@@ -122,7 +122,7 @@ OFFENSE_PLAYER_REACTION_011:
 	PlayerCommandData.setMS $00                                                                                           ; x8106  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8108 
 OFFENSE_PLAYER_REACTION_LOOP_011:
-	.DB $DF                                                                                                               ; x8109 
+	PlayerCommandData.computerTakesControl                                                                                ; x8109 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_011                                                             ; x810a  {"(Amount)":"-1 bytes to x8109"}
 OFFENSE_PLAYER_REACTION_012:
 	.DB $D0, $F0, $48                                                                                                     ; x810c  {"(Location)":{"up":0,"left":9}}
@@ -2991,7 +2991,7 @@ OFFENSE_PLAYER_REACTION_315:
 OFFENSE_PLAYER_REACTION_JUMP_189:
 	PlayerCommandData.playerTakesControl                                                                                  ; x9848 
 OFFENSE_PLAYER_REACTION_LOOP_118:
-	.DB $DF                                                                                                               ; x9849 
+	PlayerCommandData.computerTakesControl                                                                                ; x9849 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_118                                                             ; x984a  {"(Amount)":"-1 bytes to x9849"}
 OFFENSE_PLAYER_REACTION_316:
 	.DB $A2                                                                                                               ; x984c 
@@ -3001,7 +3001,7 @@ OFFENSE_PLAYER_REACTION_LOOP_119:
 OFFENSE_PLAYER_REACTION_JUMP_190:
 	PlayerCommandData.playerTakesControl                                                                                  ; x9852 
 OFFENSE_PLAYER_REACTION_LOOP_120:
-	.DB $DF                                                                                                               ; x9853 
+	PlayerCommandData.computerTakesControl                                                                                ; x9853 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_120                                                             ; x9854  {"(Amount)":"-1 bytes to x9853"}
 OFFENSE_PLAYER_REACTION_317:
 	.DB $A1                                                                                                               ; x9856 
@@ -5308,7 +5308,7 @@ DEFENSE_PLAYER_REACTION_195:
 	PlayerCommandData.setMS $00                                                                                           ; xaae0  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; xaae2 
 DEFENSE_PLAYER_REACTION_LOOP_008:
-	.DB $DF                                                                                                               ; xaae3 
+	PlayerCommandData.computerTakesControl                                                                                ; xaae3 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_008                                                             ; xaae4  {"(Amount)":"-1 bytes to xaae3"}
 DEFENSE_PLAYER_REACTION_JUMP_088:
 	PlayerCommandData.turn $46                                                                                            ; xaae6  {"(Time)":"for 3.5s"}
@@ -7897,7 +7897,7 @@ DEFENSE_PLAYER_REACTION_522:
 	PlayerCommandData.boostRS $EF                                                                                         ; xbfc9  {"(Boost)":{"value":239}}
 	PlayerCommandData.playerTakesControl                                                                                  ; xbfcb 
 DEFENSE_PLAYER_REACTION_LOOP_017:
-	.DB $DF                                                                                                               ; xbfcc 
+	PlayerCommandData.computerTakesControl                                                                                ; xbfcc 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_017                                                             ; xbfcd  {"(Amount)":"-1 bytes to xbfcc"}
 
 .PAD $C000, $FF
