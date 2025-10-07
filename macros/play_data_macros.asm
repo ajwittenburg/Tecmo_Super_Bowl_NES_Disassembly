@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.waitForSnap2PointStance
+    .DB $EC
+.ENDM
+
 .MACRO PlayerCommandData.motion time
     .DB $ED
     .DB time

@@ -5,7 +5,7 @@ OFFENSE_PLAY_DATA:
 
 OFFENSE_PLAYER_REACTION_001:
 	.DB $B0, $CC, $98                                                                                                     ; x8010 
-	.DB $EC                                                                                                               ; x8013 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8013 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x8014  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	.DB $B4, $48, $88                                                                                                     ; x8017 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x801a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -17,7 +17,7 @@ OFFENSE_PLAYER_REACTION_LOOP_001:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_001                                                             ; x8029  {"(Amount)":"-3 bytes to x8026"}
 OFFENSE_PLAYER_REACTION_002:
 	.DB $B0, $DC, $88                                                                                                     ; x802b 
-	.DB $EC                                                                                                               ; x802e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x802e 
 	PlayerCommandData.setToGrapple %00111100, %00000000                                                                   ; x802f  {"(Player)":"LE,ROLB,RILB,LILB"}
 	.DB $B4, $60, $A0                                                                                                     ; x8032 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8035  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -28,7 +28,7 @@ OFFENSE_PLAYER_REACTION_LOOP_002:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_002                                                             ; x8041  {"(Amount)":"-3 bytes to x803e"}
 OFFENSE_PLAYER_REACTION_003:
 	.DB $B0, $F0, $80                                                                                                     ; x8043 
-	.DB $EC                                                                                                               ; x8046 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8046 
 	PlayerCommandData.setToGrapple %10000110, %00000000                                                                   ; x8047  {"(Player)":"RE,LILB,LOLB"}
 	.DB $B4, $78, $B0                                                                                                     ; x804a 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x804d  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -38,7 +38,7 @@ OFFENSE_PLAYER_REACTION_LOOP_003:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_003                                                             ; x8056  {"(Amount)":"-3 bytes to x8053"}
 OFFENSE_PLAYER_REACTION_004:
 	.DB $B0, $04, $88                                                                                                     ; x8058 
-	.DB $EC                                                                                                               ; x805b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x805b 
 	PlayerCommandData.setToGrapple %00000011, %11000000                                                                   ; x805c  {"(Player)":"LOLB,RCB,LCB,FS"}
 	.DB $B4, $90, $A0                                                                                                     ; x805f 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8062  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -49,7 +49,7 @@ OFFENSE_PLAYER_REACTION_LOOP_004:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_004                                                             ; x806e  {"(Amount)":"-3 bytes to x806b"}
 OFFENSE_PLAYER_REACTION_005:
 	.DB $B0, $18, $98                                                                                                     ; x8070 
-	.DB $EC                                                                                                               ; x8073 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8073 
 	PlayerCommandData.setToGrapple %00000000, %11100000                                                                   ; x8074  {"(Player)":"LCB,FS,SS"}
 	.DB $B4, $A8, $88                                                                                                     ; x8077 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x807a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -61,7 +61,7 @@ OFFENSE_PLAYER_REACTION_LOOP_005:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_005                                                             ; x8089  {"(Amount)":"-3 bytes to x8086"}
 OFFENSE_PLAYER_REACTION_006:
 	.DB $B1, $CC, $00                                                                                                     ; x808b 
-	.DB $EC                                                                                                               ; x808e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x808e 
 	PlayerCommandData.setToGrapple %01110000, %00000000                                                                   ; x808f  {"(Player)":"NT,LE,ROLB"}
 	.DB $B4, $50, $38                                                                                                     ; x8092 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8095  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -71,7 +71,7 @@ OFFENSE_PLAYER_REACTION_LOOP_006:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_006                                                             ; x809e  {"(Amount)":"-3 bytes to x809b"}
 OFFENSE_PLAYER_REACTION_007:
 	.DB $B1, $E4, $00                                                                                                     ; x80a0 
-	.DB $EC                                                                                                               ; x80a3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80a3 
 	PlayerCommandData.setToGrapple %00001110, %00000000                                                                   ; x80a4  {"(Player)":"RILB,LILB,LOLB"}
 	.DB $B4, $68, $48                                                                                                     ; x80a7 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80aa  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -84,7 +84,7 @@ OFFENSE_PLAYER_REACTION_LOOP_007:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_007                                                             ; x80ba  {"(Amount)":"-1 bytes to x80b9"}
 OFFENSE_PLAYER_REACTION_008:
 	.DB $B1, $FC, $00                                                                                                     ; x80bc 
-	.DB $EC                                                                                                               ; x80bf 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80bf 
 	PlayerCommandData.setToGrapple %00000111, %00000000                                                                   ; x80c0  {"(Player)":"LILB,LOLB,RCB"}
 	.DB $B4, $88, $48                                                                                                     ; x80c3 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80c6  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
@@ -97,7 +97,7 @@ OFFENSE_PLAYER_REACTION_LOOP_008:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_008                                                             ; x80d6  {"(Amount)":"-1 bytes to x80d5"}
 OFFENSE_PLAYER_REACTION_009:
 	.DB $B1, $14, $00                                                                                                     ; x80d8 
-	.DB $EC                                                                                                               ; x80db 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80db 
 	.DB $B4, $A0, $38                                                                                                     ; x80dc 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80df  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	.DB $CD, $04, $7F                                                                                                     ; x80e2  {"(Location)":{"down":0.5,"right":15.875}}
@@ -106,7 +106,7 @@ OFFENSE_PLAYER_REACTION_LOOP_009:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_009                                                             ; x80e8  {"(Amount)":"-3 bytes to x80e5"}
 OFFENSE_PLAYER_REACTION_010:
 	.DB $B1, $E0, $78                                                                                                     ; x80ea 
-	.DB $EC                                                                                                               ; x80ed 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80ed 
 	.DB $B4, $88, $28                                                                                                     ; x80ee 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x80f1  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	.DB $CF, $00, $30                                                                                                     ; x80f4  {"(Location)":{"up":15,"right":6}}
@@ -116,7 +116,7 @@ OFFENSE_PLAYER_REACTION_LOOP_010:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_010                                                             ; x80fd  {"(Amount)":"-3 bytes to x80fa"}
 OFFENSE_PLAYER_REACTION_011:
 	.DB $B1, $00, $48                                                                                                     ; x80ff 
-	.DB $EC                                                                                                               ; x8102 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8102 
 	.DB $E3, $30                                                                                                          ; x8103  {"(Boost)":{"value":48}}
 	PlayerCommandData.changePlayerIconToReturner                                                                          ; x8105 
 	.DB $E1, $00                                                                                                          ; x8106  {"(Value)":6}
@@ -126,14 +126,14 @@ OFFENSE_PLAYER_REACTION_LOOP_011:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_011                                                             ; x810a  {"(Amount)":"-1 bytes to x8109"}
 OFFENSE_PLAYER_REACTION_012:
 	.DB $D0, $F0, $48                                                                                                     ; x810c  {"(Location)":{"up":0,"left":9}}
-	.DB $EC                                                                                                               ; x810f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x810f 
 	.DB $E6                                                                                                               ; x8110 
 OFFENSE_PLAYER_REACTION_LOOP_012:
 	PlayerCommandData.turn $00                                                                                            ; x8111  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_012                                                             ; x8113  {"(Amount)":"-2 bytes to x8111"}
 OFFENSE_PLAYER_REACTION_013:
 	.DB $D0, $00, $30                                                                                                     ; x8115  {"(Location)":{"down":2,"left":6}}
-	.DB $EC                                                                                                               ; x8118 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8118 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x8119  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x811c  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_014:
@@ -142,13 +142,13 @@ OFFENSE_PLAYER_REACTION_014:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_129                                                                  ; x8123  {"(Pointer)":" to x866f"}
 OFFENSE_PLAYER_REACTION_015:
 	.DB $D1, $36, $0C                                                                                                     ; x8126  {"(Location)":{"up":8.25,"left":1.5}}
-	.DB $EC                                                                                                               ; x8129 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8129 
 OFFENSE_PLAYER_REACTION_JUMP_001:
 	.DB $D7, $00, $7F                                                                                                     ; x812a  {"(Location)":{"up":0,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x812d  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_016:
 	.DB $D1, $C0, $0C                                                                                                     ; x8130  {"(Location)":{"down":9,"left":1.5}}
-	.DB $EC                                                                                                               ; x8133 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8133 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_001                                                             ; x8134  {"(Pointer)":" to x812a"}
 OFFENSE_PLAYER_REACTION_017:
 	.DB $D0, $18, $1C                                                                                                     ; x8137  {"(Location)":{"down":5,"left":3.5}}
@@ -172,7 +172,7 @@ OFFENSE_PLAYER_REACTION_021:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_425                                                                  ; x8157  {"(Pointer)":" to x9e3a"}
 OFFENSE_PLAYER_REACTION_022:
 	.DB $D0, $08, $0C                                                                                                     ; x815a  {"(Location)":{"down":3,"left":1.5}}
-	.DB $EC                                                                                                               ; x815d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x815d 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_427                                                                  ; x815e  {"(Pointer)":" to x9e46"}
 OFFENSE_PLAYER_REACTION_023:
 	PlayerCommandData.boostHP $07                                                                                         ; x8161  {"(Boost)":{"value":7}}
@@ -193,7 +193,7 @@ OFFENSE_PLAYER_REACTION_025:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x817e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_026:
 	.DB $D0, $F0, $60                                                                                                     ; x8181  {"(Location)":{"up":0,"left":12}}
-	.DB $EC                                                                                                               ; x8184 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8184 
 	.DB $E7                                                                                                               ; x8185 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8186  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_027:
@@ -241,7 +241,7 @@ OFFENSE_PLAYER_REACTION_035:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_432                                                                  ; x81d6  {"(Pointer)":" to x9e64"}
 OFFENSE_PLAYER_REACTION_036:
 	.DB $D0, $F0, $60                                                                                                     ; x81d9  {"(Location)":{"up":0,"left":12}}
-	.DB $EC                                                                                                               ; x81dc 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x81dc 
 	.DB $E8                                                                                                               ; x81dd 
 OFFENSE_PLAYER_REACTION_LOOP_013:
 	PlayerCommandData.turn $00                                                                                            ; x81de  {"(Time)":"for forever"}
@@ -260,13 +260,13 @@ OFFENSE_PLAYER_REACTION_039:
 	.DB $EA                                                                                                               ; x81f5 
 OFFENSE_PLAYER_REACTION_040:
 	.DB $D0, $0C, $40                                                                                                     ; x81f6  {"(Location)":{"down":3.5,"left":8}}
-	.DB $EC                                                                                                               ; x81f9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x81f9 
 OFFENSE_PLAYER_REACTION_041:
 	.DB $D0, $C0, $18                                                                                                     ; x81fa  {"(Location)":{"up":6,"left":3}}
-	.DB $EC                                                                                                               ; x81fd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x81fd 
 OFFENSE_PLAYER_REACTION_042:
 	.DB $D0, $0C, $40                                                                                                     ; x81fe  {"(Location)":{"down":3.5,"left":8}}
-	.DB $EC                                                                                                               ; x8201 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8201 
 OFFENSE_PLAYER_REACTION_043:
 	.DB $D0, $0C, $30                                                                                                     ; x8202  {"(Location)":{"down":3.5,"left":6}}
 	.DB $EA                                                                                                               ; x8205 
@@ -282,7 +282,7 @@ OFFENSE_PLAYER_REACTION_045:
 	.DB $D8, $F0, $C0                                                                                                     ; x8217  {"(Location)":{"up":0,"left":8}}
 	.DB $EA                                                                                                               ; x821a 
 	.DB $D0, $D8, $40                                                                                                     ; x821b  {"(Location)":{"up":3,"left":8}}
-	.DB $EC                                                                                                               ; x821e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x821e 
 OFFENSE_PLAYER_REACTION_046:
 	.DB $D0, $F0, $48                                                                                                     ; x821f  {"(Location)":{"up":0,"left":9}}
 	.DB $EA                                                                                                               ; x8222 
@@ -292,7 +292,7 @@ OFFENSE_PLAYER_REACTION_047:
 	.DB $D8, $D4, $CC                                                                                                     ; x8228  {"(Location)":{"up":3.5,"left":6.5}}
 	.DB $D8, $E0, $D8                                                                                                     ; x822b  {"(Location)":{"up":2,"left":5}}
 	.DB $D9, $C0, $D8                                                                                                     ; x822e  {"(Location)":{"down":9,"left":5}}
-	.DB $EC                                                                                                               ; x8231 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8231 
 OFFENSE_PLAYER_REACTION_048:
 	.DB $D0, $D4, $40                                                                                                     ; x8232  {"(Location)":{"up":3.5,"left":8}}
 	.DB $EA                                                                                                               ; x8235 
@@ -306,22 +306,22 @@ OFFENSE_PLAYER_REACTION_049:
 	.DB $EA                                                                                                               ; x8246 
 OFFENSE_PLAYER_REACTION_050:
 	.DB $D1, $48, $0C                                                                                                     ; x8247  {"(Location)":{"up":6,"left":1.5}}
-	.DB $EC                                                                                                               ; x824a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x824a 
 OFFENSE_PLAYER_REACTION_051:
 	.DB $D0, $D8, $40                                                                                                     ; x824b  {"(Location)":{"up":3,"left":8}}
-	.DB $EC                                                                                                               ; x824e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x824e 
 OFFENSE_PLAYER_REACTION_052:
 	.DB $D1, $B2, $18                                                                                                     ; x824f  {"(Location)":{"down":7.25,"left":3}}
-	.DB $EC                                                                                                               ; x8252 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8252 
 OFFENSE_PLAYER_REACTION_053:
 	.DB $D1, $48, $18                                                                                                     ; x8253  {"(Location)":{"up":6,"left":3}}
-	.DB $EC                                                                                                               ; x8256 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8256 
 OFFENSE_PLAYER_REACTION_054:
 	.DB $D0, $18, $16                                                                                                     ; x8257  {"(Location)":{"down":5,"left":2.75}}
-	.DB $EC                                                                                                               ; x825a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x825a 
 OFFENSE_PLAYER_REACTION_055:
 	.DB $D0, $C4, $18                                                                                                     ; x825b  {"(Location)":{"up":5.5,"left":3}}
-	.DB $EC                                                                                                               ; x825e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x825e 
 OFFENSE_PLAYER_REACTION_056:
 	.DB $D0, $F0, $48                                                                                                     ; x825f  {"(Location)":{"up":0,"left":9}}
 	.DB $EA                                                                                                               ; x8262 
@@ -329,7 +329,7 @@ OFFENSE_PLAYER_REACTION_057:
 	.DB $D0, $14, $0C                                                                                                     ; x8263  {"(Location)":{"down":4.5,"left":1.5}}
 	.DB $EB, $50                                                                                                          ; x8266  {"(Time)":"for 4s"}
 	.DB $D9, $C0, $F4                                                                                                     ; x8268  {"(Location)":{"down":9,"left":1.5}}
-	.DB $EC                                                                                                               ; x826b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x826b 
 OFFENSE_PLAYER_REACTION_058:
 	.DB $D0, $0C, $40                                                                                                     ; x826c  {"(Location)":{"down":3.5,"left":8}}
 	.DB $EB, $14                                                                                                          ; x826f  {"(Time)":"for 1s"}
@@ -342,7 +342,7 @@ OFFENSE_PLAYER_REACTION_059:
 	.DB $EA                                                                                                               ; x827e 
 OFFENSE_PLAYER_REACTION_060:
 	.DB $D0, $C8, $18                                                                                                     ; x827f  {"(Location)":{"up":5,"left":3}}
-	.DB $EC                                                                                                               ; x8282 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8282 
 OFFENSE_PLAYER_REACTION_061:
 	.DB $D0, $0C, $40                                                                                                     ; x8283  {"(Location)":{"down":3.5,"left":8}}
 	.DB $EA                                                                                                               ; x8286 
@@ -358,73 +358,73 @@ OFFENSE_PLAYER_REACTION_064:
 	.DB $D1, $2C, $14                                                                                                     ; x8294  {"(Location)":{"up":9.5,"left":2.5}}
 	PlayerCommandData.motion $32                                                                                          ; x8297  {"(Time)":"for 2.5s"}
 	.DB $D8, $C0, $EC                                                                                                     ; x8299  {"(Location)":{"up":6,"left":2.5}}
-	.DB $EC                                                                                                               ; x829c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x829c 
 OFFENSE_PLAYER_REACTION_065:
 	.DB $D0, $CC, $0C                                                                                                     ; x829d  {"(Location)":{"up":4.5,"left":1.5}}
 	.DB $EB, $28                                                                                                          ; x82a0  {"(Time)":"for 2s"}
 	.DB $D9, $36, $F4                                                                                                     ; x82a2  {"(Location)":{"up":8.25,"left":1.5}}
-	.DB $EC                                                                                                               ; x82a5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82a5 
 OFFENSE_PLAYER_REACTION_066:
 	.DB $D1, $36, $0C                                                                                                     ; x82a6  {"(Location)":{"up":8.25,"left":1.5}}
-	.DB $EC                                                                                                               ; x82a9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82a9 
 OFFENSE_PLAYER_REACTION_067:
 	.DB $D1, $36, $14                                                                                                     ; x82aa  {"(Location)":{"up":8.25,"left":2.5}}
-	.DB $EC                                                                                                               ; x82ad 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82ad 
 OFFENSE_PLAYER_REACTION_068:
 	.DB $D1, $C0, $0C                                                                                                     ; x82ae  {"(Location)":{"down":9,"left":1.5}}
-	.DB $EC                                                                                                               ; x82b1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82b1 
 	.DB $D1, $A8, $18                                                                                                     ; x82b2  {"(Location)":{"down":6,"left":3}}
-	.DB $EC                                                                                                               ; x82b5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82b5 
 OFFENSE_PLAYER_REACTION_069:
 	.DB $D1, $C6, $0C                                                                                                     ; x82b6  {"(Location)":{"down":9.75,"left":1.5}}
-	.DB $EC                                                                                                               ; x82b9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82b9 
 OFFENSE_PLAYER_REACTION_070:
 	.DB $D1, $C6, $18                                                                                                     ; x82ba  {"(Location)":{"down":9.75,"left":3}}
 	PlayerCommandData.motion $8C                                                                                          ; x82bd  {"(Time)":"for 7s"}
 	.DB $D8, $10, $E8                                                                                                     ; x82bf  {"(Location)":{"down":4,"left":3}}
-	.DB $EC                                                                                                               ; x82c2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82c2 
 OFFENSE_PLAYER_REACTION_071:
 	.DB $D0, $1C, $0C                                                                                                     ; x82c3  {"(Location)":{"down":5.5,"left":1.5}}
 	.DB $EB, $28                                                                                                          ; x82c6  {"(Time)":"for 2s"}
 	.DB $D9, $C0, $F4                                                                                                     ; x82c8  {"(Location)":{"down":9,"left":1.5}}
-	.DB $EC                                                                                                               ; x82cb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82cb 
 OFFENSE_PLAYER_REACTION_072:
 	.DB $D0, $B8, $18                                                                                                     ; x82cc  {"(Location)":{"up":7,"left":3}}
 	PlayerCommandData.motion $14                                                                                          ; x82cf  {"(Time)":"for 1s"}
 	.DB $D8, $B8, $D8                                                                                                     ; x82d1  {"(Location)":{"up":7,"left":5}}
 	.DB $D7, $40, $00                                                                                                     ; x82d4  {"(Location)":{"down":8,"left":0}}
 	.DB $D9, $B8, $D8                                                                                                     ; x82d7  {"(Location)":{"down":8,"left":5}}
-	.DB $EC                                                                                                               ; x82da 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82da 
 OFFENSE_PLAYER_REACTION_073:
 	.DB $D1, $C0, $14                                                                                                     ; x82db  {"(Location)":{"down":9,"left":2.5}}
-	.DB $EC                                                                                                               ; x82de 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82de 
 OFFENSE_PLAYER_REACTION_074:
 	.DB $D1, $4C, $18                                                                                                     ; x82df  {"(Location)":{"up":5.5,"left":3}}
-	.DB $EC                                                                                                               ; x82e2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82e2 
 OFFENSE_PLAYER_REACTION_075:
 	.DB $D1, $C0, $0C                                                                                                     ; x82e3  {"(Location)":{"down":9,"left":1.5}}
-	.DB $EC                                                                                                               ; x82e6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82e6 
 OFFENSE_PLAYER_REACTION_076:
 	.DB $D1, $3A, $0C                                                                                                     ; x82e7  {"(Location)":{"up":7.75,"left":1.5}}
-	.DB $EC                                                                                                               ; x82ea 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82ea 
 OFFENSE_PLAYER_REACTION_077:
 	.DB $D0, $20, $18                                                                                                     ; x82eb  {"(Location)":{"down":6,"left":3}}
-	.DB $EC                                                                                                               ; x82ee 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82ee 
 OFFENSE_PLAYER_REACTION_078:
 	.DB $D0, $18, $16                                                                                                     ; x82ef  {"(Location)":{"down":5,"left":2.75}}
-	.DB $EC                                                                                                               ; x82f2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82f2 
 OFFENSE_PLAYER_REACTION_079:
 	.DB $D1, $A8, $18                                                                                                     ; x82f3  {"(Location)":{"down":6,"left":3}}
-	.DB $EC                                                                                                               ; x82f6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82f6 
 OFFENSE_PLAYER_REACTION_080:
 	.DB $D1, $C0, $0C                                                                                                     ; x82f7  {"(Location)":{"down":9,"left":1.5}}
-	.DB $EC                                                                                                               ; x82fa 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82fa 
 OFFENSE_PLAYER_REACTION_081:
 	.DB $D1, $B2, $18                                                                                                     ; x82fb  {"(Location)":{"down":7.25,"left":3}}
-	.DB $EC                                                                                                               ; x82fe 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82fe 
 OFFENSE_PLAYER_REACTION_082:
 	.DB $D0, $1C, $18                                                                                                     ; x82ff  {"(Location)":{"down":5.5,"left":3}}
-	.DB $EC                                                                                                               ; x8302 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8302 
 OFFENSE_PLAYER_REACTION_083:
 	.DB $D0, $14, $0C                                                                                                     ; x8303  {"(Location)":{"down":4.5,"left":1.5}}
 	.DB $EA                                                                                                               ; x8306 
@@ -452,19 +452,19 @@ OFFENSE_PLAYER_REACTION_090:
 	.DB $D0, $F0, $48                                                                                                     ; x8323  {"(Location)":{"up":0,"left":9}}
 	PlayerCommandData.qbStance                                                                                            ; x8326 
 	.DB $D0, $D4, $38                                                                                                     ; x8327  {"(Location)":{"up":3.5,"left":7}}
-	.DB $EC                                                                                                               ; x832a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x832a 
 	.DB $D0, $00, $40                                                                                                     ; x832b  {"(Location)":{"down":2,"left":8}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x832e  {"(Direction)":"90 degrees"}
 	PlayerCommandData.wait $01, $FF                                                                                       ; x8330  {"(Start Time, End Time)":"start in between 0.05s and 12.75s"}
 	.DB $D8, $C0, $D8                                                                                                     ; x8333  {"(Location)":{"up":6,"left":5}}
 	.DB $D8, $18, $D8                                                                                                     ; x8336  {"(Location)":{"down":5,"left":5}}
-	.DB $EC                                                                                                               ; x8339 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8339 
 	.DB $D1, $38, $08                                                                                                     ; x833a  {"(Location)":{"up":8,"left":1}}
-	.DB $EC                                                                                                               ; x833d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x833d 
 	.DB $D1, $C8, $08                                                                                                     ; x833e  {"(Location)":{"down":10,"left":1}}
-	.DB $EC                                                                                                               ; x8341 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8341 
 	.DB $D1, $B0, $18                                                                                                     ; x8342  {"(Location)":{"down":7,"left":3}}
-	.DB $EC                                                                                                               ; x8345 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8345 
 	.DB $D0, $F0, $06                                                                                                     ; x8346  {"(Location)":{"up":0,"left":0.75}}
 	.DB $D3                                                                                                               ; x8349 
 OFFENSE_PLAYER_REACTION_091:
@@ -3922,7 +3922,7 @@ DEFENSE_PLAYER_REACTION_001:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa015  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_002:
 	.DB $D0, $A8, $2C                                                                                                     ; xa018  {"(Location)":{"up":9,"right":5.5}}
-	.DB $EC                                                                                                               ; xa01b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa01b 
 DEFENSE_PLAYER_REACTION_JUMP_001:
 	.DB $D7, $00, $64                                                                                                     ; xa01c  {"(Location)":{"up":0,"left":12.5}}
 	.DB $D7, $00, $44                                                                                                     ; xa01f  {"(Location)":{"up":0,"left":8.5}}
@@ -3930,26 +3930,26 @@ DEFENSE_PLAYER_REACTION_JUMP_001:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa025  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_003:
 	.DB $D0, $B0, $28                                                                                                     ; xa028  {"(Location)":{"up":8,"right":5}}
-	.DB $EC                                                                                                               ; xa02b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa02b 
 DEFENSE_PLAYER_REACTION_LOOP_001:
 	.DB $D7, $00, $7F                                                                                                     ; xa02c  {"(Location)":{"up":0,"left":15.875}}
 	.DB $D7, $00, $44                                                                                                     ; xa02f  {"(Location)":{"up":0,"left":8.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa032  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_004:
 	.DB $D0, $C0, $2C                                                                                                     ; xa035  {"(Location)":{"up":6,"right":5.5}}
-	.DB $EC                                                                                                               ; xa038 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa038 
 DEFENSE_PLAYER_REACTION_JUMP_002:
 	.DB $D7, $00, $7F                                                                                                     ; xa039  {"(Location)":{"up":0,"left":15.875}}
 	PlayerCommandData.turn $3C                                                                                            ; xa03c  {"(Time)":"for 3s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa03e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_005:
 	.DB $D0, $D0, $28                                                                                                     ; xa041  {"(Location)":{"up":4,"right":5}}
-	.DB $EC                                                                                                               ; xa044 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa044 
 DEFENSE_PLAYER_REACTION_JUMP_003:
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_001                                                             ; xa045  {"(Amount)":"-25 bytes to xa02c"}
 DEFENSE_PLAYER_REACTION_006:
 	.DB $D0, $E0, $28                                                                                                     ; xa047  {"(Location)":{"up":2,"right":5}}
-	.DB $EC                                                                                                               ; xa04a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa04a 
 DEFENSE_PLAYER_REACTION_LOOP_002:
 	.DB $D7, $00, $7F                                                                                                     ; xa04b  {"(Location)":{"up":0,"left":15.875}}
 	PlayerCommandData.wait $64, $FF                                                                                       ; xa04e  {"(Start Time, End Time)":"start in between 5s and 12.75s"}
@@ -3957,44 +3957,44 @@ DEFENSE_PLAYER_REACTION_LOOP_002:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa054  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_007:
 	.DB $D0, $00, $28                                                                                                     ; xa057  {"(Location)":{"down":2,"right":5}}
-	.DB $EC                                                                                                               ; xa05a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa05a 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_002                                                             ; xa05b  {"(Amount)":"-16 bytes to xa04b"}
 DEFENSE_PLAYER_REACTION_008:
 	.DB $D0, $10, $28                                                                                                     ; xa05d  {"(Location)":{"down":4,"right":5}}
-	.DB $EC                                                                                                               ; xa060 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa060 
 DEFENSE_PLAYER_REACTION_LOOP_003:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_003                                                             ; xa061  {"(Pointer)":" to xa045"}
 DEFENSE_PLAYER_REACTION_009:
 	.DB $D0, $20, $2C                                                                                                     ; xa064  {"(Location)":{"down":6,"right":5.5}}
-	.DB $EC                                                                                                               ; xa067 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa067 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_002                                                             ; xa068  {"(Pointer)":" to xa039"}
 DEFENSE_PLAYER_REACTION_010:
 	.DB $D0, $30, $28                                                                                                     ; xa06b  {"(Location)":{"down":8,"right":5}}
-	.DB $EC                                                                                                               ; xa06e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa06e 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_003                                                             ; xa06f  {"(Amount)":"-14 bytes to xa061"}
 DEFENSE_PLAYER_REACTION_011:
 	.DB $D0, $38, $2C                                                                                                     ; xa071  {"(Location)":{"down":9,"right":5.5}}
-	.DB $EC                                                                                                               ; xa074 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa074 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_001                                                             ; xa075  {"(Pointer)":" to xa01c"}
 DEFENSE_PLAYER_REACTION_012:
 	.DB $D1, $36, $0C                                                                                                     ; xa078  {"(Location)":{"up":8.25,"right":1.5}}
-	.DB $EC                                                                                                               ; xa07b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa07b 
 	PlayerCommandData.setToGrapple %00010000, %00000000                                                                   ; xa07c  {"(Player)":"WR1"}
 	.DB $D7, $00, $10                                                                                                     ; xa07f  {"(Location)":{"up":0,"left":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa082  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_013:
 	.DB $D1, $C0, $0C                                                                                                     ; xa085  {"(Location)":{"down":9,"right":1.5}}
-	.DB $EC                                                                                                               ; xa088 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa088 
 	PlayerCommandData.setToGrapple %00001000, %00000000                                                                   ; xa089  {"(Player)":"WR2"}
 	.DB $D7, $00, $10                                                                                                     ; xa08c  {"(Location)":{"up":0,"left":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa08f  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_014:
 	.DB $D0, $D0, $48                                                                                                     ; xa092  {"(Location)":{"up":4,"right":9}}
-	.DB $EC                                                                                                               ; xa095 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa095 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xa096  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_015:
 	.DB $D0, $10, $48                                                                                                     ; xa099  {"(Location)":{"down":4,"right":9}}
-	.DB $EC                                                                                                               ; xa09c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa09c 
 	.DB $D7, $00, $88                                                                                                     ; xa09d  {"(Location)":{"up":0,"right":14.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa0a0  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_016:
@@ -4081,19 +4081,19 @@ DEFENSE_PLAYER_REACTION_031:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa144  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_032:
 	.DB $D0, $C8, $10                                                                                                     ; xa147  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa14a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa14a 
 DEFENSE_PLAYER_REACTION_JUMP_004:
 	.DB $D8, $CC, $10                                                                                                     ; xa14b  {"(Location)":{"up":4.5,"left":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa14e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_033:
 	.DB $D0, $E0, $18                                                                                                     ; xa151  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa154 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa154 
 DEFENSE_PLAYER_REACTION_JUMP_005:
 	.DB $D8, $E0, $10                                                                                                     ; xa155  {"(Location)":{"up":2,"left":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa158  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_034:
 	.DB $D0, $00, $18                                                                                                     ; xa15b  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa15e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa15e 
 DEFENSE_PLAYER_REACTION_JUMP_006:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xa15f  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
 	.DB $D8, $04, $F0                                                                                                     ; xa162  {"(Location)":{"down":2.5,"right":2}}
@@ -4101,14 +4101,14 @@ DEFENSE_PLAYER_REACTION_JUMP_006:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa168  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_035:
 	.DB $D0, $18, $0C                                                                                                     ; xa16b  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa16e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa16e 
 DEFENSE_PLAYER_REACTION_JUMP_007:
 	PlayerCommandData.turn $14                                                                                            ; xa16f  {"(Time)":"for 1s"}
 	.DB $D8, $10, $E8                                                                                                     ; xa171  {"(Location)":{"down":4,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa174  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_036:
 	.DB $D1, $36, $28                                                                                                     ; xa177  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa17a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa17a 
 	PlayerCommandData.stand $0A                                                                                           ; xa17b  {"(Time)":"for 0.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_008:
 	.DB $D7, $00, $90                                                                                                     ; xa17d  {"(Location)":{"up":0,"right":13.875}}
@@ -4116,7 +4116,7 @@ DEFENSE_PLAYER_REACTION_JUMP_008:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa183  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_037:
 	.DB $D1, $C0, $28                                                                                                     ; xa186  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa189 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa189 
 DEFENSE_PLAYER_REACTION_JUMP_009:
 	PlayerCommandData.stand $0A                                                                                           ; xa18a  {"(Time)":"for 0.5s"}
 	.DB $D8, $F0, $E8                                                                                                     ; xa18c  {"(Location)":{"up":0,"right":3}}
@@ -4152,7 +4152,7 @@ DEFENSE_PLAYER_REACTION_JUMP_012:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa1ca  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_041:
 	.DB $D0, $C8, $10                                                                                                     ; xa1cd  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa1d0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa1d0 
 DEFENSE_PLAYER_REACTION_JUMP_013:
 	.DB $D8, $C0, $00                                                                                                     ; xa1d1  {"(Location)":{"up":6,"left":0}}
 	.DB $D8, $C0, $28                                                                                                     ; xa1d4  {"(Location)":{"up":6,"left":5}}
@@ -4165,7 +4165,7 @@ DEFENSE_PLAYER_REACTION_JUMP_014:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa1e5  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_042:
 	.DB $D0, $00, $18                                                                                                     ; xa1e8  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa1eb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa1eb 
 	.DB $D8, $00, $E8                                                                                                     ; xa1ec  {"(Location)":{"down":2,"right":3}}
 	.DB $D8, $F0, $D8                                                                                                     ; xa1ef  {"(Location)":{"up":0,"right":5}}
 	.DB $D8, $E0, $B8                                                                                                     ; xa1f2  {"(Location)":{"up":2,"right":9}}
@@ -4174,7 +4174,7 @@ DEFENSE_PLAYER_REACTION_042:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa1fa  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_043:
 	.DB $D0, $18, $0C                                                                                                     ; xa1fd  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa200 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa200 
 	.DB $D8, $08, $0C                                                                                                     ; xa201  {"(Location)":{"down":3,"left":1.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa204  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_JUMP_015:
@@ -4182,21 +4182,21 @@ DEFENSE_PLAYER_REACTION_JUMP_015:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa20a  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_044:
 	.DB $D1, $C0, $28                                                                                                     ; xa20d  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa210 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa210 
 DEFENSE_PLAYER_REACTION_JUMP_016:
 	.DB $D8, $0C, $E0                                                                                                     ; xa211  {"(Location)":{"down":3.5,"right":4}}
 	PlayerCommandData.turn $50                                                                                            ; xa214  {"(Time)":"for 4s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa216  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_045:
 	.DB $D0, $C8, $50                                                                                                     ; xa219  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa21c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa21c 
 DEFENSE_PLAYER_REACTION_JUMP_017:
 	.DB $D7, $30, $C0                                                                                                     ; xa21d  {"(Location)":{"down":6,"right":7.875}}
 	.DB $D7, $40, $00                                                                                                     ; xa220  {"(Location)":{"down":8,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa223  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_046:
 	.DB $D0, $18, $50                                                                                                     ; xa226  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa229 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa229 
 DEFENSE_PLAYER_REACTION_JUMP_018:
 	.DB $C8, $D8, $AA, $02                                                                                                ; xa22a  {"(Pointer)":" to xaae8","(Random)":"87.5%"}
 	.DB $D8, $00, $B0                                                                                                     ; xa22e  {"(Location)":{"down":2,"right":10}}
@@ -4211,7 +4211,7 @@ DEFENSE_PLAYER_REACTION_047:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa243  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_048:
 	.DB $D0, $C8, $10                                                                                                     ; xa246  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa249 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa249 
 DEFENSE_PLAYER_REACTION_JUMP_019:
 	.DB $D8, $C8, $18                                                                                                     ; xa24a  {"(Location)":{"up":5,"left":3}}
 	.DB $D8, $D0, $28                                                                                                     ; xa24d  {"(Location)":{"up":4,"left":5}}
@@ -4222,13 +4222,13 @@ DEFENSE_PLAYER_REACTION_049:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa257  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_050:
 	.DB $D0, $00, $18                                                                                                     ; xa25a  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa25d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa25d 
 DEFENSE_PLAYER_REACTION_JUMP_020:
 	.DB $D8, $FC, $0C                                                                                                     ; xa25e  {"(Location)":{"down":1.5,"left":1.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa261  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_051:
 	.DB $D0, $18, $0C                                                                                                     ; xa264  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa267 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa267 
 DEFENSE_PLAYER_REACTION_JUMP_021:
 	.DB $D8, $28, $00                                                                                                     ; xa268  {"(Location)":{"down":7,"left":0}}
 	.DB $D8, $28, $20                                                                                                     ; xa26b  {"(Location)":{"down":7,"left":4}}
@@ -4236,14 +4236,14 @@ DEFENSE_PLAYER_REACTION_JUMP_021:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa271  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_052:
 	.DB $D1, $36, $28                                                                                                     ; xa274  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa277 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa277 
 DEFENSE_PLAYER_REACTION_JUMP_022:
 	.DB $D9, $36, $B0                                                                                                     ; xa278  {"(Location)":{"up":8.25,"right":10}}
 	.DB $D8, $F8, $88                                                                                                     ; xa27b  {"(Location)":{"down":1,"right":15}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa27e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_053:
 	.DB $D1, $C0, $28                                                                                                     ; xa281  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa284 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa284 
 DEFENSE_PLAYER_REACTION_JUMP_023:
 	.DB $D9, $C0, $B0                                                                                                     ; xa285  {"(Location)":{"down":9,"right":10}}
 	.DB $D8, $30, $A0                                                                                                     ; xa288  {"(Location)":{"down":8,"right":12}}
@@ -4252,14 +4252,14 @@ DEFENSE_PLAYER_REACTION_JUMP_023:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa291  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_054:
 	.DB $D0, $C8, $50                                                                                                     ; xa294  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa297 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa297 
 DEFENSE_PLAYER_REACTION_JUMP_024:
 	PlayerCommandData.wait $01, $14                                                                                       ; xa298  {"(Start Time, End Time)":"start in between 0.05s and 1s"}
 	.DB $D8, $F8, $B8                                                                                                     ; xa29b  {"(Location)":{"down":1,"right":9}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa29e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_055:
 	.DB $D0, $18, $50                                                                                                     ; xa2a1  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa2a4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa2a4 
 	.DB $24, $D8, $A8                                                                                                     ; xa2a5  {"(Pointer)":" to xa8e8"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_078                                                             ; xa2a8  {"(Pointer)":" to xa8b0"}
 DEFENSE_PLAYER_REACTION_056:
@@ -4275,20 +4275,20 @@ DEFENSE_PLAYER_REACTION_057:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa2bf  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_058:
 	.DB $D0, $C8, $10                                                                                                     ; xa2c2  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa2c5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa2c5 
 	.DB $D8, $C4, $F8                                                                                                     ; xa2c6  {"(Location)":{"up":5.5,"right":1}}
 	.DB $D8, $C4, $10                                                                                                     ; xa2c9  {"(Location)":{"up":5.5,"left":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa2cc  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_059:
 	.DB $D0, $E0, $18                                                                                                     ; xa2cf  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa2d2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa2d2 
 DEFENSE_PLAYER_REACTION_JUMP_025:
 	.DB $D8, $F0, $F0                                                                                                     ; xa2d3  {"(Location)":{"up":0,"right":2}}
 	.DB $D8, $F0, $08                                                                                                     ; xa2d6  {"(Location)":{"up":0,"left":1}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa2d9  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_060:
 	.DB $D0, $00, $18                                                                                                     ; xa2dc  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa2df 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa2df 
 	.DB $27, $DB, $A2                                                                                                     ; xa2e0  {"(Pointer)":" to xa2eb"}
 DEFENSE_PLAYER_REACTION_JUMP_026:
 	PlayerCommandData.stand $3C                                                                                           ; xa2e3  {"(Time)":"for 3s"}
@@ -4299,7 +4299,7 @@ DEFENSE_PLAYER_REACTION_JUMP_027:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa2ee  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_061:
 	.DB $D0, $18, $0C                                                                                                     ; xa2f1  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa2f4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa2f4 
 DEFENSE_PLAYER_REACTION_JUMP_028:
 	.DB $2B, $EC, $A2                                                                                                     ; xa2f5  {"(Pointer)":" to xa2fc"}
 	.DB $C8, $DC, $AA, $06                                                                                                ; xa2f8  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
@@ -4310,18 +4310,18 @@ DEFENSE_PLAYER_REACTION_JUMP_029:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa304  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_062:
 	.DB $D1, $36, $28                                                                                                     ; xa307  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa30a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa30a 
 	PlayerCommandData.turn $14                                                                                            ; xa30b  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa30d  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_063:
 	.DB $D1, $C0, $28                                                                                                     ; xa310  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa313 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa313 
 DEFENSE_PLAYER_REACTION_JUMP_030:
 	.DB $D7, $00, $90                                                                                                     ; xa314  {"(Location)":{"up":0,"right":13.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa317  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_064:
 	.DB $D0, $C8, $50                                                                                                     ; xa31a  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa31d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa31d 
 	.DB $27, $15, $A3                                                                                                     ; xa31e  {"(Pointer)":" to xa325"}
 	.DB $C8, $D8, $AA, $01                                                                                                ; xa321  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_031:
@@ -4330,7 +4330,7 @@ DEFENSE_PLAYER_REACTION_JUMP_031:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa32a  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_065:
 	.DB $D0, $18, $50                                                                                                     ; xa32d  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa330 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa330 
 	.DB $27, $EC, $BD                                                                                                     ; xa331  {"(Pointer)":" to xbdfc"}
 	.DB $D8, $E8, $98                                                                                                     ; xa334  {"(Location)":{"up":1,"right":13}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa337  {"(Pointer)":" to xbdfc"}
@@ -4341,13 +4341,13 @@ DEFENSE_PLAYER_REACTION_066:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa341  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_067:
 	.DB $D0, $C8, $10                                                                                                     ; xa344  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa347 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa347 
 	.DB $D8, $D8, $F8                                                                                                     ; xa348  {"(Location)":{"up":3,"right":1}}
 	.DB $D8, $D8, $00                                                                                                     ; xa34b  {"(Location)":{"up":3,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa34e  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_068:
 	.DB $D0, $00, $18                                                                                                     ; xa351  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa354 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa354 
 DEFENSE_PLAYER_REACTION_JUMP_032:
 	.DB $27, $53, $A3                                                                                                     ; xa355  {"(Pointer)":" to xa363"}
 	PlayerCommandData.turn $14                                                                                            ; xa358  {"(Time)":"for 1s"}
@@ -4360,7 +4360,7 @@ DEFENSE_PLAYER_REACTION_JUMP_033:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa368  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_069:
 	.DB $D0, $18, $0C                                                                                                     ; xa36b  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa36e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa36e 
 	.DB $27, $66, $A3                                                                                                     ; xa36f  {"(Pointer)":" to xa376"}
 	.DB $C8, $DC, $AA, $06                                                                                                ; xa372  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_034:
@@ -4369,13 +4369,13 @@ DEFENSE_PLAYER_REACTION_JUMP_034:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa37c  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_070:
 	.DB $D1, $36, $28                                                                                                     ; xa37f  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa382 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa382 
 	PlayerCommandData.turn $0A                                                                                            ; xa383  {"(Time)":"for 0.5s"}
 	.DB $D9, $36, $C0                                                                                                     ; xa385  {"(Location)":{"up":8.25,"right":8}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa388  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_071:
 	.DB $D0, $00, $18                                                                                                     ; xa38b  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa38e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa38e 
 DEFENSE_PLAYER_REACTION_JUMP_035:
 	.DB $26, $45, $A3                                                                                                     ; xa38f  {"(Pointer)":" to xa355"}
 	.DB $D8, $F0, $D0                                                                                                     ; xa392  {"(Location)":{"up":0,"right":6}}
@@ -4383,7 +4383,7 @@ DEFENSE_PLAYER_REACTION_JUMP_035:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa397  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_072:
 	.DB $D0, $C8, $50                                                                                                     ; xa39a  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa39d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa39d 
 DEFENSE_UNUSED_REACTION_JUMP_001:
 	.DB $24, $95, $A3                                                                                                     ; xa39e  {"(Pointer)":" to xa3a5"}
 	.DB $C8, $D8, $AA, $04                                                                                                ; xa3a1  {"(Pointer)":" to xaae8","(Random)":"75%"}
@@ -4392,7 +4392,7 @@ DEFENSE_PLAYER_REACTION_JUMP_036:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa3a8  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_073:
 	.DB $D0, $18, $50                                                                                                     ; xa3ab  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa3ae 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa3ae 
 DEFENSE_PLAYER_REACTION_JUMP_037:
 	PlayerCommandData.turn $14                                                                                            ; xa3af  {"(Time)":"for 1s"}
 	.DB $D8, $E8, $81                                                                                                     ; xa3b1  {"(Location)":{"up":1,"right":15.875}}
@@ -4405,30 +4405,30 @@ DEFENSE_PLAYER_REACTION_074:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa3c1  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_075:
 	.DB $D0, $E0, $18                                                                                                     ; xa3c4  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa3c7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa3c7 
 	PlayerCommandData.stand $3C                                                                                           ; xa3c8  {"(Time)":"for 3s"}
 	.DB $D8, $F0, $D0                                                                                                     ; xa3ca  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa3cd  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_076:
 	.DB $D0, $00, $18                                                                                                     ; xa3d0  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa3d3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa3d3 
 DEFENSE_PLAYER_REACTION_JUMP_038:
 	.DB $D8, $F0, $06                                                                                                     ; xa3d4  {"(Location)":{"up":0,"left":0.75}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa3d7  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_077:
 	.DB $D0, $18, $0C                                                                                                     ; xa3da  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa3dd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa3dd 
 	.DB $D8, $14, $0C                                                                                                     ; xa3de  {"(Location)":{"down":4.5,"left":1.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa3e1  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_078:
 	.DB $D0, $C8, $10                                                                                                     ; xa3e4  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa3e7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa3e7 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xa3e8  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
 	.DB $D8, $E0, $0C                                                                                                     ; xa3eb  {"(Location)":{"up":2,"left":1.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa3ee  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_079:
 	.DB $D0, $E0, $18                                                                                                     ; xa3f1  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa3f4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa3f4 
 DEFENSE_PLAYER_REACTION_JUMP_039:
 	PlayerCommandData.stand $14                                                                                           ; xa3f5  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $D0                                                                                                     ; xa3f7  {"(Location)":{"up":0,"right":6}}
@@ -4436,7 +4436,7 @@ DEFENSE_PLAYER_REACTION_JUMP_039:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa3fc  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_080:
 	.DB $D0, $00, $18                                                                                                     ; xa3ff  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa402 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa402 
 DEFENSE_PLAYER_REACTION_JUMP_040:
 	PlayerCommandData.turn $3C                                                                                            ; xa403  {"(Time)":"for 3s"}
 	.DB $D8, $10, $C8                                                                                                     ; xa405  {"(Location)":{"down":4,"right":7}}
@@ -4456,7 +4456,7 @@ DEFENSE_PLAYER_REACTION_082:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa425  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_083:
 	.DB $D0, $E0, $18                                                                                                     ; xa428  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa42b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa42b 
 	.DB $2B, $23, $A4                                                                                                     ; xa42c  {"(Pointer)":" to xa433"}
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xa42f  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_041:
@@ -4466,21 +4466,21 @@ DEFENSE_PLAYER_REACTION_JUMP_041:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa43a  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_084:
 	.DB $D0, $00, $18                                                                                                     ; xa43d  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa440 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa440 
 	PlayerCommandData.stand $12                                                                                           ; xa441  {"(Time)":"for 0.9s"}
 	.DB $D8, $10, $C8                                                                                                     ; xa443  {"(Location)":{"down":4,"right":7}}
 	PlayerCommandData.turn $64                                                                                            ; xa446  {"(Time)":"for 5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa448  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_085:
 	.DB $D0, $18, $0C                                                                                                     ; xa44b  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa44e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa44e 
 	.DB $D8, $20, $00                                                                                                     ; xa44f  {"(Location)":{"down":6,"left":0}}
 	.DB $D8, $20, $1C                                                                                                     ; xa452  {"(Location)":{"down":6,"left":3.5}}
 	.DB $D8, $10, $2C                                                                                                     ; xa455  {"(Location)":{"down":4,"left":5.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa458  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_086:
 	.DB $D0, $E0, $18                                                                                                     ; xa45b  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa45e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa45e 
 DEFENSE_PLAYER_REACTION_JUMP_042:
 	PlayerCommandData.stand $14                                                                                           ; xa45f  {"(Time)":"for 1s"}
 	.DB $27, $5C, $A4                                                                                                     ; xa461  {"(Pointer)":" to xa46c"}
@@ -4492,13 +4492,13 @@ DEFENSE_PLAYER_REACTION_JUMP_043:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa46f  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_087:
 	.DB $D0, $00, $18                                                                                                     ; xa472  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa475 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa475 
 	.DB $D8, $0C, $F8                                                                                                     ; xa476  {"(Location)":{"down":3.5,"right":1}}
 	.DB $D8, $0C, $1C                                                                                                     ; xa479  {"(Location)":{"down":3.5,"left":3.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa47c  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_088:
 	.DB $D0, $18, $0C                                                                                                     ; xa47f  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa482 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa482 
 DEFENSE_PLAYER_REACTION_JUMP_044:
 	PlayerCommandData.stand $1E                                                                                           ; xa483  {"(Time)":"for 1.5s"}
 	.DB $D8, $20, $00                                                                                                     ; xa485  {"(Location)":{"down":6,"left":0}}
@@ -4507,7 +4507,7 @@ DEFENSE_PLAYER_REACTION_JUMP_044:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa48e  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_089:
 	.DB $D0, $E0, $18                                                                                                     ; xa491  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa494 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa494 
 DEFENSE_PLAYER_REACTION_JUMP_045:
 	PlayerCommandData.stand $32                                                                                           ; xa495  {"(Time)":"for 2.5s"}
 	.DB $D8, $C8, $D0                                                                                                     ; xa497  {"(Location)":{"up":5,"right":6}}
@@ -4516,7 +4516,7 @@ DEFENSE_PLAYER_REACTION_JUMP_045:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa49f  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_090:
 	.DB $D0, $00, $18                                                                                                     ; xa4a2  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa4a5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4a5 
 	PlayerCommandData.stand $3C                                                                                           ; xa4a6  {"(Time)":"for 3s"}
 	.DB $D8, $E0, $C8                                                                                                     ; xa4a8  {"(Location)":{"up":2,"right":7}}
 	.DB $D8, $D0, $C0                                                                                                     ; xa4ab  {"(Location)":{"up":4,"right":8}}
@@ -4524,7 +4524,7 @@ DEFENSE_PLAYER_REACTION_090:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa4b0  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_091:
 	.DB $D0, $18, $0C                                                                                                     ; xa4b3  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa4b6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4b6 
 DEFENSE_PLAYER_REACTION_JUMP_046:
 	.DB $C8, $DC, $AA, $01                                                                                                ; xa4b7  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
 	.DB $D8, $28, $08                                                                                                     ; xa4bb  {"(Location)":{"down":7,"left":1}}
@@ -4536,7 +4536,7 @@ DEFENSE_PLAYER_REACTION_JUMP_046:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa4cb  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_092:
 	.DB $D0, $00, $18                                                                                                     ; xa4ce  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa4d1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4d1 
 	PlayerCommandData.stand $0A                                                                                           ; xa4d2  {"(Time)":"for 0.5s"}
 	.DB $D8, $F8, $D8                                                                                                     ; xa4d4  {"(Location)":{"down":1,"right":5}}
 	PlayerCommandData.turn $14                                                                                            ; xa4d7  {"(Time)":"for 1s"}
@@ -4547,7 +4547,7 @@ DEFENSE_PLAYER_REACTION_092:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa4e4  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_093:
 	.DB $D0, $18, $0C                                                                                                     ; xa4e7  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa4ea 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4ea 
 DEFENSE_PLAYER_REACTION_JUMP_047:
 	.DB $D8, $20, $F8                                                                                                     ; xa4eb  {"(Location)":{"down":6,"right":1}}
 	.DB $D8, $20, $08                                                                                                     ; xa4ee  {"(Location)":{"down":6,"left":1}}
@@ -4557,7 +4557,7 @@ DEFENSE_PLAYER_REACTION_JUMP_047:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa4f9  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_094:
 	.DB $D0, $C8, $10                                                                                                     ; xa4fc  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa4ff 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4ff 
 DEFENSE_PLAYER_REACTION_JUMP_048:
 	.DB $C8, $DC, $AA, $01                                                                                                ; xa500  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
 	PlayerCommandData.turn $0A                                                                                            ; xa504  {"(Time)":"for 0.5s"}
@@ -4572,7 +4572,7 @@ DEFENSE_PLAYER_REACTION_095:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa518  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_096:
 	.DB $D0, $E0, $18                                                                                                     ; xa51b  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa51e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa51e 
 DEFENSE_PLAYER_REACTION_JUMP_049:
 	.DB $D8, $D8, $F0                                                                                                     ; xa51f  {"(Location)":{"up":3,"right":2}}
 	PlayerCommandData.turn $28                                                                                            ; xa522  {"(Time)":"for 2s"}
@@ -4580,20 +4580,20 @@ DEFENSE_PLAYER_REACTION_JUMP_049:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa527  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_097:
 	.DB $D0, $18, $0C                                                                                                     ; xa52a  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa52d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa52d 
 	.DB $D8, $18, $F8                                                                                                     ; xa52e  {"(Location)":{"down":5,"right":1}}
 	.DB $D8, $18, $08                                                                                                     ; xa531  {"(Location)":{"down":5,"left":1}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa534  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_098:
 	.DB $D0, $18, $0C                                                                                                     ; xa537  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa53a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa53a 
 	.DB $D8, $20, $00                                                                                                     ; xa53b  {"(Location)":{"down":6,"left":0}}
 	.DB $D8, $20, $10                                                                                                     ; xa53e  {"(Location)":{"down":6,"left":2}}
 	.DB $D8, $18, $18                                                                                                     ; xa541  {"(Location)":{"down":5,"left":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa544  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_099:
 	.DB $D1, $C0, $28                                                                                                     ; xa547  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa54a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa54a 
 DEFENSE_PLAYER_REACTION_JUMP_050:
 	.DB $D9, $C0, $00                                                                                                     ; xa54b  {"(Location)":{"down":9,"left":0}}
 	.DB $D8, $20, $28                                                                                                     ; xa54e  {"(Location)":{"down":6,"left":5}}
@@ -4606,7 +4606,7 @@ DEFENSE_PLAYER_REACTION_100:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa55d  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_101:
 	.DB $D0, $C8, $10                                                                                                     ; xa560  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa563 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa563 
 DEFENSE_PLAYER_REACTION_JUMP_051:
 	.DB $D8, $BC, $00                                                                                                     ; xa564  {"(Location)":{"up":6.5,"left":0}}
 	.DB $D8, $BC, $38                                                                                                     ; xa567  {"(Location)":{"up":6.5,"left":7}}
@@ -4614,19 +4614,19 @@ DEFENSE_PLAYER_REACTION_JUMP_051:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa56c  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_102:
 	.DB $D0, $E0, $18                                                                                                     ; xa56f  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa572 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa572 
 	.DB $D8, $D0, $F0                                                                                                     ; xa573  {"(Location)":{"up":4,"right":2}}
 	.DB $D8, $D0, $0C                                                                                                     ; xa576  {"(Location)":{"up":4,"left":1.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa579  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_103:
 	.DB $D0, $00, $18                                                                                                     ; xa57c  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa57f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa57f 
 	.DB $D8, $10, $F0                                                                                                     ; xa580  {"(Location)":{"down":4,"right":2}}
 	.DB $D8, $10, $08                                                                                                     ; xa583  {"(Location)":{"down":4,"left":1}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa586  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_104:
 	.DB $D0, $18, $0C                                                                                                     ; xa589  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa58c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa58c 
 DEFENSE_PLAYER_REACTION_JUMP_052:
 	.DB $C8, $DC, $AA, $05                                                                                                ; xa58d  {"(Pointer)":" to xaaec","(Random)":"68.75%"}
 	.DB $D8, $28, $08                                                                                                     ; xa591  {"(Location)":{"down":7,"left":1}}
@@ -4644,7 +4644,7 @@ DEFENSE_PLAYER_REACTION_105:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa5ae  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_106:
 	.DB $D0, $C8, $10                                                                                                     ; xa5b1  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa5b4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa5b4 
 	.DB $D8, $D0, $F4                                                                                                     ; xa5b5  {"(Location)":{"up":4,"right":1.5}}
 	.DB $D8, $D0, $00                                                                                                     ; xa5b8  {"(Location)":{"up":4,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa5bb  {"(Pointer)":" to xaabd"}
@@ -4655,7 +4655,7 @@ DEFENSE_PLAYER_REACTION_JUMP_053:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa5c6  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_107:
 	.DB $D0, $00, $18                                                                                                     ; xa5c9  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa5cc 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa5cc 
 	.DB $D8, $00, $00                                                                                                     ; xa5cd  {"(Location)":{"down":2,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa5d0  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_108:
@@ -4669,7 +4669,7 @@ DEFENSE_PLAYER_REACTION_108:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa5e4  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_109:
 	.DB $D0, $E0, $18                                                                                                     ; xa5e7  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa5ea 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa5ea 
 	.DB $C8, $ED, $A5, $06                                                                                                ; xa5eb  {"(Pointer)":" to xa5fd","(Random)":"62.5%"}
 	.DB $D8, $D0, $E8                                                                                                     ; xa5ef  {"(Location)":{"up":4,"right":3}}
 	.DB $D8, $C0, $00                                                                                                     ; xa5f2  {"(Location)":{"up":6,"left":0}}
@@ -4682,7 +4682,7 @@ DEFENSE_PLAYER_REACTION_JUMP_054:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xa603  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_110:
 	.DB $D0, $18, $0C                                                                                                     ; xa606  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa609 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa609 
 DEFENSE_PLAYER_REACTION_JUMP_055:
 	PlayerCommandData.turn $0A                                                                                            ; xa60a  {"(Time)":"for 0.5s"}
 	.DB $D8, $18, $E0                                                                                                     ; xa60c  {"(Location)":{"down":5,"right":4}}
@@ -4703,14 +4703,14 @@ DEFENSE_PLAYER_REACTION_112:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa62e  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_113:
 	.DB $D0, $E0, $18                                                                                                     ; xa631  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa634 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa634 
 	PlayerCommandData.stand $3C                                                                                           ; xa635  {"(Time)":"for 3s"}
 	.DB $D8, $E8, $C8                                                                                                     ; xa637  {"(Location)":{"up":1,"right":7}}
 	PlayerCommandData.turn $14                                                                                            ; xa63a  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa63c  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_114:
 	.DB $D0, $18, $0C                                                                                                     ; xa63f  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa642 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa642 
 	.DB $D8, $10, $FC                                                                                                     ; xa643  {"(Location)":{"down":4,"right":0.5}}
 	.DB $D8, $10, $08                                                                                                     ; xa646  {"(Location)":{"down":4,"left":1}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa649  {"(Pointer)":" to xaabd"}
@@ -4722,19 +4722,19 @@ DEFENSE_PLAYER_REACTION_115:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa655  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_116:
 	.DB $D0, $E0, $18                                                                                                     ; xa658  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa65b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa65b 
 	.DB $D8, $E8, $F0                                                                                                     ; xa65c  {"(Location)":{"up":1,"right":2}}
 	.DB $D8, $E8, $00                                                                                                     ; xa65f  {"(Location)":{"up":1,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa662  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_117:
 	.DB $D0, $18, $0C                                                                                                     ; xa665  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa668 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa668 
 DEFENSE_PLAYER_REACTION_JUMP_056:
 	.DB $D8, $18, $00                                                                                                     ; xa669  {"(Location)":{"down":5,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa66c  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_118:
 	.DB $D0, $E0, $18                                                                                                     ; xa66f  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa672 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa672 
 	.DB $24, $6A, $A6                                                                                                     ; xa673  {"(Pointer)":" to xa67a"}
 	.DB $C8, $D6, $AA, $06                                                                                                ; xa676  {"(Pointer)":" to xaae6","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_057:
@@ -4746,7 +4746,7 @@ DEFENSE_PLAYER_REACTION_JUMP_057:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa687  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_119:
 	.DB $D0, $00, $18                                                                                                     ; xa68a  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa68d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa68d 
 	.DB $24, $85, $A6                                                                                                     ; xa68e  {"(Pointer)":" to xa695"}
 	.DB $C8, $D6, $AA, $0A                                                                                                ; xa691  {"(Pointer)":" to xaae6","(Random)":"37.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_058:
@@ -4758,27 +4758,27 @@ DEFENSE_PLAYER_REACTION_JUMP_058:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa6a2  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_120:
 	.DB $D0, $C8, $10                                                                                                     ; xa6a5  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa6a8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa6a8 
 	.DB $29, $C1, $A1                                                                                                     ; xa6a9  {"(Pointer)":" to xa1d1"}
 	PlayerCommandData.turn $1E                                                                                            ; xa6ac  {"(Time)":"for 1.5s"}
 	.DB $D8, $D0, $E8                                                                                                     ; xa6ae  {"(Location)":{"up":4,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa6b1  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_121:
 	.DB $D0, $18, $0C                                                                                                     ; xa6b4  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa6b7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa6b7 
 	.DB $29, $E5, $A2                                                                                                     ; xa6b8  {"(Pointer)":" to xa2f5"}
 	PlayerCommandData.turn $1E                                                                                            ; xa6bb  {"(Time)":"for 1.5s"}
 	.DB $D8, $10, $E8                                                                                                     ; xa6bd  {"(Location)":{"down":4,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa6c0  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_122:
 	.DB $D0, $C8, $50                                                                                                     ; xa6c3  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa6c6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa6c6 
 	.DB $29, $EC, $BD                                                                                                     ; xa6c7  {"(Pointer)":" to xbdfc"}
 	.DB $D8, $D8, $C8                                                                                                     ; xa6ca  {"(Location)":{"up":3,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa6cd  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_123:
 	.DB $D0, $18, $50                                                                                                     ; xa6d0  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa6d3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa6d3 
 	.DB $29, $EC, $BD                                                                                                     ; xa6d4  {"(Pointer)":" to xbdfc"}
 	.DB $D8, $08, $C0                                                                                                     ; xa6d7  {"(Location)":{"down":3,"right":8}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa6da  {"(Pointer)":" to xbdfc"}
@@ -4790,12 +4790,12 @@ DEFENSE_PLAYER_REACTION_124:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa6e7  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_125:
 	.DB $D0, $E0, $18                                                                                                     ; xa6ea  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa6ed 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa6ed 
 	PlayerCommandData.turn $32                                                                                            ; xa6ee  {"(Time)":"for 2.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa6f0  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_126:
 	.DB $D0, $00, $18                                                                                                     ; xa6f3  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa6f6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa6f6 
 	.DB $D8, $10, $F8                                                                                                     ; xa6f7  {"(Location)":{"down":4,"right":1}}
 	.DB $D8, $10, $20                                                                                                     ; xa6fa  {"(Location)":{"down":4,"left":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa6fd  {"(Pointer)":" to xaabd"}
@@ -4837,7 +4837,7 @@ DEFENSE_PLAYER_REACTION_JUMP_061:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa740  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_131:
 	.DB $D0, $C8, $10                                                                                                     ; xa743  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa746 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa746 
 DEFENSE_PLAYER_REACTION_JUMP_062:
 	.DB $E0, $0F                                                                                                          ; xa747  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa749  {"(Boost)":{"value":48}}
@@ -4846,7 +4846,7 @@ DEFENSE_PLAYER_REACTION_JUMP_062:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa750  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_132:
 	.DB $D0, $E0, $18                                                                                                     ; xa753  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa756 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa756 
 DEFENSE_PLAYER_REACTION_JUMP_063:
 	.DB $E0, $0F                                                                                                          ; xa757  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa759  {"(Boost)":{"value":48}}
@@ -4855,7 +4855,7 @@ DEFENSE_PLAYER_REACTION_JUMP_063:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa760  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_133:
 	.DB $D0, $00, $18                                                                                                     ; xa763  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa766 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa766 
 DEFENSE_PLAYER_REACTION_JUMP_064:
 	.DB $E0, $0F                                                                                                          ; xa767  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa769  {"(Boost)":{"value":48}}
@@ -4864,7 +4864,7 @@ DEFENSE_PLAYER_REACTION_JUMP_064:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa770  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_134:
 	.DB $D0, $18, $0C                                                                                                     ; xa773  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa776 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa776 
 DEFENSE_UNUSED_REACTION_JUMP_002:
 	.DB $E0, $0F                                                                                                          ; xa777  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa779  {"(Boost)":{"value":48}}
@@ -4873,7 +4873,7 @@ DEFENSE_UNUSED_REACTION_JUMP_002:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa780  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_135:
 	.DB $D1, $36, $28                                                                                                     ; xa783  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa786 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa786 
 DEFENSE_PLAYER_REACTION_JUMP_065:
 	.DB $E0, $0F                                                                                                          ; xa787  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa789  {"(Boost)":{"value":48}}
@@ -4882,7 +4882,7 @@ DEFENSE_PLAYER_REACTION_JUMP_065:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa790  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_136:
 	.DB $D1, $C0, $28                                                                                                     ; xa793  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa796 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa796 
 	.DB $E0, $0F                                                                                                          ; xa797  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa799  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa79b  {"(Boost)":{"value":48}}
@@ -4890,7 +4890,7 @@ DEFENSE_PLAYER_REACTION_136:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa7a0  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_137:
 	.DB $D0, $C8, $50                                                                                                     ; xa7a3  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa7a6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7a6 
 DEFENSE_PLAYER_REACTION_JUMP_066:
 	.DB $E0, $0F                                                                                                          ; xa7a7  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa7a9  {"(Boost)":{"value":48}}
@@ -4899,7 +4899,7 @@ DEFENSE_PLAYER_REACTION_JUMP_066:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa7b0  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_138:
 	.DB $D0, $18, $50                                                                                                     ; xa7b3  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa7b6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7b6 
 	.DB $E0, $0F                                                                                                          ; xa7b7  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa7b9  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa7bb  {"(Boost)":{"value":48}}
@@ -4907,13 +4907,13 @@ DEFENSE_PLAYER_REACTION_138:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa7c0  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_139:
 	.DB $D0, $00, $18                                                                                                     ; xa7c3  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa7c6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7c6 
 DEFENSE_PLAYER_REACTION_JUMP_067:
 	.DB $D8, $08, $D0                                                                                                     ; xa7c7  {"(Location)":{"down":3,"right":6}}
 	PlayerCommandData.turn $28                                                                                            ; xa7ca  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa7cc  {"(Pointer)":" to xaad2"}
 	.DB $D1, $36, $28                                                                                                     ; xa7cf  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa7d2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7d2 
 DEFENSE_PLAYER_REACTION_JUMP_068:
 	.DB $E3, $04                                                                                                          ; xa7d3  {"(Boost)":{"value":4}}
 	.DB $D9, $36, $B0                                                                                                     ; xa7d5  {"(Location)":{"up":8.25,"right":10}}
@@ -4921,7 +4921,7 @@ DEFENSE_PLAYER_REACTION_JUMP_068:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa7db  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_140:
 	.DB $D0, $E0, $18                                                                                                     ; xa7de  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa7e1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7e1 
 DEFENSE_PLAYER_REACTION_JUMP_069:
 	.DB $D8, $D8, $E0                                                                                                     ; xa7e2  {"(Location)":{"up":3,"right":4}}
 	.DB $D8, $D8, $C8                                                                                                     ; xa7e5  {"(Location)":{"up":3,"right":7}}
@@ -4929,7 +4929,7 @@ DEFENSE_PLAYER_REACTION_JUMP_069:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa7eb  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_141:
 	.DB $D0, $C8, $50                                                                                                     ; xa7ee  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa7f1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7f1 
 	.DB $2A, $EB, $A7                                                                                                     ; xa7f2  {"(Pointer)":" to xa7fb"}
 DEFENSE_PLAYER_REACTION_JUMP_070:
 	.DB $D7, $30, $90                                                                                                     ; xa7f5  {"(Location)":{"down":6,"right":13.875}}
@@ -4938,24 +4938,24 @@ DEFENSE_PLAYER_REACTION_JUMP_071:
 	.DB $D8, $D0, $D8                                                                                                     ; xa7fb  {"(Location)":{"up":4,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa7fe  {"(Pointer)":" to xbdfc"}
 	.DB $D0, $E0, $18                                                                                                     ; xa801  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa804 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa804 
 DEFENSE_PLAYER_REACTION_JUMP_072:
 	.DB $D8, $F0, $C8                                                                                                     ; xa805  {"(Location)":{"up":0,"right":7}}
 	.DB $D8, $10, $C8                                                                                                     ; xa808  {"(Location)":{"down":4,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa80b  {"(Pointer)":" to xaacc"}
 	.DB $D0, $00, $18                                                                                                     ; xa80e  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa811 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa811 
 DEFENSE_PLAYER_REACTION_JUMP_073:
 	.DB $D8, $08, $F0                                                                                                     ; xa812  {"(Location)":{"down":3,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa815  {"(Pointer)":" to xaad2"}
 	.DB $D1, $C0, $28                                                                                                     ; xa818  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa81b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa81b 
 DEFENSE_PLAYER_REACTION_JUMP_074:
 	.DB $D8, $0C, $E0                                                                                                     ; xa81c  {"(Location)":{"down":3.5,"right":4}}
 	PlayerCommandData.wait $01, $28                                                                                       ; xa81f  {"(Start Time, End Time)":"start in between 0.05s and 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa822  {"(Pointer)":" to xaacc"}
 	.DB $D0, $18, $50                                                                                                     ; xa825  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa828 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa828 
 DEFENSE_PLAYER_REACTION_JUMP_075:
 	.DB $D7, $08, $D0                                                                                                     ; xa829  {"(Location)":{"down":1,"right":5.875}}
 	PlayerCommandData.stand $01                                                                                           ; xa82c  {"(Time)":"for 0.05s"}
@@ -4964,7 +4964,7 @@ DEFENSE_PLAYER_REACTION_JUMP_075:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa833  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_142:
 	.DB $D1, $36, $28                                                                                                     ; xa836  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa839 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa839 
 	.DB $24, $F7, $A1                                                                                                     ; xa83a  {"(Pointer)":" to xa207"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_068                                                             ; xa83d  {"(Pointer)":" to xa7d3"}
 DEFENSE_PLAYER_REACTION_143:
@@ -4975,45 +4975,45 @@ DEFENSE_PLAYER_REACTION_143:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_012                                                             ; xa849  {"(Pointer)":" to xa1c7"}
 DEFENSE_PLAYER_REACTION_144:
 	.DB $D0, $E0, $18                                                                                                     ; xa84c  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa84f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa84f 
 	.DB $25, $CC, $A1                                                                                                     ; xa850  {"(Pointer)":" to xa1dc"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_069                                                             ; xa853  {"(Pointer)":" to xa7e2"}
 DEFENSE_PLAYER_REACTION_145:
 	.DB $D1, $36, $28                                                                                                     ; xa856  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa859 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa859 
 DEFENSE_PLAYER_REACTION_JUMP_076:
 	.DB $29, $EC, $BD                                                                                                     ; xa85a  {"(Pointer)":" to xbdfc"}
 	.DB $27, $F7, $A1                                                                                                     ; xa85d  {"(Pointer)":" to xa207"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_068                                                             ; xa860  {"(Pointer)":" to xa7d3"}
 DEFENSE_PLAYER_REACTION_146:
 	.DB $D0, $C8, $50                                                                                                     ; xa863  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa866 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa866 
 	.DB $24, $0D, $A2                                                                                                     ; xa867  {"(Pointer)":" to xa21d"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_070                                                             ; xa86a  {"(Pointer)":" to xa7f5"}
 DEFENSE_PLAYER_REACTION_147:
 	.DB $D0, $E0, $18                                                                                                     ; xa86d  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa870 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa870 
 	.DB $2A, $D2, $A7                                                                                                     ; xa871  {"(Pointer)":" to xa7e2"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_072                                                             ; xa874  {"(Pointer)":" to xa805"}
 DEFENSE_PLAYER_REACTION_148:
 	.DB $D0, $00, $18                                                                                                     ; xa877  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa87a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa87a 
 	.DB $2A, $B7, $A7                                                                                                     ; xa87b  {"(Pointer)":" to xa7c7"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_073                                                             ; xa87e  {"(Pointer)":" to xa812"}
 DEFENSE_PLAYER_REACTION_149:
 	.DB $D1, $C0, $28                                                                                                     ; xa881  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa884 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa884 
 	.DB $27, $0C, $A8                                                                                                     ; xa885  {"(Pointer)":" to xa81c"}
 	PlayerCommandData.wait $50, $78                                                                                       ; xa888  {"(Start Time, End Time)":"start in between 4s and 6s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa88b  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_150:
 	.DB $D0, $18, $50                                                                                                     ; xa88e  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa891 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa891 
 	.DB $2C, $1A, $A2                                                                                                     ; xa892  {"(Pointer)":" to xa22a"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_075                                                             ; xa895  {"(Pointer)":" to xa829"}
 DEFENSE_PLAYER_REACTION_151:
 	.DB $D0, $C8, $10                                                                                                     ; xa898  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa89b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa89b 
 DEFENSE_PLAYER_REACTION_JUMP_077:
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xa89c  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	.DB $D8, $BC, $D8                                                                                                     ; xa8a0  {"(Location)":{"up":6.5,"right":5}}
@@ -5022,48 +5022,48 @@ DEFENSE_PLAYER_REACTION_JUMP_077:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa8a9  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_152:
 	.DB $D0, $18, $50                                                                                                     ; xa8ac  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa8af 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8af 
 DEFENSE_PLAYER_REACTION_JUMP_078:
 	.DB $C8, $D8, $AA, $03                                                                                                ; xa8b0  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	.DB $D8, $E8, $90                                                                                                     ; xa8b4  {"(Location)":{"up":1,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa8b7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_153:
 	.DB $D0, $C8, $10                                                                                                     ; xa8ba  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa8bd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8bd 
 	.DB $27, $3A, $A2                                                                                                     ; xa8be  {"(Pointer)":" to xa24a"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_077                                                             ; xa8c1  {"(Pointer)":" to xa89c"}
 DEFENSE_PLAYER_REACTION_154:
 	.DB $D0, $C8, $50                                                                                                     ; xa8c4  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa8c7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8c7 
 	.DB $23, $E5, $A7                                                                                                     ; xa8c8  {"(Pointer)":" to xa7f5"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_024                                                             ; xa8cb  {"(Pointer)":" to xa298"}
 DEFENSE_PLAYER_REACTION_155:
 	.DB $D1, $36, $28                                                                                                     ; xa8ce  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa8d1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8d1 
 	PlayerCommandData.stand $1E                                                                                           ; xa8d2  {"(Time)":"for 1.5s"}
 	.DB $D8, $C8, $C8                                                                                                     ; xa8d4  {"(Location)":{"up":5,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa8d7  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_156:
 	.DB $D0, $E0, $18                                                                                                     ; xa8da  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa8dd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8dd 
 	.DB $27, $45, $A1                                                                                                     ; xa8de  {"(Pointer)":" to xa155"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa8e1  {"(Pointer)":" to xaad2"}
 	.DB $D0, $18, $50                                                                                                     ; xa8e4  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa8e7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8e7 
 DEFENSE_PLAYER_REACTION_JUMP_079:
 	.DB $D8, $D0, $E0                                                                                                     ; xa8e8  {"(Location)":{"up":4,"right":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa8eb  {"(Pointer)":" to xbdfc"}
 	.DB $D1, $C0, $28                                                                                                     ; xa8ee  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa8f1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8f1 
 	.DB $D7, $00, $30                                                                                                     ; xa8f2  {"(Location)":{"up":0,"left":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa8f5  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_157:
 	.DB $D0, $C8, $10                                                                                                     ; xa8f8  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa8fb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8fb 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa8fc  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_158:
 	.DB $D1, $C0, $28                                                                                                     ; xa8ff  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa902 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa902 
 DEFENSE_PLAYER_REACTION_LOOP_005:
 	PlayerCommandData.turn $14                                                                                            ; xa903  {"(Time)":"for 1s"}
 	.DB $C8, $D8, $AA, $01                                                                                                ; xa905  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
@@ -5071,7 +5071,7 @@ DEFENSE_PLAYER_REACTION_LOOP_005:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa90b  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_159:
 	.DB $D1, $C0, $28                                                                                                     ; xa90e  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa911 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa911 
 DEFENSE_PLAYER_REACTION_JUMP_080:
 	.DB $27, $C2, $AA                                                                                                     ; xa912  {"(Pointer)":" to xaad2"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_005                                                             ; xa915  {"(Amount)":"-18 bytes to xa903"}
@@ -5082,24 +5082,24 @@ DEFENSE_PLAYER_REACTION_160:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_060                                                             ; xa91e  {"(Pointer)":" to xa728"}
 DEFENSE_PLAYER_REACTION_161:
 	.DB $D0, $E0, $18                                                                                                     ; xa921  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xa924 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa924 
 	.DB $2C, $45, $A1                                                                                                     ; xa925  {"(Pointer)":" to xa155"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_063                                                             ; xa928  {"(Pointer)":" to xa757"}
 DEFENSE_PLAYER_REACTION_162:
 	.DB $D0, $00, $18                                                                                                     ; xa92b  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa92e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa92e 
 	.DB $2C, $4E, $A2                                                                                                     ; xa92f  {"(Pointer)":" to xa25e"}
 	PlayerCommandData.stand $1E                                                                                           ; xa932  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_064                                                             ; xa934  {"(Pointer)":" to xa767"}
 DEFENSE_PLAYER_REACTION_163:
 	.DB $D0, $18, $0C                                                                                                     ; xa937  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa93a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa93a 
 	.DB $2C, $58, $A2                                                                                                     ; xa93b  {"(Pointer)":" to xa268"}
 	PlayerCommandData.stand $28                                                                                           ; xa93e  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_087                                                             ; xa940  {"(Pointer)":" to xaad5"}
 DEFENSE_PLAYER_REACTION_164:
 	.DB $D0, $C8, $50                                                                                                     ; xa943  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa946 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa946 
 DEFENSE_PLAYER_REACTION_JUMP_081:
 	.DB $C8, $D8, $AA, $08                                                                                                ; xa947  {"(Pointer)":" to xaae8","(Random)":"50%"}
 	.DB $D8, $E8, $98                                                                                                     ; xa94b  {"(Location)":{"up":1,"right":13}}
@@ -5110,7 +5110,7 @@ DEFENSE_PLAYER_REACTION_JUMP_082:
 	.DB $D8, $20, $90                                                                                                     ; xa957  {"(Location)":{"down":6,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa95a  {"(Pointer)":" to xaacc"}
 	.DB $D0, $18, $50                                                                                                     ; xa95d  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa960 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa960 
 DEFENSE_PLAYER_REACTION_JUMP_083:
 	.DB $D8, $00, $C8                                                                                                     ; xa961  {"(Location)":{"down":2,"right":7}}
 	PlayerCommandData.wait $32, $5A                                                                                       ; xa964  {"(Start Time, End Time)":"start in between 2.5s and 4.5s"}
@@ -5119,64 +5119,64 @@ DEFENSE_PLAYER_REACTION_JUMP_083:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa96c  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_165:
 	.DB $D0, $C8, $50                                                                                                     ; xa96f  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xa972 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa972 
 	.DB $C8, $D8, $AA, $05                                                                                                ; xa973  {"(Pointer)":" to xaae8","(Random)":"68.75%"}
 	.DB $24, $85, $A1                                                                                                     ; xa977  {"(Pointer)":" to xa195"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_081                                                             ; xa97a  {"(Pointer)":" to xa947"}
 DEFENSE_PLAYER_REACTION_166:
 	.DB $D0, $18, $50                                                                                                     ; xa97d  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa980 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa980 
 	.DB $C8, $D8, $AA, $01                                                                                                ; xa981  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	.DB $24, $90, $A1                                                                                                     ; xa985  {"(Pointer)":" to xa1a0"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_083                                                             ; xa988  {"(Pointer)":" to xa961"}
 DEFENSE_PLAYER_REACTION_167:
 	.DB $D1, $36, $28                                                                                                     ; xa98b  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xa98e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa98e 
 	.DB $27, $6D, $A1                                                                                                     ; xa98f  {"(Pointer)":" to xa17d"}
 	.DB $D8, $E8, $A8                                                                                                     ; xa992  {"(Location)":{"up":1,"right":11}}
 	.DB $D8, $10, $A8                                                                                                     ; xa995  {"(Location)":{"down":4,"right":11}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa998  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_168:
 	.DB $D0, $18, $0C                                                                                                     ; xa99b  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa99e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa99e 
 	.DB $27, $EC, $BD                                                                                                     ; xa99f  {"(Pointer)":" to xbdfc"}
 	PlayerCommandData.turn $14                                                                                            ; xa9a2  {"(Time)":"for 1s"}
 	.DB $D8, $10, $E8                                                                                                     ; xa9a4  {"(Location)":{"down":4,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa9a7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_169:
 	.DB $D0, $00, $18                                                                                                     ; xa9aa  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa9ad 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9ad 
 	PlayerCommandData.stand $14                                                                                           ; xa9ae  {"(Time)":"for 1s"}
 	.DB $25, $4F, $A1                                                                                                     ; xa9b0  {"(Pointer)":" to xa15f"}
 	.DB $D7, $20, $00                                                                                                     ; xa9b3  {"(Location)":{"down":4,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa9b6  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_170:
 	.DB $D0, $18, $0C                                                                                                     ; xa9b9  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xa9bc 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9bc 
 	PlayerCommandData.wait $14, $5A                                                                                       ; xa9bd  {"(Start Time, End Time)":"start in between 1s and 4.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa9c0  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_171:
 	.DB $D1, $C0, $28                                                                                                     ; xa9c3  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xa9c6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9c6 
 	.DB $2A, $7A, $A1                                                                                                     ; xa9c7  {"(Pointer)":" to xa18a"}
 	PlayerCommandData.wait $14, $64                                                                                       ; xa9ca  {"(Start Time, End Time)":"start in between 1s and 5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa9cd  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_172:
 	.DB $D0, $18, $50                                                                                                     ; xa9d0  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xa9d3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9d3 
 	.DB $C8, $D8, $AA, $03                                                                                                ; xa9d4  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	.DB $27, $51, $A9                                                                                                     ; xa9d8  {"(Pointer)":" to xa961"}
 	PlayerCommandData.wait $14, $82                                                                                       ; xa9db  {"(Start Time, End Time)":"start in between 1s and 6.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa9de  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_173:
 	.DB $D0, $C8, $10                                                                                                     ; xa9e1  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xa9e4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9e4 
 	.DB $29, $8C, $A8                                                                                                     ; xa9e5  {"(Pointer)":" to xa89c"}
 	.DB $D8, $E8, $E0                                                                                                     ; xa9e8  {"(Location)":{"up":1,"right":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa9eb  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_174:
 	.DB $D0, $00, $18                                                                                                     ; xa9ee  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xa9f1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9f1 
 	.DB $2B, $D3, $A2                                                                                                     ; xa9f2  {"(Pointer)":" to xa2e3"}
 	PlayerCommandData.stand $14                                                                                           ; xa9f5  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C8                                                                                                     ; xa9f7  {"(Location)":{"up":0,"right":7}}
@@ -5184,7 +5184,7 @@ DEFENSE_PLAYER_REACTION_174:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa9fd  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_175:
 	.DB $D0, $18, $0C                                                                                                     ; xaa00  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xaa03 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa03 
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xaa04  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	.DB $D8, $28, $00                                                                                                     ; xaa08  {"(Location)":{"down":7,"left":0}}
 	.DB $D8, $28, $D8                                                                                                     ; xaa0b  {"(Location)":{"down":7,"right":5}}
@@ -5192,7 +5192,7 @@ DEFENSE_PLAYER_REACTION_175:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaa11  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_176:
 	.DB $D0, $18, $50                                                                                                     ; xaa14  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xaa17 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa17 
 DEFENSE_PLAYER_REACTION_JUMP_084:
 	.DB $D8, $E8, $98                                                                                                     ; xaa18  {"(Location)":{"up":1,"right":13}}
 	.DB $D8, $B8, $90                                                                                                     ; xaa1b  {"(Location)":{"up":7,"right":14}}
@@ -5214,40 +5214,40 @@ DEFENSE_PLAYER_REACTION_179:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_061                                                             ; xaa39  {"(Pointer)":" to xa737"}
 DEFENSE_PLAYER_REACTION_180:
 	.DB $D0, $C8, $10                                                                                                     ; xaa3c  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xaa3f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa3f 
 	PlayerCommandData.stand $1E                                                                                           ; xaa40  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_062                                                             ; xaa42  {"(Pointer)":" to xa747"}
 DEFENSE_PLAYER_REACTION_181:
 	.DB $D0, $E0, $18                                                                                                     ; xaa45  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xaa48 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa48 
 	PlayerCommandData.stand $1E                                                                                           ; xaa49  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_063                                                             ; xaa4b  {"(Pointer)":" to xa757"}
 DEFENSE_PLAYER_REACTION_182:
 	.DB $D0, $00, $18                                                                                                     ; xaa4e  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xaa51 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa51 
 	PlayerCommandData.stand $1E                                                                                           ; xaa52  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_064                                                             ; xaa54  {"(Pointer)":" to xa767"}
 	.DB $D0, $18, $0C                                                                                                     ; xaa57  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xaa5a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa5a 
 	PlayerCommandData.stand $1E                                                                                           ; xaa5b  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_UNUSED_REACTION_JUMP_002                                                             ; xaa5d  {"(Pointer)":" to xa777"}
 DEFENSE_PLAYER_REACTION_183:
 	.DB $D0, $00, $18                                                                                                     ; xaa60  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xaa63 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa63 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaa64  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_184:
 	.DB $D1, $36, $28                                                                                                     ; xaa67  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xaa6a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa6a 
 	.DB $D7, $00, $20                                                                                                     ; xaa6b  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xaa6e  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_185:
 	.DB $D1, $C0, $28                                                                                                     ; xaa71  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xaa74 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa74 
 	.DB $27, $04, $A3                                                                                                     ; xaa75  {"(Pointer)":" to xa314"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaa78  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_186:
 	.DB $D0, $C8, $50                                                                                                     ; xaa7b  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xaa7e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa7e 
 DEFENSE_PLAYER_REACTION_JUMP_085:
 	.DB $C8, $D8, $AA, $03                                                                                                ; xaa7f  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	.DB $D8, $B8, $D8                                                                                                     ; xaa83  {"(Location)":{"up":7,"right":5}}
@@ -5255,16 +5255,16 @@ DEFENSE_PLAYER_REACTION_JUMP_085:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xaa89  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_187:
 	.DB $D0, $18, $0C                                                                                                     ; xaa8c  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xaa8f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa8f 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaa90  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_188:
 	.DB $D0, $C8, $50                                                                                                     ; xaa93  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xaa96 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa96 
 	.DB $29, $6F, $AA                                                                                                     ; xaa97  {"(Pointer)":" to xaa7f"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaa9a  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_189:
 	.DB $D0, $C8, $50                                                                                                     ; xaa9d  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xaaa0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaaa0 
 DEFENSE_UNUSED_REACTION_JUMP_003:
 	.DB $C8, $D8, $AA, $07                                                                                                ; xaaa1  {"(Pointer)":" to xaae8","(Random)":"56.25%"}
 	.DB $2B, $A0, $AA                                                                                                     ; xaaa5  {"(Pointer)":" to xaab0"}
@@ -5276,7 +5276,7 @@ DEFENSE_PLAYER_REACTION_JUMP_086:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xaab3  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_190:
 	.DB $D0, $18, $50                                                                                                     ; xaab6  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xaab9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaab9 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaaba  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_191:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xaabd  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
@@ -5320,44 +5320,44 @@ DEFENSE_PLAYER_REACTION_JUMP_090:
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaaee  {"(Amount)":"-28 bytes to xaad2"}
 DEFENSE_PLAYER_REACTION_196:
 	.DB $D0, $00, $18                                                                                                     ; xaaf0  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xaaf3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaaf3 
 DEFENSE_PLAYER_REACTION_JUMP_091:
 	.DB $29, $7F, $A3                                                                                                     ; xaaf4  {"(Pointer)":" to xa38f"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaaf7  {"(Pointer)":" to xaad2"}
 	.DB $D0, $C8, $50                                                                                                     ; xaafa  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xaafd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaafd 
 	.DB $27, $91, $AA                                                                                                     ; xaafe  {"(Pointer)":" to xaaa1"}
 	PlayerCommandData.jumpTo DEFENSE_UNUSED_REACTION_JUMP_001                                                             ; xab01  {"(Pointer)":" to xa39e"}
 DEFENSE_PLAYER_REACTION_197:
 	.DB $D0, $E0, $18                                                                                                     ; xab04  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xab07 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab07 
 	.DB $2B, $0F, $A5                                                                                                     ; xab08  {"(Pointer)":" to xa51f"}
 	.DB $D8, $E0, $E0                                                                                                     ; xab0b  {"(Location)":{"up":2,"right":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xab0e  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_198:
 	.DB $D1, $36, $28                                                                                                     ; xab11  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xab14 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab14 
 	.DB $2B, $68, $A2                                                                                                     ; xab15  {"(Pointer)":" to xa278"}
 	.DB $D8, $D0, $9C                                                                                                     ; xab18  {"(Location)":{"up":4,"right":12.5}}
 	.DB $D8, $F0, $90                                                                                                     ; xab1b  {"(Location)":{"up":0,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xab1e  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_199:
 	.DB $D1, $C0, $28                                                                                                     ; xab21  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xab24 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab24 
 	.DB $27, $F3, $A8                                                                                                     ; xab25  {"(Pointer)":" to xa903"}
 	.DB $D9, $C0, $A0                                                                                                     ; xab28  {"(Location)":{"down":9,"right":12}}
 	.DB $D9, $C8, $81                                                                                                     ; xab2b  {"(Location)":{"down":10,"right":15.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xab2e  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_200:
 	.DB $D0, $18, $50                                                                                                     ; xab31  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xab34 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab34 
 	.DB $C8, $D8, $AA, $01                                                                                                ; xab35  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	.DB $27, $A0, $A8                                                                                                     ; xab39  {"(Pointer)":" to xa8b0"}
 	.DB $D8, $30, $C0                                                                                                     ; xab3c  {"(Location)":{"down":8,"right":8}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xab3f  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_201:
 	.DB $D0, $C8, $10                                                                                                     ; xab42  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xab45 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab45 
 	.DB $27, $C1, $A1                                                                                                     ; xab46  {"(Pointer)":" to xa1d1"}
 DEFENSE_PLAYER_REACTION_JUMP_092:
 	.DB $C8, $DC, $AA, $06                                                                                                ; xab49  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
@@ -5367,11 +5367,11 @@ DEFENSE_PLAYER_REACTION_JUMP_092:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xab55  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_202:
 	.DB $D0, $C8, $50                                                                                                     ; xab58  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xab5b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab5b 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xab5c  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_203:
 	.DB $D0, $00, $18                                                                                                     ; xab5f  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xab62 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab62 
 	.DB $27, $C4, $A3                                                                                                     ; xab63  {"(Pointer)":" to xa3d4"}
 	.DB $27, $61, $AB                                                                                                     ; xab66  {"(Pointer)":" to xab71"}
 DEFENSE_PLAYER_REACTION_JUMP_093:
@@ -5384,29 +5384,29 @@ DEFENSE_PLAYER_REACTION_JUMP_094:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xab77  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_204:
 	.DB $D0, $C8, $10                                                                                                     ; xab7a  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xab7d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab7d 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_092                                                             ; xab7e  {"(Pointer)":" to xab49"}
 DEFENSE_PLAYER_REACTION_205:
 	.DB $D0, $E0, $18                                                                                                     ; xab81  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xab84 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab84 
 	.DB $D8, $E8, $D8                                                                                                     ; xab85  {"(Location)":{"up":1,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xab88  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_206:
 	.DB $D0, $00, $18                                                                                                     ; xab8b  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xab8e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab8e 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_093                                                             ; xab8f  {"(Pointer)":" to xab69"}
 DEFENSE_PLAYER_REACTION_207:
 	.DB $D1, $36, $28                                                                                                     ; xab92  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xab95 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab95 
 	.DB $D7, $00, $D0                                                                                                     ; xab96  {"(Location)":{"up":0,"right":5.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xab99  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_208:
 	.DB $D0, $18, $0C                                                                                                     ; xab9c  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xab9f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab9f 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_087                                                             ; xaba0  {"(Pointer)":" to xaad5"}
 DEFENSE_PLAYER_REACTION_209:
 	.DB $D1, $36, $28                                                                                                     ; xaba3  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xaba6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaba6 
 DEFENSE_PLAYER_REACTION_JUMP_095:
 	.DB $2B, $9E, $AB                                                                                                     ; xaba7  {"(Pointer)":" to xabae"}
 DEFENSE_PLAYER_REACTION_JUMP_096:
@@ -5416,27 +5416,27 @@ DEFENSE_PLAYER_REACTION_JUMP_097:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xabb1  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_210:
 	.DB $D0, $00, $18                                                                                                     ; xabb4  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xabb7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xabb7 
 	.DB $2B, $F3, $A3                                                                                                     ; xabb8  {"(Pointer)":" to xa403"}
 	.DB $D8, $E8, $C0                                                                                                     ; xabbb  {"(Location)":{"up":1,"right":8}}
 	PlayerCommandData.turn $3C                                                                                            ; xabbe  {"(Time)":"for 3s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xabc0  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_211:
 	.DB $D0, $E0, $18                                                                                                     ; xabc3  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xabc6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xabc6 
 	.DB $2C, $E5, $A3                                                                                                     ; xabc7  {"(Pointer)":" to xa3f5"}
 	PlayerCommandData.wait $0A, $32                                                                                       ; xabca  {"(Start Time, End Time)":"start in between 0.5s and 2.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xabcd  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_212:
 	.DB $D0, $18, $0C                                                                                                     ; xabd0  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xabd3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xabd3 
 DEFENSE_PLAYER_REACTION_JUMP_098:
 	.DB $27, $EC, $BD                                                                                                     ; xabd4  {"(Pointer)":" to xbdfc"}
 	.DB $D8, $18, $C8                                                                                                     ; xabd7  {"(Location)":{"down":5,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xabda  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_213:
 	.DB $D1, $36, $28                                                                                                     ; xabdd  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xabe0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xabe0 
 	PlayerCommandData.wait $0A, $5A                                                                                       ; xabe1  {"(Start Time, End Time)":"start in between 0.5s and 4.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_099:
 	.DB $27, $DD, $AB                                                                                                     ; xabe4  {"(Pointer)":" to xabed"}
@@ -5447,7 +5447,7 @@ DEFENSE_PLAYER_REACTION_JUMP_100:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xabf0  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_214:
 	.DB $D1, $C0, $28                                                                                                     ; xabf3  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xabf6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xabf6 
 	PlayerCommandData.wait $0A, $5A                                                                                       ; xabf7  {"(Start Time, End Time)":"start in between 0.5s and 4.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_101:
 	.DB $27, $F3, $AB                                                                                                     ; xabfa  {"(Pointer)":" to xac03"}
@@ -5458,7 +5458,7 @@ DEFENSE_PLAYER_REACTION_JUMP_102:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac06  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_215:
 	.DB $D0, $C8, $50                                                                                                     ; xac09  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xac0c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac0c 
 	PlayerCommandData.wait $0A, $5A                                                                                       ; xac0d  {"(Start Time, End Time)":"start in between 0.5s and 4.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_103:
 	.DB $27, $07, $AC                                                                                                     ; xac10  {"(Pointer)":" to xac17"}
@@ -5472,7 +5472,7 @@ DEFENSE_PLAYER_REACTION_JUMP_105:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac23  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_216:
 	.DB $D0, $18, $50                                                                                                     ; xac26  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xac29 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac29 
 	PlayerCommandData.wait $0A, $5A                                                                                       ; xac2a  {"(Start Time, End Time)":"start in between 0.5s and 4.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_106:
 	.DB $27, $24, $AC                                                                                                     ; xac2d  {"(Pointer)":" to xac34"}
@@ -5486,43 +5486,43 @@ DEFENSE_PLAYER_REACTION_JUMP_108:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac40  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_217:
 	.DB $D1, $36, $28                                                                                                     ; xac43  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xac46 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac46 
 DEFENSE_PLAYER_REACTION_JUMP_109:
 	.DB $2B, $D4, $AB                                                                                                     ; xac47  {"(Pointer)":" to xabe4"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_117                                                             ; xac4a  {"(Pointer)":" to xad01"}
 DEFENSE_PLAYER_REACTION_218:
 	.DB $D0, $C8, $50                                                                                                     ; xac4d  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xac50 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac50 
 DEFENSE_PLAYER_REACTION_JUMP_110:
 	.DB $2B, $00, $AC                                                                                                     ; xac51  {"(Pointer)":" to xac10"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac54  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_219:
 	.DB $D0, $18, $50                                                                                                     ; xac57  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xac5a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac5a 
 DEFENSE_PLAYER_REACTION_JUMP_111:
 	.DB $2B, $1D, $AC                                                                                                     ; xac5b  {"(Pointer)":" to xac2d"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac5e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_220:
 	.DB $D0, $E0, $18                                                                                                     ; xac61  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xac64 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac64 
 	PlayerCommandData.turn $3C                                                                                            ; xac65  {"(Time)":"for 3s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac67  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_221:
 	.DB $D0, $18, $0C                                                                                                     ; xac6a  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xac6d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac6d 
 	PlayerCommandData.wait $82, $AA                                                                                       ; xac6e  {"(Start Time, End Time)":"start in between 6.5s and 8.5s"}
 	.DB $D8, $10, $F0                                                                                                     ; xac71  {"(Location)":{"down":4,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac74  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_222:
 	.DB $D1, $36, $28                                                                                                     ; xac77  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xac7a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac7a 
 	PlayerCommandData.stand $1E                                                                                           ; xac7b  {"(Time)":"for 1.5s"}
 	.DB $D7, $00, $E8                                                                                                     ; xac7d  {"(Location)":{"up":0,"right":2.875}}
 	PlayerCommandData.turn $28                                                                                            ; xac80  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac82  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_223:
 	.DB $D1, $C0, $28                                                                                                     ; xac85  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xac88 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac88 
 	.DB $C8, $D8, $AA, $06                                                                                                ; xac89  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
 	PlayerCommandData.stand $14                                                                                           ; xac8d  {"(Time)":"for 1s"}
 	.DB $D7, $00, $E8                                                                                                     ; xac8f  {"(Location)":{"up":0,"right":2.875}}
@@ -5530,19 +5530,19 @@ DEFENSE_PLAYER_REACTION_223:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac94  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_224:
 	.DB $D0, $C8, $50                                                                                                     ; xac97  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xac9a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac9a 
 	PlayerCommandData.turn $32                                                                                            ; xac9b  {"(Time)":"for 2.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac9d  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_225:
 	.DB $D0, $18, $50                                                                                                     ; xaca0  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xaca3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaca3 
 DEFENSE_PLAYER_REACTION_JUMP_112:
 	.DB $D8, $08, $A0                                                                                                     ; xaca4  {"(Location)":{"down":3,"right":12}}
 	PlayerCommandData.turn $3C                                                                                            ; xaca7  {"(Time)":"for 3s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaca9  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_226:
 	.DB $D1, $36, $28                                                                                                     ; xacac  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xacaf 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacaf 
 	.DB $29, $AB, $AC                                                                                                     ; xacb0  {"(Pointer)":" to xacbb"}
 	PlayerCommandData.turn $28                                                                                            ; xacb3  {"(Time)":"for 2s"}
 	.DB $D9, $36, $81                                                                                                     ; xacb5  {"(Location)":{"up":8.25,"right":15.875}}
@@ -5552,7 +5552,7 @@ DEFENSE_PLAYER_REACTION_JUMP_113:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_099                                                             ; xacbd  {"(Pointer)":" to xabe4"}
 DEFENSE_PLAYER_REACTION_227:
 	.DB $D1, $C0, $28                                                                                                     ; xacc0  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xacc3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacc3 
 	.DB $29, $BB, $AC                                                                                                     ; xacc4  {"(Pointer)":" to xaccb"}
 	.DB $C8, $D8, $AA, $01                                                                                                ; xacc7  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_114:
@@ -5565,7 +5565,7 @@ DEFENSE_PLAYER_REACTION_JUMP_115:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_101                                                             ; xacd8  {"(Pointer)":" to xabfa"}
 DEFENSE_PLAYER_REACTION_228:
 	.DB $D0, $18, $0C                                                                                                     ; xacdb  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xacde 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacde 
 	.DB $29, $73, $A4                                                                                                     ; xacdf  {"(Pointer)":" to xa483"}
 DEFENSE_PLAYER_REACTION_JUMP_116:
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xace2  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
@@ -5576,24 +5576,24 @@ DEFENSE_PLAYER_REACTION_JUMP_116:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xacf1  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_229:
 	.DB $D0, $18, $0C                                                                                                     ; xacf4  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xacf7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacf7 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_116                                                             ; xacf8  {"(Pointer)":" to xace2"}
 DEFENSE_PLAYER_REACTION_230:
 	.DB $D1, $36, $28                                                                                                     ; xacfb  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xacfe 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacfe 
 	PlayerCommandData.turn $32                                                                                            ; xacff  {"(Time)":"for 2.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_117:
 	.DB $D8, $D0, $F0                                                                                                     ; xad01  {"(Location)":{"up":4,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xad04  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_231:
 	.DB $D1, $C0, $28                                                                                                     ; xad07  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xad0a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad0a 
 	.DB $27, $3B, $A5                                                                                                     ; xad0b  {"(Pointer)":" to xa54b"}
 	.DB $26, $75, $A2                                                                                                     ; xad0e  {"(Pointer)":" to xa285"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_080                                                             ; xad11  {"(Pointer)":" to xa912"}
 DEFENSE_PLAYER_REACTION_232:
 	.DB $D0, $C8, $10                                                                                                     ; xad14  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xad17 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad17 
 	.DB $29, $54, $A5                                                                                                     ; xad18  {"(Pointer)":" to xa564"}
 	.DB $D8, $C0, $F8                                                                                                     ; xad1b  {"(Location)":{"up":6,"right":1}}
 	PlayerCommandData.turn $0A                                                                                            ; xad1e  {"(Time)":"for 0.5s"}
@@ -5602,7 +5602,7 @@ DEFENSE_PLAYER_REACTION_232:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xad26  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_233:
 	.DB $D0, $18, $0C                                                                                                     ; xad29  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xad2c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad2c 
 	.DB $29, $7D, $A5                                                                                                     ; xad2d  {"(Pointer)":" to xa58d"}
 	.DB $D8, $28, $08                                                                                                     ; xad30  {"(Location)":{"down":7,"left":1}}
 	PlayerCommandData.turn $0A                                                                                            ; xad33  {"(Time)":"for 0.5s"}
@@ -5617,38 +5617,38 @@ DEFENSE_PLAYER_REACTION_234:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xad47  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_235:
 	.DB $D0, $18, $50                                                                                                     ; xad4a  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xad4d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad4d 
 	.DB $27, $9F, $A3                                                                                                     ; xad4e  {"(Pointer)":" to xa3af"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_084                                                             ; xad51  {"(Pointer)":" to xaa18"}
 DEFENSE_PLAYER_REACTION_236:
 	.DB $D0, $E0, $18                                                                                                     ; xad54  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xad57 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad57 
 	.DB $2B, $AE, $A5                                                                                                     ; xad58  {"(Pointer)":" to xa5be"}
 	.DB $D8, $C8, $EC                                                                                                     ; xad5b  {"(Location)":{"up":5,"right":2.5}}
 	PlayerCommandData.turn $46                                                                                            ; xad5e  {"(Time)":"for 3.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xad60  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_237:
 	.DB $D0, $00, $18                                                                                                     ; xad63  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xad66 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad66 
 	.DB $26, $E4, $AA                                                                                                     ; xad67  {"(Pointer)":" to xaaf4"}
 	.DB $D8, $E0, $D8                                                                                                     ; xad6a  {"(Location)":{"up":2,"right":5}}
 	PlayerCommandData.turn $3C                                                                                            ; xad6d  {"(Time)":"for 3s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xad6f  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_238:
 	.DB $D0, $18, $50                                                                                                     ; xad72  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xad75 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad75 
 	.DB $D7, $00, $88                                                                                                     ; xad76  {"(Location)":{"up":0,"right":14.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xad79  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_239:
 	.DB $D0, $C8, $50                                                                                                     ; xad7c  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xad7f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad7f 
 	.DB $27, $EC, $BD                                                                                                     ; xad80  {"(Pointer)":" to xbdfc"}
 	.DB $27, $8A, $A3                                                                                                     ; xad83  {"(Pointer)":" to xa39a"}
 	.DB $D8, $00, $E8                                                                                                     ; xad86  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xad89  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_240:
 	.DB $D1, $36, $28                                                                                                     ; xad8c  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xad8f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad8f 
 	.DB $C8, $D8, $AA, $01                                                                                                ; xad90  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	.DB $2B, $EC, $BD                                                                                                     ; xad94  {"(Pointer)":" to xbdfc"}
 	.DB $D9, $36, $28                                                                                                     ; xad97  {"(Location)":{"up":8.25,"left":5}}
@@ -5656,52 +5656,52 @@ DEFENSE_PLAYER_REACTION_240:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xad9c  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_241:
 	.DB $D1, $C0, $28                                                                                                     ; xad9f  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xada2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xada2 
 	.DB $D9, $C0, $68                                                                                                     ; xada3  {"(Location)":{"down":9,"left":13}}
 	.DB $D7, $C8, $E8                                                                                                     ; xada6  {"(Location)":{"up":6.875,"right":2.875}}
 	.DB $D7, $C8, $E8                                                                                                     ; xada9  {"(Location)":{"up":6.875,"right":2.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadac  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_242:
 	.DB $D0, $C8, $10                                                                                                     ; xadaf  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xadb2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadb2 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadb3  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_243:
 	.DB $D0, $E0, $18                                                                                                     ; xadb6  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xadb9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadb9 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadba  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_244:
 	.DB $D0, $00, $18                                                                                                     ; xadbd  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xadc0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadc0 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadc1  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_245:
 	.DB $D0, $18, $0C                                                                                                     ; xadc4  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xadc7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadc7 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadc8  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_246:
 	.DB $D1, $36, $28                                                                                                     ; xadcb  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xadce 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadce 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadcf  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_247:
 	.DB $D1, $C0, $28                                                                                                     ; xadd2  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xadd5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadd5 
 	.DB $C8, $9A, $B9, $03                                                                                                ; xadd6  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadda  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_248:
 	.DB $D0, $C8, $50                                                                                                     ; xaddd  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xade0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xade0 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xade1  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_249:
 	.DB $D0, $18, $50                                                                                                     ; xade4  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xade7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xade7 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xade8  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_250:
 	.DB $D0, $E0, $18                                                                                                     ; xadeb  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xadee 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadee 
 	.DB $27, $4F, $A4                                                                                                     ; xadef  {"(Pointer)":" to xa45f"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_045                                                             ; xadf2  {"(Pointer)":" to xa495"}
 DEFENSE_PLAYER_REACTION_251:
 	.DB $D0, $18, $0C                                                                                                     ; xadf5  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xadf8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadf8 
 	.DB $26, $A7, $A4                                                                                                     ; xadf9  {"(Pointer)":" to xa4b7"}
 	PlayerCommandData.turn $3C                                                                                            ; xadfc  {"(Time)":"for 3s"}
 	.DB $D8, $18, $E0                                                                                                     ; xadfe  {"(Location)":{"down":5,"right":4}}
@@ -5710,39 +5710,39 @@ DEFENSE_PLAYER_REACTION_251:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xae06  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_252:
 	.DB $D1, $36, $28                                                                                                     ; xae09  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xae0c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae0c 
 	.DB $27, $97, $AB                                                                                                     ; xae0d  {"(Pointer)":" to xaba7"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xae10  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_253:
 	.DB $D1, $C0, $28                                                                                                     ; xae13  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xae16 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae16 
 	.DB $D9, $C0, $88                                                                                                     ; xae17  {"(Location)":{"down":9,"right":15}}
 	PlayerCommandData.turn $64                                                                                            ; xae1a  {"(Time)":"for 5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xae1c  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_254:
 	.DB $D1, $36, $28                                                                                                     ; xae1f  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xae22 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae22 
 	.DB $D8, $D0, $D8                                                                                                     ; xae23  {"(Location)":{"up":4,"right":5}}
 	PlayerCommandData.turn $3C                                                                                            ; xae26  {"(Time)":"for 3s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xae28  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_255:
 	.DB $D0, $C8, $10                                                                                                     ; xae2b  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xae2e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae2e 
 	PlayerCommandData.turn $8C                                                                                            ; xae2f  {"(Time)":"for 7s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_062                                                             ; xae31  {"(Pointer)":" to xa747"}
 DEFENSE_PLAYER_REACTION_256:
 	.DB $D1, $36, $28                                                                                                     ; xae34  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xae37 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae37 
 	PlayerCommandData.turn $96                                                                                            ; xae38  {"(Time)":"for 7.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_065                                                             ; xae3a  {"(Pointer)":" to xa787"}
 DEFENSE_PLAYER_REACTION_257:
 	.DB $D0, $C8, $50                                                                                                     ; xae3d  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xae40 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae40 
 	PlayerCommandData.turn $A0                                                                                            ; xae41  {"(Time)":"for 8s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_066                                                             ; xae43  {"(Pointer)":" to xa7a7"}
 DEFENSE_PLAYER_REACTION_258:
 	.DB $D1, $36, $28                                                                                                     ; xae46  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xae49 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae49 
 	.DB $2C, $41, $AE                                                                                                     ; xae4a  {"(Pointer)":" to xae51"}
 	.DB $C8, $D8, $AA, $06                                                                                                ; xae4d  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_118:
@@ -5752,21 +5752,21 @@ DEFENSE_PLAYER_REACTION_JUMP_118:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xae59  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_259:
 	.DB $D0, $C8, $50                                                                                                     ; xae5c  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xae5f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae5f 
 DEFENSE_PLAYER_REACTION_JUMP_119:
 	PlayerCommandData.turn $50                                                                                            ; xae60  {"(Time)":"for 4s"}
 	.DB $D8, $00, $B8                                                                                                     ; xae62  {"(Location)":{"down":2,"right":9}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xae65  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_260:
 	.DB $D0, $18, $50                                                                                                     ; xae68  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xae6b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae6b 
 DEFENSE_PLAYER_REACTION_JUMP_120:
 	PlayerCommandData.turn $3C                                                                                            ; xae6c  {"(Time)":"for 3s"}
 	.DB $D8, $20, $90                                                                                                     ; xae6e  {"(Location)":{"down":6,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xae71  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_261:
 	.DB $D0, $C8, $10                                                                                                     ; xae74  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xae77 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae77 
 	.DB $26, $F0, $A4                                                                                                     ; xae78  {"(Pointer)":" to xa500"}
 	PlayerCommandData.turn $0A                                                                                            ; xae7b  {"(Time)":"for 0.5s"}
 	.DB $D8, $C8, $E0                                                                                                     ; xae7d  {"(Location)":{"up":5,"right":4}}
@@ -5775,7 +5775,7 @@ DEFENSE_PLAYER_REACTION_261:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xae85  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_262:
 	.DB $D0, $C8, $50                                                                                                     ; xae88  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xae8b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae8b 
 	.DB $27, $50, $AE                                                                                                     ; xae8c  {"(Pointer)":" to xae60"}
 	.DB $27, $88, $AE                                                                                                     ; xae8f  {"(Pointer)":" to xae98"}
 	.DB $D8, $D8, $C0                                                                                                     ; xae92  {"(Location)":{"up":3,"right":8}}
@@ -5785,7 +5785,7 @@ DEFENSE_PLAYER_REACTION_JUMP_121:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xae9b  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_263:
 	.DB $D1, $C0, $28                                                                                                     ; xae9e  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xaea1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaea1 
 	.DB $27, $04, $A3                                                                                                     ; xaea2  {"(Pointer)":" to xa314"}
 	.DB $D7, $00, $90                                                                                                     ; xaea5  {"(Location)":{"up":0,"right":13.875}}
 	.DB $D7, $00, $90                                                                                                     ; xaea8  {"(Location)":{"up":0,"right":13.875}}
@@ -5793,47 +5793,47 @@ DEFENSE_PLAYER_REACTION_263:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaeae  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_264:
 	.DB $D1, $C0, $28                                                                                                     ; xaeb1  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xaeb4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaeb4 
 	PlayerCommandData.turn $50                                                                                            ; xaeb5  {"(Time)":"for 4s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaeb7  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_265:
 	.DB $D0, $18, $50                                                                                                     ; xaeba  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xaebd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaebd 
 	.DB $24, $5C, $AE                                                                                                     ; xaebe  {"(Pointer)":" to xae6c"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaec1  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_266:
 	.DB $D0, $18, $0C                                                                                                     ; xaec4  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xaec7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaec7 
 	.DB $D7, $F8, $F8                                                                                                     ; xaec8  {"(Location)":{"up":0.875,"right":0.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaecb  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_267:
 	.DB $D0, $18, $0C                                                                                                     ; xaece  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xaed1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaed1 
 	.DB $29, $5F, $A1                                                                                                     ; xaed2  {"(Pointer)":" to xa16f"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xaed5  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_268:
 	.DB $D1, $36, $28                                                                                                     ; xaed8  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xaedb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaedb 
 	.DB $29, $37, $AC                                                                                                     ; xaedc  {"(Pointer)":" to xac47"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xaedf  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_269:
 	.DB $D1, $C0, $28                                                                                                     ; xaee2  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xaee5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaee5 
 	.DB $29, $7A, $A1                                                                                                     ; xaee6  {"(Pointer)":" to xa18a"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xaee9  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_270:
 	.DB $D0, $C8, $50                                                                                                     ; xaeec  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xaeef 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaeef 
 	.DB $28, $41, $AC                                                                                                     ; xaef0  {"(Pointer)":" to xac51"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_103                                                             ; xaef3  {"(Pointer)":" to xac10"}
 DEFENSE_PLAYER_REACTION_271:
 	.DB $D0, $18, $50                                                                                                     ; xaef6  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xaef9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaef9 
 	.DB $28, $4B, $AC                                                                                                     ; xaefa  {"(Pointer)":" to xac5b"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_106                                                             ; xaefd  {"(Pointer)":" to xac2d"}
 DEFENSE_PLAYER_REACTION_272:
 	.DB $D0, $C8, $10                                                                                                     ; xaf00  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xaf03 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf03 
 DEFENSE_PLAYER_REACTION_JUMP_122:
 	PlayerCommandData.turn $14                                                                                            ; xaf04  {"(Time)":"for 1s"}
 	.DB $D8, $D8, $E0                                                                                                     ; xaf06  {"(Location)":{"up":3,"right":4}}
@@ -5842,7 +5842,7 @@ DEFENSE_PLAYER_REACTION_JUMP_122:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaf0e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_273:
 	.DB $D0, $E0, $18                                                                                                     ; xaf11  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xaf14 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf14 
 	.DB $C8, $88, $B9, $06                                                                                                ; xaf15  {"(Pointer)":" to xb998","(Random)":"62.5%"}
 	PlayerCommandData.turn $0A                                                                                            ; xaf19  {"(Time)":"for 0.5s"}
 	.DB $D8, $F0, $D0                                                                                                     ; xaf1b  {"(Location)":{"up":0,"right":6}}
@@ -5851,7 +5851,7 @@ DEFENSE_PLAYER_REACTION_273:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaf23  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_274:
 	.DB $D0, $00, $18                                                                                                     ; xaf26  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xaf29 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf29 
 	.DB $C8, $51, $B9, $07                                                                                                ; xaf2a  {"(Pointer)":" to xb961","(Random)":"56.25%"}
 	PlayerCommandData.turn $0A                                                                                            ; xaf2e  {"(Time)":"for 0.5s"}
 	.DB $D8, $10, $D8                                                                                                     ; xaf30  {"(Location)":{"down":4,"right":5}}
@@ -5860,7 +5860,7 @@ DEFENSE_PLAYER_REACTION_274:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaf38  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_275:
 	.DB $D1, $36, $28                                                                                                     ; xaf3b  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xaf3e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf3e 
 	.DB $C8, $40, $B9, $02                                                                                                ; xaf3f  {"(Pointer)":" to xb950","(Random)":"87.5%"}
 	.DB $D9, $36, $B0                                                                                                     ; xaf43  {"(Location)":{"up":8.25,"right":10}}
 	.DB $D7, $40, $D0                                                                                                     ; xaf46  {"(Location)":{"down":8,"right":5.875}}
@@ -5868,7 +5868,7 @@ DEFENSE_PLAYER_REACTION_275:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_490                                                                  ; xaf4c  {"(Pointer)":" to xbdf8"}
 DEFENSE_PLAYER_REACTION_276:
 	.DB $D1, $C0, $28                                                                                                     ; xaf4f  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xaf52 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf52 
 DEFENSE_PLAYER_REACTION_JUMP_123:
 	PlayerCommandData.turn $14                                                                                            ; xaf53  {"(Time)":"for 1s"}
 	.DB $D9, $C0, $28                                                                                                     ; xaf55  {"(Location)":{"down":9,"left":5}}
@@ -5876,7 +5876,7 @@ DEFENSE_PLAYER_REACTION_JUMP_123:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaf5a  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_277:
 	.DB $D0, $C8, $50                                                                                                     ; xaf5d  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xaf60 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf60 
 DEFENSE_PLAYER_REACTION_JUMP_124:
 	.DB $C8, $4B, $B9, $04                                                                                                ; xaf61  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	.DB $D8, $00, $A0                                                                                                     ; xaf65  {"(Location)":{"down":2,"right":12}}
@@ -5888,7 +5888,7 @@ DEFENSE_PLAYER_REACTION_JUMP_125:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xaf73  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_278:
 	.DB $D1, $36, $28                                                                                                     ; xaf76  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xaf79 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf79 
 	.DB $29, $36, $BE                                                                                                     ; xaf7a  {"(Pointer)":" to xbe46"}
 	.DB $29, $F4, $BD                                                                                                     ; xaf7d  {"(Pointer)":" to xbe04"}
 	.DB $D8, $E8, $A8                                                                                                     ; xaf80  {"(Location)":{"up":1,"right":11}}
@@ -5896,7 +5896,7 @@ DEFENSE_PLAYER_REACTION_278:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xaf85  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_279:
 	.DB $D0, $C8, $10                                                                                                     ; xaf88  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xaf8b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf8b 
 	.DB $27, $F4, $AE                                                                                                     ; xaf8c  {"(Pointer)":" to xaf04"}
 DEFENSE_PLAYER_REACTION_JUMP_126:
 	PlayerCommandData.turn $14                                                                                            ; xaf8f  {"(Time)":"for 1s"}
@@ -5909,7 +5909,7 @@ DEFENSE_PLAYER_REACTION_JUMP_126:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xafa2  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_280:
 	.DB $D0, $18, $50                                                                                                     ; xafa5  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xafa8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafa8 
 DEFENSE_PLAYER_REACTION_JUMP_127:
 	.DB $C8, $8E, $B9, $05                                                                                                ; xafa9  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
 	.DB $27, $60, $AF                                                                                                     ; xafad  {"(Pointer)":" to xaf70"}
@@ -5917,30 +5917,30 @@ DEFENSE_PLAYER_REACTION_JUMP_127:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xafb3  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_281:
 	.DB $D1, $C0, $28                                                                                                     ; xafb6  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xafb9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafb9 
 	.DB $29, $10, $BE                                                                                                     ; xafba  {"(Pointer)":" to xbe20"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_123                                                             ; xafbd  {"(Pointer)":" to xaf53"}
 DEFENSE_PLAYER_REACTION_282:
 	.DB $D0, $C8, $50                                                                                                     ; xafc0  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xafc3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafc3 
 	.DB $2A, $78, $BE                                                                                                     ; xafc4  {"(Pointer)":" to xbe88"}
 	.DB $29, $51, $AF                                                                                                     ; xafc7  {"(Pointer)":" to xaf61"}
 	.DB $D8, $B8, $F0                                                                                                     ; xafca  {"(Location)":{"up":7,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xafcd  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_283:
 	.DB $D0, $18, $50                                                                                                     ; xafd0  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xafd3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafd3 
 	.DB $26, $99, $AF                                                                                                     ; xafd4  {"(Pointer)":" to xafa9"}
 	.DB $D8, $E0, $B0                                                                                                     ; xafd7  {"(Location)":{"up":2,"right":10}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xafda  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_284:
 	.DB $D0, $C8, $10                                                                                                     ; xafdd  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xafe0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafe0 
 	.DB $2C, $F4, $AE                                                                                                     ; xafe1  {"(Pointer)":" to xaf04"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_126                                                             ; xafe4  {"(Pointer)":" to xaf8f"}
 DEFENSE_PLAYER_REACTION_285:
 	.DB $D0, $E0, $18                                                                                                     ; xafe7  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xafea 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafea 
 DEFENSE_PLAYER_REACTION_JUMP_128:
 	.DB $C8, $7C, $B9, $06                                                                                                ; xafeb  {"(Pointer)":" to xb98c","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_129:
@@ -5949,7 +5949,7 @@ DEFENSE_PLAYER_REACTION_JUMP_129:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaff5  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_286:
 	.DB $D0, $00, $18                                                                                                     ; xaff8  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xaffb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaffb 
 DEFENSE_PLAYER_REACTION_JUMP_130:
 	.DB $C8, $82, $B9, $07                                                                                                ; xaffc  {"(Pointer)":" to xb992","(Random)":"56.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_131:
@@ -5958,7 +5958,7 @@ DEFENSE_PLAYER_REACTION_JUMP_131:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb006  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_287:
 	.DB $D1, $36, $28                                                                                                     ; xb009  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb00c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb00c 
 DEFENSE_PLAYER_REACTION_JUMP_132:
 	.DB $C8, $94, $B9, $02                                                                                                ; xb00d  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_133:
@@ -5968,7 +5968,7 @@ DEFENSE_PLAYER_REACTION_JUMP_133:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb019  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_288:
 	.DB $D1, $C0, $28                                                                                                     ; xb01c  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb01f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb01f 
 DEFENSE_PLAYER_REACTION_JUMP_134:
 	.DB $C8, $9A, $B9, $03                                                                                                ; xb020  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_135:
@@ -5978,7 +5978,7 @@ DEFENSE_PLAYER_REACTION_JUMP_135:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb02c  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_289:
 	.DB $D0, $C8, $50                                                                                                     ; xb02f  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb032 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb032 
 	.DB $C8, $88, $B9, $04                                                                                                ; xb033  {"(Pointer)":" to xb998","(Random)":"75%"}
 	.DB $27, $33, $B0                                                                                                     ; xb037  {"(Pointer)":" to xb043"}
 	.DB $D8, $C0, $00                                                                                                     ; xb03a  {"(Location)":{"up":6,"left":0}}
@@ -5993,7 +5993,7 @@ DEFENSE_PLAYER_REACTION_JUMP_137:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb04f  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_290:
 	.DB $D0, $18, $50                                                                                                     ; xb052  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb055 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb055 
 DEFENSE_PLAYER_REACTION_JUMP_138:
 	.DB $C8, $8E, $B9, $05                                                                                                ; xb056  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
 	.DB $27, $56, $B0                                                                                                     ; xb05a  {"(Pointer)":" to xb066"}
@@ -6006,7 +6006,7 @@ DEFENSE_PLAYER_REACTION_JUMP_139:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb06b  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_291:
 	.DB $D1, $36, $28                                                                                                     ; xb06e  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb071 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb071 
 	.DB $29, $36, $BE                                                                                                     ; xb072  {"(Pointer)":" to xbe46"}
 	.DB $29, $F0, $BD                                                                                                     ; xb075  {"(Pointer)":" to xbe00"}
 	.DB $27, $FD, $AF                                                                                                     ; xb078  {"(Pointer)":" to xb00d"}
@@ -6014,7 +6014,7 @@ DEFENSE_PLAYER_REACTION_291:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xb07e  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_292:
 	.DB $D1, $C0, $28                                                                                                     ; xb081  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb084 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb084 
 	.DB $27, $7E, $B0                                                                                                     ; xb085  {"(Pointer)":" to xb08e"}
 	.DB $29, $00, $BE                                                                                                     ; xb088  {"(Pointer)":" to xbe10"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_134                                                             ; xb08b  {"(Pointer)":" to xb020"}
@@ -6027,19 +6027,19 @@ DEFENSE_PLAYER_REACTION_JUMP_140:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xb09d  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_293:
 	.DB $D0, $E0, $18                                                                                                     ; xb0a0  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xb0a3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0a3 
 	.DB $21, $08, $BE                                                                                                     ; xb0a4  {"(Pointer)":" to xbe18"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_128                                                             ; xb0a7  {"(Pointer)":" to xafeb"}
 DEFENSE_PLAYER_REACTION_294:
 	.DB $D0, $C8, $50                                                                                                     ; xb0aa  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb0ad 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0ad 
 	.DB $27, $78, $BE                                                                                                     ; xb0ae  {"(Pointer)":" to xbe88"}
 	.DB $28, $04, $BE                                                                                                     ; xb0b1  {"(Pointer)":" to xbe14"}
 	.DB $D8, $00, $E0                                                                                                     ; xb0b4  {"(Location)":{"down":2,"right":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb0b7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_295:
 	.DB $D0, $18, $50                                                                                                     ; xb0ba  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb0bd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0bd 
 	.DB $27, $B4, $B0                                                                                                     ; xb0be  {"(Pointer)":" to xb0c4"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xb0c1  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_JUMP_141:
@@ -6047,35 +6047,35 @@ DEFENSE_PLAYER_REACTION_JUMP_141:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_298                                                             ; xb0c6  {"(Pointer)":" to xbec0"}
 DEFENSE_PLAYER_REACTION_296:
 	.DB $D1, $36, $28                                                                                                     ; xb0c9  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb0cc 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0cc 
 	.DB $D9, $36, $A0                                                                                                     ; xb0cd  {"(Location)":{"up":8.25,"right":12}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_267                                                             ; xb0d0  {"(Pointer)":" to xbe08"}
 DEFENSE_PLAYER_REACTION_297:
 	.DB $D1, $C0, $28                                                                                                     ; xb0d3  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb0d6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0d6 
 	.DB $D9, $C0, $A0                                                                                                     ; xb0d7  {"(Location)":{"down":9,"right":12}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb0da  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_298:
 	.DB $D1, $C0, $28                                                                                                     ; xb0dd  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb0e0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0e0 
 	.DB $C8, $56, $B9, $03                                                                                                ; xb0e1  {"(Pointer)":" to xb966","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb0e5  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_299:
 	.DB $D0, $C8, $50                                                                                                     ; xb0e8  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb0eb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0eb 
 	.DB $C8, $66, $B9, $04                                                                                                ; xb0ec  {"(Pointer)":" to xb976","(Random)":"75%"}
 	.DB $D9, $30, $AC                                                                                                     ; xb0f0  {"(Location)":{"up":9,"right":10.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb0f3  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_300:
 	.DB $D0, $18, $50                                                                                                     ; xb0f6  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb0f9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0f9 
 DEFENSE_PLAYER_REACTION_JUMP_142:
 	.DB $C8, $4B, $B9, $05                                                                                                ; xb0fa  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
 	.DB $D8, $BC, $90                                                                                                     ; xb0fe  {"(Location)":{"up":6.5,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb101  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_301:
 	.DB $D1, $C0, $28                                                                                                     ; xb104  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb107 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb107 
 	.DB $29, $FC, $BD                                                                                                     ; xb108  {"(Pointer)":" to xbe0c"}
 	.DB $29, $04, $B1                                                                                                     ; xb10b  {"(Pointer)":" to xb114"}
 	.DB $D8, $F0, $90                                                                                                     ; xb10e  {"(Location)":{"up":0,"right":14}}
@@ -6085,7 +6085,7 @@ DEFENSE_PLAYER_REACTION_JUMP_143:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xb117  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_302:
 	.DB $D0, $18, $0C                                                                                                     ; xb11a  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xb11d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb11d 
 	.DB $27, $FA, $A5                                                                                                     ; xb11e  {"(Pointer)":" to xa60a"}
 DEFENSE_PLAYER_REACTION_LOOP_009:
 	PlayerCommandData.turn $0A                                                                                            ; xb121  {"(Time)":"for 0.5s"}
@@ -6098,17 +6098,17 @@ DEFENSE_PLAYER_REACTION_LOOP_009:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb134  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_303:
 	.DB $D0, $18, $0C                                                                                                     ; xb137  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xb13a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb13a 
 	.DB $2C, $FA, $A5                                                                                                     ; xb13b  {"(Pointer)":" to xa60a"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_009                                                             ; xb13e  {"(Amount)":"-29 bytes to xb121"}
 DEFENSE_PLAYER_REACTION_304:
 	.DB $D1, $36, $28                                                                                                     ; xb140  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb143 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb143 
 	.DB $29, $0C, $BE                                                                                                     ; xb144  {"(Pointer)":" to xbe1c"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb147  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_305:
 	.DB $D0, $C8, $50                                                                                                     ; xb14a  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb14d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb14d 
 	.DB $29, $47, $B1                                                                                                     ; xb14e  {"(Pointer)":" to xb157"}
 	.DB $D8, $D8, $98                                                                                                     ; xb151  {"(Location)":{"up":3,"right":13}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb154  {"(Pointer)":" to xbdfc"}
@@ -6117,20 +6117,20 @@ DEFENSE_PLAYER_REACTION_JUMP_144:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb15a  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_306:
 	.DB $D0, $18, $50                                                                                                     ; xb15d  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb160 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb160 
 	.DB $29, $10, $BE                                                                                                     ; xb161  {"(Pointer)":" to xbe20"}
 	.DB $26, $EA, $B0                                                                                                     ; xb164  {"(Pointer)":" to xb0fa"}
 	.DB $D8, $28, $08                                                                                                     ; xb167  {"(Location)":{"down":7,"left":1}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xb16a  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_307:
 	.DB $D0, $E0, $18                                                                                                     ; xb16d  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xb170 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb170 
 	.DB $C8, $A0, $B9, $06                                                                                                ; xb171  {"(Pointer)":" to xb9b0","(Random)":"62.5%"}
 	.DB $D8, $C8, $F0                                                                                                     ; xb175  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb178  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_308:
 	.DB $D0, $00, $18                                                                                                     ; xb17b  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb17e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb17e 
 DEFENSE_PLAYER_REACTION_JUMP_145:
 	.DB $C8, $AB, $B9, $07                                                                                                ; xb17f  {"(Pointer)":" to xb9bb","(Random)":"56.25%"}
 	PlayerCommandData.turn $0A                                                                                            ; xb183  {"(Time)":"for 0.5s"}
@@ -6140,14 +6140,14 @@ DEFENSE_PLAYER_REACTION_JUMP_145:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb18d  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_309:
 	.DB $D1, $C0, $28                                                                                                     ; xb190  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb193 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb193 
 DEFENSE_PLAYER_REACTION_LOOP_010:
 	.DB $C8, $9A, $B9, $03                                                                                                ; xb194  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
 	.DB $D8, $E8, $E8                                                                                                     ; xb198  {"(Location)":{"up":1,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb19b  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_310:
 	.DB $D0, $18, $50                                                                                                     ; xb19e  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb1a1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1a1 
 DEFENSE_PLAYER_REACTION_JUMP_146:
 	.DB $C8, $8E, $B9, $05                                                                                                ; xb1a2  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
 	.DB $27, $A4, $B1                                                                                                     ; xb1a6  {"(Pointer)":" to xb1b4"}
@@ -6161,7 +6161,7 @@ DEFENSE_PLAYER_REACTION_JUMP_147:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb1b9  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_311:
 	.DB $D0, $00, $18                                                                                                     ; xb1bc  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb1bf 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1bf 
 	.DB $27, $6F, $B1                                                                                                     ; xb1c0  {"(Pointer)":" to xb17f"}
 DEFENSE_PLAYER_REACTION_JUMP_148:
 	.DB $D8, $F8, $D8                                                                                                     ; xb1c3  {"(Location)":{"down":1,"right":5}}
@@ -6172,19 +6172,19 @@ DEFENSE_PLAYER_REACTION_JUMP_148:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb1d1  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_312:
 	.DB $D1, $36, $28                                                                                                     ; xb1d4  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb1d7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1d7 
 	.DB $29, $F8, $BD                                                                                                     ; xb1d8  {"(Pointer)":" to xbe08"}
 	.DB $29, $F0, $BD                                                                                                     ; xb1db  {"(Pointer)":" to xbe00"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_132                                                             ; xb1de  {"(Pointer)":" to xb00d"}
 DEFENSE_PLAYER_REACTION_313:
 	.DB $D1, $C0, $28                                                                                                     ; xb1e1  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb1e4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1e4 
 	.DB $29, $41, $BE                                                                                                     ; xb1e5  {"(Pointer)":" to xbe51"}
 	.DB $29, $00, $BE                                                                                                     ; xb1e8  {"(Pointer)":" to xbe10"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_010                                                             ; xb1eb  {"(Amount)":"-87 bytes to xb194"}
 DEFENSE_PLAYER_REACTION_314:
 	.DB $D0, $C8, $50                                                                                                     ; xb1ed  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb1f0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1f0 
 DEFENSE_PLAYER_REACTION_JUMP_149:
 	.DB $C8, $6C, $B9, $04                                                                                                ; xb1f1  {"(Pointer)":" to xb97c","(Random)":"75%"}
 	.DB $D8, $B8, $E8                                                                                                     ; xb1f5  {"(Location)":{"up":7,"right":3}}
@@ -6193,12 +6193,12 @@ DEFENSE_PLAYER_REACTION_JUMP_149:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb1fd  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_315:
 	.DB $D0, $00, $18                                                                                                     ; xb200  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb203 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb203 
 	.DB $2C, $6F, $B1                                                                                                     ; xb204  {"(Pointer)":" to xb17f"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_148                                                             ; xb207  {"(Pointer)":" to xb1c3"}
 DEFENSE_PLAYER_REACTION_316:
 	.DB $D0, $C8, $50                                                                                                     ; xb20a  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb20d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb20d 
 	.DB $29, $0A, $B2                                                                                                     ; xb20e  {"(Pointer)":" to xb21a"}
 	.DB $25, $E1, $B1                                                                                                     ; xb211  {"(Pointer)":" to xb1f1"}
 	.DB $D8, $E8, $A0                                                                                                     ; xb214  {"(Location)":{"up":1,"right":12}}
@@ -6208,14 +6208,14 @@ DEFENSE_PLAYER_REACTION_JUMP_150:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xb21d  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_317:
 	.DB $D0, $18, $50                                                                                                     ; xb220  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb223 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb223 
 	.DB $28, $10, $BE                                                                                                     ; xb224  {"(Pointer)":" to xbe20"}
 	.DB $27, $92, $B1                                                                                                     ; xb227  {"(Pointer)":" to xb1a2"}
 	.DB $D8, $30, $E8                                                                                                     ; xb22a  {"(Location)":{"down":8,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xb22d  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_318:
 	.DB $D1, $36, $28                                                                                                     ; xb230  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb233 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb233 
 	.DB $2A, $F8, $BD                                                                                                     ; xb234  {"(Pointer)":" to xbe08"}
 	.DB $2A, $33, $B2                                                                                                     ; xb237  {"(Pointer)":" to xb243"}
 	.DB $2A, $39, $B2                                                                                                     ; xb23a  {"(Pointer)":" to xb249"}
@@ -6229,7 +6229,7 @@ DEFENSE_PLAYER_REACTION_JUMP_152:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xb24c  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_319:
 	.DB $D1, $C0, $28                                                                                                     ; xb24f  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb252 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb252 
 	.DB $2C, $10, $BE                                                                                                     ; xb253  {"(Pointer)":" to xbe20"}
 	.DB $D7, $00, $90                                                                                                     ; xb256  {"(Location)":{"up":0,"right":13.875}}
 	PlayerCommandData.wait $3C, $78                                                                                       ; xb259  {"(Start Time, End Time)":"start in between 3s and 6s"}
@@ -6237,14 +6237,14 @@ DEFENSE_PLAYER_REACTION_319:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb25f  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_320:
 	.DB $D0, $18, $50                                                                                                     ; xb262  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb265 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb265 
 	.DB $2C, $10, $BE                                                                                                     ; xb266  {"(Pointer)":" to xbe20"}
 	.DB $27, $99, $AF                                                                                                     ; xb269  {"(Pointer)":" to xafa9"}
 	.DB $D8, $F8, $D8                                                                                                     ; xb26c  {"(Location)":{"down":1,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xb26f  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_321:
 	.DB $D0, $C8, $50                                                                                                     ; xb272  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb275 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb275 
 DEFENSE_PLAYER_REACTION_JUMP_153:
 	.DB $C8, $40, $B9, $04                                                                                                ; xb276  {"(Pointer)":" to xb950","(Random)":"75%"}
 	PlayerCommandData.turn $14                                                                                            ; xb27a  {"(Time)":"for 1s"}
@@ -6258,20 +6258,20 @@ DEFENSE_PLAYER_REACTION_JUMP_154:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb28b  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_322:
 	.DB $D1, $36, $28                                                                                                     ; xb28e  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb291 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb291 
 	.DB $29, $F8, $BD                                                                                                     ; xb292  {"(Pointer)":" to xbe08"}
 	.DB $26, $5A, $BC                                                                                                     ; xb295  {"(Pointer)":" to xbc6a"}
 	.DB $D8, $F0, $C8                                                                                                     ; xb298  {"(Location)":{"up":0,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xb29b  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_323:
 	.DB $D1, $C0, $28                                                                                                     ; xb29e  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb2a1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2a1 
 	.DB $29, $41, $BE                                                                                                     ; xb2a2  {"(Pointer)":" to xbe51"}
 	.DB $29, $F0, $BD                                                                                                     ; xb2a5  {"(Pointer)":" to xbe00"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_250                                                             ; xb2a8  {"(Pointer)":" to xbc54"}
 DEFENSE_PLAYER_REACTION_324:
 	.DB $D0, $18, $50                                                                                                     ; xb2ab  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb2ae 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2ae 
 DEFENSE_PLAYER_REACTION_JUMP_155:
 	.DB $C8, $51, $B9, $05                                                                                                ; xb2af  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $27, $74, $B2                                                                                                     ; xb2b3  {"(Pointer)":" to xb284"}
@@ -6280,13 +6280,13 @@ DEFENSE_PLAYER_REACTION_JUMP_155:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb2bc  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_325:
 	.DB $D0, $C8, $50                                                                                                     ; xb2bf  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb2c2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2c2 
 	.DB $29, $0C, $BE                                                                                                     ; xb2c3  {"(Pointer)":" to xbe1c"}
 	.DB $D8, $F0, $E8                                                                                                     ; xb2c6  {"(Location)":{"up":0,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xb2c9  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_326:
 	.DB $D0, $18, $50                                                                                                     ; xb2cc  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb2cf 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2cf 
 	.DB $24, $C6, $B2                                                                                                     ; xb2d0  {"(Pointer)":" to xb2d6"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_155                                                             ; xb2d3  {"(Pointer)":" to xb2af"}
 DEFENSE_PLAYER_REACTION_JUMP_156:
@@ -6296,7 +6296,7 @@ DEFENSE_PLAYER_REACTION_JUMP_156:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xb2df  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_327:
 	.DB $D1, $36, $28                                                                                                     ; xb2e2  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb2e5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2e5 
 DEFENSE_PLAYER_REACTION_JUMP_157:
 	.DB $C8, $94, $B9, $02                                                                                                ; xb2e6  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
 	PlayerCommandData.turn $0A                                                                                            ; xb2ea  {"(Time)":"for 0.5s"}
@@ -6305,14 +6305,14 @@ DEFENSE_PLAYER_REACTION_JUMP_157:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb2f2  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_328:
 	.DB $D0, $C8, $50                                                                                                     ; xb2f5  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb2f8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2f8 
 DEFENSE_PLAYER_REACTION_JUMP_158:
 	.DB $C8, $B6, $B9, $04                                                                                                ; xb2f9  {"(Pointer)":" to xb9c6","(Random)":"75%"}
 	.DB $D7, $48, $88                                                                                                     ; xb2fd  {"(Location)":{"down":9,"right":14.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb300  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_329:
 	.DB $D1, $36, $28                                                                                                     ; xb303  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb306 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb306 
 	.DB $29, $36, $BE                                                                                                     ; xb307  {"(Pointer)":" to xbe46"}
 	.DB $29, $06, $B3                                                                                                     ; xb30a  {"(Pointer)":" to xb316"}
 	.DB $29, $D6, $B2                                                                                                     ; xb30d  {"(Pointer)":" to xb2e6"}
@@ -6324,14 +6324,14 @@ DEFENSE_PLAYER_REACTION_JUMP_159:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xb31c  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_330:
 	.DB $D0, $C8, $50                                                                                                     ; xb31f  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb322 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb322 
 	.DB $27, $78, $BE                                                                                                     ; xb323  {"(Pointer)":" to xbe88"}
 	.DB $D8, $B8, $D8                                                                                                     ; xb326  {"(Location)":{"up":7,"right":5}}
 	.DB $D8, $B8, $10                                                                                                     ; xb329  {"(Location)":{"up":7,"left":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xb32c  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_331:
 	.DB $D0, $18, $50                                                                                                     ; xb32f  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb332 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb332 
 	.DB $29, $FC, $BD                                                                                                     ; xb333  {"(Pointer)":" to xbe0c"}
 	.DB $27, $2F, $B3                                                                                                     ; xb336  {"(Pointer)":" to xb33f"}
 	.DB $D8, $F8, $C8                                                                                                     ; xb339  {"(Location)":{"down":1,"right":7}}
@@ -6341,29 +6341,29 @@ DEFENSE_PLAYER_REACTION_JUMP_160:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb342  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_332:
 	.DB $D0, $18, $50                                                                                                     ; xb345  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb348 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb348 
 	.DB $C8, $40, $B9, $05                                                                                                ; xb349  {"(Pointer)":" to xb950","(Random)":"68.75%"}
 	.DB $D7, $E8, $C8                                                                                                     ; xb34d  {"(Location)":{"up":2.875,"right":6.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb350  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_333:
 	.DB $D1, $36, $28                                                                                                     ; xb353  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb356 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb356 
 	.DB $27, $36, $BE                                                                                                     ; xb357  {"(Pointer)":" to xbe46"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_132                                                             ; xb35a  {"(Pointer)":" to xb00d"}
 DEFENSE_PLAYER_REACTION_334:
 	.DB $D1, $C0, $28                                                                                                     ; xb35d  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb360 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb360 
 	.DB $27, $41, $BE                                                                                                     ; xb361  {"(Pointer)":" to xbe51"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_134                                                             ; xb364  {"(Pointer)":" to xb020"}
 DEFENSE_PLAYER_REACTION_335:
 	.DB $D0, $C8, $50                                                                                                     ; xb367  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb36a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb36a 
 	.DB $26, $E9, $B2                                                                                                     ; xb36b  {"(Pointer)":" to xb2f9"}
 	.DB $D8, $E0, $E0                                                                                                     ; xb36e  {"(Location)":{"up":2,"right":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xb371  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_336:
 	.DB $D0, $18, $50                                                                                                     ; xb374  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb377 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb377 
 	.DB $26, $74, $B3                                                                                                     ; xb378  {"(Pointer)":" to xb384"}
 	.DB $27, $7A, $B3                                                                                                     ; xb37b  {"(Pointer)":" to xb38a"}
 	.DB $D8, $30, $D8                                                                                                     ; xb37e  {"(Location)":{"down":8,"right":5}}
@@ -6376,7 +6376,7 @@ DEFENSE_PLAYER_REACTION_JUMP_162:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_272                                                             ; xb38d  {"(Pointer)":" to xbe1c"}
 DEFENSE_PLAYER_REACTION_337:
 	.DB $D1, $36, $28                                                                                                     ; xb390  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb393 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb393 
 DEFENSE_PLAYER_REACTION_JUMP_163:
 	.DB $C8, $94, $B9, $04                                                                                                ; xb394  {"(Pointer)":" to xb9a4","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_164:
@@ -6386,7 +6386,7 @@ DEFENSE_PLAYER_REACTION_JUMP_164:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb3a0  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_338:
 	.DB $D0, $C8, $50                                                                                                     ; xb3a3  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb3a6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3a6 
 DEFENSE_PLAYER_REACTION_JUMP_165:
 	.DB $C8, $6C, $B9, $04                                                                                                ; xb3a7  {"(Pointer)":" to xb97c","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_166:
@@ -6396,7 +6396,7 @@ DEFENSE_PLAYER_REACTION_JUMP_166:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb3b3  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_339:
 	.DB $D0, $18, $50                                                                                                     ; xb3b6  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb3b9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3b9 
 DEFENSE_PLAYER_REACTION_JUMP_167:
 	.DB $C8, $66, $B9, $05                                                                                                ; xb3ba  {"(Pointer)":" to xb976","(Random)":"68.75%"}
 	.DB $29, $BC, $B3                                                                                                     ; xb3be  {"(Pointer)":" to xb3cc"}
@@ -6409,13 +6409,13 @@ DEFENSE_PLAYER_REACTION_JUMP_168:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb3cf  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_340:
 	.DB $D1, $36, $28                                                                                                     ; xb3d2  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb3d5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3d5 
 	.DB $29, $F0, $BD                                                                                                     ; xb3d6  {"(Pointer)":" to xbe00"}
 	.DB $29, $F8, $BD                                                                                                     ; xb3d9  {"(Pointer)":" to xbe08"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_163                                                             ; xb3dc  {"(Pointer)":" to xb394"}
 DEFENSE_PLAYER_REACTION_341:
 	.DB $D0, $C8, $50                                                                                                     ; xb3df  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb3e2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3e2 
 	.DB $29, $DC, $B3                                                                                                     ; xb3e3  {"(Pointer)":" to xb3ec"}
 	.DB $27, $E2, $B3                                                                                                     ; xb3e6  {"(Pointer)":" to xb3f2"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_165                                                             ; xb3e9  {"(Pointer)":" to xb3a7"}
@@ -6427,14 +6427,14 @@ DEFENSE_PLAYER_REACTION_JUMP_170:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xb3f5  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_342:
 	.DB $D0, $18, $50                                                                                                     ; xb3f8  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb3fb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3fb 
 	.DB $29, $F2, $B3                                                                                                     ; xb3fc  {"(Pointer)":" to xb402"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_167                                                             ; xb3ff  {"(Pointer)":" to xb3ba"}
 DEFENSE_PLAYER_REACTION_JUMP_171:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_294                                                             ; xb402  {"(Pointer)":" to xbe96"}
 DEFENSE_PLAYER_REACTION_343:
 	.DB $D1, $36, $28                                                                                                     ; xb405  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb408 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb408 
 DEFENSE_PLAYER_REACTION_JUMP_172:
 	.DB $C8, $4B, $B9, $02                                                                                                ; xb409  {"(Pointer)":" to xb95b","(Random)":"87.5%"}
 	PlayerCommandData.turn $32                                                                                            ; xb40d  {"(Time)":"for 2.5s"}
@@ -6448,7 +6448,7 @@ DEFENSE_PLAYER_REACTION_JUMP_173:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb420  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_344:
 	.DB $D1, $C0, $28                                                                                                     ; xb423  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb426 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb426 
 DEFENSE_PLAYER_REACTION_JUMP_174:
 	.DB $C8, $66, $B9, $03                                                                                                ; xb427  {"(Pointer)":" to xb976","(Random)":"81.25%"}
 	PlayerCommandData.turn $46                                                                                            ; xb42b  {"(Time)":"for 3.5s"}
@@ -6461,7 +6461,7 @@ DEFENSE_PLAYER_REACTION_JUMP_175:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb43b  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_345:
 	.DB $D0, $C8, $50                                                                                                     ; xb43e  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb441 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb441 
 DEFENSE_PLAYER_REACTION_JUMP_176:
 	PlayerCommandData.wait $01, $14                                                                                       ; xb442  {"(Start Time, End Time)":"start in between 0.05s and 1s"}
 	.DB $D8, $F8, $B8                                                                                                     ; xb445  {"(Location)":{"down":1,"right":9}}
@@ -6483,17 +6483,17 @@ DEFENSE_PLAYER_REACTION_JUMP_179:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb469  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_346:
 	.DB $D1, $36, $28                                                                                                     ; xb46c  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb46f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb46f 
 	.DB $26, $F9, $B3                                                                                                     ; xb470  {"(Pointer)":" to xb409"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_267                                                             ; xb473  {"(Pointer)":" to xbe08"}
 DEFENSE_PLAYER_REACTION_347:
 	.DB $D1, $C0, $28                                                                                                     ; xb476  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb479 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb479 
 	.DB $29, $FC, $BD                                                                                                     ; xb47a  {"(Pointer)":" to xbe0c"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_174                                                             ; xb47d  {"(Pointer)":" to xb427"}
 DEFENSE_PLAYER_REACTION_348:
 	.DB $D0, $18, $50                                                                                                     ; xb480  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb483 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb483 
 DEFENSE_PLAYER_REACTION_JUMP_180:
 	.DB $27, $49, $B4                                                                                                     ; xb484  {"(Pointer)":" to xb459"}
 	PlayerCommandData.wait $0A, $1E                                                                                       ; xb487  {"(Start Time, End Time)":"start in between 0.5s and 1.5s"}
@@ -6503,36 +6503,36 @@ DEFENSE_PLAYER_REACTION_JUMP_180:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb492  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_349:
 	.DB $D0, $C8, $50                                                                                                     ; xb495  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb498 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb498 
 	.DB $27, $32, $B4                                                                                                     ; xb499  {"(Pointer)":" to xb442"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_272                                                             ; xb49c  {"(Pointer)":" to xbe1c"}
 DEFENSE_PLAYER_REACTION_350:
 	.DB $D0, $18, $50                                                                                                     ; xb49f  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb4a2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4a2 
 	.DB $27, $74, $B4                                                                                                     ; xb4a3  {"(Pointer)":" to xb484"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_282                                                             ; xb4a6  {"(Pointer)":" to xbe51"}
 DEFENSE_PLAYER_REACTION_351:
 	.DB $D1, $36, $28                                                                                                     ; xb4a9  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb4ac 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4ac 
 	.DB $C8, $6C, $B9, $02                                                                                                ; xb4ad  {"(Pointer)":" to xb97c","(Random)":"87.5%"}
 	PlayerCommandData.turn $14                                                                                            ; xb4b1  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb4b3  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_352:
 	.DB $D1, $C0, $28                                                                                                     ; xb4b6  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb4b9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4b9 
 DEFENSE_PLAYER_REACTION_JUMP_181:
 	.DB $C8, $8E, $B9, $03                                                                                                ; xb4ba  {"(Pointer)":" to xb99e","(Random)":"81.25%"}
 	PlayerCommandData.turn $1E                                                                                            ; xb4be  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb4c0  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_353:
 	.DB $D0, $C8, $50                                                                                                     ; xb4c3  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb4c6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4c6 
 	.DB $C8, $88, $B9, $04                                                                                                ; xb4c7  {"(Pointer)":" to xb998","(Random)":"75%"}
 	.DB $D8, $E8, $81                                                                                                     ; xb4cb  {"(Location)":{"up":1,"right":15.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb4ce  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_354:
 	.DB $D0, $18, $50                                                                                                     ; xb4d1  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb4d4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4d4 
 	.DB $C8, $4B, $B9, $05                                                                                                ; xb4d5  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
 	.DB $D7, $00, $C8                                                                                                     ; xb4d9  {"(Location)":{"up":0,"right":6.875}}
 	.DB $D7, $F0, $00                                                                                                     ; xb4dc  {"(Location)":{"up":1.875,"left":0}}
@@ -6542,7 +6542,7 @@ DEFENSE_PLAYER_REACTION_354:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb4e7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_355:
 	.DB $D0, $E0, $18                                                                                                     ; xb4ea  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xb4ed 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4ed 
 DEFENSE_PLAYER_REACTION_JUMP_182:
 	.DB $C8, $BC, $B9, $06                                                                                                ; xb4ee  {"(Pointer)":" to xb9cc","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_183:
@@ -6552,7 +6552,7 @@ DEFENSE_PLAYER_REACTION_JUMP_183:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb4fb  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_356:
 	.DB $D0, $00, $18                                                                                                     ; xb4fe  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb501 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb501 
 DEFENSE_PLAYER_REACTION_JUMP_184:
 	.DB $C8, $CB, $B9, $07                                                                                                ; xb502  {"(Pointer)":" to xb9db","(Random)":"56.25%"}
 	.DB $D8, $18, $08                                                                                                     ; xb506  {"(Location)":{"down":5,"left":1}}
@@ -6562,37 +6562,37 @@ DEFENSE_PLAYER_REACTION_JUMP_184:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb511  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_357:
 	.DB $D1, $36, $28                                                                                                     ; xb514  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb517 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb517 
 	.DB $29, $F8, $BD                                                                                                     ; xb518  {"(Pointer)":" to xbe08"}
 	.DB $27, $F4, $BD                                                                                                     ; xb51b  {"(Pointer)":" to xbe04"}
 	.DB $D9, $36, $20                                                                                                     ; xb51e  {"(Location)":{"up":8.25,"left":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xb521  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_358:
 	.DB $D1, $C0, $28                                                                                                     ; xb524  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb527 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb527 
 	.DB $29, $FC, $BD                                                                                                     ; xb528  {"(Pointer)":" to xbe0c"}
 	.DB $29, $00, $BE                                                                                                     ; xb52b  {"(Pointer)":" to xbe10"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_181                                                             ; xb52e  {"(Pointer)":" to xb4ba"}
 DEFENSE_PLAYER_REACTION_359:
 	.DB $D0, $E0, $18                                                                                                     ; xb531  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xb534 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb534 
 	.DB $27, $DE, $B4                                                                                                     ; xb535  {"(Pointer)":" to xb4ee"}
 	.DB $D8, $C0, $18                                                                                                     ; xb538  {"(Location)":{"up":6,"left":3}}
 	.DB $D8, $C0, $28                                                                                                     ; xb53b  {"(Location)":{"up":6,"left":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xb53e  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_360:
 	.DB $D0, $C8, $50                                                                                                     ; xb541  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb544 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb544 
 	.DB $27, $0C, $BE                                                                                                     ; xb545  {"(Pointer)":" to xbe1c"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xb548  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_361:
 	.DB $D0, $18, $50                                                                                                     ; xb54b  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb54e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb54e 
 	.DB $27, $14, $BE                                                                                                     ; xb54f  {"(Pointer)":" to xbe24"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_273                                                             ; xb552  {"(Pointer)":" to xbe20"}
 DEFENSE_PLAYER_REACTION_362:
 	.DB $D0, $C8, $50                                                                                                     ; xb555  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb558 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb558 
 	.DB $C8, $4B, $B9, $04                                                                                                ; xb559  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	.DB $D8, $C0, $E0                                                                                                     ; xb55d  {"(Location)":{"up":6,"right":4}}
 	.DB $D8, $C0, $08                                                                                                     ; xb560  {"(Location)":{"up":6,"left":1}}
@@ -6600,7 +6600,7 @@ DEFENSE_PLAYER_REACTION_362:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb565  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_363:
 	.DB $D0, $18, $50                                                                                                     ; xb568  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb56b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb56b 
 	.DB $C8, $51, $B9, $05                                                                                                ; xb56c  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $27, $6B, $B5                                                                                                     ; xb570  {"(Pointer)":" to xb57b"}
 	.DB $D8, $F0, $E8                                                                                                     ; xb573  {"(Location)":{"up":0,"right":3}}
@@ -6611,13 +6611,13 @@ DEFENSE_PLAYER_REACTION_JUMP_185:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb57e  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_364:
 	.DB $D1, $36, $28                                                                                                     ; xb581  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb584 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb584 
 	.DB $29, $F8, $BD                                                                                                     ; xb585  {"(Pointer)":" to xbe08"}
 	.DB $29, $28, $BE                                                                                                     ; xb588  {"(Pointer)":" to xbe38"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_132                                                             ; xb58b  {"(Pointer)":" to xb00d"}
 DEFENSE_PLAYER_REACTION_365:
 	.DB $D1, $C0, $28                                                                                                     ; xb58e  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb591 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb591 
 	.DB $29, $41, $BE                                                                                                     ; xb592  {"(Pointer)":" to xbe51"}
 	.DB $29, $8B, $B5                                                                                                     ; xb595  {"(Pointer)":" to xb59b"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_134                                                             ; xb598  {"(Pointer)":" to xb020"}
@@ -6626,35 +6626,35 @@ DEFENSE_PLAYER_REACTION_JUMP_186:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xb59e  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_366:
 	.DB $D0, $C8, $50                                                                                                     ; xb5a1  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb5a4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5a4 
 	.DB $27, $62, $BE                                                                                                     ; xb5a5  {"(Pointer)":" to xbe72"}
 	.DB $D9, $36, $D8                                                                                                     ; xb5a8  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_272                                                             ; xb5ab  {"(Pointer)":" to xbe1c"}
 DEFENSE_PLAYER_REACTION_367:
 	.DB $D0, $18, $50                                                                                                     ; xb5ae  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb5b1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5b1 
 	.DB $27, $14, $BE                                                                                                     ; xb5b2  {"(Pointer)":" to xbe24"}
 	.DB $D8, $30, $D0                                                                                                     ; xb5b5  {"(Location)":{"down":8,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_294                                                             ; xb5b8  {"(Pointer)":" to xbe96"}
 DEFENSE_PLAYER_REACTION_368:
 	.DB $D1, $36, $28                                                                                                     ; xb5bb  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb5be 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5be 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb5bf  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_369:
 	.DB $D1, $C0, $28                                                                                                     ; xb5c2  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb5c5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5c5 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb5c6  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_370:
 	.DB $D0, $C8, $50                                                                                                     ; xb5c9  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb5cc 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5cc 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb5cd  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_371:
 	.DB $D0, $18, $50                                                                                                     ; xb5d0  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb5d3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5d3 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb5d4  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_372:
 	.DB $D1, $36, $28                                                                                                     ; xb5d7  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb5da 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5da 
 DEFENSE_PLAYER_REACTION_JUMP_187:
 	.DB $C8, $94, $B9, $02                                                                                                ; xb5db  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
 	.DB $D8, $D8, $F8                                                                                                     ; xb5df  {"(Location)":{"up":3,"right":1}}
@@ -6663,7 +6663,7 @@ DEFENSE_PLAYER_REACTION_JUMP_187:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb5e8  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_373:
 	.DB $D1, $C0, $28                                                                                                     ; xb5eb  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb5ee 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5ee 
 DEFENSE_PLAYER_REACTION_JUMP_188:
 	.DB $C8, $51, $B9, $03                                                                                                ; xb5ef  {"(Pointer)":" to xb961","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_189:
@@ -6673,7 +6673,7 @@ DEFENSE_PLAYER_REACTION_JUMP_189:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb5fc  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_374:
 	.DB $D0, $C8, $50                                                                                                     ; xb5ff  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb602 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb602 
 	.DB $C8, $A0, $B9, $04                                                                                                ; xb603  {"(Pointer)":" to xb9b0","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_190:
 	.DB $D8, $B8, $C0                                                                                                     ; xb607  {"(Location)":{"up":7,"right":8}}
@@ -6682,7 +6682,7 @@ DEFENSE_PLAYER_REACTION_JUMP_190:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb60e  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_375:
 	.DB $D0, $18, $50                                                                                                     ; xb611  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb614 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb614 
 DEFENSE_PLAYER_REACTION_JUMP_191:
 	.DB $C8, $9A, $B9, $05                                                                                                ; xb615  {"(Pointer)":" to xb9aa","(Random)":"68.75%"}
 	.DB $D7, $D8, $C8                                                                                                     ; xb619  {"(Location)":{"up":4.875,"right":6.875}}
@@ -6693,7 +6693,7 @@ DEFENSE_PLAYER_REACTION_JUMP_192:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb624  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_376:
 	.DB $D0, $00, $18                                                                                                     ; xb627  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb62a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb62a 
 	.DB $C8, $CB, $B9, $07                                                                                                ; xb62b  {"(Pointer)":" to xb9db","(Random)":"56.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_193:
 	.DB $D8, $10, $08                                                                                                     ; xb62f  {"(Location)":{"down":4,"left":1}}
@@ -6701,7 +6701,7 @@ DEFENSE_PLAYER_REACTION_JUMP_193:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb635  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_377:
 	.DB $D1, $36, $28                                                                                                     ; xb638  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb63b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb63b 
 	.DB $26, $36, $BE                                                                                                     ; xb63c  {"(Pointer)":" to xbe46"}
 	.DB $26, $3E, $B6                                                                                                     ; xb63f  {"(Pointer)":" to xb64e"}
 	.DB $29, $CB, $B5                                                                                                     ; xb642  {"(Pointer)":" to xb5db"}
@@ -6713,7 +6713,7 @@ DEFENSE_PLAYER_REACTION_JUMP_194:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xb651  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_378:
 	.DB $D1, $C0, $28                                                                                                     ; xb654  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb657 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb657 
 	.DB $27, $57, $B6                                                                                                     ; xb658  {"(Pointer)":" to xb667"}
 	.DB $29, $DF, $B5                                                                                                     ; xb65b  {"(Pointer)":" to xb5ef"}
 	.DB $D8, $28, $00                                                                                                     ; xb65e  {"(Location)":{"down":7,"left":0}}
@@ -6727,12 +6727,12 @@ DEFENSE_PLAYER_REACTION_JUMP_195:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xb672  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_379:
 	.DB $D0, $E0, $18                                                                                                     ; xb675  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xb678 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb678 
 	.DB $27, $14, $BE                                                                                                     ; xb679  {"(Pointer)":" to xbe24"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_182                                                             ; xb67c  {"(Pointer)":" to xb4ee"}
 DEFENSE_PLAYER_REACTION_380:
 	.DB $D0, $18, $50                                                                                                     ; xb67f  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb682 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb682 
 	.DB $27, $B0, $BE                                                                                                     ; xb683  {"(Pointer)":" to xbec0"}
 	.DB $29, $05, $B6                                                                                                     ; xb686  {"(Pointer)":" to xb615"}
 	.DB $D8, $30, $F8                                                                                                     ; xb689  {"(Location)":{"down":8,"right":1}}
@@ -6740,19 +6740,19 @@ DEFENSE_PLAYER_REACTION_380:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xb68f  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_381:
 	.DB $D0, $18, $50                                                                                                     ; xb692  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb695 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb695 
 DEFENSE_PLAYER_REACTION_JUMP_196:
 	.DB $C8, $51, $B9, $05                                                                                                ; xb696  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $D7, $00, $C8                                                                                                     ; xb69a  {"(Location)":{"up":0,"right":6.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb69d  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_382:
 	.DB $D1, $36, $28                                                                                                     ; xb6a0  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb6a3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6a3 
 	.DB $29, $F8, $BD                                                                                                     ; xb6a4  {"(Pointer)":" to xbe08"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_132                                                             ; xb6a7  {"(Pointer)":" to xb00d"}
 DEFENSE_PLAYER_REACTION_383:
 	.DB $D1, $C0, $28                                                                                                     ; xb6aa  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb6ad 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6ad 
 	.DB $29, $41, $BE                                                                                                     ; xb6ae  {"(Pointer)":" to xbe51"}
 	.DB $29, $10, $B0                                                                                                     ; xb6b1  {"(Pointer)":" to xb020"}
 	.DB $D8, $28, $E8                                                                                                     ; xb6b4  {"(Location)":{"down":7,"right":3}}
@@ -6760,26 +6760,26 @@ DEFENSE_PLAYER_REACTION_383:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xb6ba  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_384:
 	.DB $D0, $00, $18                                                                                                     ; xb6bd  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb6c0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6c0 
 	.DB $27, $04, $BE                                                                                                     ; xb6c1  {"(Pointer)":" to xbe14"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_184                                                             ; xb6c4  {"(Pointer)":" to xb502"}
 DEFENSE_PLAYER_REACTION_385:
 	.DB $D0, $C8, $50                                                                                                     ; xb6c7  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb6ca 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6ca 
 	.DB $27, $0C, $BE                                                                                                     ; xb6cb  {"(Pointer)":" to xbe1c"}
 	.DB $27, $66, $B2                                                                                                     ; xb6ce  {"(Pointer)":" to xb276"}
 	.DB $D8, $D8, $88                                                                                                     ; xb6d1  {"(Location)":{"up":3,"right":15}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb6d4  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_386:
 	.DB $D0, $18, $50                                                                                                     ; xb6d7  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb6da 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6da 
 	.DB $29, $86, $BE                                                                                                     ; xb6db  {"(Pointer)":" to xbe96"}
 	.DB $27, $86, $B6                                                                                                     ; xb6de  {"(Pointer)":" to xb696"}
 	.DB $D8, $30, $F0                                                                                                     ; xb6e1  {"(Location)":{"down":8,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xb6e4  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_387:
 	.DB $D0, $C8, $50                                                                                                     ; xb6e7  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb6ea 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6ea 
 DEFENSE_PLAYER_REACTION_JUMP_197:
 	.DB $C8, $4B, $B9, $04                                                                                                ; xb6eb  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	.DB $D8, $C8, $10                                                                                                     ; xb6ef  {"(Location)":{"up":5,"left":2}}
@@ -6787,7 +6787,7 @@ DEFENSE_PLAYER_REACTION_JUMP_197:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb6f4  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_388:
 	.DB $D0, $18, $50                                                                                                     ; xb6f7  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb6fa 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6fa 
 DEFENSE_PLAYER_REACTION_JUMP_198:
 	.DB $C8, $71, $B9, $05                                                                                                ; xb6fb  {"(Pointer)":" to xb981","(Random)":"68.75%"}
 	.DB $D8, $F8, $81                                                                                                     ; xb6ff  {"(Location)":{"down":1,"right":15.875}}
@@ -6796,14 +6796,14 @@ DEFENSE_PLAYER_REACTION_389:
 	.DB $D1, $C0, $28                                                                                                     ; xb705  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.motion $A0                                                                                          ; xb708  {"(Time)":"for 8s"}
 	.DB $D8, $10, $D8                                                                                                     ; xb70a  {"(Location)":{"down":4,"right":5}}
-	.DB $EC                                                                                                               ; xb70d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb70d 
 	.DB $26, $FC, $BD                                                                                                     ; xb70e  {"(Pointer)":" to xbe0c"}
 	.DB $27, $F0, $BD                                                                                                     ; xb711  {"(Pointer)":" to xbe00"}
 	.DB $D8, $28, $C8                                                                                                     ; xb714  {"(Location)":{"down":7,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xb717  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_390:
 	.DB $D0, $C8, $50                                                                                                     ; xb71a  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb71d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb71d 
 	.DB $27, $DB, $B6                                                                                                     ; xb71e  {"(Pointer)":" to xb6eb"}
 	PlayerCommandData.turn $64                                                                                            ; xb721  {"(Time)":"for 5s"}
 	.DB $D7, $08, $81                                                                                                     ; xb723  {"(Location)":{"down":1,"right":15.75}}
@@ -6811,20 +6811,20 @@ DEFENSE_PLAYER_REACTION_390:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_272                                                             ; xb729  {"(Pointer)":" to xbe1c"}
 DEFENSE_PLAYER_REACTION_391:
 	.DB $D0, $18, $50                                                                                                     ; xb72c  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb72f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb72f 
 	.DB $26, $6D, $BE                                                                                                     ; xb730  {"(Pointer)":" to xbe7d"}
 	.DB $27, $EB, $B6                                                                                                     ; xb733  {"(Pointer)":" to xb6fb"}
 	.DB $D8, $08, $E8                                                                                                     ; xb736  {"(Location)":{"down":3,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_273                                                             ; xb739  {"(Pointer)":" to xbe20"}
 DEFENSE_PLAYER_REACTION_392:
 	.DB $D0, $C8, $50                                                                                                     ; xb73c  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb73f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb73f 
 	.DB $D8, $F0, $81                                                                                                     ; xb740  {"(Location)":{"up":0,"right":15.875}}
 	.DB $27, $EC, $BD                                                                                                     ; xb743  {"(Pointer)":" to xbdfc"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb746  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_393:
 	.DB $D0, $E0, $18                                                                                                     ; xb749  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xb74c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb74c 
 	PlayerCommandData.turn $50                                                                                            ; xb74d  {"(Time)":"for 4s"}
 	.DB $D8, $00, $F0                                                                                                     ; xb74f  {"(Location)":{"down":2,"right":2}}
 	PlayerCommandData.turn $14                                                                                            ; xb752  {"(Time)":"for 1s"}
@@ -6832,7 +6832,7 @@ DEFENSE_PLAYER_REACTION_393:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb757  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_394:
 	.DB $D0, $00, $18                                                                                                     ; xb75a  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xb75d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb75d 
 	PlayerCommandData.turn $46                                                                                            ; xb75e  {"(Time)":"for 3.5s"}
 	.DB $D8, $18, $E8                                                                                                     ; xb760  {"(Location)":{"down":5,"right":3}}
 	.DB $D8, $30, $F8                                                                                                     ; xb763  {"(Location)":{"down":8,"right":1}}
@@ -6842,7 +6842,7 @@ DEFENSE_PLAYER_REACTION_394:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb76e  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_395:
 	.DB $D1, $C0, $28                                                                                                     ; xb771  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb774 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb774 
 DEFENSE_PLAYER_REACTION_JUMP_199:
 	PlayerCommandData.turn $3C                                                                                            ; xb775  {"(Time)":"for 3s"}
 	.DB $D8, $38, $00                                                                                                     ; xb777  {"(Location)":{"down":9,"left":0}}
@@ -6851,7 +6851,7 @@ DEFENSE_PLAYER_REACTION_JUMP_199:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb780  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_396:
 	.DB $D0, $C8, $50                                                                                                     ; xb783  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb786 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb786 
 DEFENSE_PLAYER_REACTION_JUMP_200:
 	.DB $C8, $51, $B9, $04                                                                                                ; xb787  {"(Pointer)":" to xb961","(Random)":"75%"}
 	.DB $2E, $87, $B7                                                                                                     ; xb78b  {"(Pointer)":" to xb797"}
@@ -6864,7 +6864,7 @@ DEFENSE_PLAYER_REACTION_JUMP_201:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb79c  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_397:
 	.DB $D0, $18, $50                                                                                                     ; xb79f  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb7a2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7a2 
 DEFENSE_PLAYER_REACTION_JUMP_202:
 	.DB $C8, $4B, $B9, $05                                                                                                ; xb7a3  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
 	PlayerCommandData.turn $14                                                                                            ; xb7a7  {"(Time)":"for 1s"}
@@ -6874,7 +6874,7 @@ DEFENSE_PLAYER_REACTION_JUMP_202:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb7b2  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_398:
 	.DB $D0, $C8, $10                                                                                                     ; xb7b5  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xb7b8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7b8 
 DEFENSE_PLAYER_REACTION_JUMP_203:
 	.DB $D8, $C0, $00                                                                                                     ; xb7b9  {"(Location)":{"up":6,"left":0}}
 	.DB $D8, $C0, $28                                                                                                     ; xb7bc  {"(Location)":{"up":6,"left":5}}
@@ -6883,19 +6883,19 @@ DEFENSE_PLAYER_REACTION_JUMP_203:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb7c4  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_399:
 	.DB $D1, $C0, $28                                                                                                     ; xb7c7  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb7ca 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7ca 
 	.DB $26, $FC, $BD                                                                                                     ; xb7cb  {"(Pointer)":" to xbe0c"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_199                                                             ; xb7ce  {"(Pointer)":" to xb775"}
 DEFENSE_PLAYER_REACTION_400:
 	.DB $D0, $C8, $50                                                                                                     ; xb7d1  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb7d4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7d4 
 	.DB $29, $0C, $BE                                                                                                     ; xb7d5  {"(Pointer)":" to xbe1c"}
 	.DB $27, $77, $B7                                                                                                     ; xb7d8  {"(Pointer)":" to xb787"}
 	.DB $D8, $C0, $F0                                                                                                     ; xb7db  {"(Location)":{"up":6,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xb7de  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_401:
 	.DB $D0, $18, $50                                                                                                     ; xb7e1  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb7e4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7e4 
 	.DB $27, $DB, $B7                                                                                                     ; xb7e5  {"(Pointer)":" to xb7eb"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_282                                                             ; xb7e8  {"(Pointer)":" to xbe51"}
 DEFENSE_PLAYER_REACTION_JUMP_204:
@@ -6904,7 +6904,7 @@ DEFENSE_PLAYER_REACTION_JUMP_204:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb7f1  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_402:
 	.DB $D1, $C0, $28                                                                                                     ; xb7f4  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb7f7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7f7 
 DEFENSE_PLAYER_REACTION_JUMP_205:
 	.DB $C8, $8E, $B9, $03                                                                                                ; xb7f8  {"(Pointer)":" to xb99e","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_206:
@@ -6915,7 +6915,7 @@ DEFENSE_PLAYER_REACTION_JUMP_206:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb807  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_403:
 	.DB $D0, $18, $50                                                                                                     ; xb80a  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb80d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb80d 
 	.DB $C8, $AB, $B9, $05                                                                                                ; xb80e  {"(Pointer)":" to xb9bb","(Random)":"68.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_207:
 	.DB $27, $10, $B8                                                                                                     ; xb812  {"(Pointer)":" to xb820"}
@@ -6928,14 +6928,14 @@ DEFENSE_PLAYER_REACTION_JUMP_208:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb823  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_404:
 	.DB $D1, $C0, $28                                                                                                     ; xb826  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb829 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb829 
 	.DB $29, $41, $BE                                                                                                     ; xb82a  {"(Pointer)":" to xbe51"}
 	.DB $26, $E8, $B7                                                                                                     ; xb82d  {"(Pointer)":" to xb7f8"}
 	.DB $D8, $14, $D8                                                                                                     ; xb830  {"(Location)":{"down":4.5,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xb833  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_405:
 	.DB $D0, $18, $0C                                                                                                     ; xb836  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xb839 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb839 
 	.DB $D8, $28, $00                                                                                                     ; xb83a  {"(Location)":{"down":7,"left":0}}
 	.DB $D8, $28, $28                                                                                                     ; xb83d  {"(Location)":{"down":7,"left":5}}
 	PlayerCommandData.turn $14                                                                                            ; xb840  {"(Time)":"for 1s"}
@@ -6943,13 +6943,13 @@ DEFENSE_PLAYER_REACTION_405:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb845  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_406:
 	.DB $D0, $18, $50                                                                                                     ; xb848  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb84b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb84b 
 	.DB $27, $86, $BE                                                                                                     ; xb84c  {"(Pointer)":" to xbe96"}
 	.DB $D8, $10, $D8                                                                                                     ; xb84f  {"(Location)":{"down":4,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xb852  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_407:
 	.DB $D0, $C8, $50                                                                                                     ; xb855  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb858 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb858 
 	.DB $C8, $4B, $B9, $04                                                                                                ; xb859  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	.DB $27, $5B, $B8                                                                                                     ; xb85d  {"(Pointer)":" to xb86b"}
 	.DB $D8, $E8, $F8                                                                                                     ; xb860  {"(Location)":{"up":1,"right":1}}
@@ -6961,7 +6961,7 @@ DEFENSE_PLAYER_REACTION_JUMP_209:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb86e  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_408:
 	.DB $D1, $36, $28                                                                                                     ; xb871  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb874 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb874 
 	.DB $29, $F4, $BD                                                                                                     ; xb875  {"(Pointer)":" to xbe04"}
 	.DB $27, $36, $BE                                                                                                     ; xb878  {"(Pointer)":" to xbe46"}
 	.DB $D8, $B8, $D8                                                                                                     ; xb87b  {"(Location)":{"up":7,"right":5}}
@@ -6970,19 +6970,19 @@ DEFENSE_PLAYER_REACTION_408:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xb883  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_409:
 	.DB $D1, $C0, $28                                                                                                     ; xb886  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb889 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb889 
 	.DB $29, $4C, $BE                                                                                                     ; xb88a  {"(Pointer)":" to xbe5c"}
 	.DB $26, $10, $B0                                                                                                     ; xb88d  {"(Pointer)":" to xb020"}
 	.DB $D8, $20, $D8                                                                                                     ; xb890  {"(Location)":{"down":6,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xb893  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_410:
 	.DB $D0, $C8, $10                                                                                                     ; xb896  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xb899 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb899 
 	.DB $27, $E9, $BE                                                                                                     ; xb89a  {"(Pointer)":" to xbef9"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xb89d  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_411:
 	.DB $D0, $C8, $50                                                                                                     ; xb8a0  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb8a3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8a3 
 	.DB $27, $9F, $B8                                                                                                     ; xb8a4  {"(Pointer)":" to xb8af"}
 	.DB $D8, $B8, $B0                                                                                                     ; xb8a7  {"(Location)":{"up":7,"right":10}}
 	PlayerCommandData.turn $64                                                                                            ; xb8aa  {"(Time)":"for 5s"}
@@ -6991,19 +6991,19 @@ DEFENSE_PLAYER_REACTION_JUMP_210:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_292                                                             ; xb8af  {"(Pointer)":" to xbe88"}
 DEFENSE_PLAYER_REACTION_412:
 	.DB $D0, $18, $50                                                                                                     ; xb8b2  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb8b5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8b5 
 	.DB $27, $9B, $BE                                                                                                     ; xb8b6  {"(Pointer)":" to xbeab"}
 	.DB $D8, $18, $C8                                                                                                     ; xb8b9  {"(Location)":{"down":5,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_273                                                             ; xb8bc  {"(Pointer)":" to xbe20"}
 DEFENSE_PLAYER_REACTION_413:
 	.DB $D0, $18, $50                                                                                                     ; xb8bf  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb8c2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8c2 
 	.DB $C8, $51, $B9, $05                                                                                                ; xb8c3  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $27, $86, $B6                                                                                                     ; xb8c7  {"(Pointer)":" to xb696"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_138                                                             ; xb8ca  {"(Pointer)":" to xb056"}
 DEFENSE_PLAYER_REACTION_414:
 	.DB $D1, $C0, $28                                                                                                     ; xb8cd  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb8d0 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8d0 
 	.DB $26, $41, $BE                                                                                                     ; xb8d1  {"(Pointer)":" to xbe51"}
 	.DB $27, $CD, $B8                                                                                                     ; xb8d4  {"(Pointer)":" to xb8dd"}
 	.DB $D8, $10, $E0                                                                                                     ; xb8d7  {"(Location)":{"down":4,"right":4}}
@@ -7013,18 +7013,18 @@ DEFENSE_PLAYER_REACTION_JUMP_211:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xb8e0  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_415:
 	.DB $D0, $C8, $50                                                                                                     ; xb8e3  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb8e6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8e6 
 	.DB $27, $78, $BE                                                                                                     ; xb8e7  {"(Pointer)":" to xbe88"}
 	PlayerCommandData.turn $50                                                                                            ; xb8ea  {"(Time)":"for 4s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb8ec  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_416:
 	.DB $D0, $18, $50                                                                                                     ; xb8ef  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb8f2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8f2 
 	.DB $27, $86, $BE                                                                                                     ; xb8f3  {"(Pointer)":" to xbe96"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xb8f6  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_417:
 	.DB $D0, $C8, $50                                                                                                     ; xb8f9  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xb8fc 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8fc 
 	.DB $C8, $6C, $B9, $04                                                                                                ; xb8fd  {"(Pointer)":" to xb97c","(Random)":"75%"}
 	.DB $27, $04, $B9                                                                                                     ; xb901  {"(Pointer)":" to xb914"}
 	PlayerCommandData.turn $14                                                                                            ; xb904  {"(Time)":"for 1s"}
@@ -7038,7 +7038,7 @@ DEFENSE_PLAYER_REACTION_JUMP_212:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb917  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_418:
 	.DB $D1, $C0, $28                                                                                                     ; xb91a  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xb91d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb91d 
 DEFENSE_PLAYER_REACTION_JUMP_213:
 	.DB $C8, $61, $B9, $03                                                                                                ; xb91e  {"(Pointer)":" to xb971","(Random)":"81.25%"}
 	.DB $D8, $20, $F0                                                                                                     ; xb922  {"(Location)":{"down":6,"right":2}}
@@ -7047,7 +7047,7 @@ DEFENSE_PLAYER_REACTION_JUMP_213:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb92a  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_419:
 	.DB $D0, $18, $50                                                                                                     ; xb92d  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xb930 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb930 
 	.DB $C8, $40, $B9, $05                                                                                                ; xb931  {"(Pointer)":" to xb950","(Random)":"68.75%"}
 	.DB $D8, $00, $F0                                                                                                     ; xb935  {"(Location)":{"down":2,"right":2}}
 	PlayerCommandData.turn $14                                                                                            ; xb938  {"(Time)":"for 1s"}
@@ -7055,7 +7055,7 @@ DEFENSE_PLAYER_REACTION_419:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb93d  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_420:
 	.DB $D1, $36, $28                                                                                                     ; xb940  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xb943 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb943 
 	.DB $29, $36, $BE                                                                                                     ; xb944  {"(Pointer)":" to xbe46"}
 	.DB $26, $FD, $AF                                                                                                     ; xb947  {"(Pointer)":" to xb00d"}
 	.DB $D8, $C8, $D8                                                                                                     ; xb94a  {"(Location)":{"up":5,"right":5}}
@@ -7158,7 +7158,7 @@ DEFENSE_PLAYER_REACTION_JUMP_238:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xba07  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_423:
 	.DB $D1, $C0, $28                                                                                                     ; xba0a  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xba0d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba0d 
 	.DB $29, $FC, $BD                                                                                                     ; xba0e  {"(Pointer)":" to xbe0c"}
 	.DB $26, $0E, $B9                                                                                                     ; xba11  {"(Pointer)":" to xb91e"}
 	.DB $D8, $08, $D8                                                                                                     ; xba14  {"(Location)":{"down":3,"right":5}}
@@ -7166,13 +7166,13 @@ DEFENSE_PLAYER_REACTION_423:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_276                                                             ; xba1a  {"(Pointer)":" to xbe2d"}
 DEFENSE_PLAYER_REACTION_424:
 	.DB $D0, $C8, $50                                                                                                     ; xba1d  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xba20 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba20 
 	.DB $27, $78, $BE                                                                                                     ; xba21  {"(Pointer)":" to xbe88"}
 	.DB $D8, $C8, $D0                                                                                                     ; xba24  {"(Location)":{"up":5,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xba27  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_425:
 	.DB $D0, $18, $50                                                                                                     ; xba2a  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xba2d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba2d 
 	.DB $27, $29, $BA                                                                                                     ; xba2e  {"(Pointer)":" to xba39"}
 	.DB $D8, $F8, $B0                                                                                                     ; xba31  {"(Location)":{"down":1,"right":10}}
 	PlayerCommandData.turn $32                                                                                            ; xba34  {"(Time)":"for 2.5s"}
@@ -7189,12 +7189,12 @@ DEFENSE_PLAYER_REACTION_426:
 	PlayerCommandData.turn $28                                                                                            ; xba4b  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_282                                                             ; xba4d  {"(Pointer)":" to xbe51"}
 DEFENSE_PLAYER_REACTION_JUMP_240:
-	.DB $EC                                                                                                               ; xba50 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba50 
 	.DB $27, $F8, $BD                                                                                                     ; xba51  {"(Pointer)":" to xbe08"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xba54  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_427:
 	.DB $D1, $C0, $28                                                                                                     ; xba57  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xba5a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba5a 
 	.DB $27, $65, $B7                                                                                                     ; xba5b  {"(Pointer)":" to xb775"}
 	.DB $D9, $B8, $A0                                                                                                     ; xba5e  {"(Location)":{"down":8,"right":12}}
 	PlayerCommandData.turn $14                                                                                            ; xba61  {"(Time)":"for 1s"}
@@ -7202,13 +7202,13 @@ DEFENSE_PLAYER_REACTION_427:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xba66  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_428:
 	.DB $D0, $C8, $50                                                                                                     ; xba69  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xba6c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba6c 
 	.DB $27, $0C, $BE                                                                                                     ; xba6d  {"(Pointer)":" to xbe1c"}
 	.DB $D8, $C8, $E0                                                                                                     ; xba70  {"(Location)":{"up":5,"right":4}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xba73  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_429:
 	.DB $D0, $18, $50                                                                                                     ; xba76  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xba79 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba79 
 	.DB $27, $93, $B7                                                                                                     ; xba7a  {"(Pointer)":" to xb7a3"}
 	.DB $D8, $F4, $88                                                                                                     ; xba7d  {"(Location)":{"down":0.5,"right":15}}
 	PlayerCommandData.turn $14                                                                                            ; xba80  {"(Time)":"for 1s"}
@@ -7216,26 +7216,26 @@ DEFENSE_PLAYER_REACTION_429:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xba85  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_430:
 	.DB $D1, $36, $28                                                                                                     ; xba88  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xba8b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba8b 
 	.DB $29, $36, $BE                                                                                                     ; xba8c  {"(Pointer)":" to xbe46"}
 	.DB $26, $5A, $BC                                                                                                     ; xba8f  {"(Pointer)":" to xbc6a"}
 	.DB $D8, $CC, $D8                                                                                                     ; xba92  {"(Location)":{"up":4.5,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xba95  {"(Pointer)":" to xbe10"}
 DEFENSE_PLAYER_REACTION_431:
 	.DB $D1, $C0, $28                                                                                                     ; xba98  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xba9b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xba9b 
 	.DB $29, $FC, $BD                                                                                                     ; xba9c  {"(Pointer)":" to xbe0c"}
 	.DB $26, $10, $B0                                                                                                     ; xba9f  {"(Pointer)":" to xb020"}
 	.DB $D8, $10, $D8                                                                                                     ; xbaa2  {"(Location)":{"down":4,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbaa5  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_432:
 	.DB $D0, $C8, $50                                                                                                     ; xbaa8  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbaab 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbaab 
 	.DB $27, $78, $BE                                                                                                     ; xbaac  {"(Pointer)":" to xbe88"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xbaaf  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_433:
 	.DB $D0, $18, $50                                                                                                     ; xbab2  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbab5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbab5 
 	.DB $27, $AF, $BA                                                                                                     ; xbab6  {"(Pointer)":" to xbabf"}
 	.DB $D8, $E8, $C8                                                                                                     ; xbab9  {"(Location)":{"up":1,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbabc  {"(Pointer)":" to xbdfc"}
@@ -7244,13 +7244,13 @@ DEFENSE_PLAYER_REACTION_JUMP_241:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_273                                                             ; xbac2  {"(Pointer)":" to xbe20"}
 DEFENSE_PLAYER_REACTION_434:
 	.DB $D1, $36, $28                                                                                                     ; xbac5  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbac8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbac8 
 	.DB $27, $5A, $BC                                                                                                     ; xbac9  {"(Pointer)":" to xbc6a"}
 	.DB $D8, $C0, $C8                                                                                                     ; xbacc  {"(Location)":{"up":6,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_281                                                             ; xbacf  {"(Pointer)":" to xbe4b"}
 DEFENSE_PLAYER_REACTION_435:
 	.DB $D1, $C0, $28                                                                                                     ; xbad2  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbad5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbad5 
 	.DB $26, $41, $BE                                                                                                     ; xbad6  {"(Pointer)":" to xbe51"}
 	.DB $26, $F0, $BD                                                                                                     ; xbad9  {"(Pointer)":" to xbe00"}
 	.DB $26, $D5, $BA                                                                                                     ; xbadc  {"(Pointer)":" to xbae5"}
@@ -7261,28 +7261,28 @@ DEFENSE_PLAYER_REACTION_JUMP_242:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbae8  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_436:
 	.DB $D0, $00, $18                                                                                                     ; xbaeb  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xbaee 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbaee 
 	.DB $27, $EC, $AF                                                                                                     ; xbaef  {"(Pointer)":" to xaffc"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xbaf2  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_437:
 	.DB $D0, $18, $0C                                                                                                     ; xbaf5  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbaf8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbaf8 
 	.DB $27, $24, $BF                                                                                                     ; xbaf9  {"(Pointer)":" to xbf34"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xbafc  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_438:
 	.DB $D0, $C8, $50                                                                                                     ; xbaff  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbb02 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb02 
 	.DB $27, $DB, $B6                                                                                                     ; xbb03  {"(Pointer)":" to xb6eb"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_292                                                             ; xbb06  {"(Pointer)":" to xbe88"}
 DEFENSE_PLAYER_REACTION_439:
 	.DB $D0, $18, $50                                                                                                     ; xbb09  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbb0c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb0c 
 	.DB $27, $08, $BE                                                                                                     ; xbb0d  {"(Pointer)":" to xbe18"}
 	.DB $D8, $28, $B8                                                                                                     ; xbb10  {"(Location)":{"down":7,"right":9}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_298                                                             ; xbb13  {"(Pointer)":" to xbec0"}
 DEFENSE_PLAYER_REACTION_440:
 	.DB $D1, $36, $28                                                                                                     ; xbb16  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbb19 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb19 
 	.DB $27, $16, $BB                                                                                                     ; xbb1a  {"(Pointer)":" to xbb26"}
 	.DB $27, $5A, $BC                                                                                                     ; xbb1d  {"(Pointer)":" to xbc6a"}
 	.DB $D8, $D8, $C8                                                                                                     ; xbb20  {"(Location)":{"up":3,"right":7}}
@@ -7292,7 +7292,7 @@ DEFENSE_PLAYER_REACTION_JUMP_243:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_280                                                             ; xbb29  {"(Pointer)":" to xbe46"}
 DEFENSE_PLAYER_REACTION_441:
 	.DB $D0, $C8, $50                                                                                                     ; xbb2c  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbb2f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb2f 
 	.DB $27, $2E, $BB                                                                                                     ; xbb30  {"(Pointer)":" to xbb3e"}
 	.DB $D8, $F8, $90                                                                                                     ; xbb33  {"(Location)":{"down":1,"right":14}}
 	PlayerCommandData.turn $14                                                                                            ; xbb36  {"(Time)":"for 1s"}
@@ -7303,7 +7303,7 @@ DEFENSE_PLAYER_REACTION_JUMP_244:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_292                                                             ; xbb41  {"(Pointer)":" to xbe88"}
 DEFENSE_PLAYER_REACTION_442:
 	.DB $D1, $36, $28                                                                                                     ; xbb44  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbb47 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb47 
 	.DB $29, $36, $BE                                                                                                     ; xbb48  {"(Pointer)":" to xbe46"}
 	.DB $27, $44, $BB                                                                                                     ; xbb4b  {"(Pointer)":" to xbb54"}
 	.DB $D8, $C0, $00                                                                                                     ; xbb4e  {"(Location)":{"up":6,"left":0}}
@@ -7313,7 +7313,7 @@ DEFENSE_PLAYER_REACTION_JUMP_245:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbb57  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_443:
 	.DB $D1, $C0, $28                                                                                                     ; xbb5a  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbb5d 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb5d 
 	.DB $29, $41, $BE                                                                                                     ; xbb5e  {"(Pointer)":" to xbe51"}
 	.DB $D8, $14, $D0                                                                                                     ; xbb61  {"(Location)":{"down":4.5,"right":6}}
 	.DB $29, $F0, $BD                                                                                                     ; xbb64  {"(Pointer)":" to xbe00"}
@@ -7321,13 +7321,13 @@ DEFENSE_PLAYER_REACTION_443:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_134                                                             ; xbb6a  {"(Pointer)":" to xb020"}
 DEFENSE_PLAYER_REACTION_444:
 	.DB $D0, $E0, $18                                                                                                     ; xbb6d  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbb70 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb70 
 	.DB $C8, $61, $B9, $06                                                                                                ; xbb71  {"(Pointer)":" to xb971","(Random)":"62.5%"}
 	.DB $D8, $C8, $D0                                                                                                     ; xbb75  {"(Location)":{"up":5,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbb78  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_445:
 	.DB $D0, $C8, $50                                                                                                     ; xbb7b  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbb7e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb7e 
 	.DB $26, $BA, $BC                                                                                                     ; xbb7f  {"(Pointer)":" to xbcca"}
 	.DB $D8, $B0, $C8                                                                                                     ; xbb82  {"(Location)":{"up":8,"right":7}}
 	PlayerCommandData.turn $C8                                                                                            ; xbb85  {"(Time)":"for 10s"}
@@ -7335,7 +7335,7 @@ DEFENSE_PLAYER_REACTION_445:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xbb8a  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_446:
 	.DB $D0, $18, $50                                                                                                     ; xbb8d  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbb90 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb90 
 	.DB $29, $10, $BE                                                                                                     ; xbb91  {"(Pointer)":" to xbe20"}
 	.DB $27, $CB, $BC                                                                                                     ; xbb94  {"(Pointer)":" to xbcdb"}
 	.DB $D8, $E8, $98                                                                                                     ; xbb97  {"(Location)":{"up":1,"right":13}}
@@ -7343,7 +7343,7 @@ DEFENSE_PLAYER_REACTION_446:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xbb9d  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_447:
 	.DB $D1, $36, $28                                                                                                     ; xbba0  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbba3 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbba3 
 	.DB $29, $36, $BE                                                                                                     ; xbba4  {"(Pointer)":" to xbe46"}
 	.DB $29, $9D, $BB                                                                                                     ; xbba7  {"(Pointer)":" to xbbad"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_258                                                             ; xbbaa  {"(Pointer)":" to xbce2"}
@@ -7357,30 +7357,30 @@ DEFENSE_PLAYER_REACTION_JUMP_246:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xbbbe  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_448:
 	.DB $D1, $C0, $28                                                                                                     ; xbbc1  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbbc4 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbbc4 
 	.DB $29, $F0, $BD                                                                                                     ; xbbc5  {"(Pointer)":" to xbe00"}
 	.DB $27, $00, $BE                                                                                                     ; xbbc8  {"(Pointer)":" to xbe10"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbbcb  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_449:
 	.DB $D0, $18, $0C                                                                                                     ; xbbce  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbbd1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbbd1 
 	.DB $27, $24, $BF                                                                                                     ; xbbd2  {"(Pointer)":" to xbf34"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_271                                                             ; xbbd5  {"(Pointer)":" to xbe18"}
 DEFENSE_PLAYER_REACTION_450:
 	.DB $D0, $C8, $50                                                                                                     ; xbbd8  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbbdb 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbbdb 
 	.DB $27, $78, $BE                                                                                                     ; xbbdc  {"(Pointer)":" to xbe88"}
 	.DB $D9, $80, $A0                                                                                                     ; xbbdf  {"(Location)":{"down":1,"right":12}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_273                                                             ; xbbe2  {"(Pointer)":" to xbe20"}
 DEFENSE_PLAYER_REACTION_451:
 	.DB $D0, $18, $50                                                                                                     ; xbbe5  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbbe8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbbe8 
 	.DB $27, $14, $BE                                                                                                     ; xbbe9  {"(Pointer)":" to xbe24"}
 	.DB $D9, $C0, $B0                                                                                                     ; xbbec  {"(Location)":{"down":9,"right":10}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_270                                                             ; xbbef  {"(Pointer)":" to xbe14"}
 DEFENSE_PLAYER_REACTION_452:
 	.DB $D0, $E0, $18                                                                                                     ; xbbf2  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbbf5 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbbf5 
 	.DB $E2, $16                                                                                                          ; xbbf6  {"(Boost)":{"value":22,"HasMaximumValue":true}}
 	.DB $E3, $16                                                                                                          ; xbbf8  {"(Boost)":{"value":22}}
 	.DB $D9, $68, $B8                                                                                                     ; xbbfa  {"(Location)":{"up":2,"right":9}}
@@ -7393,13 +7393,13 @@ DEFENSE_PLAYER_REACTION_453:
 	.DB $82                                                                                                               ; xbc0b 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbc0c  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_JUMP_247:
-	.DB $EC                                                                                                               ; xbc0f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc0f 
 	.DB $27, $F8, $BD                                                                                                     ; xbc10  {"(Pointer)":" to xbe08"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xbc13  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_454:
 	.DB $D1, $36, $28                                                                                                     ; xbc16  {"(Location)":{"up":8.25,"right":5}}
 	.DB $2A, $19, $BC                                                                                                     ; xbc19  {"(Pointer)":" to xbc29"}
-	.DB $EC                                                                                                               ; xbc1c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc1c 
 	.DB $27, $4C, $BE                                                                                                     ; xbc1d  {"(Pointer)":" to xbe5c"}
 	.DB $27, $23, $BC                                                                                                     ; xbc20  {"(Pointer)":" to xbc33"}
 	.DB $D8, $C0, $D8                                                                                                     ; xbc23  {"(Location)":{"up":6,"right":5}}
@@ -7407,7 +7407,7 @@ DEFENSE_PLAYER_REACTION_454:
 DEFENSE_PLAYER_REACTION_JUMP_248:
 	PlayerCommandData.motion $64                                                                                          ; xbc29  {"(Time)":"for 5s"}
 	.DB $83                                                                                                               ; xbc2b 
-	.DB $EC                                                                                                               ; xbc2c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc2c 
 	.DB $D8, $F0, $D8                                                                                                     ; xbc2d  {"(Location)":{"up":0,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_267                                                             ; xbc30  {"(Pointer)":" to xbe08"}
 DEFENSE_PLAYER_REACTION_JUMP_249:
@@ -7415,68 +7415,68 @@ DEFENSE_PLAYER_REACTION_JUMP_249:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xbc36  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_455:
 	.DB $D0, $C8, $50                                                                                                     ; xbc39  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbc3c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc3c 
 	.DB $29, $08, $BE                                                                                                     ; xbc3d  {"(Pointer)":" to xbe18"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_274                                                             ; xbc40  {"(Pointer)":" to xbe24"}
 DEFENSE_PLAYER_REACTION_456:
 	.DB $D0, $18, $50                                                                                                     ; xbc43  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbc46 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc46 
 	.DB $27, $41, $BE                                                                                                     ; xbc47  {"(Pointer)":" to xbe51"}
 	.DB $D8, $08, $D0                                                                                                     ; xbc4a  {"(Location)":{"down":3,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_272                                                             ; xbc4d  {"(Pointer)":" to xbe1c"}
 DEFENSE_PLAYER_REACTION_457:
 	.DB $D1, $C0, $28                                                                                                     ; xbc50  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbc53 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc53 
 DEFENSE_PLAYER_REACTION_JUMP_250:
 	.DB $C8, $61, $B9, $03                                                                                                ; xbc54  {"(Pointer)":" to xb971","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_135                                                             ; xbc58  {"(Pointer)":" to xb024"}
 DEFENSE_PLAYER_REACTION_458:
 	.DB $D0, $18, $0C                                                                                                     ; xbc5b  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbc5e 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc5e 
 	.DB $C8, $71, $B9, $0C                                                                                                ; xbc5f  {"(Pointer)":" to xb981","(Random)":"25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbc63  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_459:
 	.DB $D1, $36, $28                                                                                                     ; xbc66  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbc69 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc69 
 DEFENSE_PLAYER_REACTION_JUMP_251:
 	.DB $C8, $88, $B9, $02                                                                                                ; xbc6a  {"(Pointer)":" to xb998","(Random)":"87.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_133                                                             ; xbc6e  {"(Pointer)":" to xb011"}
 DEFENSE_PLAYER_REACTION_460:
 	.DB $D0, $E0, $18                                                                                                     ; xbc71  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbc74 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc74 
 	.DB $C8, $BC, $B9, $06                                                                                                ; xbc75  {"(Pointer)":" to xb9cc","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_129                                                             ; xbc79  {"(Pointer)":" to xafef"}
 DEFENSE_PLAYER_REACTION_461:
 	.DB $D0, $00, $18                                                                                                     ; xbc7c  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xbc7f 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc7f 
 	.DB $C8, $C5, $B9, $07                                                                                                ; xbc80  {"(Pointer)":" to xb9d5","(Random)":"56.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_131                                                             ; xbc84  {"(Pointer)":" to xb000"}
 DEFENSE_PLAYER_REACTION_462:
 	.DB $D1, $C0, $28                                                                                                     ; xbc87  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbc8a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc8a 
 	.DB $27, $FC, $BD                                                                                                     ; xbc8b  {"(Pointer)":" to xbe0c"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_134                                                             ; xbc8e  {"(Pointer)":" to xb020"}
 DEFENSE_PLAYER_REACTION_463:
 	.DB $D0, $E0, $18                                                                                                     ; xbc91  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbc94 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc94 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_129                                                             ; xbc95  {"(Pointer)":" to xafef"}
 DEFENSE_PLAYER_REACTION_464:
 	.DB $D0, $C8, $10                                                                                                     ; xbc98  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xbc9b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc9b 
 	.DB $C8, $7C, $B9, $09                                                                                                ; xbc9c  {"(Pointer)":" to xb98c","(Random)":"43.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_203                                                             ; xbca0  {"(Pointer)":" to xb7b9"}
 DEFENSE_PLAYER_REACTION_465:
 	.DB $D0, $E0, $18                                                                                                     ; xbca3  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbca6 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbca6 
 	.DB $C8, $E6, $B9, $06                                                                                                ; xbca7  {"(Pointer)":" to xb9f6","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_129                                                             ; xbcab  {"(Pointer)":" to xafef"}
 DEFENSE_PLAYER_REACTION_466:
 	.DB $D1, $36, $28                                                                                                     ; xbcae  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbcb1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcb1 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_164                                                             ; xbcb2  {"(Pointer)":" to xb398"}
 DEFENSE_PLAYER_REACTION_467:
 	.DB $D1, $C0, $28                                                                                                     ; xbcb5  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbcb8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcb8 
 	.DB $C8, $B0, $BC, $03                                                                                                ; xbcb9  {"(Pointer)":" to xbcc0","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_252:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_206                                                             ; xbcbd  {"(Pointer)":" to xb7fc"}
@@ -7485,7 +7485,7 @@ DEFENSE_PLAYER_REACTION_JUMP_253:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xbcc3  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_468:
 	.DB $D0, $C8, $50                                                                                                     ; xbcc6  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbcc9 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcc9 
 DEFENSE_PLAYER_REACTION_JUMP_254:
 	.DB $C8, $C1, $BC, $04                                                                                                ; xbcca  {"(Pointer)":" to xbcd1","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_255:
@@ -7495,28 +7495,28 @@ DEFENSE_PLAYER_REACTION_JUMP_256:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xbcd4  {"(Pointer)":" to xbe00"}
 DEFENSE_PLAYER_REACTION_469:
 	.DB $D0, $18, $50                                                                                                     ; xbcd7  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbcda 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcda 
 DEFENSE_PLAYER_REACTION_JUMP_257:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_207                                                             ; xbcdb  {"(Pointer)":" to xb812"}
 DEFENSE_PLAYER_REACTION_470:
 	.DB $D1, $36, $28                                                                                                     ; xbcde  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbce1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbce1 
 DEFENSE_PLAYER_REACTION_JUMP_258:
 	.DB $C8, $4B, $B9, $02                                                                                                ; xbce2  {"(Pointer)":" to xb95b","(Random)":"87.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_133                                                             ; xbce6  {"(Pointer)":" to xb011"}
 DEFENSE_PLAYER_REACTION_471:
 	.DB $D1, $C0, $28                                                                                                     ; xbce9  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbcec 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcec 
 	.DB $C8, $61, $B9, $03                                                                                                ; xbced  {"(Pointer)":" to xb971","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_189                                                             ; xbcf1  {"(Pointer)":" to xb5f3"}
 DEFENSE_PLAYER_REACTION_472:
 	.DB $D0, $C8, $50                                                                                                     ; xbcf4  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbcf7 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcf7 
 	.DB $C8, $56, $B9, $04                                                                                                ; xbcf8  {"(Pointer)":" to xb966","(Random)":"75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_190                                                             ; xbcfc  {"(Pointer)":" to xb607"}
 DEFENSE_PLAYER_REACTION_473:
 	.DB $D0, $00, $18                                                                                                     ; xbcff  {"(Location)":{"down":2,"right":3}}
-	.DB $EC                                                                                                               ; xbd02 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd02 
 	.DB $C8, $FA, $BC, $07                                                                                                ; xbd03  {"(Pointer)":" to xbd0a","(Random)":"56.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_193                                                             ; xbd07  {"(Pointer)":" to xb62f"}
 DEFENSE_PLAYER_REACTION_JUMP_259:
@@ -7525,47 +7525,47 @@ DEFENSE_PLAYER_REACTION_JUMP_259:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xbd10  {"(Pointer)":" to xbe0c"}
 DEFENSE_PLAYER_REACTION_474:
 	.DB $D0, $18, $0C                                                                                                     ; xbd13  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbd16 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd16 
 	.DB $C8, $40, $B9, $0C                                                                                                ; xbd17  {"(Pointer)":" to xb950","(Random)":"25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_047                                                             ; xbd1b  {"(Pointer)":" to xa4eb"}
 DEFENSE_PLAYER_REACTION_475:
 	.DB $D0, $E0, $18                                                                                                     ; xbd1e  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbd21 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd21 
 	.DB $C8, $7C, $B9, $06                                                                                                ; xbd22  {"(Pointer)":" to xb98c","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_183                                                             ; xbd26  {"(Pointer)":" to xb4f2"}
 DEFENSE_PLAYER_REACTION_476:
 	.DB $D0, $C8, $10                                                                                                     ; xbd29  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xbd2c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd2c 
 	.DB $29, $3B, $A1                                                                                                     ; xbd2d  {"(Pointer)":" to xa14b"}
 	.DB $C8, $DC, $AA, $06                                                                                                ; xbd30  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_004                                                             ; xbd34  {"(Pointer)":" to xa14b"}
 DEFENSE_PLAYER_REACTION_477:
 	.DB $D0, $18, $50                                                                                                     ; xbd37  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbd3a 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd3a 
 	.DB $29, $EC, $BD                                                                                                     ; xbd3b  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_LOOP_013:
 	.DB $C8, $D8, $AA, $03                                                                                                ; xbd3e  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbd42  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_478:
 	.DB $D0, $C8, $50                                                                                                     ; xbd45  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbd48 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd48 
 	.DB $29, $EC, $BD                                                                                                     ; xbd49  {"(Pointer)":" to xbdfc"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_013                                                             ; xbd4c  {"(Amount)":"-14 bytes to xbd3e"}
 DEFENSE_PLAYER_REACTION_479:
 	.DB $D1, $36, $28                                                                                                     ; xbd4e  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbd51 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd51 
 	.DB $26, $9A, $AB                                                                                                     ; xbd52  {"(Pointer)":" to xabaa"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_097                                                             ; xbd55  {"(Pointer)":" to xabae"}
 DEFENSE_PLAYER_REACTION_480:
 	.DB $D0, $C8, $10                                                                                                     ; xbd58  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xbd5b 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd5b 
 	.DB $2B, $53, $BD                                                                                                     ; xbd5c  {"(Pointer)":" to xbd63"}
 	.DB $C8, $DC, $AA, $09                                                                                                ; xbd5f  {"(Pointer)":" to xaaec","(Random)":"43.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_260:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_013                                                             ; xbd63  {"(Pointer)":" to xa1d1"}
 DEFENSE_PLAYER_REACTION_481:
 	.DB $D1, $C0, $28                                                                                                     ; xbd66  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbd69 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd69 
 	.DB $2B, $01, $A2                                                                                                     ; xbd6a  {"(Pointer)":" to xa211"}
 	.DB $C8, $64, $BD, $06                                                                                                ; xbd6d  {"(Pointer)":" to xbd74","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_016                                                             ; xbd71  {"(Pointer)":" to xa211"}
@@ -7574,7 +7574,7 @@ DEFENSE_PLAYER_REACTION_JUMP_261:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_089                                                             ; xbd76  {"(Pointer)":" to xaae8"}
 DEFENSE_PLAYER_REACTION_482:
 	.DB $D1, $36, $28                                                                                                     ; xbd79  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbd7c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd7c 
 	.DB $C8, $7A, $BD, $04                                                                                                ; xbd7d  {"(Pointer)":" to xbd8a","(Random)":"75%"}
 	.DB $2C, $EC, $BD                                                                                                     ; xbd81  {"(Pointer)":" to xbdfc"}
 	.DB $25, $4A, $A8                                                                                                     ; xbd84  {"(Pointer)":" to xa85a"}
@@ -7584,25 +7584,25 @@ DEFENSE_PLAYER_REACTION_JUMP_262:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_089                                                             ; xbd8d  {"(Pointer)":" to xaae8"}
 DEFENSE_PLAYER_REACTION_483:
 	.DB $D0, $C8, $50                                                                                                     ; xbd90  {"(Location)":{"up":5,"right":10}}
-	.DB $EC                                                                                                               ; xbd93 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd93 
 	.DB $29, $C2, $AA                                                                                                     ; xbd94  {"(Pointer)":" to xaad2"}
 	.DB $C8, $D8, $AA, $09                                                                                                ; xbd97  {"(Pointer)":" to xaae8","(Random)":"43.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xbd9b  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_484:
 	.DB $D0, $18, $50                                                                                                     ; xbd9e  {"(Location)":{"down":5,"right":10}}
-	.DB $EC                                                                                                               ; xbda1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbda1 
 	.DB $29, $94, $AC                                                                                                     ; xbda2  {"(Pointer)":" to xaca4"}
 	.DB $C8, $D8, $AA, $0B                                                                                                ; xbda5  {"(Pointer)":" to xaae8","(Random)":"31.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_112                                                             ; xbda9  {"(Pointer)":" to xaca4"}
 DEFENSE_PLAYER_REACTION_485:
 	.DB $D1, $36, $28                                                                                                     ; xbdac  {"(Location)":{"up":8.25,"right":5}}
-	.DB $EC                                                                                                               ; xbdaf 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbdaf 
 	.DB $2B, $EC, $BD                                                                                                     ; xbdb0  {"(Pointer)":" to xbdfc"}
 	.DB $C8, $D8, $AA, $01                                                                                                ; xbdb3  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbdb7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_486:
 	.DB $D0, $E0, $18                                                                                                     ; xbdba  {"(Location)":{"up":2,"right":3}}
-	.DB $EC                                                                                                               ; xbdbd 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbdbd 
 	.DB $2B, $C3, $A2                                                                                                     ; xbdbe  {"(Pointer)":" to xa2d3"}
 	.DB $C8, $B8, $BD, $05                                                                                                ; xbdc1  {"(Pointer)":" to xbdc8","(Random)":"68.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_025                                                             ; xbdc5  {"(Pointer)":" to xa2d3"}
@@ -7611,19 +7611,19 @@ DEFENSE_PLAYER_REACTION_JUMP_263:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_089                                                             ; xbdcb  {"(Pointer)":" to xaae8"}
 DEFENSE_PLAYER_REACTION_487:
 	.DB $D1, $C0, $28                                                                                                     ; xbdce  {"(Location)":{"down":9,"right":5}}
-	.DB $EC                                                                                                               ; xbdd1 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbdd1 
 	.DB $2B, $04, $A3                                                                                                     ; xbdd2  {"(Pointer)":" to xa314"}
 	.DB $C8, $DC, $AA, $08                                                                                                ; xbdd5  {"(Pointer)":" to xaaec","(Random)":"50%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_030                                                             ; xbdd9  {"(Pointer)":" to xa314"}
 DEFENSE_PLAYER_REACTION_488:
 	.DB $D0, $18, $0C                                                                                                     ; xbddc  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbddf 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbddf 
 	.DB $29, $59, $A6                                                                                                     ; xbde0  {"(Pointer)":" to xa669"}
 	.DB $C8, $DC, $AA, $06                                                                                                ; xbde3  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_056                                                             ; xbde7  {"(Pointer)":" to xa669"}
 DEFENSE_PLAYER_REACTION_489:
 	.DB $D0, $18, $0C                                                                                                     ; xbdea  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbded 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbded 
 	.DB $29, $C4, $AB                                                                                                     ; xbdee  {"(Pointer)":" to xabd4"}
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xbdf1  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_098                                                             ; xbdf5  {"(Pointer)":" to xabd4"}
@@ -7764,11 +7764,11 @@ DEFENSE_PLAYER_REACTION_493:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xbeec  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_494:
 	.DB $D0, $C8, $10                                                                                                     ; xbeef  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xbef2 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbef2 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_014                                                             ; xbef3  {"(Amount)":"10 bytes to xbefd"}
 DEFENSE_PLAYER_REACTION_495:
 	.DB $D0, $C8, $10                                                                                                     ; xbef5  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xbef8 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbef8 
 DEFENSE_PLAYER_REACTION_JUMP_299:
 	.DB $C8, $7C, $B9, $09                                                                                                ; xbef9  {"(Pointer)":" to xb98c","(Random)":"43.75%"}
 DEFENSE_PLAYER_REACTION_LOOP_014:
@@ -7778,16 +7778,16 @@ DEFENSE_PLAYER_REACTION_LOOP_014:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xbf06  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_496:
 	.DB $D0, $C8, $10                                                                                                     ; xbf09  {"(Location)":{"up":5,"right":2}}
-	.DB $EC                                                                                                               ; xbf0c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf0c 
 	.DB $C8, $F1, $B9, $0C                                                                                                ; xbf0d  {"(Pointer)":" to xba01","(Random)":"25%"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_014                                                             ; xbf11  {"(Amount)":"-20 bytes to xbefd"}
 DEFENSE_PLAYER_REACTION_497:
 	.DB $D0, $18, $0C                                                                                                     ; xbf13  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbf16 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf16 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_015                                                             ; xbf17  {"(Amount)":"13 bytes to xbf24"}
 DEFENSE_PLAYER_REACTION_498:
 	.DB $D0, $18, $0C                                                                                                     ; xbf19  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbf1c 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf1c 
 	.DB $29, $14, $BF                                                                                                     ; xbf1d  {"(Pointer)":" to xbf24"}
 	.DB $C8, $00, $BE, $0C                                                                                                ; xbf20  {"(Pointer)":" to xbe10","(Random)":"25%"}
 DEFENSE_PLAYER_REACTION_LOOP_015:
@@ -7797,7 +7797,7 @@ DEFENSE_PLAYER_REACTION_LOOP_015:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xbf2d  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_499:
 	.DB $D0, $18, $0C                                                                                                     ; xbf30  {"(Location)":{"down":5,"right":1.5}}
-	.DB $EC                                                                                                               ; xbf33 
+	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf33 
 DEFENSE_PLAYER_REACTION_JUMP_300:
 	.DB $C8, $7C, $B9, $0C                                                                                                ; xbf34  {"(Pointer)":" to xb98c","(Random)":"25%"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_015                                                             ; xbf38  {"(Amount)":"-20 bytes to xbf24"}
