@@ -348,7 +348,7 @@ OFFENSE_PLAYER_REACTION_061:
 	.DB $EA                                                                                                               ; x8286 
 OFFENSE_PLAYER_REACTION_062:
 	.DB $D1, $2E, $18                                                                                                     ; x8287  {"(Location)":{"up":9.25,"left":3}}
-	.DB $ED, $5A                                                                                                          ; x828a  {"(Time)":"for 4.5s"}
+	PlayerCommandData.motion $5A                                                                                          ; x828a  {"(Time)":"for 4.5s"}
 	.DB $D8, $CC, $E8                                                                                                     ; x828c  {"(Location)":{"up":4.5,"left":3}}
 	.DB $EA                                                                                                               ; x828f 
 OFFENSE_PLAYER_REACTION_063:
@@ -356,7 +356,7 @@ OFFENSE_PLAYER_REACTION_063:
 	.DB $EA                                                                                                               ; x8293 
 OFFENSE_PLAYER_REACTION_064:
 	.DB $D1, $2C, $14                                                                                                     ; x8294  {"(Location)":{"up":9.5,"left":2.5}}
-	.DB $ED, $32                                                                                                          ; x8297  {"(Time)":"for 2.5s"}
+	PlayerCommandData.motion $32                                                                                          ; x8297  {"(Time)":"for 2.5s"}
 	.DB $D8, $C0, $EC                                                                                                     ; x8299  {"(Location)":{"up":6,"left":2.5}}
 	.DB $EC                                                                                                               ; x829c 
 OFFENSE_PLAYER_REACTION_065:
@@ -380,7 +380,7 @@ OFFENSE_PLAYER_REACTION_069:
 	.DB $EC                                                                                                               ; x82b9 
 OFFENSE_PLAYER_REACTION_070:
 	.DB $D1, $C6, $18                                                                                                     ; x82ba  {"(Location)":{"down":9.75,"left":3}}
-	.DB $ED, $8C                                                                                                          ; x82bd  {"(Time)":"for 7s"}
+	PlayerCommandData.motion $8C                                                                                          ; x82bd  {"(Time)":"for 7s"}
 	.DB $D8, $10, $E8                                                                                                     ; x82bf  {"(Location)":{"down":4,"left":3}}
 	.DB $EC                                                                                                               ; x82c2 
 OFFENSE_PLAYER_REACTION_071:
@@ -390,7 +390,7 @@ OFFENSE_PLAYER_REACTION_071:
 	.DB $EC                                                                                                               ; x82cb 
 OFFENSE_PLAYER_REACTION_072:
 	.DB $D0, $B8, $18                                                                                                     ; x82cc  {"(Location)":{"up":7,"left":3}}
-	.DB $ED, $14                                                                                                          ; x82cf  {"(Time)":"for 1s"}
+	PlayerCommandData.motion $14                                                                                          ; x82cf  {"(Time)":"for 1s"}
 	.DB $D8, $B8, $D8                                                                                                     ; x82d1  {"(Location)":{"up":7,"left":5}}
 	.DB $D7, $40, $00                                                                                                     ; x82d4  {"(Location)":{"down":8,"left":0}}
 	.DB $D9, $B8, $D8                                                                                                     ; x82d7  {"(Location)":{"down":8,"left":5}}
@@ -6794,7 +6794,7 @@ DEFENSE_PLAYER_REACTION_JUMP_198:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb702  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_389:
 	.DB $D1, $C0, $28                                                                                                     ; xb705  {"(Location)":{"down":9,"right":5}}
-	.DB $ED, $A0                                                                                                          ; xb708  {"(Time)":"for 8s"}
+	PlayerCommandData.motion $A0                                                                                          ; xb708  {"(Time)":"for 8s"}
 	.DB $D8, $10, $D8                                                                                                     ; xb70a  {"(Location)":{"down":4,"right":5}}
 	.DB $EC                                                                                                               ; xb70d 
 	.DB $26, $FC, $BD                                                                                                     ; xb70e  {"(Pointer)":" to xbe0c"}
@@ -7183,7 +7183,7 @@ DEFENSE_PLAYER_REACTION_JUMP_239:
 DEFENSE_PLAYER_REACTION_426:
 	.DB $D1, $36, $28                                                                                                     ; xba3f  {"(Location)":{"up":8.25,"right":5}}
 	.DB $26, $40, $BA                                                                                                     ; xba42  {"(Pointer)":" to xba50"}
-	.DB $ED, $14                                                                                                          ; xba45  {"(Time)":"for 1s"}
+	PlayerCommandData.motion $14                                                                                          ; xba45  {"(Time)":"for 1s"}
 	.DB $D7, $02, $04                                                                                                     ; xba47  {"(Location)":{"down":0.25,"left":0.5}}
 	.DB $84                                                                                                               ; xba4a 
 	PlayerCommandData.turn $28                                                                                            ; xba4b  {"(Time)":"for 2s"}
@@ -7388,7 +7388,7 @@ DEFENSE_PLAYER_REACTION_452:
 DEFENSE_PLAYER_REACTION_453:
 	.DB $D1, $36, $28                                                                                                     ; xbc00  {"(Location)":{"up":8.25,"right":5}}
 	.DB $27, $FF, $BB                                                                                                     ; xbc03  {"(Pointer)":" to xbc0f"}
-	.DB $ED, $82                                                                                                          ; xbc06  {"(Time)":"for 6.5s"}
+	PlayerCommandData.motion $82                                                                                          ; xbc06  {"(Time)":"for 6.5s"}
 	.DB $D7, $02, $04                                                                                                     ; xbc08  {"(Location)":{"down":0.25,"left":0.5}}
 	.DB $82                                                                                                               ; xbc0b 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbc0c  {"(Pointer)":" to xbe04"}
@@ -7405,7 +7405,7 @@ DEFENSE_PLAYER_REACTION_454:
 	.DB $D8, $C0, $D8                                                                                                     ; xbc23  {"(Location)":{"up":6,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbc26  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_JUMP_248:
-	.DB $ED, $64                                                                                                          ; xbc29  {"(Time)":"for 5s"}
+	PlayerCommandData.motion $64                                                                                          ; xbc29  {"(Time)":"for 5s"}
 	.DB $83                                                                                                               ; xbc2b 
 	.DB $EC                                                                                                               ; xbc2c 
 	.DB $D8, $F0, $D8                                                                                                     ; xbc2d  {"(Location)":{"up":0,"right":5}}

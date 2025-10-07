@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.motion time
+    .DB $ED
+    .DB time
+.ENDM
+
 .MACRO PlayerCommandData.qbStance
     .DB $EE
 .ENDM
