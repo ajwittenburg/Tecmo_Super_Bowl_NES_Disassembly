@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.boostHP boost
+    .DB $F7
+    .DB boost
+.ENDM
+
 .MACRO PlayerCommandData.infiniteLoop
     .DB $F8
 .ENDM
