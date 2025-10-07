@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.kickoff
+    .DB $E5
+.ENDM
+
 .MACRO PlayerCommandData.punt
     .DB $E6
 .ENDM

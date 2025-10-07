@@ -3917,7 +3917,7 @@ DEFENSE_PLAY_DATA:
 
 DEFENSE_PLAYER_REACTION_001:
 	.DB $D0, $F0, $38                                                                                                     ; xa010  {"(Location)":{"up":0,"right":7}}
-	.DB $E5                                                                                                               ; xa013 
+	PlayerCommandData.kickoff                                                                                             ; xa013 
 	.DB $E4                                                                                                               ; xa014 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa015  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_002:
