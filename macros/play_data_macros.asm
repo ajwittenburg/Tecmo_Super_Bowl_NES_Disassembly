@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.passRush
+    .DB $DD
+.ENDM
+
 .MACRO PlayerCommandData.computerTakesControl
     .DB $DF
 .ENDM

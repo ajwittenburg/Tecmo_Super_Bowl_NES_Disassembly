@@ -3866,14 +3866,14 @@ OFFENSE_PLAYER_REACTION_446:
 	PlayerCommandData.boostRS $11                                                                                         ; x9f48  {"(Boost)":{"value":17}}
 OFFENSE_PLAYER_REACTION_LOOP_130:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f4a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $DD                                                                                                               ; x9f4d 
+	PlayerCommandData.passRush                                                                                            ; x9f4d 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_130                                                             ; x9f4e  {"(Amount)":"-4 bytes to x9f4a"}
 OFFENSE_PLAYER_REACTION_447:
 	PlayerCommandData.boostRS $11                                                                                         ; x9f50  {"(Boost)":{"value":17}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9f52 
 OFFENSE_PLAYER_REACTION_LOOP_131:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f53  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $DD                                                                                                               ; x9f56 
+	PlayerCommandData.passRush                                                                                            ; x9f56 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_131                                                             ; x9f57  {"(Amount)":"-4 bytes to x9f53"}
 OFFENSE_PLAYER_REACTION_448:
 	.DB $C4, $14                                                                                                          ; x9f59  {"(Time)":"for 1s"}
@@ -5286,13 +5286,13 @@ DEFENSE_PLAYER_REACTION_192:
 	PlayerCommandData.playerTakesControl                                                                                  ; xaac3 
 DEFENSE_PLAYER_REACTION_LOOP_006:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xaac4  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $DD                                                                                                               ; xaac7 
+	PlayerCommandData.passRush                                                                                            ; xaac7 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_006                                                             ; xaac8  {"(Amount)":"-4 bytes to xaac4"}
 DEFENSE_PLAYER_REACTION_193:
 	PlayerCommandData.boostRS $16                                                                                         ; xaaca  {"(Boost)":{"value":22}}
 DEFENSE_PLAYER_REACTION_194:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xaacc  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $DD                                                                                                               ; xaacf 
+	PlayerCommandData.passRush                                                                                            ; xaacf 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaad0  {"(Amount)":"-4 bytes to xaacc"}
 DEFENSE_PLAYER_REACTION_LOOP_007:
 	.DB $DB                                                                                                               ; xaad2 
