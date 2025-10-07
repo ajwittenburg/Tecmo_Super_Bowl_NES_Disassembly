@@ -5295,7 +5295,7 @@ DEFENSE_PLAYER_REACTION_194:
 	PlayerCommandData.passRush                                                                                            ; xaacf 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaad0  {"(Amount)":"-4 bytes to xaacc"}
 DEFENSE_PLAYER_REACTION_LOOP_007:
-	.DB $DB                                                                                                               ; xaad2 
+	PlayerCommandData.verticallyMirrorBallCarrier                                                                         ; xaad2 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaad3  {"(Amount)":"-1 bytes to xaad2"}
 DEFENSE_PLAYER_REACTION_JUMP_087:
 	PlayerCommandData.boostHP $30                                                                                         ; xaad5  {"(Boost)":{"value":48}}
