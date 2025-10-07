@@ -119,7 +119,7 @@ OFFENSE_PLAYER_REACTION_011:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8102 
 	PlayerCommandData.boostRS $30                                                                                         ; x8103  {"(Boost)":{"value":48}}
 	PlayerCommandData.changePlayerIconToReturner                                                                          ; x8105 
-	.DB $E1, $00                                                                                                          ; x8106  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; x8106  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8108 
 OFFENSE_PLAYER_REACTION_LOOP_011:
 	.DB $DF                                                                                                               ; x8109 
@@ -1332,14 +1332,14 @@ OFFENSE_PLAYER_REACTION_176:
 	.DB $D4                                                                                                               ; x8a36 
 	.DB $D8, $F0, $E0                                                                                                     ; x8a37  {"(Location)":{"up":0,"left":4}}
 	.DB $E0, $04                                                                                                          ; x8a3a  {"(Value)":31}
-	.DB $E1, $03                                                                                                          ; x8a3c  {"(Value)":25}
+	PlayerCommandData.setMS $03                                                                                           ; x8a3c  {"(Value)":25}
 	.DB $71                                                                                                               ; x8a3e 
 	.DB $D8, $F0, $9C                                                                                                     ; x8a3f  {"(Location)":{"up":0,"left":12.5}}
 	PlayerCommandData.stand $01                                                                                           ; x8a42  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x8a44  {"(Direction)":"90 degrees"}
 	PlayerCommandData.turn $5A                                                                                            ; x8a46  {"(Time)":"for 4.5s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x8a48  {"(Direction)":"90 degrees"}
-	.DB $E1, $00                                                                                                          ; x8a4a  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; x8a4a  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8a4c 
 	.DB $C7, $4C, $AA                                                                                                     ; x8a4d  {"(Pointer)":" to x8a5c"}
 	.DB $C1, $0A, $6E, $7F                                                                                                ; x8a50  {"(Start Time, End Time)":"start in between 0.5s and 5.5s","(Take Sack Chance)":"50.390625%"}
@@ -2650,13 +2650,13 @@ OFFENSE_PLAYER_REACTION_280:
 	.DB $D8, $F8, $D4                                                                                                     ; x954d  {"(Location)":{"down":1,"left":5.5}}
 	.DB $51                                                                                                               ; x9550 
 	.DB $E0, $07                                                                                                          ; x9551  {"(Value)":50}
-	.DB $E1, $07                                                                                                          ; x9553  {"(Value)":50}
+	PlayerCommandData.setMS $07                                                                                           ; x9553  {"(Value)":50}
 	.DB $D8, $F8, $C8                                                                                                     ; x9555  {"(Location)":{"down":1,"left":7}}
 	.DB $D8, $FC, $B8                                                                                                     ; x9558  {"(Location)":{"down":1.5,"left":9}}
 	PlayerCommandData.stand $01                                                                                           ; x955b  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x955d  {"(Direction)":"90 degrees"}
 	PlayerCommandData.turn $5A                                                                                            ; x955f  {"(Time)":"for 4.5s"}
-	.DB $E1, $00                                                                                                          ; x9561  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; x9561  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9563 
 	PlayerCommandData.stand $01                                                                                           ; x9564  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x9566  {"(Direction)":"90 degrees"}
@@ -2987,7 +2987,7 @@ OFFENSE_PLAYER_REACTION_314:
 	PlayerCommandData.turn $00                                                                                            ; x9842  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9844  {"(Amount)":"-2 bytes to x9842"}
 OFFENSE_PLAYER_REACTION_315:
-	.DB $E1, $00                                                                                                          ; x9846  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; x9846  {"(Value)":6}
 OFFENSE_PLAYER_REACTION_JUMP_189:
 	PlayerCommandData.playerTakesControl                                                                                  ; x9848 
 OFFENSE_PLAYER_REACTION_LOOP_118:
@@ -3666,7 +3666,7 @@ OFFENSE_PLAYER_REACTION_412:
 OFFENSE_PLAYER_REACTION_413:
 	PlayerCommandData.wait $01, $50                                                                                       ; x9df8  {"(Start Time, End Time)":"start in between 0.05s and 4s"}
 OFFENSE_PLAYER_REACTION_LOOP_126:
-	.DB $E1, $00                                                                                                          ; x9dfb  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; x9dfb  {"(Value)":6}
 OFFENSE_PLAYER_REACTION_LOOP_127:
 	PlayerCommandData.recoverBall                                                                                         ; x9dfd 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_127                                                             ; x9dfe  {"(Amount)":"-1 bytes to x9dfd"}
@@ -3703,7 +3703,7 @@ OFFENSE_PLAYER_REACTION_423:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_128                                                             ; x9e30  {"(Amount)":"-30 bytes to x9e12"}
 OFFENSE_PLAYER_REACTION_424:
 	PlayerCommandData.wait $01, $50                                                                                       ; x9e32  {"(Start Time, End Time)":"start in between 0.05s and 4s"}
-	.DB $E1, $00                                                                                                          ; x9e35  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; x9e35  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9e37 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_128                                                             ; x9e38  {"(Amount)":"-38 bytes to x9e12"}
 OFFENSE_PLAYER_REACTION_425:
@@ -5305,7 +5305,7 @@ DEFENSE_PLAYER_REACTION_JUMP_087:
 DEFENSE_PLAYER_REACTION_195:
 	PlayerCommandData.boostRS $10                                                                                         ; xaadd  {"(Boost)":{"value":16}}
 	PlayerCommandData.changePlayerIconToReturner                                                                          ; xaadf 
-	.DB $E1, $00                                                                                                          ; xaae0  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; xaae0  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; xaae2 
 DEFENSE_PLAYER_REACTION_LOOP_008:
 	.DB $DF                                                                                                               ; xaae3 
@@ -7802,7 +7802,7 @@ DEFENSE_PLAYER_REACTION_JUMP_300:
 	.DB $C8, $7C, $B9, $0C                                                                                                ; xbf34  {"(Pointer)":" to xb98c","(Random)":"25%"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_015                                                             ; xbf38  {"(Amount)":"-20 bytes to xbf24"}
 DEFENSE_PLAYER_REACTION_500:
-	.DB $E1, $00                                                                                                          ; xbf3a  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; xbf3a  {"(Value)":6}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf3c  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
 	PlayerCommandData.wait $01, $50                                                                                       ; xbf3f  {"(Start Time, End Time)":"start in between 0.05s and 4s"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_503                                                                  ; xbf42  {"(Amount)":"18 bytes to xbf54"}
@@ -7815,13 +7815,13 @@ DEFENSE_PLAYER_REACTION_502:
 	PlayerCommandData.wait $01, $50                                                                                       ; xbf4f  {"(Start Time, End Time)":"start in between 0.05s and 4s"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_503                                                                  ; xbf52  {"(Amount)":"2 bytes to xbf54"}
 DEFENSE_PLAYER_REACTION_503:
-	.DB $E1, $00                                                                                                          ; xbf54  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; xbf54  {"(Value)":6}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf56  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
 DEFENSE_PLAYER_REACTION_LOOP_016:
 	PlayerCommandData.recoverBall                                                                                         ; xbf59 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_016                                                             ; xbf5a  {"(Amount)":"-1 bytes to xbf59"}
 DEFENSE_PLAYER_REACTION_504:
-	.DB $E1, $00                                                                                                          ; xbf5c  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; xbf5c  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; xbf5e 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_503                                                                  ; xbf5f  {"(Amount)":"-11 bytes to xbf54"}
 DEFENSE_PLAYER_REACTION_505:
@@ -7892,7 +7892,7 @@ DEFENSE_PLAYER_REACTION_521:
 	.DB $30                                                                                                               ; xbfc2 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_521                                                                  ; xbfc3  {"(Amount)":"-6 bytes to xbfbd"}
 DEFENSE_PLAYER_REACTION_522:
-	.DB $E1, $00                                                                                                          ; xbfc5  {"(Value)":6}
+	PlayerCommandData.setMS $00                                                                                           ; xbfc5  {"(Value)":6}
 	PlayerCommandData.boostRP $03                                                                                         ; xbfc7  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $EF                                                                                         ; xbfc9  {"(Boost)":{"value":239}}
 	PlayerCommandData.playerTakesControl                                                                                  ; xbfcb 
