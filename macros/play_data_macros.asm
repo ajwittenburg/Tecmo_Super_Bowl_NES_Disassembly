@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.changePlayerIconToReturner
+    .DB $EF
+.ENDM
+
 .MACRO PlayerCommandData.faceDirection direction
     .DB $F0
     .DB direction

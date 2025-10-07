@@ -118,7 +118,7 @@ OFFENSE_PLAYER_REACTION_011:
 	.DB $B1, $00, $48                                                                                                     ; x80ff 
 	.DB $EC                                                                                                               ; x8102 
 	.DB $E3, $30                                                                                                          ; x8103  {"(Boost)":{"value":48}}
-	.DB $EF                                                                                                               ; x8105 
+	PlayerCommandData.changePlayerIconToReturner                                                                          ; x8105 
 	.DB $E1, $00                                                                                                          ; x8106  {"(Value)":6}
 	.DB $E4                                                                                                               ; x8108 
 OFFENSE_PLAYER_REACTION_LOOP_011:
@@ -5304,7 +5304,7 @@ DEFENSE_PLAYER_REACTION_JUMP_087:
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaadb  {"(Amount)":"-15 bytes to xaacc"}
 DEFENSE_PLAYER_REACTION_195:
 	.DB $E3, $10                                                                                                          ; xaadd  {"(Boost)":{"value":16}}
-	.DB $EF                                                                                                               ; xaadf 
+	PlayerCommandData.changePlayerIconToReturner                                                                          ; xaadf 
 	.DB $E1, $00                                                                                                          ; xaae0  {"(Value)":6}
 	.DB $E4                                                                                                               ; xaae2 
 DEFENSE_PLAYER_REACTION_LOOP_008:
