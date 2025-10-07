@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.boostRP boost
+    .DB $E2
+    .DB boost
+.ENDM
+
 .MACRO PlayerCommandData.boostRS boost
     .DB $E3
     .DB boost

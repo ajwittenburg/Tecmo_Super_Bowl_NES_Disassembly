@@ -176,14 +176,14 @@ OFFENSE_PLAYER_REACTION_022:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_427                                                                  ; x815e  {"(Pointer)":" to x9e46"}
 OFFENSE_PLAYER_REACTION_023:
 	PlayerCommandData.boostHP $07                                                                                         ; x8161  {"(Boost)":{"value":7}}
-	.DB $E2, $06                                                                                                          ; x8163  {"(Boost)":{"value":6,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $06                                                                                         ; x8163  {"(Boost)":{"value":6,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x8165  {"(Boost)":{"value":4}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8167 
 	.DB $D7, $00, $30                                                                                                     ; x8168  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_446                                                                  ; x816b  {"(Pointer)":" to x9f48"}
 OFFENSE_PLAYER_REACTION_024:
 	PlayerCommandData.boostHP $07                                                                                         ; x816e  {"(Boost)":{"value":7}}
-	.DB $E2, $06                                                                                                          ; x8170  {"(Boost)":{"value":6,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $06                                                                                         ; x8170  {"(Boost)":{"value":6,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x8172  {"(Boost)":{"value":4}}
 	.DB $D7, $00, $30                                                                                                     ; x8174  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_446                                                                  ; x8177  {"(Pointer)":" to x9f48"}
@@ -505,7 +505,7 @@ OFFENSE_PLAYER_REACTION_JUMP_005:
 	PlayerCommandData.boostRS $03                                                                                         ; x838e  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_015                                                             ; x8390  {"(Amount)":"-24 bytes to x8378"}
 OFFENSE_PLAYER_REACTION_JUMP_006:
-	.DB $E2, $12                                                                                                          ; x8392  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8392  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_014                                                             ; x8394  {"(Amount)":"-50 bytes to x8362"}
 OFFENSE_PLAYER_REACTION_093:
 	.DB $D8, $00, $CC                                                                                                     ; x8396  {"(Location)":{"down":2,"left":6.5}}
@@ -592,7 +592,7 @@ OFFENSE_PLAYER_REACTION_JUMP_010:
 	PlayerCommandData.boostRS $03                                                                                         ; x8445  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_019                                                             ; x8447  {"(Amount)":"2 bytes to x8449"}
 OFFENSE_PLAYER_REACTION_LOOP_019:
-	.DB $E2, $12                                                                                                          ; x8449  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8449  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_018                                                             ; x844b  {"(Amount)":"-28 bytes to x842f"}
 OFFENSE_PLAYER_REACTION_105:
 	.DB $D4                                                                                                               ; x844d 
@@ -630,7 +630,7 @@ OFFENSE_PLAYER_REACTION_JUMP_014:
 	PlayerCommandData.boostRS $03                                                                                         ; x848f  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_021                                                             ; x8491  {"(Amount)":"2 bytes to x8493"}
 OFFENSE_PLAYER_REACTION_LOOP_021:
-	.DB $E2, $12                                                                                                          ; x8493  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8493  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_020                                                             ; x8495  {"(Amount)":"-34 bytes to x8473"}
 OFFENSE_PLAYER_REACTION_107:
 	.DB $D8, $0C, $D0                                                                                                     ; x8497  {"(Location)":{"down":3.5,"left":6}}
@@ -698,7 +698,7 @@ OFFENSE_PLAYER_REACTION_JUMP_017:
 	.DB $C1, $19, $2D, $FD                                                                                                ; x8527  {"(Start Time, End Time)":"start in between 1.25s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	.DB $D8, $B8, $D8                                                                                                     ; x852b  {"(Location)":{"up":7,"left":5}}
 	.DB $27, $08, $A5                                                                                                     ; x852e  {"(Pointer)":" to x8518"}
-	.DB $E2, $03                                                                                                          ; x8531  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; x8531  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x8533  {"(Boost)":{"value":3}}
 	.DB $D8, $B8, $F0                                                                                                     ; x8535  {"(Location)":{"up":7,"left":2}}
 	.DB $C1, $3C, $41, $FD                                                                                                ; x8538  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
@@ -756,7 +756,7 @@ OFFENSE_PLAYER_REACTION_JUMP_021:
 	PlayerCommandData.boostRS $03                                                                                         ; x85a5  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_024                                                             ; x85a7  {"(Amount)":"2 bytes to x85a9"}
 OFFENSE_PLAYER_REACTION_LOOP_024:
-	.DB $E2, $12                                                                                                          ; x85a9  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x85a9  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_023                                                             ; x85ab  {"(Amount)":"-26 bytes to x8591"}
 OFFENSE_PLAYER_REACTION_121:
 	.DB $D8, $D0, $D8                                                                                                     ; x85ad  {"(Location)":{"up":4,"left":5}}
@@ -854,7 +854,7 @@ OFFENSE_PLAYER_REACTION_JUMP_027:
 	PlayerCommandData.boostRS $03                                                                                         ; x8667  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_030                                                             ; x8669  {"(Amount)":"2 bytes to x866b"}
 OFFENSE_PLAYER_REACTION_LOOP_030:
-	.DB $E2, $12                                                                                                          ; x866b  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x866b  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_029                                                             ; x866d  {"(Amount)":"-31 bytes to x864e"}
 OFFENSE_PLAYER_REACTION_129:
 	.DB $D8, $C4, $F8                                                                                                     ; x866f  {"(Location)":{"up":5.5,"left":1}}
@@ -941,7 +941,7 @@ OFFENSE_PLAYER_REACTION_JUMP_034:
 	PlayerCommandData.boostRS $03                                                                                         ; x871c  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_032                                                             ; x871e  {"(Amount)":"2 bytes to x8720"}
 OFFENSE_PLAYER_REACTION_LOOP_032:
-	.DB $E2, $12                                                                                                          ; x8720  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8720  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_031                                                             ; x8722  {"(Amount)":"-34 bytes to x8700"}
 OFFENSE_PLAYER_REACTION_139:
 	.DB $D9, $C0, $18                                                                                                     ; x8724  {"(Location)":{"down":9,"right":3}}
@@ -997,7 +997,7 @@ OFFENSE_PLAYER_REACTION_JUMP_038:
 	PlayerCommandData.boostRS $03                                                                                         ; x878e  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_035                                                             ; x8790  {"(Amount)":"2 bytes to x8792"}
 OFFENSE_PLAYER_REACTION_LOOP_035:
-	.DB $E2, $12                                                                                                          ; x8792  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8792  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_034                                                             ; x8794  {"(Amount)":"-34 bytes to x8772"}
 OFFENSE_PLAYER_REACTION_145:
 	PlayerCommandData.stand $06                                                                                           ; x8796  {"(Time)":"for 0.3s"}
@@ -1042,7 +1042,7 @@ OFFENSE_PLAYER_REACTION_JUMP_042:
 	PlayerCommandData.boostRS $03                                                                                         ; x87e9  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_037                                                             ; x87eb  {"(Amount)":"2 bytes to x87ed"}
 OFFENSE_PLAYER_REACTION_LOOP_037:
-	.DB $E2, $12                                                                                                          ; x87ed  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x87ed  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_036                                                             ; x87ef  {"(Amount)":"-34 bytes to x87cd"}
 OFFENSE_PLAYER_REACTION_148:
 	.DB $D8, $C8, $08                                                                                                     ; x87f1  {"(Location)":{"up":5,"right":1}}
@@ -1081,7 +1081,7 @@ OFFENSE_PLAYER_REACTION_JUMP_044:
 	.DB $C1, $0A, $46, $CC                                                                                                ; x8840  {"(Start Time, End Time)":"start in between 0.5s and 3.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_043                                                             ; x8844  {"(Amount)":"-14 bytes to x8836"}
 OFFENSE_PLAYER_REACTION_JUMP_045:
-	.DB $E2, $04                                                                                                          ; x8846  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x8846  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x8848  {"(Boost)":{"value":4}}
 	.DB $D8, $30, $C8                                                                                                     ; x884a  {"(Location)":{"down":8,"left":7}}
 	.DB $27, $26, $A8                                                                                                     ; x884d  {"(Pointer)":" to x8836"}
@@ -1122,10 +1122,10 @@ OFFENSE_PLAYER_REACTION_JUMP_049:
 	PlayerCommandData.boostRS $03                                                                                         ; x8896  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_039                                                             ; x8898  {"(Amount)":"2 bytes to x889a"}
 OFFENSE_PLAYER_REACTION_LOOP_039:
-	.DB $E2, $12                                                                                                          ; x889a  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x889a  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_038                                                             ; x889c  {"(Amount)":"-28 bytes to x8880"}
 OFFENSE_PLAYER_REACTION_155:
-	.DB $E2, $09                                                                                                          ; x889e  {"(Boost)":{"value":9,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $09                                                                                         ; x889e  {"(Boost)":{"value":9,"HasMaximumValue":true}}
 	.DB $D8, $F0, $E0                                                                                                     ; x88a0  {"(Location)":{"up":0,"left":4}}
 	.DB $D8, $F8, $F8                                                                                                     ; x88a3  {"(Location)":{"down":1,"left":1}}
 	PlayerCommandData.setToBlock %00010001, %11100000                                                                     ; x88a6  {"(Player)":"ROLB,RCB,LCB,FS,SS"}
@@ -1176,7 +1176,7 @@ OFFENSE_PLAYER_REACTION_JUMP_053:
 	PlayerCommandData.boostRS $03                                                                                         ; x88fd  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_043                                                             ; x88ff  {"(Amount)":"2 bytes to x8901"}
 OFFENSE_PLAYER_REACTION_LOOP_043:
-	.DB $E2, $12                                                                                                          ; x8901  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8901  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_042                                                             ; x8903  {"(Amount)":"-31 bytes to x88e4"}
 OFFENSE_PLAYER_REACTION_159:
 	.DB $D7, $00, $20                                                                                                     ; x8905  {"(Location)":{"up":0,"right":4}}
@@ -1245,7 +1245,7 @@ OFFENSE_PLAYER_REACTION_JUMP_057:
 	PlayerCommandData.boostRS $03                                                                                         ; x8980  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_047                                                             ; x8982  {"(Amount)":"2 bytes to x8984"}
 OFFENSE_PLAYER_REACTION_LOOP_047:
-	.DB $E2, $12                                                                                                          ; x8984  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8984  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_046                                                             ; x8986  {"(Amount)":"-34 bytes to x8964"}
 OFFENSE_PLAYER_REACTION_167:
 	.DB $D8, $C8, $00                                                                                                     ; x8988  {"(Location)":{"up":5,"left":0}}
@@ -1308,7 +1308,7 @@ OFFENSE_PLAYER_REACTION_JUMP_061:
 	PlayerCommandData.boostRS $04                                                                                         ; x8a08  {"(Boost)":{"value":4}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_049                                                             ; x8a0a  {"(Amount)":"2 bytes to x8a0c"}
 OFFENSE_PLAYER_REACTION_LOOP_049:
-	.DB $E2, $12                                                                                                          ; x8a0c  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8a0c  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_048                                                             ; x8a0e  {"(Amount)":"-40 bytes to x89e6"}
 OFFENSE_PLAYER_REACTION_173:
 	.DB $D9, $C0, $38                                                                                                     ; x8a10  {"(Location)":{"down":9,"right":7}}
@@ -1402,7 +1402,7 @@ OFFENSE_PLAYER_REACTION_JUMP_066:
 	PlayerCommandData.boostRS $03                                                                                         ; x8ace  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_052                                                             ; x8ad0  {"(Amount)":"2 bytes to x8ad2"}
 OFFENSE_PLAYER_REACTION_LOOP_052:
-	.DB $E2, $12                                                                                                          ; x8ad2  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8ad2  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_051                                                             ; x8ad4  {"(Amount)":"-37 bytes to x8aaf"}
 OFFENSE_PLAYER_REACTION_180:
 	.DB $D8, $C8, $20                                                                                                     ; x8ad6  {"(Location)":{"up":5,"right":4}}
@@ -1459,7 +1459,7 @@ OFFENSE_PLAYER_REACTION_JUMP_070:
 	PlayerCommandData.boostRS $04                                                                                         ; x8b46  {"(Boost)":{"value":4}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_054                                                             ; x8b48  {"(Amount)":"2 bytes to x8b4a"}
 OFFENSE_PLAYER_REACTION_LOOP_054:
-	.DB $E2, $12                                                                                                          ; x8b4a  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8b4a  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_053                                                             ; x8b4c  {"(Amount)":"-46 bytes to x8b1e"}
 OFFENSE_PLAYER_REACTION_185:
 	.DB $D4                                                                                                               ; x8b4e 
@@ -1503,7 +1503,7 @@ OFFENSE_PLAYER_REACTION_JUMP_072:
 	.DB $C1, $23, $82, $CC                                                                                                ; x8ba9  {"(Start Time, End Time)":"start in between 1.75s and 6.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_071                                                             ; x8bad  {"(Amount)":"-14 bytes to x8b9f"}
 OFFENSE_PLAYER_REACTION_JUMP_073:
-	.DB $E2, $04                                                                                                          ; x8baf  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x8baf  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x8bb1  {"(Boost)":{"value":4}}
 	.DB $D8, $B8, $C8                                                                                                     ; x8bb3  {"(Location)":{"up":7,"left":7}}
 	.DB $D8, $B8, $D8                                                                                                     ; x8bb6  {"(Location)":{"up":7,"left":5}}
@@ -1549,7 +1549,7 @@ OFFENSE_PLAYER_REACTION_JUMP_077:
 	PlayerCommandData.boostRS $03                                                                                         ; x8c0d  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_056                                                             ; x8c0f  {"(Amount)":"2 bytes to x8c11"}
 OFFENSE_PLAYER_REACTION_LOOP_056:
-	.DB $E2, $12                                                                                                          ; x8c11  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8c11  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_055                                                             ; x8c13  {"(Amount)":"-34 bytes to x8bf1"}
 OFFENSE_PLAYER_REACTION_191:
 	.DB $D8, $14, $E0                                                                                                     ; x8c15  {"(Location)":{"down":4.5,"left":4}}
@@ -1592,7 +1592,7 @@ OFFENSE_PLAYER_REACTION_JUMP_081:
 	PlayerCommandData.boostRS $03                                                                                         ; x8c60  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_058                                                             ; x8c62  {"(Amount)":"2 bytes to x8c64"}
 OFFENSE_PLAYER_REACTION_LOOP_058:
-	.DB $E2, $12                                                                                                          ; x8c64  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8c64  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_057                                                             ; x8c66  {"(Amount)":"-34 bytes to x8c44"}
 OFFENSE_PLAYER_REACTION_195:
 	PlayerCommandData.setToGrapple %00000010, %00000000                                                                   ; x8c68  {"(Player)":"LOLB"}
@@ -1645,7 +1645,7 @@ OFFENSE_PLAYER_REACTION_JUMP_085:
 	PlayerCommandData.boostRS $03                                                                                         ; x8ccb  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_061                                                             ; x8ccd  {"(Amount)":"2 bytes to x8ccf"}
 OFFENSE_PLAYER_REACTION_LOOP_061:
-	.DB $E2, $12                                                                                                          ; x8ccf  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8ccf  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_060                                                             ; x8cd1  {"(Amount)":"-40 bytes to x8ca9"}
 OFFENSE_PLAYER_REACTION_200:
 	.DB $D9, $48, $20                                                                                                     ; x8cd3  {"(Location)":{"up":6,"right":4}}
@@ -1717,7 +1717,7 @@ OFFENSE_PLAYER_REACTION_JUMP_089:
 	PlayerCommandData.boostRS $03                                                                                         ; x8d61  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_063                                                             ; x8d63  {"(Amount)":"2 bytes to x8d65"}
 OFFENSE_PLAYER_REACTION_LOOP_063:
-	.DB $E2, $12                                                                                                          ; x8d65  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8d65  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_062                                                             ; x8d67  {"(Amount)":"-40 bytes to x8d3f"}
 OFFENSE_PLAYER_REACTION_210:
 	.DB $D9, $36, $28                                                                                                     ; x8d69  {"(Location)":{"up":8.25,"right":5}}
@@ -1772,7 +1772,7 @@ OFFENSE_PLAYER_REACTION_JUMP_092:
 	.DB $C1, $19, $2D, $FD                                                                                                ; x8de0  {"(Start Time, End Time)":"start in between 1.25s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	.DB $D8, $34, $C8                                                                                                     ; x8de4  {"(Location)":{"down":8.5,"left":7}}
 	.DB $27, $C1, $AD                                                                                                     ; x8de7  {"(Pointer)":" to x8dd1"}
-	.DB $E2, $03                                                                                                          ; x8dea  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; x8dea  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x8dec  {"(Boost)":{"value":3}}
 	.DB $D8, $34, $F0                                                                                                     ; x8dee  {"(Location)":{"down":8.5,"left":2}}
 	.DB $C1, $3C, $41, $FD                                                                                                ; x8df1  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
@@ -1822,7 +1822,7 @@ OFFENSE_PLAYER_REACTION_JUMP_097:
 	PlayerCommandData.boostRS $03                                                                                         ; x8e4c  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_065                                                             ; x8e4e  {"(Amount)":"2 bytes to x8e50"}
 OFFENSE_PLAYER_REACTION_LOOP_065:
-	.DB $E2, $12                                                                                                          ; x8e50  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8e50  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_064                                                             ; x8e52  {"(Amount)":"-37 bytes to x8e2d"}
 OFFENSE_PLAYER_REACTION_219:
 	.DB $D8, $D8, $E0                                                                                                     ; x8e54  {"(Location)":{"up":3,"left":4}}
@@ -1901,7 +1901,7 @@ OFFENSE_PLAYER_REACTION_JUMP_101:
 	PlayerCommandData.boostRS $03                                                                                         ; x8ef9  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_067                                                             ; x8efb  {"(Amount)":"2 bytes to x8efd"}
 OFFENSE_PLAYER_REACTION_LOOP_067:
-	.DB $E2, $12                                                                                                          ; x8efd  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8efd  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_066                                                             ; x8eff  {"(Amount)":"-34 bytes to x8edd"}
 OFFENSE_PLAYER_REACTION_229:
 	PlayerCommandData.stand $1E                                                                                           ; x8f01  {"(Time)":"for 1.5s"}
@@ -1931,7 +1931,7 @@ OFFENSE_PLAYER_REACTION_JUMP_105:
 	PlayerCommandData.boostRS $03                                                                                         ; x8f32  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_069                                                             ; x8f34  {"(Amount)":"2 bytes to x8f36"}
 OFFENSE_PLAYER_REACTION_LOOP_069:
-	.DB $E2, $12                                                                                                          ; x8f36  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8f36  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_068                                                             ; x8f38  {"(Amount)":"-34 bytes to x8f16"}
 OFFENSE_PLAYER_REACTION_230:
 	PlayerCommandData.stand $10                                                                                           ; x8f3a  {"(Time)":"for 0.8s"}
@@ -1962,7 +1962,7 @@ OFFENSE_PLAYER_REACTION_JUMP_109:
 	PlayerCommandData.boostRS $03                                                                                         ; x8f6e  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_071                                                             ; x8f70  {"(Amount)":"2 bytes to x8f72"}
 OFFENSE_PLAYER_REACTION_LOOP_071:
-	.DB $E2, $12                                                                                                          ; x8f72  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8f72  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_070                                                             ; x8f74  {"(Amount)":"-37 bytes to x8f4f"}
 OFFENSE_PLAYER_REACTION_231:
 	.DB $D8, $D0, $F4                                                                                                     ; x8f76  {"(Location)":{"up":4,"left":1.5}}
@@ -2005,7 +2005,7 @@ OFFENSE_PLAYER_REACTION_JUMP_113:
 	PlayerCommandData.boostRS $03                                                                                         ; x8fc2  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_073                                                             ; x8fc4  {"(Amount)":"2 bytes to x8fc6"}
 OFFENSE_PLAYER_REACTION_LOOP_073:
-	.DB $E2, $12                                                                                                          ; x8fc6  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x8fc6  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_072                                                             ; x8fc8  {"(Amount)":"-28 bytes to x8fac"}
 OFFENSE_PLAYER_REACTION_235:
 	.DB $D8, $C8, $0C                                                                                                     ; x8fca  {"(Location)":{"up":5,"right":1.5}}
@@ -2073,7 +2073,7 @@ OFFENSE_PLAYER_REACTION_JUMP_118:
 	PlayerCommandData.boostRS $03                                                                                         ; x9057  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_076                                                             ; x9059  {"(Amount)":"2 bytes to x905b"}
 OFFENSE_PLAYER_REACTION_LOOP_076:
-	.DB $E2, $12                                                                                                          ; x905b  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x905b  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_075                                                             ; x905d  {"(Amount)":"-53 bytes to x9028"}
 OFFENSE_PLAYER_REACTION_240:
 	.DB $D8, $F0, $C8                                                                                                     ; x905f  {"(Location)":{"up":0,"left":7}}
@@ -2173,7 +2173,7 @@ OFFENSE_PLAYER_REACTION_JUMP_124:
 	PlayerCommandData.boostRS $03                                                                                         ; x9130  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_079                                                             ; x9132  {"(Amount)":"2 bytes to x9134"}
 OFFENSE_PLAYER_REACTION_LOOP_079:
-	.DB $E2, $12                                                                                                          ; x9134  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x9134  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_078                                                             ; x9136  {"(Amount)":"-31 bytes to x9117"}
 OFFENSE_PLAYER_REACTION_250:
 	.DB $D4                                                                                                               ; x9138 
@@ -2202,7 +2202,7 @@ OFFENSE_PLAYER_REACTION_JUMP_128:
 	PlayerCommandData.boostRS $03                                                                                         ; x9165  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_081                                                             ; x9167  {"(Amount)":"2 bytes to x9169"}
 OFFENSE_PLAYER_REACTION_LOOP_081:
-	.DB $E2, $12                                                                                                          ; x9169  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x9169  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_080                                                             ; x916b  {"(Amount)":"-32 bytes to x914b"}
 OFFENSE_PLAYER_REACTION_251:
 	.DB $27, $3C, $BE                                                                                                     ; x916d  {"(Pointer)":" to x9e4c"}
@@ -2249,7 +2249,7 @@ OFFENSE_PLAYER_REACTION_JUMP_132:
 	PlayerCommandData.boostRS $03                                                                                         ; x91c1  {"(Boost)":{"value":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_083                                                             ; x91c3  {"(Amount)":"2 bytes to x91c5"}
 OFFENSE_PLAYER_REACTION_LOOP_083:
-	.DB $E2, $12                                                                                                          ; x91c5  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x91c5  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_082                                                             ; x91c7  {"(Amount)":"-43 bytes to x919c"}
 OFFENSE_PLAYER_REACTION_257:
 	.DB $D8, $08, $D0                                                                                                     ; x91c9  {"(Location)":{"down":3,"left":6}}
@@ -2339,7 +2339,7 @@ OFFENSE_PLAYER_REACTION_JUMP_136:
 	PlayerCommandData.boostRS $04                                                                                         ; x928f  {"(Boost)":{"value":4}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_085                                                             ; x9291  {"(Amount)":"2 bytes to x9293"}
 OFFENSE_PLAYER_REACTION_LOOP_085:
-	.DB $E2, $12                                                                                                          ; x9293  {"(Boost)":{"value":18,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $12                                                                                         ; x9293  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_084                                                             ; x9295  {"(Amount)":"-41 bytes to x926c"}
 OFFENSE_PLAYER_REACTION_265:
 	.DB $D4                                                                                                               ; x9297 
@@ -2358,7 +2358,7 @@ OFFENSE_PLAYER_REACTION_JUMP_137:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_086                                                             ; x92ba  {"(Amount)":"-15 bytes to x92ab"}
 OFFENSE_PLAYER_REACTION_JUMP_138:
 	.DB $C1, $23, $2D, $FD                                                                                                ; x92bc  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x92c0  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x92c0  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x92c2  {"(Boost)":{"value":4}}
 	.DB $D8, $10, $E8                                                                                                     ; x92c4  {"(Location)":{"down":4,"left":3}}
 	.DB $D8, $1A, $F0                                                                                                     ; x92c7  {"(Location)":{"down":5.25,"left":2}}
@@ -2402,7 +2402,7 @@ OFFENSE_PLAYER_REACTION_JUMP_141:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_088                                                             ; x9321  {"(Amount)":"-14 bytes to x9313"}
 OFFENSE_PLAYER_REACTION_JUMP_142:
 	.DB $C1, $23, $2D, $FD                                                                                                ; x9323  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x9327  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x9327  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x9329  {"(Boost)":{"value":4}}
 	.DB $27, $26, $B3                                                                                                     ; x932b  {"(Pointer)":" to x9336"}
 	.DB $D8, $16, $F0                                                                                                     ; x932e  {"(Location)":{"down":4.75,"left":2}}
@@ -2431,7 +2431,7 @@ OFFENSE_PLAYER_REACTION_JUMP_146:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_090                                                             ; x935f  {"(Amount)":"-22 bytes to x9349"}
 OFFENSE_PLAYER_REACTION_JUMP_147:
 	.DB $C1, $2D, $37, $FD                                                                                                ; x9361  {"(Start Time, End Time)":"start in between 2.25s and 2.75s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $03                                                                                                          ; x9365  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; x9365  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x9367  {"(Boost)":{"value":3}}
 	.DB $D8, $E6, $F0                                                                                                     ; x9369  {"(Location)":{"up":1.25,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x936c  {"(Pointer)":" to x9848"}
@@ -2454,7 +2454,7 @@ OFFENSE_PLAYER_REACTION_JUMP_148:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_091                                                             ; x9395  {"(Amount)":"-14 bytes to x9387"}
 OFFENSE_PLAYER_REACTION_JUMP_149:
 	.DB $C1, $23, $2D, $FD                                                                                                ; x9397  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x939b  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x939b  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x939d  {"(Boost)":{"value":4}}
 	.DB $27, $9A, $B3                                                                                                     ; x939f  {"(Pointer)":" to x93aa"}
 	.DB $D8, $16, $F0                                                                                                     ; x93a2  {"(Location)":{"down":4.75,"left":2}}
@@ -2495,7 +2495,7 @@ OFFENSE_PLAYER_REACTION_JUMP_152:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_094                                                             ; x93f3  {"(Amount)":"-14 bytes to x93e5"}
 OFFENSE_PLAYER_REACTION_JUMP_153:
 	.DB $C1, $19, $1E, $FD                                                                                                ; x93f5  {"(Start Time, End Time)":"start in between 1.25s and 1.5s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x93f9  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x93f9  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x93fb  {"(Boost)":{"value":4}}
 	.DB $D8, $F9, $F0                                                                                                     ; x93fd  {"(Location)":{"down":1.125,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x9400  {"(Pointer)":" to x9848"}
@@ -2517,7 +2517,7 @@ OFFENSE_PLAYER_REACTION_JUMP_154:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_095                                                             ; x9427  {"(Amount)":"-14 bytes to x9419"}
 OFFENSE_PLAYER_REACTION_JUMP_155:
 	.DB $C1, $19, $23, $FD                                                                                                ; x9429  {"(Start Time, End Time)":"start in between 1.25s and 1.75s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x942d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x942d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x942f  {"(Boost)":{"value":4}}
 	.DB $D8, $16, $F0                                                                                                     ; x9431  {"(Location)":{"down":4.75,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x9434  {"(Pointer)":" to x9848"}
@@ -2545,7 +2545,7 @@ OFFENSE_PLAYER_REACTION_JUMP_156:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_096                                                             ; x9467  {"(Amount)":"-13 bytes to x945a"}
 OFFENSE_PLAYER_REACTION_JUMP_157:
 	.DB $C1, $23, $2D, $FD                                                                                                ; x9469  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x946d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x946d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x946f  {"(Boost)":{"value":4}}
 	.DB $27, $6C, $B4                                                                                                     ; x9471  {"(Pointer)":" to x947c"}
 	.DB $D8, $16, $F0                                                                                                     ; x9474  {"(Location)":{"down":4.75,"left":2}}
@@ -2603,7 +2603,7 @@ OFFENSE_PLAYER_REACTION_JUMP_161:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_099                                                             ; x94eb  {"(Amount)":"-30 bytes to x94cd"}
 OFFENSE_PLAYER_REACTION_JUMP_162:
 	.DB $C1, $23, $2D, $FD                                                                                                ; x94ed  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x94f1  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x94f1  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x94f3  {"(Boost)":{"value":4}}
 	.DB $27, $F0, $B4                                                                                                     ; x94f5  {"(Pointer)":" to x9500"}
 	.DB $D8, $14, $F0                                                                                                     ; x94f8  {"(Location)":{"down":4.5,"left":2}}
@@ -2630,7 +2630,7 @@ OFFENSE_PLAYER_REACTION_JUMP_164:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_101                                                             ; x9527  {"(Amount)":"-14 bytes to x9519"}
 OFFENSE_PLAYER_REACTION_JUMP_165:
 	.DB $C1, $0F, $19, $FD                                                                                                ; x9529  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x952d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x952d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x952f  {"(Boost)":{"value":4}}
 	.DB $27, $2C, $B5                                                                                                     ; x9531  {"(Pointer)":" to x953c"}
 	.DB $D8, $FA, $F0                                                                                                     ; x9534  {"(Location)":{"down":1.25,"left":2}}
@@ -2697,7 +2697,7 @@ OFFENSE_PLAYER_REACTION_JUMP_168:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_104                                                             ; x95bb  {"(Amount)":"-21 bytes to x95a6"}
 OFFENSE_PLAYER_REACTION_JUMP_169:
 	.DB $C1, $0F, $19, $FD                                                                                                ; x95bd  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x95c1  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x95c1  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x95c3  {"(Boost)":{"value":4}}
 	.DB $D8, $16, $F0                                                                                                     ; x95c5  {"(Location)":{"down":4.75,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x95c8  {"(Pointer)":" to x9848"}
@@ -2718,7 +2718,7 @@ OFFENSE_PLAYER_REACTION_JUMP_170:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_106                                                             ; x95ed  {"(Amount)":"-15 bytes to x95de"}
 OFFENSE_PLAYER_REACTION_JUMP_171:
 	.DB $C1, $0F, $19, $FD                                                                                                ; x95ef  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x95f3  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x95f3  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x95f5  {"(Boost)":{"value":4}}
 	.DB $D8, $14, $F0                                                                                                     ; x95f7  {"(Location)":{"down":4.5,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x95fa  {"(Pointer)":" to x9848"}
@@ -2739,7 +2739,7 @@ OFFENSE_PLAYER_REACTION_JUMP_172:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_107                                                             ; x961f  {"(Amount)":"-15 bytes to x9610"}
 OFFENSE_PLAYER_REACTION_JUMP_173:
 	.DB $C1, $05, $0A, $FD                                                                                                ; x9621  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x9625  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x9625  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x9627  {"(Boost)":{"value":4}}
 	.DB $27, $24, $B6                                                                                                     ; x9629  {"(Pointer)":" to x9634"}
 	.DB $D8, $FB, $F0                                                                                                     ; x962c  {"(Location)":{"down":1.375,"left":2}}
@@ -2766,7 +2766,7 @@ OFFENSE_PLAYER_REACTION_JUMP_175:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_109                                                             ; x965c  {"(Amount)":"-15 bytes to x964d"}
 OFFENSE_PLAYER_REACTION_JUMP_176:
 	.DB $C1, $05, $0A, $FD                                                                                                ; x965e  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $03                                                                                                          ; x9662  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; x9662  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x9664  {"(Boost)":{"value":3}}
 	.DB $27, $61, $B6                                                                                                     ; x9666  {"(Pointer)":" to x9671"}
 	.DB $D8, $16, $F0                                                                                                     ; x9669  {"(Location)":{"down":4.75,"left":2}}
@@ -2793,7 +2793,7 @@ OFFENSE_PLAYER_REACTION_JUMP_178:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_111                                                             ; x9699  {"(Amount)":"-15 bytes to x968a"}
 OFFENSE_PLAYER_REACTION_JUMP_179:
 	.DB $C1, $05, $0A, $FD                                                                                                ; x969b  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $03                                                                                                          ; x969f  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; x969f  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x96a1  {"(Boost)":{"value":3}}
 	.DB $D8, $17, $F0                                                                                                     ; x96a3  {"(Location)":{"down":4.875,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x96a6  {"(Pointer)":" to x9848"}
@@ -2820,7 +2820,7 @@ OFFENSE_PLAYER_REACTION_JUMP_181:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_180                                                             ; x96dd  {"(Amount)":"-19 bytes to x96ca"}
 OFFENSE_PLAYER_REACTION_JUMP_182:
 	.DB $C1, $0F, $19, $FD                                                                                                ; x96df  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x96e3  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x96e3  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x96e5  {"(Boost)":{"value":4}}
 	.DB $D8, $CC, $F0                                                                                                     ; x96e7  {"(Location)":{"up":4.5,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x96ea  {"(Pointer)":" to x9848"}
@@ -2843,7 +2843,7 @@ OFFENSE_PLAYER_REACTION_JUMP_183:
 OFFENSE_PLAYER_REACTION_JUMP_184:
 	PlayerCommandData.faceDirection $80                                                                                   ; x9713  {"(Direction)":"90 degrees"}
 	.DB $C1, $23, $2D, $FD                                                                                                ; x9715  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $03                                                                                                          ; x9719  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; x9719  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x971b  {"(Boost)":{"value":3}}
 	.DB $D8, $FB, $F0                                                                                                     ; x971d  {"(Location)":{"down":1.375,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x9720  {"(Pointer)":" to x9848"}
@@ -2881,7 +2881,7 @@ OFFENSE_PLAYER_REACTION_JUMP_186:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_115                                                             ; x9773  {"(Amount)":"-15 bytes to x9764"}
 OFFENSE_PLAYER_REACTION_JUMP_187:
 	.DB $C1, $23, $2D, $FD                                                                                                ; x9775  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
-	.DB $E2, $04                                                                                                          ; x9779  {"(Boost)":{"value":4,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $04                                                                                         ; x9779  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x977b  {"(Boost)":{"value":4}}
 	.DB $D8, $CE, $F0                                                                                                     ; x977d  {"(Location)":{"up":4.25,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x9780  {"(Pointer)":" to x9848"}
@@ -5299,7 +5299,7 @@ DEFENSE_PLAYER_REACTION_LOOP_007:
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xaad3  {"(Amount)":"-1 bytes to xaad2"}
 DEFENSE_PLAYER_REACTION_JUMP_087:
 	PlayerCommandData.boostHP $30                                                                                         ; xaad5  {"(Boost)":{"value":48}}
-	.DB $E2, $08                                                                                                          ; xaad7  {"(Boost)":{"value":8,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $08                                                                                         ; xaad7  {"(Boost)":{"value":8,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $08                                                                                         ; xaad9  {"(Boost)":{"value":8}}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaadb  {"(Amount)":"-15 bytes to xaacc"}
 DEFENSE_PLAYER_REACTION_195:
@@ -7381,7 +7381,7 @@ DEFENSE_PLAYER_REACTION_451:
 DEFENSE_PLAYER_REACTION_452:
 	.DB $D0, $E0, $18                                                                                                     ; xbbf2  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbbf5 
-	.DB $E2, $16                                                                                                          ; xbbf6  {"(Boost)":{"value":22,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $16                                                                                         ; xbbf6  {"(Boost)":{"value":22,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $16                                                                                         ; xbbf8  {"(Boost)":{"value":22}}
 	.DB $D9, $68, $B8                                                                                                     ; xbbfa  {"(Location)":{"up":2,"right":9}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xbbfd  {"(Pointer)":" to xbe0c"}
@@ -7893,7 +7893,7 @@ DEFENSE_PLAYER_REACTION_521:
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_521                                                                  ; xbfc3  {"(Amount)":"-6 bytes to xbfbd"}
 DEFENSE_PLAYER_REACTION_522:
 	.DB $E1, $00                                                                                                          ; xbfc5  {"(Value)":6}
-	.DB $E2, $03                                                                                                          ; xbfc7  {"(Boost)":{"value":3,"HasMaximumValue":true}}
+	PlayerCommandData.boostRP $03                                                                                         ; xbfc7  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $EF                                                                                         ; xbfc9  {"(Boost)":{"value":239}}
 	PlayerCommandData.playerTakesControl                                                                                  ; xbfcb 
 DEFENSE_PLAYER_REACTION_LOOP_017:
