@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.stand time
+    .DB $F3
+    .DB time
+.ENDM
+
 .MACRO PlayerCommandData.turn time
     .DB $F4
     .DB time

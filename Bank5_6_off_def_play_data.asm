@@ -602,7 +602,7 @@ OFFENSE_PLAYER_REACTION_105:
 	.DB $D8, $C8, $C0                                                                                                     ; x8455  {"(Location)":{"up":5,"left":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8458  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_106:
-	.DB $F3, $14                                                                                                          ; x845b  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x845b  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C8                                                                                                     ; x845d  {"(Location)":{"up":0,"left":7}}
 	.DB $E4                                                                                                               ; x8460 
 	.DB $D8, $18, $D0                                                                                                     ; x8461  {"(Location)":{"down":5,"left":6}}
@@ -705,7 +705,7 @@ OFFENSE_PLAYER_REACTION_JUMP_017:
 	.DB $27, $38, $B8                                                                                                     ; x853c  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_015                                                             ; x853f  {"(Amount)":"-39 bytes to x8518"}
 OFFENSE_PLAYER_REACTION_116:
-	.DB $F3, $14                                                                                                          ; x8541  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8541  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C8                                                                                                     ; x8543  {"(Location)":{"up":0,"left":7}}
 	.DB $D8, $18, $D0                                                                                                     ; x8546  {"(Location)":{"down":5,"left":6}}
 	.DB $D8, $28, $E0                                                                                                     ; x8549  {"(Location)":{"down":7,"left":4}}
@@ -730,7 +730,7 @@ OFFENSE_PLAYER_REACTION_119:
 	.DB $D7, $00, $C8                                                                                                     ; x8571  {"(Location)":{"up":0,"left":6.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8574  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_120:
-	.DB $F3, $14                                                                                                          ; x8577  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8577  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C0                                                                                                     ; x8579  {"(Location)":{"up":0,"left":8}}
 	.DB $D8, $F8, $E0                                                                                                     ; x857c  {"(Location)":{"down":1,"left":4}}
 	.DB $D8, $04, $F0                                                                                                     ; x857f  {"(Location)":{"down":2.5,"left":2}}
@@ -760,7 +760,7 @@ OFFENSE_PLAYER_REACTION_LOOP_024:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_023                                                             ; x85ab  {"(Amount)":"-26 bytes to x8591"}
 OFFENSE_PLAYER_REACTION_121:
 	.DB $D8, $D0, $D8                                                                                                     ; x85ad  {"(Location)":{"up":4,"left":5}}
-	.DB $F3, $01                                                                                                          ; x85b0  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x85b0  {"(Time)":"for 0.05s"}
 	.DB $F0, $60                                                                                                          ; x85b2  {"(Direction)":"45 degrees"}
 OFFENSE_PLAYER_REACTION_LOOP_025:
 	PlayerCommandData.setToBlock %10011001, %00000000                                                                     ; x85b4  {"(Player)":"RE,ROLB,RILB,RCB"}
@@ -774,7 +774,7 @@ OFFENSE_PLAYER_REACTION_122:
 OFFENSE_PLAYER_REACTION_123:
 	.DB $D8, $18, $EC                                                                                                     ; x85c7  {"(Location)":{"down":5,"left":2.5}}
 	.DB $D8, $18, $CC                                                                                                     ; x85ca  {"(Location)":{"down":5,"left":6.5}}
-	.DB $F3, $01                                                                                                          ; x85cd  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x85cd  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x85cf  {"(Direction)":"135 degrees"}
 OFFENSE_PLAYER_REACTION_LOOP_026:
 	PlayerCommandData.setToBlock %00000110, %10000000                                                                     ; x85d1  {"(Player)":"LILB,LOLB,LCB"}
@@ -784,7 +784,7 @@ OFFENSE_PLAYER_REACTION_LOOP_026:
 OFFENSE_PLAYER_REACTION_124:
 	.DB $D8, $0C, $EC                                                                                                     ; x85da  {"(Location)":{"down":3.5,"left":2.5}}
 	.DB $D8, $0C, $E0                                                                                                     ; x85dd  {"(Location)":{"down":3.5,"left":4}}
-	.DB $F3, $01                                                                                                          ; x85e0  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x85e0  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x85e2  {"(Direction)":"135 degrees"}
 OFFENSE_PLAYER_REACTION_JUMP_022:
 	PlayerCommandData.setToBlock %01100110, %00000000                                                                     ; x85e4  {"(Player)":"NT,LE,LILB,LOLB"}
@@ -807,7 +807,7 @@ OFFENSE_PLAYER_REACTION_JUMP_023:
 	.DB $C1, $01, $78, $CC                                                                                                ; x8608  {"(Start Time, End Time)":"start in between 0.05s and 6s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_027                                                             ; x860c  {"(Amount)":"-12 bytes to x8600"}
 OFFENSE_PLAYER_REACTION_126:
-	.DB $F3, $14                                                                                                          ; x860e  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x860e  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $D0                                                                                                     ; x8610  {"(Location)":{"up":0,"left":6}}
 	.DB $D8, $00, $E0                                                                                                     ; x8613  {"(Location)":{"down":2,"left":4}}
 	.DB $D8, $04, $F0                                                                                                     ; x8616  {"(Location)":{"down":2.5,"left":2}}
@@ -827,7 +827,7 @@ OFFENSE_PLAYER_REACTION_127:
 	.DB $D8, $F0, $B0                                                                                                     ; x8630  {"(Location)":{"up":0,"left":10}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8633  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_128:
-	.DB $F3, $0A                                                                                                          ; x8636  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; x8636  {"(Time)":"for 0.5s"}
 	.DB $D8, $EC, $D4                                                                                                     ; x8638  {"(Location)":{"up":0.5,"left":5.5}}
 	.DB $E4                                                                                                               ; x863b 
 	.DB $D8, $E0, $E4                                                                                                     ; x863c  {"(Location)":{"up":2,"left":3.5}}
@@ -872,7 +872,7 @@ OFFENSE_PLAYER_REACTION_131:
 	.DB $D8, $14, $18                                                                                                     ; x8688  {"(Location)":{"down":4.5,"right":3}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_434                                                                  ; x868b  {"(Pointer)":" to x9e70"}
 OFFENSE_PLAYER_REACTION_132:
-	.DB $F3, $06                                                                                                          ; x868e  {"(Time)":"for 0.3s"}
+	PlayerCommandData.stand $06                                                                                           ; x868e  {"(Time)":"for 0.3s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_429                                                                  ; x8690  {"(Pointer)":" to x9e52"}
 OFFENSE_PLAYER_REACTION_133:
 	.DB $D8, $E4, $00                                                                                                     ; x8693  {"(Location)":{"up":1.5,"left":0}}
@@ -899,7 +899,7 @@ OFFENSE_PLAYER_REACTION_JUMP_030:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_029                                                             ; x86c5  {"(Pointer)":" to x86b7"}
 OFFENSE_PLAYER_REACTION_136:
 	.DB $A2                                                                                                               ; x86c8 
-	.DB $F3, $05                                                                                                          ; x86c9  {"(Time)":"for 0.25s"}
+	PlayerCommandData.stand $05                                                                                           ; x86c9  {"(Time)":"for 0.25s"}
 	.DB $D8, $EC, $D4                                                                                                     ; x86cb  {"(Location)":{"up":0.5,"left":5.5}}
 	.DB $D8, $E0, $E4                                                                                                     ; x86ce  {"(Location)":{"up":2,"left":3.5}}
 	.DB $D8, $D0, $00                                                                                                     ; x86d1  {"(Location)":{"up":4,"left":0}}
@@ -913,7 +913,7 @@ OFFENSE_PLAYER_REACTION_137:
 	.DB $D8, $F0, $D0                                                                                                     ; x86e2  {"(Location)":{"up":0,"left":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x86e5  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_138:
-	.DB $F3, $14                                                                                                          ; x86e8  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x86e8  {"(Time)":"for 1s"}
 	.DB $D8, $D0, $C8                                                                                                     ; x86ea  {"(Location)":{"up":4,"left":7}}
 	.DB $E4                                                                                                               ; x86ed 
 	.DB $D8, $C4, $D4                                                                                                     ; x86ee  {"(Location)":{"up":5.5,"left":5.5}}
@@ -970,7 +970,7 @@ OFFENSE_PLAYER_REACTION_LOOP_033:
 	.DB $CD, $E0, $40                                                                                                     ; x8758  {"(Location)":{"up":3.875,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_033                                                             ; x875b  {"(Amount)":"-3 bytes to x8758"}
 OFFENSE_PLAYER_REACTION_144:
-	.DB $F3, $10                                                                                                          ; x875d  {"(Time)":"for 0.8s"}
+	PlayerCommandData.stand $10                                                                                           ; x875d  {"(Time)":"for 0.8s"}
 	.DB $D8, $20, $CC                                                                                                     ; x875f  {"(Location)":{"down":6,"left":6.5}}
 	.DB $E4                                                                                                               ; x8762 
 	.DB $C8, $72, $A7, $09                                                                                                ; x8763  {"(Pointer)":" to x8782","(Random)":"43.75%"}
@@ -1000,7 +1000,7 @@ OFFENSE_PLAYER_REACTION_LOOP_035:
 	.DB $E2, $12                                                                                                          ; x8792  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_034                                                             ; x8794  {"(Amount)":"-34 bytes to x8772"}
 OFFENSE_PLAYER_REACTION_145:
-	.DB $F3, $06                                                                                                          ; x8796  {"(Time)":"for 0.3s"}
+	PlayerCommandData.stand $06                                                                                           ; x8796  {"(Time)":"for 0.3s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x8798  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_146:
 	.DB $D4                                                                                                               ; x879b 
@@ -1012,7 +1012,7 @@ OFFENSE_PLAYER_REACTION_146:
 	.DB $D8, $20, $A8                                                                                                     ; x87a9  {"(Location)":{"down":6,"left":11}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x87ac  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_147:
-	.DB $F3, $21                                                                                                          ; x87af  {"(Time)":"for 1.65s"}
+	PlayerCommandData.stand $21                                                                                           ; x87af  {"(Time)":"for 1.65s"}
 	.DB $D8, $F0, $C0                                                                                                     ; x87b1  {"(Location)":{"up":0,"left":8}}
 	.DB $D8, $E8, $D4                                                                                                     ; x87b4  {"(Location)":{"up":1,"left":5.5}}
 	.DB $E4                                                                                                               ; x87b7 
@@ -1150,7 +1150,7 @@ OFFENSE_PLAYER_REACTION_157:
 	.DB $D8, $F0, $A8                                                                                                     ; x88c9  {"(Location)":{"up":0,"left":11}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x88cc  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_158:
-	.DB $F3, $3C                                                                                                          ; x88cf  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x88cf  {"(Time)":"for 3s"}
 	.DB $D8, $F2, $C0                                                                                                     ; x88d1  {"(Location)":{"down":0.25,"left":8}}
 	.DB $E4                                                                                                               ; x88d4 
 	.DB $C8, $E1, $A8, $09                                                                                                ; x88d5  {"(Pointer)":" to x88f1","(Random)":"43.75%"}
@@ -1192,7 +1192,7 @@ OFFENSE_PLAYER_REACTION_162:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x891a  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_163:
 	.DB $D8, $08, $E4                                                                                                     ; x891d  {"(Location)":{"down":3,"left":3.5}}
-	.DB $F3, $01                                                                                                          ; x8920  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8920  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x8922  {"(Direction)":"90 degrees"}
 OFFENSE_PLAYER_REACTION_LOOP_044:
 	PlayerCommandData.setToBlock %00100100, %00000000                                                                     ; x8924  {"(Player)":"LE,LILB"}
@@ -1202,7 +1202,7 @@ OFFENSE_PLAYER_REACTION_LOOP_044:
 OFFENSE_PLAYER_REACTION_164:
 	.DB $D8, $10, $E8                                                                                                     ; x892d  {"(Location)":{"down":4,"left":3}}
 	.DB $D8, $10, $D4                                                                                                     ; x8930  {"(Location)":{"down":4,"left":5.5}}
-	.DB $F3, $01                                                                                                          ; x8933  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8933  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x8935  {"(Direction)":"135 degrees"}
 OFFENSE_PLAYER_REACTION_LOOP_045:
 	PlayerCommandData.setToBlock %00000110, %10000000                                                                     ; x8937  {"(Player)":"LILB,LOLB,LCB"}
@@ -1216,7 +1216,7 @@ OFFENSE_PLAYER_REACTION_165:
 	.DB $D8, $F0, $9C                                                                                                     ; x8945  {"(Location)":{"up":0,"left":12.5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8948  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_166:
-	.DB $F3, $1E                                                                                                          ; x894b  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x894b  {"(Time)":"for 1.5s"}
 	.DB $D8, $D8, $C0                                                                                                     ; x894d  {"(Location)":{"up":3,"left":8}}
 	.DB $D8, $C0, $D0                                                                                                     ; x8950  {"(Location)":{"up":6,"left":6}}
 	.DB $63                                                                                                               ; x8953 
@@ -1253,7 +1253,7 @@ OFFENSE_PLAYER_REACTION_167:
 	PlayerCommandData.setToBlock %00001001, %01000000                                                                     ; x898e  {"(Player)":"RILB,RCB,FS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8991  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_168:
-	.DB $F3, $3C                                                                                                          ; x8994  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x8994  {"(Time)":"for 3s"}
 	.DB $D9, $36, $E8                                                                                                     ; x8996  {"(Location)":{"up":8.25,"left":3}}
 	.DB $D8, $C0, $C8                                                                                                     ; x8999  {"(Location)":{"up":6,"left":7}}
 	.DB $D8, $D0, $B8                                                                                                     ; x899c  {"(Location)":{"up":4,"left":9}}
@@ -1264,7 +1264,7 @@ OFFENSE_PLAYER_REACTION_169:
 	.DB $D9, $C0, $38                                                                                                     ; x89a8  {"(Location)":{"down":9,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_434                                                                  ; x89ab  {"(Pointer)":" to x9e70"}
 OFFENSE_PLAYER_REACTION_170:
-	.DB $F3, $1E                                                                                                          ; x89ae  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x89ae  {"(Time)":"for 1.5s"}
 	.DB $D8, $D8, $C0                                                                                                     ; x89b0  {"(Location)":{"up":3,"left":8}}
 	.DB $D8, $C0, $D0                                                                                                     ; x89b3  {"(Location)":{"up":6,"left":6}}
 	.DB $53                                                                                                               ; x89b6 
@@ -1274,10 +1274,10 @@ OFFENSE_PLAYER_REACTION_170:
 OFFENSE_PLAYER_REACTION_171:
 	.DB $D8, $C8, $00                                                                                                     ; x89c0  {"(Location)":{"up":5,"left":0}}
 	.DB $D8, $C0, $10                                                                                                     ; x89c3  {"(Location)":{"up":6,"right":2}}
-	.DB $F3, $0A                                                                                                          ; x89c6  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; x89c6  {"(Time)":"for 0.5s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_435                                                                  ; x89c8  {"(Pointer)":" to x9e76"}
 OFFENSE_PLAYER_REACTION_172:
-	.DB $F3, $3C                                                                                                          ; x89cb  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x89cb  {"(Time)":"for 3s"}
 	.DB $D9, $36, $E8                                                                                                     ; x89cd  {"(Location)":{"up":8.25,"left":3}}
 	.DB $D8, $C0, $C8                                                                                                     ; x89d0  {"(Location)":{"up":6,"left":7}}
 	.DB $D8, $D0, $B8                                                                                                     ; x89d3  {"(Location)":{"up":4,"left":9}}
@@ -1318,15 +1318,15 @@ OFFENSE_PLAYER_REACTION_173:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_433                                                                  ; x8a1b  {"(Pointer)":" to x9e6a"}
 OFFENSE_PLAYER_REACTION_174:
 	.DB $D8, $14, $C4                                                                                                     ; x8a1e  {"(Location)":{"down":4.5,"left":7.5}}
-	.DB $F3, $01                                                                                                          ; x8a21  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8a21  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x8a23  {"(Direction)":"135 degrees"}
-	.DB $F3, $1E                                                                                                          ; x8a25  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x8a25  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_431                                                                  ; x8a27  {"(Pointer)":" to x9e5e"}
 OFFENSE_PLAYER_REACTION_175:
 	.DB $D8, $0C, $D4                                                                                                     ; x8a2a  {"(Location)":{"down":3.5,"left":5.5}}
-	.DB $F3, $01                                                                                                          ; x8a2d  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8a2d  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x8a2f  {"(Direction)":"135 degrees"}
-	.DB $F3, $1E                                                                                                          ; x8a31  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x8a31  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x8a33  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_176:
 	.DB $D4                                                                                                               ; x8a36 
@@ -1335,7 +1335,7 @@ OFFENSE_PLAYER_REACTION_176:
 	.DB $E1, $03                                                                                                          ; x8a3c  {"(Value)":25}
 	.DB $71                                                                                                               ; x8a3e 
 	.DB $D8, $F0, $9C                                                                                                     ; x8a3f  {"(Location)":{"up":0,"left":12.5}}
-	.DB $F3, $01                                                                                                          ; x8a42  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8a42  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x8a44  {"(Direction)":"90 degrees"}
 	PlayerCommandData.turn $5A                                                                                            ; x8a46  {"(Time)":"for 4.5s"}
 	.DB $F0, $80                                                                                                          ; x8a48  {"(Direction)":"90 degrees"}
@@ -1350,13 +1350,13 @@ OFFENSE_PLAYER_REACTION_JUMP_062:
 	.DB $C1, $0A, $6E, $CC                                                                                                ; x8a5c  {"(Start Time, End Time)":"start in between 0.5s and 5.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_050                                                             ; x8a60  {"(Amount)":"-12 bytes to x8a54"}
 OFFENSE_PLAYER_REACTION_177:
-	.DB $F3, $3C                                                                                                          ; x8a62  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x8a62  {"(Time)":"for 3s"}
 	.DB $D9, $36, $E8                                                                                                     ; x8a64  {"(Location)":{"up":8.25,"left":3}}
 	.DB $D8, $C0, $C8                                                                                                     ; x8a67  {"(Location)":{"up":6,"left":7}}
 	.DB $D8, $D0, $B8                                                                                                     ; x8a6a  {"(Location)":{"up":4,"left":9}}
 	.DB $70                                                                                                               ; x8a6d 
 	.DB $F0, $E0                                                                                                          ; x8a6e  {"(Direction)":"225 degrees"}
-	.DB $F3, $14                                                                                                          ; x8a70  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8a70  {"(Time)":"for 1s"}
 	.DB $F0, $80                                                                                                          ; x8a72  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToBlock %10011001, %00000000                                                                     ; x8a74  {"(Player)":"RE,ROLB,RILB,RCB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8a77  {"(Pointer)":" to x9ef8"}
@@ -1373,7 +1373,7 @@ OFFENSE_PLAYER_REACTION_178:
 	.DB $D8, $C8, $08                                                                                                     ; x8a91  {"(Location)":{"up":5,"right":1}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_432                                                                  ; x8a94  {"(Pointer)":" to x9e64"}
 OFFENSE_PLAYER_REACTION_179:
-	.DB $F3, $14                                                                                                          ; x8a97  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8a97  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C4                                                                                                     ; x8a99  {"(Location)":{"up":0,"left":7.5}}
 	.DB $D8, $08, $D4                                                                                                     ; x8a9c  {"(Location)":{"down":3,"left":5.5}}
 	.DB $E4                                                                                                               ; x8a9f 
@@ -1412,7 +1412,7 @@ OFFENSE_PLAYER_REACTION_181:
 	.DB $D9, $36, $10                                                                                                     ; x8ade  {"(Location)":{"up":8.25,"right":2}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_434                                                                  ; x8ae1  {"(Pointer)":" to x9e70"}
 OFFENSE_PLAYER_REACTION_182:
-	.DB $F3, $1E                                                                                                          ; x8ae4  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x8ae4  {"(Time)":"for 1.5s"}
 	.DB $D8, $F0, $C4                                                                                                     ; x8ae6  {"(Location)":{"up":0,"left":7.5}}
 	.DB $D8, $08, $D4                                                                                                     ; x8ae9  {"(Location)":{"down":3,"left":5.5}}
 	.DB $D8, $20, $D8                                                                                                     ; x8aec  {"(Location)":{"down":6,"left":5}}
@@ -1420,14 +1420,14 @@ OFFENSE_PLAYER_REACTION_182:
 	.DB $D8, $28, $E0                                                                                                     ; x8af0  {"(Location)":{"down":7,"left":4}}
 	.DB $D8, $30, $F8                                                                                                     ; x8af3  {"(Location)":{"down":8,"left":1}}
 	.DB $D8, $30, $00                                                                                                     ; x8af6  {"(Location)":{"down":8,"left":0}}
-	.DB $F3, $64                                                                                                          ; x8af9  {"(Time)":"for 5s"}
+	PlayerCommandData.stand $64                                                                                           ; x8af9  {"(Time)":"for 5s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_434                                                                  ; x8afb  {"(Pointer)":" to x9e70"}
 OFFENSE_PLAYER_REACTION_183:
-	.DB $F3, $1E                                                                                                          ; x8afe  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x8afe  {"(Time)":"for 1.5s"}
 	.DB $D8, $C8, $18                                                                                                     ; x8b00  {"(Location)":{"up":5,"right":3}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_428                                                                  ; x8b03  {"(Pointer)":" to x9e4c"}
 OFFENSE_PLAYER_REACTION_184:
-	.DB $F3, $37                                                                                                          ; x8b06  {"(Time)":"for 2.75s"}
+	PlayerCommandData.stand $37                                                                                           ; x8b06  {"(Time)":"for 2.75s"}
 	.DB $D8, $30, $E0                                                                                                     ; x8b08  {"(Location)":{"down":8,"left":4}}
 	.DB $D8, $18, $CC                                                                                                     ; x8b0b  {"(Location)":{"down":5,"left":6.5}}
 	.DB $E4                                                                                                               ; x8b0e 
@@ -1478,7 +1478,7 @@ OFFENSE_PLAYER_REACTION_187:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x8b6b  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	.DB $D8, $14, $E0                                                                                                     ; x8b6e  {"(Location)":{"down":4.5,"left":4}}
 	.DB $F0, $80                                                                                                          ; x8b71  {"(Direction)":"90 degrees"}
-	.DB $F3, $14                                                                                                          ; x8b73  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8b73  {"(Time)":"for 1s"}
 	.DB $D8, $20, $E8                                                                                                     ; x8b75  {"(Location)":{"down":6,"left":3}}
 	.DB $D8, $28, $00                                                                                                     ; x8b78  {"(Location)":{"down":7,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_433                                                                  ; x8b7b  {"(Pointer)":" to x9e6a"}
@@ -1512,16 +1512,16 @@ OFFENSE_PLAYER_REACTION_JUMP_073:
 	.DB $27, $38, $B8                                                                                                     ; x8bbf  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_071                                                             ; x8bc2  {"(Amount)":"-35 bytes to x8b9f"}
 OFFENSE_PLAYER_REACTION_189:
-	.DB $F3, $14                                                                                                          ; x8bc4  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8bc4  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C4                                                                                                     ; x8bc6  {"(Location)":{"up":0,"left":7.5}}
 	.DB $D8, $08, $D4                                                                                                     ; x8bc9  {"(Location)":{"down":3,"left":5.5}}
 	.DB $D8, $18, $D8                                                                                                     ; x8bcc  {"(Location)":{"down":5,"left":5}}
-	.DB $F3, $01                                                                                                          ; x8bcf  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8bcf  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x8bd1  {"(Direction)":"135 degrees"}
 	PlayerCommandData.setToBlock %00100110, %10100000                                                                     ; x8bd3  {"(Player)":"LE,LILB,LOLB,LCB,SS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8bd6  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_190:
-	.DB $F3, $0D                                                                                                          ; x8bd9  {"(Time)":"for 0.65s"}
+	PlayerCommandData.stand $0D                                                                                           ; x8bd9  {"(Time)":"for 0.65s"}
 	.DB $D8, $F0, $C4                                                                                                     ; x8bdb  {"(Location)":{"up":0,"left":7.5}}
 	.DB $D8, $00, $D8                                                                                                     ; x8bde  {"(Location)":{"down":2,"left":5}}
 	.DB $E4                                                                                                               ; x8be1 
@@ -1553,7 +1553,7 @@ OFFENSE_PLAYER_REACTION_LOOP_056:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_055                                                             ; x8c13  {"(Amount)":"-34 bytes to x8bf1"}
 OFFENSE_PLAYER_REACTION_191:
 	.DB $D8, $14, $E0                                                                                                     ; x8c15  {"(Location)":{"down":4.5,"left":4}}
-	.DB $F3, $08                                                                                                          ; x8c18  {"(Time)":"for 0.4s"}
+	PlayerCommandData.stand $08                                                                                           ; x8c18  {"(Time)":"for 0.4s"}
 	.DB $D8, $20, $EC                                                                                                     ; x8c1a  {"(Location)":{"down":6,"left":2.5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_433                                                                  ; x8c1d  {"(Pointer)":" to x9e6a"}
 OFFENSE_PLAYER_REACTION_192:
@@ -1615,7 +1615,7 @@ OFFENSE_PLAYER_REACTION_198:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8c8e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_199:
 	.DB $D8, $E0, $C0                                                                                                     ; x8c91  {"(Location)":{"up":2,"left":8}}
-	.DB $F3, $01                                                                                                          ; x8c94  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8c94  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x8c96  {"(Direction)":"90 degrees"}
 	.DB $D5                                                                                                               ; x8c98 
 	.DB $E4                                                                                                               ; x8c99 
@@ -1661,7 +1661,7 @@ OFFENSE_PLAYER_REACTION_203:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_435                                                                  ; x8ce8  {"(Pointer)":" to x9e76"}
 OFFENSE_PLAYER_REACTION_204:
 	.DB $D8, $D8, $E0                                                                                                     ; x8ceb  {"(Location)":{"up":3,"left":4}}
-	.DB $F3, $01                                                                                                          ; x8cee  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8cee  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x8cf0  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToBlock %11011000, %00000000                                                                     ; x8cf2  {"(Player)":"RE,NT,ROLB,RILB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8cf5  {"(Pointer)":" to x9ef8"}
@@ -1687,7 +1687,7 @@ OFFENSE_PLAYER_REACTION_208:
 	.DB $D8, $34, $18                                                                                                     ; x8d21  {"(Location)":{"down":8.5,"right":3}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8d24  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_209:
-	.DB $F3, $19                                                                                                          ; x8d27  {"(Time)":"for 1.25s"}
+	PlayerCommandData.stand $19                                                                                           ; x8d27  {"(Time)":"for 1.25s"}
 	.DB $D8, $04, $C8                                                                                                     ; x8d29  {"(Location)":{"down":2.5,"left":7}}
 	.DB $D8, $E8, $C8                                                                                                     ; x8d2c  {"(Location)":{"up":1,"left":7}}
 	.DB $E4                                                                                                               ; x8d2f 
@@ -1779,11 +1779,11 @@ OFFENSE_PLAYER_REACTION_JUMP_092:
 	.DB $27, $38, $B8                                                                                                     ; x8df5  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_090                                                             ; x8df8  {"(Amount)":"-39 bytes to x8dd1"}
 OFFENSE_PLAYER_REACTION_216:
-	.DB $F3, $19                                                                                                          ; x8dfa  {"(Time)":"for 1.25s"}
+	PlayerCommandData.stand $19                                                                                           ; x8dfa  {"(Time)":"for 1.25s"}
 	.DB $D8, $04, $C8                                                                                                     ; x8dfc  {"(Location)":{"down":2.5,"left":7}}
 	.DB $D8, $E8, $C8                                                                                                     ; x8dff  {"(Location)":{"up":1,"left":7}}
 	.DB $D8, $D8, $D0                                                                                                     ; x8e02  {"(Location)":{"up":3,"left":6}}
-	.DB $F3, $01                                                                                                          ; x8e05  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8e05  {"(Time)":"for 0.05s"}
 	.DB $F0, $60                                                                                                          ; x8e07  {"(Direction)":"45 degrees"}
 	PlayerCommandData.setToBlock %11011001, %00000000                                                                     ; x8e09  {"(Player)":"RE,NT,ROLB,RILB,RCB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8e0c  {"(Pointer)":" to x9ef8"}
@@ -1873,7 +1873,7 @@ OFFENSE_PLAYER_REACTION_227:
 	.DB $CE, $E8, $50                                                                                                     ; x8ebf  {"(Location)":{"up":1,"right":10}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8ec2  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_228:
-	.DB $F3, $14                                                                                                          ; x8ec5  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x8ec5  {"(Time)":"for 1s"}
 	.DB $D8, $04, $CC                                                                                                     ; x8ec7  {"(Location)":{"down":2.5,"left":6.5}}
 	.DB $D8, $E8, $D8                                                                                                     ; x8eca  {"(Location)":{"up":1,"left":5}}
 	.DB $E4                                                                                                               ; x8ecd 
@@ -1904,7 +1904,7 @@ OFFENSE_PLAYER_REACTION_LOOP_067:
 	.DB $E2, $12                                                                                                          ; x8efd  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_066                                                             ; x8eff  {"(Amount)":"-34 bytes to x8edd"}
 OFFENSE_PLAYER_REACTION_229:
-	.DB $F3, $1E                                                                                                          ; x8f01  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x8f01  {"(Time)":"for 1.5s"}
 	.DB $D8, $E8, $D4                                                                                                     ; x8f03  {"(Location)":{"up":1,"left":5.5}}
 	.DB $E4                                                                                                               ; x8f06 
 	.DB $C8, $16, $AF, $09                                                                                                ; x8f07  {"(Pointer)":" to x8f26","(Random)":"43.75%"}
@@ -1934,7 +1934,7 @@ OFFENSE_PLAYER_REACTION_LOOP_069:
 	.DB $E2, $12                                                                                                          ; x8f36  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_068                                                             ; x8f38  {"(Amount)":"-34 bytes to x8f16"}
 OFFENSE_PLAYER_REACTION_230:
-	.DB $F3, $10                                                                                                          ; x8f3a  {"(Time)":"for 0.8s"}
+	PlayerCommandData.stand $10                                                                                           ; x8f3a  {"(Time)":"for 0.8s"}
 	.DB $D8, $D8, $C0                                                                                                     ; x8f3c  {"(Location)":{"up":3,"left":8}}
 	.DB $E4                                                                                                               ; x8f3f 
 	.DB $C8, $52, $AF, $09                                                                                                ; x8f40  {"(Pointer)":" to x8f62","(Random)":"43.75%"}
@@ -2029,7 +2029,7 @@ OFFENSE_PLAYER_REACTION_238:
 	.DB $D8, $F6, $E0                                                                                                     ; x8ff5  {"(Location)":{"down":0.75,"left":4}}
 	.DB $61                                                                                                               ; x8ff8 
 	.DB $D8, $F6, $B8                                                                                                     ; x8ff9  {"(Location)":{"down":0.75,"left":9}}
-	.DB $F3, $01                                                                                                          ; x8ffc  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x8ffc  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x8ffe  {"(Direction)":"90 degrees"}
 	.DB $E4                                                                                                               ; x9000 
 	.DB $C7, $02, $B0                                                                                                     ; x9001  {"(Pointer)":" to x9012"}
@@ -2131,7 +2131,7 @@ OFFENSE_PLAYER_REACTION_247:
 	.DB $D8, $F6, $C0                                                                                                     ; x90da  {"(Location)":{"down":0.75,"left":8}}
 	.DB $E4                                                                                                               ; x90dd 
 	.DB $D8, $F6, $B8                                                                                                     ; x90de  {"(Location)":{"down":0.75,"left":9}}
-	.DB $F3, $01                                                                                                          ; x90e1  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x90e1  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x90e3  {"(Direction)":"90 degrees"}
 	.DB $C7, $E5, $B0                                                                                                     ; x90e5  {"(Pointer)":" to x90f5"}
 	.DB $C1, $28, $64, $7F                                                                                                ; x90e8  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"50.390625%"}
@@ -2143,11 +2143,11 @@ OFFENSE_PLAYER_REACTION_JUMP_120:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_077                                                             ; x90f9  {"(Amount)":"-13 bytes to x90ec"}
 OFFENSE_PLAYER_REACTION_248:
 	.DB $D5                                                                                                               ; x90fb 
-	.DB $F3, $1E                                                                                                          ; x90fc  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x90fc  {"(Time)":"for 1.5s"}
 	.DB $72                                                                                                               ; x90fe 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x90ff  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_249:
-	.DB $F3, $50                                                                                                          ; x9102  {"(Time)":"for 4s"}
+	PlayerCommandData.stand $50                                                                                           ; x9102  {"(Time)":"for 4s"}
 	.DB $D8, $E4, $D0                                                                                                     ; x9104  {"(Location)":{"up":1.5,"left":6}}
 	.DB $E4                                                                                                               ; x9107 
 	.DB $C8, $14, $B1, $09                                                                                                ; x9108  {"(Pointer)":" to x9124","(Random)":"43.75%"}
@@ -2253,13 +2253,13 @@ OFFENSE_PLAYER_REACTION_LOOP_083:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_082                                                             ; x91c7  {"(Amount)":"-43 bytes to x919c"}
 OFFENSE_PLAYER_REACTION_257:
 	.DB $D8, $08, $D0                                                                                                     ; x91c9  {"(Location)":{"down":3,"left":6}}
-	.DB $F3, $01                                                                                                          ; x91cc  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x91cc  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x91ce  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToBlock %00100000, %00000000                                                                     ; x91d0  {"(Player)":"LE"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x91d3  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_258:
 	.DB $D8, $10, $E8                                                                                                     ; x91d6  {"(Location)":{"down":4,"left":3}}
-	.DB $F3, $0A                                                                                                          ; x91d9  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; x91d9  {"(Time)":"for 0.5s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x91db  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_259:
 	.DB $D8, $F8, $E4                                                                                                     ; x91de  {"(Location)":{"down":1,"left":3.5}}
@@ -2299,7 +2299,7 @@ OFFENSE_PLAYER_REACTION_262:
 	.DB $CE, $20, $30                                                                                                     ; x9237  {"(Location)":{"down":6,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x923a  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_263:
-	.DB $F3, $19                                                                                                          ; x923d  {"(Time)":"for 1.25s"}
+	PlayerCommandData.stand $19                                                                                           ; x923d  {"(Time)":"for 1.25s"}
 	.DB $D8, $04, $C8                                                                                                     ; x923f  {"(Location)":{"down":2.5,"left":7}}
 	.DB $D8, $E8, $C8                                                                                                     ; x9242  {"(Location)":{"up":1,"left":7}}
 	.DB $D8, $D8, $D0                                                                                                     ; x9245  {"(Location)":{"up":3,"left":6}}
@@ -2309,7 +2309,7 @@ OFFENSE_PLAYER_REACTION_263:
 	.DB $D8, $C0, $00                                                                                                     ; x924f  {"(Location)":{"up":6,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9252  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_264:
-	.DB $F3, $64                                                                                                          ; x9255  {"(Time)":"for 5s"}
+	PlayerCommandData.stand $64                                                                                           ; x9255  {"(Time)":"for 5s"}
 	.DB $D8, $B8, $D8                                                                                                     ; x9257  {"(Location)":{"up":7,"left":5}}
 	.DB $D8, $D0, $C0                                                                                                     ; x925a  {"(Location)":{"up":4,"left":8}}
 	.DB $C8, $73, $B2, $09                                                                                                ; x925d  {"(Pointer)":" to x9283","(Random)":"43.75%"}
@@ -2374,7 +2374,7 @@ OFFENSE_PLAYER_REACTION_266:
 	.DB $D8, $F0, $C8                                                                                                     ; x92dd  {"(Location)":{"up":0,"left":7}}
 	.DB $E4                                                                                                               ; x92e0 
 	.DB $D8, $F0, $C0                                                                                                     ; x92e1  {"(Location)":{"up":0,"left":8}}
-	.DB $F3, $01                                                                                                          ; x92e4  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x92e4  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x92e6  {"(Direction)":"90 degrees"}
 	.DB $C7, $E9, $B2                                                                                                     ; x92e8  {"(Pointer)":" to x92f9"}
 	.DB $C1, $0A, $BE, $7F                                                                                                ; x92eb  {"(Start Time, End Time)":"start in between 0.5s and 9.5s","(Take Sack Chance)":"50.390625%"}
@@ -2435,7 +2435,7 @@ OFFENSE_PLAYER_REACTION_JUMP_147:
 	.DB $E3, $03                                                                                                          ; x9367  {"(Boost)":{"value":3}}
 	.DB $D8, $E6, $F0                                                                                                     ; x9369  {"(Location)":{"up":1.25,"left":2}}
 	.DB $27, $38, $B8                                                                                                     ; x936c  {"(Pointer)":" to x9848"}
-	.DB $F3, $1E                                                                                                          ; x936f  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x936f  {"(Time)":"for 1.5s"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_090                                                             ; x9371  {"(Amount)":"-40 bytes to x9349"}
 OFFENSE_PLAYER_REACTION_269:
 	.DB $D4                                                                                                               ; x9373 
@@ -2524,7 +2524,7 @@ OFFENSE_PLAYER_REACTION_JUMP_155:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_095                                                             ; x9437  {"(Amount)":"-30 bytes to x9419"}
 OFFENSE_PLAYER_REACTION_273:
 	.DB $D8, $CC, $C4                                                                                                     ; x9439  {"(Location)":{"up":4.5,"left":7.5}}
-	.DB $F3, $01                                                                                                          ; x943c  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x943c  {"(Time)":"for 0.05s"}
 	.DB $F0, $60                                                                                                          ; x943e  {"(Direction)":"45 degrees"}
 	PlayerCommandData.setToBlock %10011001, %00000000                                                                     ; x9440  {"(Player)":"RE,ROLB,RILB,RCB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9443  {"(Pointer)":" to x9ef8"}
@@ -2561,9 +2561,9 @@ OFFENSE_PLAYER_REACTION_275:
 	.DB $51                                                                                                               ; x9485 
 	.DB $D8, $F0, $B8                                                                                                     ; x9486  {"(Location)":{"up":0,"left":9}}
 	.DB $F0, $A0                                                                                                          ; x9489  {"(Direction)":"135 degrees"}
-	.DB $F3, $3C                                                                                                          ; x948b  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x948b  {"(Time)":"for 3s"}
 	.DB $E4                                                                                                               ; x948d 
-	.DB $F3, $01                                                                                                          ; x948e  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x948e  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9490  {"(Direction)":"90 degrees"}
 	.DB $C7, $92, $B4                                                                                                     ; x9492  {"(Pointer)":" to x94a2"}
 	.DB $C1, $1E, $64, $7F                                                                                                ; x9495  {"(Start Time, End Time)":"start in between 1.5s and 5s","(Take Sack Chance)":"50.390625%"}
@@ -2574,7 +2574,7 @@ OFFENSE_PLAYER_REACTION_JUMP_159:
 	.DB $C1, $1E, $64, $CC                                                                                                ; x94a2  {"(Start Time, End Time)":"start in between 1.5s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_098                                                             ; x94a6  {"(Amount)":"-13 bytes to x9499"}
 OFFENSE_PLAYER_REACTION_276:
-	.DB $F3, $14                                                                                                          ; x94a8  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x94a8  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C8                                                                                                     ; x94aa  {"(Location)":{"up":0,"left":7}}
 	.DB $D8, $18, $D0                                                                                                     ; x94ad  {"(Location)":{"down":5,"left":6}}
 	.DB $D8, $20, $D8                                                                                                     ; x94b0  {"(Location)":{"down":6,"left":5}}
@@ -2653,12 +2653,12 @@ OFFENSE_PLAYER_REACTION_280:
 	.DB $E1, $07                                                                                                          ; x9553  {"(Value)":50}
 	.DB $D8, $F8, $C8                                                                                                     ; x9555  {"(Location)":{"down":1,"left":7}}
 	.DB $D8, $FC, $B8                                                                                                     ; x9558  {"(Location)":{"down":1.5,"left":9}}
-	.DB $F3, $01                                                                                                          ; x955b  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x955b  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x955d  {"(Direction)":"90 degrees"}
 	PlayerCommandData.turn $5A                                                                                            ; x955f  {"(Time)":"for 4.5s"}
 	.DB $E1, $00                                                                                                          ; x9561  {"(Value)":6}
 	.DB $E4                                                                                                               ; x9563 
-	.DB $F3, $01                                                                                                          ; x9564  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9564  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9566  {"(Direction)":"90 degrees"}
 	.DB $C7, $68, $B5                                                                                                     ; x9568  {"(Pointer)":" to x9578"}
 	.DB $C1, $3C, $64, $7F                                                                                                ; x956b  {"(Start Time, End Time)":"start in between 3s and 5s","(Take Sack Chance)":"50.390625%"}
@@ -2669,7 +2669,7 @@ OFFENSE_PLAYER_REACTION_JUMP_167:
 	.DB $C1, $3C, $64, $CC                                                                                                ; x9578  {"(Start Time, End Time)":"start in between 3s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_103                                                             ; x957c  {"(Amount)":"-13 bytes to x956f"}
 OFFENSE_PLAYER_REACTION_281:
-	.DB $F3, $14                                                                                                          ; x957e  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; x957e  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C4                                                                                                     ; x9580  {"(Location)":{"up":0,"left":7.5}}
 	.DB $D8, $08, $D4                                                                                                     ; x9583  {"(Location)":{"down":3,"left":5.5}}
 	.DB $D8, $28, $E0                                                                                                     ; x9586  {"(Location)":{"down":7,"left":4}}
@@ -2955,7 +2955,7 @@ OFFENSE_PLAYER_REACTION_309:
 OFFENSE_PLAYER_REACTION_310:
 	.DB $D5                                                                                                               ; x9804 
 	.DB $F0, $80                                                                                                          ; x9805  {"(Direction)":"90 degrees"}
-	.DB $F3, $05                                                                                                          ; x9807  {"(Time)":"for 0.25s"}
+	PlayerCommandData.stand $05                                                                                           ; x9807  {"(Time)":"for 0.25s"}
 	.DB $C0, $00, $F8                                                                                                     ; x9809  {"(Location)":{"up":0,"left":0.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_144                                                             ; x980c  {"(Pointer)":" to x933c"}
 OFFENSE_PLAYER_REACTION_311:
@@ -2981,7 +2981,7 @@ OFFENSE_PLAYER_REACTION_312:
 	.DB $72                                                                                                               ; x983a 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_093                                                             ; x983b  {"(Pointer)":" to x8e14"}
 OFFENSE_PLAYER_REACTION_313:
-	.DB $F3, $00                                                                                                          ; x983e  {"(Time)":"for forever"}
+	PlayerCommandData.stand $00                                                                                           ; x983e  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_313                                                                  ; x9840  {"(Amount)":"-2 bytes to x983e"}
 OFFENSE_PLAYER_REACTION_314:
 	PlayerCommandData.turn $00                                                                                            ; x9842  {"(Time)":"for forever"}
@@ -3015,7 +3015,7 @@ OFFENSE_PLAYER_REACTION_318:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9867  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_319:
 	.DB $A2                                                                                                               ; x986a 
-	.DB $F3, $21                                                                                                          ; x986b  {"(Time)":"for 1.65s"}
+	PlayerCommandData.stand $21                                                                                           ; x986b  {"(Time)":"for 1.65s"}
 	.DB $D8, $F0, $C0                                                                                                     ; x986d  {"(Location)":{"up":0,"left":8}}
 	.DB $D8, $E8, $D4                                                                                                     ; x9870  {"(Location)":{"up":1,"left":5.5}}
 	.DB $D8, $D0, $E0                                                                                                     ; x9873  {"(Location)":{"up":4,"left":4}}
@@ -3038,7 +3038,7 @@ OFFENSE_PLAYER_REACTION_321:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x989c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_322:
 	.DB $A1                                                                                                               ; x989f 
-	.DB $F3, $3C                                                                                                          ; x98a0  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x98a0  {"(Time)":"for 3s"}
 	.DB $D8, $14, $18                                                                                                     ; x98a2  {"(Location)":{"down":4.5,"right":3}}
 	.DB $D8, $30, $38                                                                                                     ; x98a5  {"(Location)":{"down":8,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98a8  {"(Pointer)":" to x9842"}
@@ -3049,13 +3049,13 @@ OFFENSE_PLAYER_REACTION_323:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98b2  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_324:
 	.DB $A1                                                                                                               ; x98b5 
-	.DB $F3, $1E                                                                                                          ; x98b6  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x98b6  {"(Time)":"for 1.5s"}
 	.DB $D8, $D8, $C0                                                                                                     ; x98b8  {"(Location)":{"up":3,"left":8}}
 	.DB $D8, $C0, $D0                                                                                                     ; x98bb  {"(Location)":{"up":6,"left":6}}
 	.DB $53                                                                                                               ; x98be 
 	PlayerCommandData.setToGrapple %00000000, %00000000                                                                   ; x98bf  {"(Player)":""}
 	.DB $F0, $E0                                                                                                          ; x98c2  {"(Direction)":"225 degrees"}
-	.DB $F3, $0A                                                                                                          ; x98c4  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; x98c4  {"(Time)":"for 0.5s"}
 	.DB $D8, $B8, $E0                                                                                                     ; x98c6  {"(Location)":{"up":7,"left":4}}
 	.DB $D8, $B8, $F0                                                                                                     ; x98c9  {"(Location)":{"up":7,"left":2}}
 	.DB $D8, $B0, $00                                                                                                     ; x98cc  {"(Location)":{"up":8,"left":0}}
@@ -3143,7 +3143,7 @@ OFFENSE_PLAYER_REACTION_335:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9988  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_336:
 	.DB $A2                                                                                                               ; x998b 
-	.DB $F3, $0A                                                                                                          ; x998c  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; x998c  {"(Time)":"for 0.5s"}
 	.DB $D8, $C4, $10                                                                                                     ; x998e  {"(Location)":{"up":5.5,"right":2}}
 	.DB $D8, $FC, $30                                                                                                     ; x9991  {"(Location)":{"down":1.5,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9994  {"(Pointer)":" to x9842"}
@@ -3165,7 +3165,7 @@ OFFENSE_PLAYER_REACTION_JUMP_192:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_192                                                             ; x99b3  {"(Pointer)":" to x99b0"}
 OFFENSE_PLAYER_REACTION_339:
 	.DB $A4                                                                                                               ; x99b6 
-	.DB $F3, $28                                                                                                          ; x99b7  {"(Time)":"for 2s"}
+	PlayerCommandData.stand $28                                                                                           ; x99b7  {"(Time)":"for 2s"}
 	.DB $D8, $1C, $F8                                                                                                     ; x99b9  {"(Location)":{"down":5.5,"left":1}}
 	.DB $D8, $20, $00                                                                                                     ; x99bc  {"(Location)":{"down":6,"left":0}}
 	.DB $D8, $38, $18                                                                                                     ; x99bf  {"(Location)":{"down":9,"right":3}}
@@ -3355,7 +3355,7 @@ OFFENSE_PLAYER_REACTION_361:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b61  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_362:
 	.DB $A4                                                                                                               ; x9b64 
-	.DB $F3, $1E                                                                                                          ; x9b65  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; x9b65  {"(Time)":"for 1.5s"}
 	.DB $D8, $C8, $D0                                                                                                     ; x9b67  {"(Location)":{"up":5,"left":6}}
 	.DB $D8, $BC, $E0                                                                                                     ; x9b6a  {"(Location)":{"up":6.5,"left":4}}
 	.DB $D8, $B8, $F8                                                                                                     ; x9b6d  {"(Location)":{"up":7,"left":1}}
@@ -3461,7 +3461,7 @@ OFFENSE_PLAYER_REACTION_377:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c47  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_378:
 	.DB $A4                                                                                                               ; x9c4a 
-	.DB $F3, $3C                                                                                                          ; x9c4b  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; x9c4b  {"(Time)":"for 3s"}
 	.DB $D8, $20, $10                                                                                                     ; x9c4d  {"(Location)":{"down":6,"right":2}}
 	.DB $D8, $28, $20                                                                                                     ; x9c50  {"(Location)":{"down":7,"right":4}}
 	.DB $D9, $C0, $30                                                                                                     ; x9c53  {"(Location)":{"down":9,"right":6}}
@@ -3751,59 +3751,59 @@ OFFENSE_PLAYER_REACTION_435:
 	.DB $3A                                                                                                               ; x9e79 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_435                                                                  ; x9e7a  {"(Amount)":"-4 bytes to x9e76"}
 OFFENSE_PLAYER_REACTION_436:
-	.DB $F3, $19                                                                                                          ; x9e7c  {"(Time)":"for 1.25s"}
+	PlayerCommandData.stand $19                                                                                           ; x9e7c  {"(Time)":"for 1.25s"}
 	.DB $D8, $E8, $D0                                                                                                     ; x9e7e  {"(Location)":{"up":1,"left":6}}
-	.DB $F3, $01                                                                                                          ; x9e81  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9e81  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9e83  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x9e85  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9e88  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_437:
-	.DB $F3, $19                                                                                                          ; x9e8b  {"(Time)":"for 1.25s"}
+	PlayerCommandData.stand $19                                                                                           ; x9e8b  {"(Time)":"for 1.25s"}
 	.DB $D8, $F8, $CC                                                                                                     ; x9e8d  {"(Location)":{"down":1,"left":6.5}}
-	.DB $F3, $01                                                                                                          ; x9e90  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9e90  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9e92  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x9e94  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9e97  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_438:
 	.DB $D8, $14, $C4                                                                                                     ; x9e9a  {"(Location)":{"down":4.5,"left":7.5}}
-	.DB $F3, $01                                                                                                          ; x9e9d  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9e9d  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x9e9f  {"(Direction)":"135 degrees"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9ea1  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.setToBlock %00100010, %10000000                                                                     ; x9ea4  {"(Player)":"LE,LOLB,LCB"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9ea7  {"(Amount)":"81 bytes to x9ef8"}
 OFFENSE_PLAYER_REACTION_439:
 	.DB $F0, $80                                                                                                          ; x9ea9  {"(Direction)":"90 degrees"}
-	.DB $F3, $0A                                                                                                          ; x9eab  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; x9eab  {"(Time)":"for 0.5s"}
 	.DB $D8, $F0, $EC                                                                                                     ; x9ead  {"(Location)":{"up":0,"left":2.5}}
-	.DB $F3, $01                                                                                                          ; x9eb0  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9eb0  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9eb2  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9eb4  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.setToBlock %11101100, %00000000                                                                     ; x9eb7  {"(Player)":"RE,NT,LE,RILB,LILB"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9eba  {"(Amount)":"62 bytes to x9ef8"}
 OFFENSE_PLAYER_REACTION_440:
 	.DB $D8, $E0, $E4                                                                                                     ; x9ebc  {"(Location)":{"up":2,"left":3.5}}
-	.DB $F3, $01                                                                                                          ; x9ebf  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9ebf  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9ec1  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9ec3  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.setToBlock %11011000, %00000000                                                                     ; x9ec6  {"(Player)":"RE,NT,ROLB,RILB"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9ec9  {"(Amount)":"47 bytes to x9ef8"}
 OFFENSE_PLAYER_REACTION_441:
 	.DB $D8, $00, $E4                                                                                                     ; x9ecb  {"(Location)":{"down":2,"left":3.5}}
-	.DB $F3, $01                                                                                                          ; x9ece  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9ece  {"(Time)":"for 0.05s"}
 	.DB $F0, $80                                                                                                          ; x9ed0  {"(Direction)":"90 degrees"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9ed2  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.setToBlock %00101110, %00000000                                                                     ; x9ed5  {"(Player)":"LE,RILB,LILB,LOLB"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9ed8  {"(Amount)":"32 bytes to x9ef8"}
 OFFENSE_PLAYER_REACTION_442:
 	.DB $D8, $D4, $D4                                                                                                     ; x9eda  {"(Location)":{"up":3.5,"left":5.5}}
-	.DB $F3, $01                                                                                                          ; x9edd  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9edd  {"(Time)":"for 0.05s"}
 	.DB $F0, $60                                                                                                          ; x9edf  {"(Direction)":"45 degrees"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9ee1  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.setToBlock %00011001, %00000000                                                                     ; x9ee4  {"(Player)":"ROLB,RILB,RCB"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9ee7  {"(Amount)":"17 bytes to x9ef8"}
 OFFENSE_PLAYER_REACTION_443:
 	.DB $D8, $0C, $D4                                                                                                     ; x9ee9  {"(Location)":{"down":3.5,"left":5.5}}
-	.DB $F3, $01                                                                                                          ; x9eec  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; x9eec  {"(Time)":"for 0.05s"}
 	.DB $F0, $A0                                                                                                          ; x9eee  {"(Direction)":"135 degrees"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9ef0  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.setToBlock %00000110, %10000000                                                                     ; x9ef3  {"(Player)":"LILB,LOLB,LCB"}
@@ -3901,8 +3901,8 @@ OFFENSE_PLAYER_REACTION_JUMP_199:
 OFFENSE_UNUSED_REACTION_JUMP_001:
 	.DB $D0, $E0, $00                                                                                                     ; x9f72  {"(Location)":{"up":2,"left":0}}
 	.DB $F0, $00                                                                                                          ; x9f75  {"(Direction)":"270 degrees"}
-	.DB $F3, $3C                                                                                                          ; x9f77  {"(Time)":"for 3s"}
-	.DB $F3, $01                                                                                                          ; x9f79  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $3C                                                                                           ; x9f77  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $01                                                                                           ; x9f79  {"(Time)":"for 0.05s"}
 	PlayerCommandData.infiniteLoop                                                                                        ; x9f7b 
 	.DB $05, $C0                                                                                                          ; x9f7c  {"(Time)":"for 9.6s"}
 	PlayerCommandData.jumpTo OFFENSE_UNUSED_REACTION_JUMP_001                                                             ; x9f7e  {"(Pointer)":" to x9f72"}
@@ -4109,7 +4109,7 @@ DEFENSE_PLAYER_REACTION_JUMP_007:
 DEFENSE_PLAYER_REACTION_036:
 	.DB $D1, $36, $28                                                                                                     ; xa177  {"(Location)":{"up":8.25,"right":5}}
 	.DB $EC                                                                                                               ; xa17a 
-	.DB $F3, $0A                                                                                                          ; xa17b  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; xa17b  {"(Time)":"for 0.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_008:
 	.DB $D7, $00, $90                                                                                                     ; xa17d  {"(Location)":{"up":0,"right":13.875}}
 	.DB $D7, $20, $C0                                                                                                     ; xa180  {"(Location)":{"down":4,"right":7.875}}
@@ -4118,12 +4118,12 @@ DEFENSE_PLAYER_REACTION_037:
 	.DB $D1, $C0, $28                                                                                                     ; xa186  {"(Location)":{"down":9,"right":5}}
 	.DB $EC                                                                                                               ; xa189 
 DEFENSE_PLAYER_REACTION_JUMP_009:
-	.DB $F3, $0A                                                                                                          ; xa18a  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; xa18a  {"(Time)":"for 0.5s"}
 	.DB $D8, $F0, $E8                                                                                                     ; xa18c  {"(Location)":{"up":0,"right":3}}
 	.DB $D8, $F0, $00                                                                                                     ; xa18f  {"(Location)":{"up":0,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_490                                                                  ; xa192  {"(Pointer)":" to xbdf8"}
 DEFENSE_PLAYER_REACTION_JUMP_010:
-	.DB $F3, $64                                                                                                          ; xa195  {"(Time)":"for 5s"}
+	PlayerCommandData.stand $64                                                                                           ; xa195  {"(Time)":"for 5s"}
 	.DB $D7, $30, $C8                                                                                                     ; xa197  {"(Location)":{"down":6,"right":6.875}}
 	.DB $D7, $28, $F0                                                                                                     ; xa19a  {"(Location)":{"down":5,"right":1.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa19d  {"(Pointer)":" to xaacc"}
@@ -4135,13 +4135,13 @@ DEFENSE_PLAYER_REACTION_JUMP_011:
 DEFENSE_PLAYER_REACTION_038:
 	.DB $D0, $D8, $08                                                                                                     ; xa1ab  {"(Location)":{"up":3,"right":1}}
 	.DB $EA                                                                                                               ; xa1ae 
-	.DB $F3, $0A                                                                                                          ; xa1af  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; xa1af  {"(Time)":"for 0.5s"}
 	.DB $D8, $E0, $00                                                                                                     ; xa1b1  {"(Location)":{"up":2,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa1b4  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_039:
 	.DB $D0, $F0, $08                                                                                                     ; xa1b7  {"(Location)":{"up":0,"right":1}}
 	.DB $EA                                                                                                               ; xa1ba 
-	.DB $F3, $0A                                                                                                          ; xa1bb  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; xa1bb  {"(Time)":"for 0.5s"}
 	.DB $D8, $F0, $04                                                                                                     ; xa1bd  {"(Location)":{"up":0,"left":0.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa1c0  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_040:
@@ -4291,7 +4291,7 @@ DEFENSE_PLAYER_REACTION_060:
 	.DB $EC                                                                                                               ; xa2df 
 	.DB $27, $DB, $A2                                                                                                     ; xa2e0  {"(Pointer)":" to xa2eb"}
 DEFENSE_PLAYER_REACTION_JUMP_026:
-	.DB $F3, $3C                                                                                                          ; xa2e3  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; xa2e3  {"(Time)":"for 3s"}
 	.DB $D8, $F8, $C8                                                                                                     ; xa2e5  {"(Location)":{"down":1,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa2e8  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_JUMP_027:
@@ -4406,7 +4406,7 @@ DEFENSE_PLAYER_REACTION_074:
 DEFENSE_PLAYER_REACTION_075:
 	.DB $D0, $E0, $18                                                                                                     ; xa3c4  {"(Location)":{"up":2,"right":3}}
 	.DB $EC                                                                                                               ; xa3c7 
-	.DB $F3, $3C                                                                                                          ; xa3c8  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; xa3c8  {"(Time)":"for 3s"}
 	.DB $D8, $F0, $D0                                                                                                     ; xa3ca  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa3cd  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_076:
@@ -4430,9 +4430,9 @@ DEFENSE_PLAYER_REACTION_079:
 	.DB $D0, $E0, $18                                                                                                     ; xa3f1  {"(Location)":{"up":2,"right":3}}
 	.DB $EC                                                                                                               ; xa3f4 
 DEFENSE_PLAYER_REACTION_JUMP_039:
-	.DB $F3, $14                                                                                                          ; xa3f5  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; xa3f5  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $D0                                                                                                     ; xa3f7  {"(Location)":{"up":0,"right":6}}
-	.DB $F3, $5A                                                                                                          ; xa3fa  {"(Time)":"for 4.5s"}
+	PlayerCommandData.stand $5A                                                                                           ; xa3fa  {"(Time)":"for 4.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa3fc  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_080:
 	.DB $D0, $00, $18                                                                                                     ; xa3ff  {"(Location)":{"down":2,"right":3}}
@@ -4460,14 +4460,14 @@ DEFENSE_PLAYER_REACTION_083:
 	.DB $2B, $23, $A4                                                                                                     ; xa42c  {"(Pointer)":" to xa433"}
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xa42f  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_041:
-	.DB $F3, $0A                                                                                                          ; xa433  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; xa433  {"(Time)":"for 0.5s"}
 	.DB $D8, $D8, $D0                                                                                                     ; xa435  {"(Location)":{"up":3,"right":6}}
 	PlayerCommandData.turn $5A                                                                                            ; xa438  {"(Time)":"for 4.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa43a  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_084:
 	.DB $D0, $00, $18                                                                                                     ; xa43d  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xa440 
-	.DB $F3, $12                                                                                                          ; xa441  {"(Time)":"for 0.9s"}
+	PlayerCommandData.stand $12                                                                                           ; xa441  {"(Time)":"for 0.9s"}
 	.DB $D8, $10, $C8                                                                                                     ; xa443  {"(Location)":{"down":4,"right":7}}
 	PlayerCommandData.turn $64                                                                                            ; xa446  {"(Time)":"for 5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa448  {"(Pointer)":" to xaabd"}
@@ -4482,7 +4482,7 @@ DEFENSE_PLAYER_REACTION_086:
 	.DB $D0, $E0, $18                                                                                                     ; xa45b  {"(Location)":{"up":2,"right":3}}
 	.DB $EC                                                                                                               ; xa45e 
 DEFENSE_PLAYER_REACTION_JUMP_042:
-	.DB $F3, $14                                                                                                          ; xa45f  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; xa45f  {"(Time)":"for 1s"}
 	.DB $27, $5C, $A4                                                                                                     ; xa461  {"(Pointer)":" to xa46c"}
 	.DB $D8, $F0, $C8                                                                                                     ; xa464  {"(Location)":{"up":0,"right":7}}
 	PlayerCommandData.turn $5A                                                                                            ; xa467  {"(Time)":"for 4.5s"}
@@ -4500,7 +4500,7 @@ DEFENSE_PLAYER_REACTION_088:
 	.DB $D0, $18, $0C                                                                                                     ; xa47f  {"(Location)":{"down":5,"right":1.5}}
 	.DB $EC                                                                                                               ; xa482 
 DEFENSE_PLAYER_REACTION_JUMP_044:
-	.DB $F3, $1E                                                                                                          ; xa483  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xa483  {"(Time)":"for 1.5s"}
 	.DB $D8, $20, $00                                                                                                     ; xa485  {"(Location)":{"down":6,"left":0}}
 	.DB $D8, $20, $28                                                                                                     ; xa488  {"(Location)":{"down":6,"left":5}}
 	.DB $D8, $14, $3C                                                                                                     ; xa48b  {"(Location)":{"down":4.5,"left":7.5}}
@@ -4509,7 +4509,7 @@ DEFENSE_PLAYER_REACTION_089:
 	.DB $D0, $E0, $18                                                                                                     ; xa491  {"(Location)":{"up":2,"right":3}}
 	.DB $EC                                                                                                               ; xa494 
 DEFENSE_PLAYER_REACTION_JUMP_045:
-	.DB $F3, $32                                                                                                          ; xa495  {"(Time)":"for 2.5s"}
+	PlayerCommandData.stand $32                                                                                           ; xa495  {"(Time)":"for 2.5s"}
 	.DB $D8, $C8, $D0                                                                                                     ; xa497  {"(Location)":{"up":5,"right":6}}
 	.DB $D8, $B0, $C8                                                                                                     ; xa49a  {"(Location)":{"up":8,"right":7}}
 	PlayerCommandData.turn $C8                                                                                            ; xa49d  {"(Time)":"for 10s"}
@@ -4517,7 +4517,7 @@ DEFENSE_PLAYER_REACTION_JUMP_045:
 DEFENSE_PLAYER_REACTION_090:
 	.DB $D0, $00, $18                                                                                                     ; xa4a2  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xa4a5 
-	.DB $F3, $3C                                                                                                          ; xa4a6  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; xa4a6  {"(Time)":"for 3s"}
 	.DB $D8, $E0, $C8                                                                                                     ; xa4a8  {"(Location)":{"up":2,"right":7}}
 	.DB $D8, $D0, $C0                                                                                                     ; xa4ab  {"(Location)":{"up":4,"right":8}}
 	PlayerCommandData.turn $3C                                                                                            ; xa4ae  {"(Time)":"for 3s"}
@@ -4528,7 +4528,7 @@ DEFENSE_PLAYER_REACTION_091:
 DEFENSE_PLAYER_REACTION_JUMP_046:
 	.DB $C8, $DC, $AA, $01                                                                                                ; xa4b7  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
 	.DB $D8, $28, $08                                                                                                     ; xa4bb  {"(Location)":{"down":7,"left":1}}
-	.DB $F3, $3C                                                                                                          ; xa4be  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; xa4be  {"(Time)":"for 3s"}
 	.DB $D8, $20, $F0                                                                                                     ; xa4c0  {"(Location)":{"down":6,"right":2}}
 	.DB $D8, $00, $D0                                                                                                     ; xa4c3  {"(Location)":{"down":2,"right":6}}
 	.DB $D8, $E8, $C8                                                                                                     ; xa4c6  {"(Location)":{"up":1,"right":7}}
@@ -4537,7 +4537,7 @@ DEFENSE_PLAYER_REACTION_JUMP_046:
 DEFENSE_PLAYER_REACTION_092:
 	.DB $D0, $00, $18                                                                                                     ; xa4ce  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xa4d1 
-	.DB $F3, $0A                                                                                                          ; xa4d2  {"(Time)":"for 0.5s"}
+	PlayerCommandData.stand $0A                                                                                           ; xa4d2  {"(Time)":"for 0.5s"}
 	.DB $D8, $F8, $D8                                                                                                     ; xa4d4  {"(Location)":{"down":1,"right":5}}
 	PlayerCommandData.turn $14                                                                                            ; xa4d7  {"(Time)":"for 1s"}
 	.DB $D8, $10, $F8                                                                                                     ; xa4d9  {"(Location)":{"down":4,"right":1}}
@@ -4704,7 +4704,7 @@ DEFENSE_PLAYER_REACTION_112:
 DEFENSE_PLAYER_REACTION_113:
 	.DB $D0, $E0, $18                                                                                                     ; xa631  {"(Location)":{"up":2,"right":3}}
 	.DB $EC                                                                                                               ; xa634 
-	.DB $F3, $3C                                                                                                          ; xa635  {"(Time)":"for 3s"}
+	PlayerCommandData.stand $3C                                                                                           ; xa635  {"(Time)":"for 3s"}
 	.DB $D8, $E8, $C8                                                                                                     ; xa637  {"(Location)":{"up":1,"right":7}}
 	PlayerCommandData.turn $14                                                                                            ; xa63a  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa63c  {"(Pointer)":" to xaabd"}
@@ -4824,7 +4824,7 @@ DEFENSE_PLAYER_REACTION_JUMP_060:
 	.DB $E0, $0F                                                                                                          ; xa728  {"(Value)":100}
 	.DB $E3, $30                                                                                                          ; xa72a  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $20                                                                                         ; xa72c  {"(Boost)":{"value":32}}
-	.DB $F3, $28                                                                                                          ; xa72e  {"(Time)":"for 2s"}
+	PlayerCommandData.stand $28                                                                                           ; xa72e  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa730  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_130:
 	.DB $D0, $08, $08                                                                                                     ; xa733  {"(Location)":{"down":3,"right":1}}
@@ -4958,7 +4958,7 @@ DEFENSE_PLAYER_REACTION_JUMP_074:
 	.DB $EC                                                                                                               ; xa828 
 DEFENSE_PLAYER_REACTION_JUMP_075:
 	.DB $D7, $08, $D0                                                                                                     ; xa829  {"(Location)":{"down":1,"right":5.875}}
-	.DB $F3, $01                                                                                                          ; xa82c  {"(Time)":"for 0.05s"}
+	PlayerCommandData.stand $01                                                                                           ; xa82c  {"(Time)":"for 0.05s"}
 	.DB $F0, $00                                                                                                          ; xa82e  {"(Direction)":"270 degrees"}
 	PlayerCommandData.wait $01, $28                                                                                       ; xa830  {"(Start Time, End Time)":"start in between 0.05s and 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa833  {"(Pointer)":" to xaacc"}
@@ -5040,7 +5040,7 @@ DEFENSE_PLAYER_REACTION_154:
 DEFENSE_PLAYER_REACTION_155:
 	.DB $D1, $36, $28                                                                                                     ; xa8ce  {"(Location)":{"up":8.25,"right":5}}
 	.DB $EC                                                                                                               ; xa8d1 
-	.DB $F3, $1E                                                                                                          ; xa8d2  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xa8d2  {"(Time)":"for 1.5s"}
 	.DB $D8, $C8, $C8                                                                                                     ; xa8d4  {"(Location)":{"up":5,"right":7}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa8d7  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_156:
@@ -5089,13 +5089,13 @@ DEFENSE_PLAYER_REACTION_162:
 	.DB $D0, $00, $18                                                                                                     ; xa92b  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xa92e 
 	.DB $2C, $4E, $A2                                                                                                     ; xa92f  {"(Pointer)":" to xa25e"}
-	.DB $F3, $1E                                                                                                          ; xa932  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xa932  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_064                                                             ; xa934  {"(Pointer)":" to xa767"}
 DEFENSE_PLAYER_REACTION_163:
 	.DB $D0, $18, $0C                                                                                                     ; xa937  {"(Location)":{"down":5,"right":1.5}}
 	.DB $EC                                                                                                               ; xa93a 
 	.DB $2C, $58, $A2                                                                                                     ; xa93b  {"(Pointer)":" to xa268"}
-	.DB $F3, $28                                                                                                          ; xa93e  {"(Time)":"for 2s"}
+	PlayerCommandData.stand $28                                                                                           ; xa93e  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_087                                                             ; xa940  {"(Pointer)":" to xaad5"}
 DEFENSE_PLAYER_REACTION_164:
 	.DB $D0, $C8, $50                                                                                                     ; xa943  {"(Location)":{"up":5,"right":10}}
@@ -5146,7 +5146,7 @@ DEFENSE_PLAYER_REACTION_168:
 DEFENSE_PLAYER_REACTION_169:
 	.DB $D0, $00, $18                                                                                                     ; xa9aa  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xa9ad 
-	.DB $F3, $14                                                                                                          ; xa9ae  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; xa9ae  {"(Time)":"for 1s"}
 	.DB $25, $4F, $A1                                                                                                     ; xa9b0  {"(Pointer)":" to xa15f"}
 	.DB $D7, $20, $00                                                                                                     ; xa9b3  {"(Location)":{"down":4,"left":0}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xa9b6  {"(Pointer)":" to xaad2"}
@@ -5178,7 +5178,7 @@ DEFENSE_PLAYER_REACTION_174:
 	.DB $D0, $00, $18                                                                                                     ; xa9ee  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xa9f1 
 	.DB $2B, $D3, $A2                                                                                                     ; xa9f2  {"(Pointer)":" to xa2e3"}
-	.DB $F3, $14                                                                                                          ; xa9f5  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; xa9f5  {"(Time)":"for 1s"}
 	.DB $D8, $F0, $C8                                                                                                     ; xa9f7  {"(Location)":{"up":0,"right":7}}
 	.DB $27, $BC, $AA                                                                                                     ; xa9fa  {"(Pointer)":" to xaacc"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa9fd  {"(Pointer)":" to xbdfc"}
@@ -5200,36 +5200,36 @@ DEFENSE_PLAYER_REACTION_JUMP_084:
 DEFENSE_PLAYER_REACTION_177:
 	.DB $D0, $D8, $08                                                                                                     ; xaa21  {"(Location)":{"up":3,"right":1}}
 	.DB $EA                                                                                                               ; xaa24 
-	.DB $F3, $1E                                                                                                          ; xaa25  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa25  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_059                                                             ; xaa27  {"(Pointer)":" to xa718"}
 DEFENSE_PLAYER_REACTION_178:
 	.DB $D0, $F0, $08                                                                                                     ; xaa2a  {"(Location)":{"up":0,"right":1}}
 	.DB $EA                                                                                                               ; xaa2d 
-	.DB $F3, $1E                                                                                                          ; xaa2e  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa2e  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_060                                                             ; xaa30  {"(Pointer)":" to xa728"}
 DEFENSE_PLAYER_REACTION_179:
 	.DB $D0, $08, $08                                                                                                     ; xaa33  {"(Location)":{"down":3,"right":1}}
 	.DB $EA                                                                                                               ; xaa36 
-	.DB $F3, $1E                                                                                                          ; xaa37  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa37  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_061                                                             ; xaa39  {"(Pointer)":" to xa737"}
 DEFENSE_PLAYER_REACTION_180:
 	.DB $D0, $C8, $10                                                                                                     ; xaa3c  {"(Location)":{"up":5,"right":2}}
 	.DB $EC                                                                                                               ; xaa3f 
-	.DB $F3, $1E                                                                                                          ; xaa40  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa40  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_062                                                             ; xaa42  {"(Pointer)":" to xa747"}
 DEFENSE_PLAYER_REACTION_181:
 	.DB $D0, $E0, $18                                                                                                     ; xaa45  {"(Location)":{"up":2,"right":3}}
 	.DB $EC                                                                                                               ; xaa48 
-	.DB $F3, $1E                                                                                                          ; xaa49  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa49  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_063                                                             ; xaa4b  {"(Pointer)":" to xa757"}
 DEFENSE_PLAYER_REACTION_182:
 	.DB $D0, $00, $18                                                                                                     ; xaa4e  {"(Location)":{"down":2,"right":3}}
 	.DB $EC                                                                                                               ; xaa51 
-	.DB $F3, $1E                                                                                                          ; xaa52  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa52  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_064                                                             ; xaa54  {"(Pointer)":" to xa767"}
 	.DB $D0, $18, $0C                                                                                                     ; xaa57  {"(Location)":{"down":5,"right":1.5}}
 	.DB $EC                                                                                                               ; xaa5a 
-	.DB $F3, $1E                                                                                                          ; xaa5b  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xaa5b  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_UNUSED_REACTION_JUMP_002                                                             ; xaa5d  {"(Pointer)":" to xa777"}
 DEFENSE_PLAYER_REACTION_183:
 	.DB $D0, $00, $18                                                                                                     ; xaa60  {"(Location)":{"down":2,"right":3}}
@@ -5269,7 +5269,7 @@ DEFENSE_UNUSED_REACTION_JUMP_003:
 	.DB $C8, $D8, $AA, $07                                                                                                ; xaaa1  {"(Pointer)":" to xaae8","(Random)":"56.25%"}
 	.DB $2B, $A0, $AA                                                                                                     ; xaaa5  {"(Pointer)":" to xaab0"}
 	.DB $D8, $C0, $C0                                                                                                     ; xaaa8  {"(Location)":{"up":6,"right":8}}
-	.DB $F3, $50                                                                                                          ; xaaab  {"(Time)":"for 4s"}
+	PlayerCommandData.stand $50                                                                                           ; xaaab  {"(Time)":"for 4s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xaaad  {"(Pointer)":" to xaacc"}
 DEFENSE_PLAYER_REACTION_JUMP_086:
 	.DB $D8, $B8, $90                                                                                                     ; xaab0  {"(Location)":{"up":7,"right":14}}
@@ -5516,7 +5516,7 @@ DEFENSE_PLAYER_REACTION_221:
 DEFENSE_PLAYER_REACTION_222:
 	.DB $D1, $36, $28                                                                                                     ; xac77  {"(Location)":{"up":8.25,"right":5}}
 	.DB $EC                                                                                                               ; xac7a 
-	.DB $F3, $1E                                                                                                          ; xac7b  {"(Time)":"for 1.5s"}
+	PlayerCommandData.stand $1E                                                                                           ; xac7b  {"(Time)":"for 1.5s"}
 	.DB $D7, $00, $E8                                                                                                     ; xac7d  {"(Location)":{"up":0,"right":2.875}}
 	PlayerCommandData.turn $28                                                                                            ; xac80  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac82  {"(Pointer)":" to xaacc"}
@@ -5524,7 +5524,7 @@ DEFENSE_PLAYER_REACTION_223:
 	.DB $D1, $C0, $28                                                                                                     ; xac85  {"(Location)":{"down":9,"right":5}}
 	.DB $EC                                                                                                               ; xac88 
 	.DB $C8, $D8, $AA, $06                                                                                                ; xac89  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
-	.DB $F3, $14                                                                                                          ; xac8d  {"(Time)":"for 1s"}
+	PlayerCommandData.stand $14                                                                                           ; xac8d  {"(Time)":"for 1s"}
 	.DB $D7, $00, $E8                                                                                                     ; xac8f  {"(Location)":{"up":0,"right":2.875}}
 	PlayerCommandData.turn $28                                                                                            ; xac92  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xac94  {"(Pointer)":" to xaacc"}
@@ -7628,7 +7628,7 @@ DEFENSE_PLAYER_REACTION_489:
 	.DB $C8, $DC, $AA, $0A                                                                                                ; xbdf1  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_098                                                             ; xbdf5  {"(Pointer)":" to xabd4"}
 DEFENSE_PLAYER_REACTION_490:
-	.DB $F3, $00                                                                                                          ; xbdf8  {"(Time)":"for forever"}
+	PlayerCommandData.stand $00                                                                                           ; xbdf8  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_490                                                                  ; xbdfa  {"(Amount)":"-2 bytes to xbdf8"}
 DEFENSE_PLAYER_REACTION_JUMP_264:
 	PlayerCommandData.turn $00                                                                                            ; xbdfc  {"(Time)":"for forever"}
