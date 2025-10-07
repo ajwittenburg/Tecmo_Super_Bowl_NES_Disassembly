@@ -1331,7 +1331,7 @@ OFFENSE_PLAYER_REACTION_175:
 OFFENSE_PLAYER_REACTION_176:
 	.DB $D4                                                                                                               ; x8a36 
 	.DB $D8, $F0, $E0                                                                                                     ; x8a37  {"(Location)":{"up":0,"left":4}}
-	.DB $E0, $04                                                                                                          ; x8a3a  {"(Value)":31}
+	PlayerCommandData.setRS $04                                                                                           ; x8a3a  {"(Value)":31}
 	PlayerCommandData.setMS $03                                                                                           ; x8a3c  {"(Value)":25}
 	.DB $71                                                                                                               ; x8a3e 
 	.DB $D8, $F0, $9C                                                                                                     ; x8a3f  {"(Location)":{"up":0,"left":12.5}}
@@ -2649,7 +2649,7 @@ OFFENSE_PLAYER_REACTION_280:
 	.DB $D4                                                                                                               ; x954c 
 	.DB $D8, $F8, $D4                                                                                                     ; x954d  {"(Location)":{"down":1,"left":5.5}}
 	.DB $51                                                                                                               ; x9550 
-	.DB $E0, $07                                                                                                          ; x9551  {"(Value)":50}
+	PlayerCommandData.setRS $07                                                                                           ; x9551  {"(Value)":50}
 	PlayerCommandData.setMS $07                                                                                           ; x9553  {"(Value)":50}
 	.DB $D8, $F8, $C8                                                                                                     ; x9555  {"(Location)":{"down":1,"left":7}}
 	.DB $D8, $FC, $B8                                                                                                     ; x9558  {"(Location)":{"down":1.5,"left":9}}
@@ -4812,7 +4812,7 @@ DEFENSE_PLAYER_REACTION_128:
 	.DB $D0, $D8, $08                                                                                                     ; xa714  {"(Location)":{"up":3,"right":1}}
 	PlayerCommandData.waitForSnap3PointStance                                                                             ; xa717 
 DEFENSE_PLAYER_REACTION_JUMP_059:
-	.DB $E0, $0F                                                                                                          ; xa718  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa718  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa71a  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa71c  {"(Boost)":{"value":48}}
 	.DB $D8, $D8, $08                                                                                                     ; xa71e  {"(Location)":{"up":3,"left":1}}
@@ -4821,7 +4821,7 @@ DEFENSE_PLAYER_REACTION_129:
 	.DB $D0, $F0, $08                                                                                                     ; xa724  {"(Location)":{"up":0,"right":1}}
 	PlayerCommandData.waitForSnap3PointStance                                                                             ; xa727 
 DEFENSE_PLAYER_REACTION_JUMP_060:
-	.DB $E0, $0F                                                                                                          ; xa728  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa728  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa72a  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $20                                                                                         ; xa72c  {"(Boost)":{"value":32}}
 	PlayerCommandData.stand $28                                                                                           ; xa72e  {"(Time)":"for 2s"}
@@ -4830,7 +4830,7 @@ DEFENSE_PLAYER_REACTION_130:
 	.DB $D0, $08, $08                                                                                                     ; xa733  {"(Location)":{"down":3,"right":1}}
 	PlayerCommandData.waitForSnap3PointStance                                                                             ; xa736 
 DEFENSE_PLAYER_REACTION_JUMP_061:
-	.DB $E0, $0F                                                                                                          ; xa737  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa737  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa739  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa73b  {"(Boost)":{"value":48}}
 	.DB $D8, $08, $08                                                                                                     ; xa73d  {"(Location)":{"down":3,"left":1}}
@@ -4839,7 +4839,7 @@ DEFENSE_PLAYER_REACTION_131:
 	.DB $D0, $C8, $10                                                                                                     ; xa743  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa746 
 DEFENSE_PLAYER_REACTION_JUMP_062:
-	.DB $E0, $0F                                                                                                          ; xa747  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa747  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa749  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa74b  {"(Boost)":{"value":48}}
 	.DB $D8, $C4, $08                                                                                                     ; xa74d  {"(Location)":{"up":5.5,"left":1}}
@@ -4848,7 +4848,7 @@ DEFENSE_PLAYER_REACTION_132:
 	.DB $D0, $E0, $18                                                                                                     ; xa753  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa756 
 DEFENSE_PLAYER_REACTION_JUMP_063:
-	.DB $E0, $0F                                                                                                          ; xa757  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa757  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa759  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa75b  {"(Boost)":{"value":48}}
 	.DB $D8, $E4, $00                                                                                                     ; xa75d  {"(Location)":{"up":1.5,"left":0}}
@@ -4857,7 +4857,7 @@ DEFENSE_PLAYER_REACTION_133:
 	.DB $D0, $00, $18                                                                                                     ; xa763  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa766 
 DEFENSE_PLAYER_REACTION_JUMP_064:
-	.DB $E0, $0F                                                                                                          ; xa767  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa767  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa769  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa76b  {"(Boost)":{"value":48}}
 	.DB $D8, $FC, $00                                                                                                     ; xa76d  {"(Location)":{"down":1.5,"left":0}}
@@ -4866,7 +4866,7 @@ DEFENSE_PLAYER_REACTION_134:
 	.DB $D0, $18, $0C                                                                                                     ; xa773  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa776 
 DEFENSE_UNUSED_REACTION_JUMP_002:
-	.DB $E0, $0F                                                                                                          ; xa777  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa777  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa779  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa77b  {"(Boost)":{"value":48}}
 	.DB $D8, $20, $08                                                                                                     ; xa77d  {"(Location)":{"down":6,"left":1}}
@@ -4875,7 +4875,7 @@ DEFENSE_PLAYER_REACTION_135:
 	.DB $D1, $36, $28                                                                                                     ; xa783  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa786 
 DEFENSE_PLAYER_REACTION_JUMP_065:
-	.DB $E0, $0F                                                                                                          ; xa787  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa787  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa789  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa78b  {"(Boost)":{"value":48}}
 	.DB $D9, $36, $00                                                                                                     ; xa78d  {"(Location)":{"up":8.25,"left":0}}
@@ -4883,7 +4883,7 @@ DEFENSE_PLAYER_REACTION_JUMP_065:
 DEFENSE_PLAYER_REACTION_136:
 	.DB $D1, $C0, $28                                                                                                     ; xa793  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa796 
-	.DB $E0, $0F                                                                                                          ; xa797  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa797  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa799  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa79b  {"(Boost)":{"value":48}}
 	.DB $D9, $C0, $00                                                                                                     ; xa79d  {"(Location)":{"down":9,"left":0}}
@@ -4892,7 +4892,7 @@ DEFENSE_PLAYER_REACTION_137:
 	.DB $D0, $C8, $50                                                                                                     ; xa7a3  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7a6 
 DEFENSE_PLAYER_REACTION_JUMP_066:
-	.DB $E0, $0F                                                                                                          ; xa7a7  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa7a7  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa7a9  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa7ab  {"(Boost)":{"value":48}}
 	.DB $D8, $C4, $C8                                                                                                     ; xa7ad  {"(Location)":{"up":5.5,"right":7}}
@@ -4900,7 +4900,7 @@ DEFENSE_PLAYER_REACTION_JUMP_066:
 DEFENSE_PLAYER_REACTION_138:
 	.DB $D0, $18, $50                                                                                                     ; xa7b3  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa7b6 
-	.DB $E0, $0F                                                                                                          ; xa7b7  {"(Value)":100}
+	PlayerCommandData.setRS $0F                                                                                           ; xa7b7  {"(Value)":100}
 	PlayerCommandData.boostRS $30                                                                                         ; xa7b9  {"(Boost)":{"value":48}}
 	PlayerCommandData.boostHP $30                                                                                         ; xa7bb  {"(Boost)":{"value":48}}
 	.DB $D8, $24, $C8                                                                                                     ; xa7bd  {"(Location)":{"down":6.5,"right":7}}

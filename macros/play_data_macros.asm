@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.setRS value
+    .DB $E0
+    .DB value
+.ENDM
+
 .MACRO PlayerCommandData.setMS value
     .DB $E1
     .DB value
