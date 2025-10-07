@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.punt
+    .DB $E6
+.ENDM
+
 .MACRO PlayerCommandData.fieldGoal
     .DB $E7
 .ENDM
