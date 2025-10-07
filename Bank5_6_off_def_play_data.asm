@@ -242,7 +242,7 @@ OFFENSE_PLAYER_REACTION_035:
 OFFENSE_PLAYER_REACTION_036:
 	.DB $D0, $F0, $60                                                                                                     ; x81d9  {"(Location)":{"up":0,"left":12}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x81dc 
-	.DB $E8                                                                                                               ; x81dd 
+	PlayerCommandData.extraPoint                                                                                          ; x81dd 
 OFFENSE_PLAYER_REACTION_LOOP_013:
 	PlayerCommandData.turn $00                                                                                            ; x81de  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_013                                                             ; x81e0  {"(Amount)":"-2 bytes to x81de"}

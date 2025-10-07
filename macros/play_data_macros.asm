@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.extraPoint
+    .DB $E8
+.ENDM
+
 .MACRO PlayerCommandData.waitForSnap3PointStance
     .DB $EA
 .ENDM
