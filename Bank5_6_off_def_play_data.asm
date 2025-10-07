@@ -3903,7 +3903,7 @@ OFFENSE_UNUSED_REACTION_JUMP_001:
 	.DB $F0, $00                                                                                                          ; x9f75  {"(Direction)":"270 degrees"}
 	.DB $F3, $3C                                                                                                          ; x9f77  {"(Time)":"for 3s"}
 	.DB $F3, $01                                                                                                          ; x9f79  {"(Time)":"for 0.05s"}
-	.DB $F8                                                                                                               ; x9f7b 
+	PlayerCommandData.infiniteLoop                                                                                        ; x9f7b 
 	.DB $05, $C0                                                                                                          ; x9f7c  {"(Time)":"for 9.6s"}
 	PlayerCommandData.jumpTo OFFENSE_UNUSED_REACTION_JUMP_001                                                             ; x9f7e  {"(Pointer)":" to x9f72"}
 	.DB $D0, $70, $70                                                                                                     ; x9f81  {"(Location)":{"down":16,"left":14}}

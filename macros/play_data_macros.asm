@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.infiniteLoop
+    .DB $F8
+.ENDM
+
 .MACRO PlayerCommandData.recoverBall
     .DB $FA
 .ENDM
