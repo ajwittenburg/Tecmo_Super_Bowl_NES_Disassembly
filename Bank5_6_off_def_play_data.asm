@@ -194,7 +194,7 @@ OFFENSE_PLAYER_REACTION_025:
 OFFENSE_PLAYER_REACTION_026:
 	.DB $D0, $F0, $60                                                                                                     ; x8181  {"(Location)":{"up":0,"left":12}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8184 
-	.DB $E7                                                                                                               ; x8185 
+	PlayerCommandData.fieldGoal                                                                                           ; x8185 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8186  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_027:
 	.DB $D0, $B4, $24                                                                                                     ; x8189  {"(Location)":{"up":7.5,"left":4.5}}
