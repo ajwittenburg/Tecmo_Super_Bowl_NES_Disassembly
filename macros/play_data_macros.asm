@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.faceDirection direction
+    .DB $F0
+    .DB direction
+.ENDM
+
 .MACRO PlayerCommandData.stand time
     .DB $F3
     .DB time
