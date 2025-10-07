@@ -254,7 +254,7 @@ OFFENSE_PLAYER_REACTION_038:
 	PlayerCommandData.qbStance                                                                                            ; x81e9 
 OFFENSE_PLAYER_REACTION_039:
 	.DB $D0, $0C, $40                                                                                                     ; x81ea  {"(Location)":{"down":3.5,"left":8}}
-	.DB $EB, $3C                                                                                                          ; x81ed  {"(Time)":"for 3s"}
+	PlayerCommandData.shift $3C                                                                                           ; x81ed  {"(Time)":"for 3s"}
 	.DB $D8, $0C, $D8                                                                                                     ; x81ef  {"(Location)":{"down":3.5,"left":5}}
 	.DB $D8, $D4, $D8                                                                                                     ; x81f2  {"(Location)":{"up":3.5,"left":5}}
 	.DB $EA                                                                                                               ; x81f5 
@@ -272,12 +272,12 @@ OFFENSE_PLAYER_REACTION_043:
 	.DB $EA                                                                                                               ; x8205 
 OFFENSE_PLAYER_REACTION_044:
 	.DB $D0, $F0, $48                                                                                                     ; x8206  {"(Location)":{"up":0,"left":9}}
-	.DB $EB, $64                                                                                                          ; x8209  {"(Time)":"for 5s"}
+	PlayerCommandData.shift $64                                                                                           ; x8209  {"(Time)":"for 5s"}
 	.DB $D8, $0C, $B8                                                                                                     ; x820b  {"(Location)":{"down":3.5,"left":9}}
 	.DB $EA                                                                                                               ; x820e 
 OFFENSE_PLAYER_REACTION_045:
 	.DB $D0, $D4, $40                                                                                                     ; x820f  {"(Location)":{"up":3.5,"left":8}}
-	.DB $EB, $32                                                                                                          ; x8212  {"(Time)":"for 2.5s"}
+	PlayerCommandData.shift $32                                                                                           ; x8212  {"(Time)":"for 2.5s"}
 	.DB $D8, $D4, $C0                                                                                                     ; x8214  {"(Location)":{"up":3.5,"left":8}}
 	.DB $D8, $F0, $C0                                                                                                     ; x8217  {"(Location)":{"up":0,"left":8}}
 	.DB $EA                                                                                                               ; x821a 
@@ -288,7 +288,7 @@ OFFENSE_PLAYER_REACTION_046:
 	.DB $EA                                                                                                               ; x8222 
 OFFENSE_PLAYER_REACTION_047:
 	.DB $D0, $D4, $40                                                                                                     ; x8223  {"(Location)":{"up":3.5,"left":8}}
-	.DB $EB, $3C                                                                                                          ; x8226  {"(Time)":"for 3s"}
+	PlayerCommandData.shift $3C                                                                                           ; x8226  {"(Time)":"for 3s"}
 	.DB $D8, $D4, $CC                                                                                                     ; x8228  {"(Location)":{"up":3.5,"left":6.5}}
 	.DB $D8, $E0, $D8                                                                                                     ; x822b  {"(Location)":{"up":2,"left":5}}
 	.DB $D9, $C0, $D8                                                                                                     ; x822e  {"(Location)":{"down":9,"left":5}}
@@ -298,10 +298,10 @@ OFFENSE_PLAYER_REACTION_048:
 	.DB $EA                                                                                                               ; x8235 
 OFFENSE_PLAYER_REACTION_049:
 	.DB $D0, $D4, $40                                                                                                     ; x8236  {"(Location)":{"up":3.5,"left":8}}
-	.DB $EB, $46                                                                                                          ; x8239  {"(Time)":"for 3.5s"}
+	PlayerCommandData.shift $46                                                                                           ; x8239  {"(Time)":"for 3.5s"}
 	.DB $D8, $C0, $C0                                                                                                     ; x823b  {"(Location)":{"up":6,"left":8}}
 	.DB $D8, $C0, $E4                                                                                                     ; x823e  {"(Location)":{"up":6,"left":3.5}}
-	.DB $EB, $3C                                                                                                          ; x8241  {"(Time)":"for 3s"}
+	PlayerCommandData.shift $3C                                                                                           ; x8241  {"(Time)":"for 3s"}
 	.DB $D9, $B8, $E4                                                                                                     ; x8243  {"(Location)":{"down":8,"left":3.5}}
 	.DB $EA                                                                                                               ; x8246 
 OFFENSE_PLAYER_REACTION_050:
@@ -327,12 +327,12 @@ OFFENSE_PLAYER_REACTION_056:
 	.DB $EA                                                                                                               ; x8262 
 OFFENSE_PLAYER_REACTION_057:
 	.DB $D0, $14, $0C                                                                                                     ; x8263  {"(Location)":{"down":4.5,"left":1.5}}
-	.DB $EB, $50                                                                                                          ; x8266  {"(Time)":"for 4s"}
+	PlayerCommandData.shift $50                                                                                           ; x8266  {"(Time)":"for 4s"}
 	.DB $D9, $C0, $F4                                                                                                     ; x8268  {"(Location)":{"down":9,"left":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x826b 
 OFFENSE_PLAYER_REACTION_058:
 	.DB $D0, $0C, $40                                                                                                     ; x826c  {"(Location)":{"down":3.5,"left":8}}
-	.DB $EB, $14                                                                                                          ; x826f  {"(Time)":"for 1s"}
+	PlayerCommandData.shift $14                                                                                           ; x826f  {"(Time)":"for 1s"}
 	.DB $D8, $0C, $D8                                                                                                     ; x8271  {"(Location)":{"down":3.5,"left":5}}
 	.DB $D9, $50, $D8                                                                                                     ; x8274  {"(Location)":{"up":5,"left":5}}
 	.DB $D9, $50, $E8                                                                                                     ; x8277  {"(Location)":{"up":5,"left":3}}
@@ -361,7 +361,7 @@ OFFENSE_PLAYER_REACTION_064:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x829c 
 OFFENSE_PLAYER_REACTION_065:
 	.DB $D0, $CC, $0C                                                                                                     ; x829d  {"(Location)":{"up":4.5,"left":1.5}}
-	.DB $EB, $28                                                                                                          ; x82a0  {"(Time)":"for 2s"}
+	PlayerCommandData.shift $28                                                                                           ; x82a0  {"(Time)":"for 2s"}
 	.DB $D9, $36, $F4                                                                                                     ; x82a2  {"(Location)":{"up":8.25,"left":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82a5 
 OFFENSE_PLAYER_REACTION_066:
@@ -385,7 +385,7 @@ OFFENSE_PLAYER_REACTION_070:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82c2 
 OFFENSE_PLAYER_REACTION_071:
 	.DB $D0, $1C, $0C                                                                                                     ; x82c3  {"(Location)":{"down":5.5,"left":1.5}}
-	.DB $EB, $28                                                                                                          ; x82c6  {"(Time)":"for 2s"}
+	PlayerCommandData.shift $28                                                                                           ; x82c6  {"(Time)":"for 2s"}
 	.DB $D9, $C0, $F4                                                                                                     ; x82c8  {"(Location)":{"down":9,"left":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x82cb 
 OFFENSE_PLAYER_REACTION_072:
