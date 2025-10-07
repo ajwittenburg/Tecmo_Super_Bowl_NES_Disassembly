@@ -2,6 +2,12 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.wait startTime, endTime
+    .DB $F5
+    .DB startTime
+    .DB endTime
+.ENDM
+
 .MACRO PlayerCommandData.setHP value
     .DB $F6
     .DB value
