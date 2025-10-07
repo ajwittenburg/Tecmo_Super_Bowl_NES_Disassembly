@@ -2,6 +2,11 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.turn time
+    .DB $F4
+    .DB time
+.ENDM
+
 .MACRO PlayerCommandData.wait startTime, endTime
     .DB $F5
     .DB startTime
