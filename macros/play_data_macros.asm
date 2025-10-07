@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.recoverBall
+    .DB $FA
+.ENDM
+
 .MACRO  PlayerCommandData.setToGrapple byteTargetPlayerBitStringA, byteTargetPlayerBitStringB
     .DB $FC
     .DB byteTargetPlayerBitStringA

@@ -3668,7 +3668,7 @@ OFFENSE_PLAYER_REACTION_413:
 OFFENSE_PLAYER_REACTION_LOOP_126:
 	.DB $E1, $00                                                                                                          ; x9dfb  {"(Value)":6}
 OFFENSE_PLAYER_REACTION_LOOP_127:
-	.DB $FA                                                                                                               ; x9dfd 
+	PlayerCommandData.recoverBall                                                                                         ; x9dfd 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_127                                                             ; x9dfe  {"(Amount)":"-1 bytes to x9dfd"}
 OFFENSE_PLAYER_REACTION_414:
 	.DB $F5, $01, $50                                                                                                     ; x9e00  {"(Start Time, End Time)":"start in between 0.05s and 4s"}
@@ -7818,7 +7818,7 @@ DEFENSE_PLAYER_REACTION_503:
 	.DB $E1, $00                                                                                                          ; xbf54  {"(Value)":6}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf56  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
 DEFENSE_PLAYER_REACTION_LOOP_016:
-	.DB $FA                                                                                                               ; xbf59 
+	PlayerCommandData.recoverBall                                                                                         ; xbf59 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_016                                                             ; xbf5a  {"(Amount)":"-1 bytes to xbf59"}
 DEFENSE_PLAYER_REACTION_504:
 	.DB $E1, $00                                                                                                          ; xbf5c  {"(Value)":6}
