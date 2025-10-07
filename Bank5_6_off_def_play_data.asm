@@ -248,10 +248,10 @@ OFFENSE_PLAYER_REACTION_LOOP_013:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_013                                                             ; x81e0  {"(Amount)":"-2 bytes to x81de"}
 OFFENSE_PLAYER_REACTION_037:
 	.DB $D0, $F0, $48                                                                                                     ; x81e2  {"(Location)":{"up":0,"left":9}}
-	.DB $EE                                                                                                               ; x81e5 
+	PlayerCommandData.qbStance                                                                                            ; x81e5 
 OFFENSE_PLAYER_REACTION_038:
 	.DB $D0, $F0, $12                                                                                                     ; x81e6  {"(Location)":{"up":0,"left":2.25}}
-	.DB $EE                                                                                                               ; x81e9 
+	PlayerCommandData.qbStance                                                                                            ; x81e9 
 OFFENSE_PLAYER_REACTION_039:
 	.DB $D0, $0C, $40                                                                                                     ; x81ea  {"(Location)":{"down":3.5,"left":8}}
 	.DB $EB, $3C                                                                                                          ; x81ed  {"(Time)":"for 3s"}
@@ -450,7 +450,7 @@ OFFENSE_PLAYER_REACTION_090:
 	.DB $D0, $08, $0C                                                                                                     ; x831f  {"(Location)":{"down":3,"left":1.5}}
 	.DB $EA                                                                                                               ; x8322 
 	.DB $D0, $F0, $48                                                                                                     ; x8323  {"(Location)":{"up":0,"left":9}}
-	.DB $EE                                                                                                               ; x8326 
+	PlayerCommandData.qbStance                                                                                            ; x8326 
 	.DB $D0, $D4, $38                                                                                                     ; x8327  {"(Location)":{"up":3.5,"left":7}}
 	.DB $EC                                                                                                               ; x832a 
 	.DB $D0, $00, $40                                                                                                     ; x832b  {"(Location)":{"down":2,"left":8}}

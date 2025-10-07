@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.qbStance
+    .DB $EE
+.ENDM
+
 .MACRO PlayerCommandData.changePlayerIconToReturner
     .DB $EF
 .ENDM
