@@ -3708,47 +3708,47 @@ OFFENSE_PLAYER_REACTION_424:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_128                                                             ; x9e38  {"(Amount)":"-38 bytes to x9e12"}
 OFFENSE_PLAYER_REACTION_425:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e3a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $30                                                                                                               ; x9e3d 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RE                                                                  ; x9e3d 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_425                                                                  ; x9e3e  {"(Amount)":"-4 bytes to x9e3a"}
 OFFENSE_PLAYER_REACTION_426:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e40  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $31                                                                                                               ; x9e43 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_NT                                                                  ; x9e43 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_426                                                                  ; x9e44  {"(Amount)":"-4 bytes to x9e40"}
 OFFENSE_PLAYER_REACTION_427:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e46  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $32                                                                                                               ; x9e49 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_LE                                                                  ; x9e49 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_427                                                                  ; x9e4a  {"(Amount)":"-4 bytes to x9e46"}
 OFFENSE_PLAYER_REACTION_428:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e4c  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $33                                                                                                               ; x9e4f 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_ROLB                                                                ; x9e4f 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_428                                                                  ; x9e50  {"(Amount)":"-4 bytes to x9e4c"}
 OFFENSE_PLAYER_REACTION_429:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e52  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $34                                                                                                               ; x9e55 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RILB                                                                ; x9e55 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_429                                                                  ; x9e56  {"(Amount)":"-4 bytes to x9e52"}
 OFFENSE_PLAYER_REACTION_430:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e58  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $35                                                                                                               ; x9e5b 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_LILB                                                                ; x9e5b 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_430                                                                  ; x9e5c  {"(Amount)":"-4 bytes to x9e58"}
 OFFENSE_PLAYER_REACTION_431:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e5e  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $36                                                                                                               ; x9e61 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_LOLB                                                                ; x9e61 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_431                                                                  ; x9e62  {"(Amount)":"-4 bytes to x9e5e"}
 OFFENSE_PLAYER_REACTION_432:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e64  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $37                                                                                                               ; x9e67 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RCB                                                                 ; x9e67 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_432                                                                  ; x9e68  {"(Amount)":"-4 bytes to x9e64"}
 OFFENSE_PLAYER_REACTION_433:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e6a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $38                                                                                                               ; x9e6d 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_LCB                                                                 ; x9e6d 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_433                                                                  ; x9e6e  {"(Amount)":"-4 bytes to x9e6a"}
 OFFENSE_PLAYER_REACTION_434:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e70  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $39                                                                                                               ; x9e73 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_FS                                                                  ; x9e73 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_434                                                                  ; x9e74  {"(Amount)":"-4 bytes to x9e70"}
 OFFENSE_PLAYER_REACTION_435:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9e76  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $3A                                                                                                               ; x9e79 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_SS                                                                  ; x9e79 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_435                                                                  ; x9e7a  {"(Amount)":"-4 bytes to x9e76"}
 OFFENSE_PLAYER_REACTION_436:
 	PlayerCommandData.stand $19                                                                                           ; x9e7c  {"(Time)":"for 1.25s"}
@@ -7839,57 +7839,57 @@ DEFENSE_PLAYER_REACTION_510:
 DEFENSE_PLAYER_REACTION_511:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf6d  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf6f  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $39                                                                                                               ; xbf72 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_LT                                                                  ; xbf72 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_511                                                                  ; xbf73  {"(Amount)":"-6 bytes to xbf6d"}
 DEFENSE_PLAYER_REACTION_512:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf75  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf77  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $36                                                                                                               ; xbf7a 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_C                                                                   ; xbf7a 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_512                                                                  ; xbf7b  {"(Amount)":"-6 bytes to xbf75"}
 DEFENSE_PLAYER_REACTION_513:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf7d  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %00000000, %00100000                                                                   ; xbf7f  {"(Player)":"RT"}
-	.DB $3A                                                                                                               ; xbf82 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RT                                                                  ; xbf82 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_513                                                                  ; xbf83  {"(Amount)":"-6 bytes to xbf7d"}
 DEFENSE_PLAYER_REACTION_514:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf85  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf87  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $35                                                                                                               ; xbf8a 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_TE1                                                                 ; xbf8a 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_514                                                                  ; xbf8b  {"(Amount)":"-6 bytes to xbf85"}
 DEFENSE_PLAYER_REACTION_515:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf8d  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf8f  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $37                                                                                                               ; xbf92 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_LG                                                                  ; xbf92 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_515                                                                  ; xbf93  {"(Amount)":"-6 bytes to xbf8d"}
 DEFENSE_PLAYER_REACTION_516:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf95  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf97  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $38                                                                                                               ; xbf9a 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RG                                                                  ; xbf9a 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_516                                                                  ; xbf9b  {"(Amount)":"-6 bytes to xbf95"}
 DEFENSE_PLAYER_REACTION_517:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf9d  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf9f  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $32                                                                                                               ; xbfa2 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RB2                                                                 ; xbfa2 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_517                                                                  ; xbfa3  {"(Amount)":"-6 bytes to xbf9d"}
 DEFENSE_PLAYER_REACTION_518:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbfa5  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbfa7  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $33                                                                                                               ; xbfaa 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_WR1                                                                 ; xbfaa 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_518                                                                  ; xbfab  {"(Amount)":"-6 bytes to xbfa5"}
 DEFENSE_PLAYER_REACTION_519:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbfad  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbfaf  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $35                                                                                                               ; xbfb2 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_TE1                                                                 ; xbfb2 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_519                                                                  ; xbfb3  {"(Amount)":"-6 bytes to xbfad"}
 DEFENSE_PLAYER_REACTION_520:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbfb5  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbfb7  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $31                                                                                                               ; xbfba 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_RB1                                                                 ; xbfba 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_520                                                                  ; xbfbb  {"(Amount)":"-6 bytes to xbfb5"}
 DEFENSE_PLAYER_REACTION_521:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbfbd  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbfbf  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $30                                                                                                               ; xbfc2 
+	PlayerCommandData.blockPlayer PLAYER_COMMAND_DATA_QB1                                                                 ; xbfc2 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_521                                                                  ; xbfc3  {"(Amount)":"-6 bytes to xbfbd"}
 DEFENSE_PLAYER_REACTION_522:
 	PlayerCommandData.setMS $00                                                                                           ; xbfc5  {"(Value)":6}

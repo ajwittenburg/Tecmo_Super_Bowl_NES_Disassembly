@@ -44,6 +44,11 @@ PLAYER_COMMAND_DATA_SS = PLAYER_COMMAND_DATA_RT
 
 ;;;;;;;;;;;;;;;
 
+; This represents commands #$30-#$3F
+.MACRO PlayerCommandData.blockPlayer playerNibble
+    PlayerCommandData.Helper.addPlayerNibble $30, playerNibble
+.ENDM
+
 ; This represents commands #$40-#$4F
 .MACRO PlayerCommandData.chopBlockPlayer playerNibble
     PlayerCommandData.Helper.addPlayerNibble $40, playerNibble
