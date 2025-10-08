@@ -3886,15 +3886,15 @@ OFFENSE_PLAYER_REACTION_451:
 OFFENSE_PLAYER_REACTION_452:
 	.DB $C4, $64                                                                                                          ; x9f61  {"(Time)":"for 5s"}
 OFFENSE_PLAYER_REACTION_453:
-	.DB $C5, $14                                                                                                          ; x9f63  {"(Time)":"for 1s"}
+	PlayerCommandData.cry $14                                                                                             ; x9f63  {"(Time)":"for 1s"}
 OFFENSE_PLAYER_REACTION_454:
-	.DB $C5, $28                                                                                                          ; x9f65  {"(Time)":"for 2s"}
+	PlayerCommandData.cry $28                                                                                             ; x9f65  {"(Time)":"for 2s"}
 OFFENSE_PLAYER_REACTION_455:
-	.DB $C5, $3C                                                                                                          ; x9f67  {"(Time)":"for 3s"}
+	PlayerCommandData.cry $3C                                                                                             ; x9f67  {"(Time)":"for 3s"}
 OFFENSE_PLAYER_REACTION_456:
-	.DB $C5, $50                                                                                                          ; x9f69  {"(Time)":"for 4s"}
+	PlayerCommandData.cry $50                                                                                             ; x9f69  {"(Time)":"for 4s"}
 OFFENSE_PLAYER_REACTION_457:
-	.DB $C5, $64                                                                                                          ; x9f6b  {"(Time)":"for 5s"}
+	PlayerCommandData.cry $64                                                                                             ; x9f6b  {"(Time)":"for 5s"}
 OFFENSE_PLAYER_REACTION_JUMP_199:
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x9f6d  {"(Location)":{"up":0,"right":10}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_199                                                             ; x9f70  {"(Amount)":"-3 bytes to x9f6d"}
@@ -7831,11 +7831,11 @@ DEFENSE_PLAYER_REACTION_506:
 DEFENSE_PLAYER_REACTION_507:
 	.DB $C4, $50                                                                                                          ; xbf65  {"(Time)":"for 4s"}
 DEFENSE_PLAYER_REACTION_508:
-	.DB $C5, $1E                                                                                                          ; xbf67  {"(Time)":"for 1.5s"}
+	PlayerCommandData.cry $1E                                                                                             ; xbf67  {"(Time)":"for 1.5s"}
 DEFENSE_PLAYER_REACTION_509:
-	.DB $C5, $32                                                                                                          ; xbf69  {"(Time)":"for 2.5s"}
+	PlayerCommandData.cry $32                                                                                             ; xbf69  {"(Time)":"for 2.5s"}
 DEFENSE_PLAYER_REACTION_510:
-	.DB $C5, $46                                                                                                          ; xbf6b  {"(Time)":"for 3.5s"}
+	PlayerCommandData.cry $46                                                                                             ; xbf6b  {"(Time)":"for 3.5s"}
 DEFENSE_PLAYER_REACTION_511:
 	PlayerCommandData.boostRS $FC                                                                                         ; xbf6d  {"(Boost)":{"value":252}}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; xbf6f  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}

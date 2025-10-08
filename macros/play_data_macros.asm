@@ -10,6 +10,11 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.cry time
+    .DB $C5
+    .DB time
+.ENDM
+
 .MACRO PlayerCommandData.COMJumpTo newLocation
     .DB $C7
     .WORD newLocation
