@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.setPositionFromKickoffB0 y,x
+    PlayerCommandData.Helper.addCommandAndLocationXY $B0, x, y
+.ENDM
+
 .MACRO PlayerCommandData.setPositionFromKickoffB1 y,x
     PlayerCommandData.Helper.addCommandAndLocationXY $B1, x, y
 .ENDM
