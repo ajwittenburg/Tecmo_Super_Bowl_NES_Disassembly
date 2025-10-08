@@ -483,9 +483,9 @@ OFFENSE_PLAYER_REACTION_LOOP_014:
 	PlayerCommandData.moveBallPlacement $F4, $B0                                                                          ; x8362  {"(Location)":{"down":0.5,"left":10}}
 	PlayerCommandData.moveBallPlacement $20, $D8                                                                          ; x8365  {"(Location)":{"down":6,"left":5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8368 
-	.DB $C8, $72, $A3, $09                                                                                                ; x8369  {"(Pointer)":" to x8382","(Random)":"43.75%"}
-	.DB $C8, $76, $A3, $05                                                                                                ; x836d  {"(Pointer)":" to x8386","(Random)":"68.75%"}
-	.DB $C8, $7A, $A3, $02                                                                                                ; x8371  {"(Pointer)":" to x838a","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_002                                        ; x8369  {"(Pointer)":" to x8382","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_003                                        ; x836d  {"(Pointer)":" to x8386","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_004                                        ; x8371  {"(Pointer)":" to x838a","(Random)":"87.5%"}
 	.DB $C7, $7E, $A3                                                                                                     ; x8375  {"(Pointer)":" to x838e"}
 OFFENSE_PLAYER_REACTION_LOOP_015:
 	PlayerCommandData.moveBallPlacement $28, $F4                                                                          ; x8378  {"(Location)":{"down":7,"left":1.5}}
@@ -570,9 +570,9 @@ OFFENSE_PLAYER_REACTION_104:
 	PlayerCommandData.moveBallPlacement $00, $CC                                                                          ; x8419  {"(Location)":{"down":2,"left":6.5}}
 	PlayerCommandData.moveBallPlacement $F8, $E8                                                                          ; x841c  {"(Location)":{"down":1,"left":3}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x841f 
-	.DB $C8, $29, $A4, $09                                                                                                ; x8420  {"(Pointer)":" to x8439","(Random)":"43.75%"}
-	.DB $C8, $2D, $A4, $05                                                                                                ; x8424  {"(Pointer)":" to x843d","(Random)":"68.75%"}
-	.DB $C8, $31, $A4, $02                                                                                                ; x8428  {"(Pointer)":" to x8441","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_007                                        ; x8420  {"(Pointer)":" to x8439","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_008                                        ; x8424  {"(Pointer)":" to x843d","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_009                                        ; x8428  {"(Pointer)":" to x8441","(Random)":"87.5%"}
 	.DB $C7, $35, $A4                                                                                                     ; x842c  {"(Pointer)":" to x8445"}
 OFFENSE_PLAYER_REACTION_LOOP_018:
 	PlayerCommandData.moveBallPlacement $F8, $38                                                                          ; x842f  {"(Location)":{"down":1,"right":7}}
@@ -606,9 +606,9 @@ OFFENSE_PLAYER_REACTION_106:
 	PlayerCommandData.moveBallPlacement $F0, $C8                                                                          ; x845d  {"(Location)":{"up":0,"left":7}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8460 
 	PlayerCommandData.moveBallPlacement $18, $D0                                                                          ; x8461  {"(Location)":{"down":5,"left":6}}
-	.DB $C8, $73, $A4, $09                                                                                                ; x8464  {"(Pointer)":" to x8483","(Random)":"43.75%"}
-	.DB $C8, $77, $A4, $05                                                                                                ; x8468  {"(Pointer)":" to x8487","(Random)":"68.75%"}
-	.DB $C8, $7B, $A4, $02                                                                                                ; x846c  {"(Pointer)":" to x848b","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_011                                        ; x8464  {"(Pointer)":" to x8483","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_012                                        ; x8468  {"(Pointer)":" to x8487","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_013                                        ; x846c  {"(Pointer)":" to x848b","(Random)":"87.5%"}
 	.DB $C7, $7F, $A4                                                                                                     ; x8470  {"(Pointer)":" to x848f"}
 OFFENSE_PLAYER_REACTION_LOOP_020:
 	.DB $2B, $38, $B8                                                                                                     ; x8473  {"(Pointer)":" to x9848"}
@@ -734,9 +734,9 @@ OFFENSE_PLAYER_REACTION_120:
 	PlayerCommandData.moveBallPlacement $F0, $C0                                                                          ; x8579  {"(Location)":{"up":0,"left":8}}
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; x857c  {"(Location)":{"down":1,"left":4}}
 	PlayerCommandData.moveBallPlacement $04, $F0                                                                          ; x857f  {"(Location)":{"down":2.5,"left":2}}
-	.DB $C8, $89, $A5, $09                                                                                                ; x8582  {"(Pointer)":" to x8599","(Random)":"43.75%"}
-	.DB $C8, $8D, $A5, $05                                                                                                ; x8586  {"(Pointer)":" to x859d","(Random)":"68.75%"}
-	.DB $C8, $91, $A5, $02                                                                                                ; x858a  {"(Pointer)":" to x85a1","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_018                                        ; x8582  {"(Pointer)":" to x8599","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_019                                        ; x8586  {"(Pointer)":" to x859d","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_020                                        ; x858a  {"(Pointer)":" to x85a1","(Random)":"87.5%"}
 	.DB $C7, $95, $A5                                                                                                     ; x858e  {"(Pointer)":" to x85a5"}
 OFFENSE_PLAYER_REACTION_LOOP_023:
 	PlayerCommandData.playerTakesControl                                                                                  ; x8591 
@@ -831,9 +831,9 @@ OFFENSE_PLAYER_REACTION_128:
 	PlayerCommandData.moveBallPlacement $EC, $D4                                                                          ; x8638  {"(Location)":{"up":0.5,"left":5.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x863b 
 	PlayerCommandData.moveBallPlacement $E0, $E4                                                                          ; x863c  {"(Location)":{"up":2,"left":3.5}}
-	.DB $C8, $4B, $A6, $09                                                                                                ; x863f  {"(Pointer)":" to x865b","(Random)":"43.75%"}
-	.DB $C8, $4F, $A6, $05                                                                                                ; x8643  {"(Pointer)":" to x865f","(Random)":"68.75%"}
-	.DB $C8, $53, $A6, $02                                                                                                ; x8647  {"(Pointer)":" to x8663","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_024                                        ; x863f  {"(Pointer)":" to x865b","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_025                                        ; x8643  {"(Pointer)":" to x865f","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_026                                        ; x8647  {"(Pointer)":" to x8663","(Random)":"87.5%"}
 	.DB $C7, $57, $A6                                                                                                     ; x864b  {"(Pointer)":" to x8667"}
 OFFENSE_PLAYER_REACTION_LOOP_029:
 	.DB $2B, $38, $B8                                                                                                     ; x864e  {"(Pointer)":" to x9848"}
@@ -917,9 +917,9 @@ OFFENSE_PLAYER_REACTION_138:
 	PlayerCommandData.moveBallPlacement $D0, $C8                                                                          ; x86ea  {"(Location)":{"up":4,"left":7}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x86ed 
 	PlayerCommandData.moveBallPlacement $C4, $D4                                                                          ; x86ee  {"(Location)":{"up":5.5,"left":5.5}}
-	.DB $C8, $00, $A7, $09                                                                                                ; x86f1  {"(Pointer)":" to x8710","(Random)":"43.75%"}
-	.DB $C8, $04, $A7, $05                                                                                                ; x86f5  {"(Pointer)":" to x8714","(Random)":"68.75%"}
-	.DB $C8, $08, $A7, $02                                                                                                ; x86f9  {"(Pointer)":" to x8718","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_031                                        ; x86f1  {"(Pointer)":" to x8710","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_032                                        ; x86f5  {"(Pointer)":" to x8714","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_033                                        ; x86f9  {"(Pointer)":" to x8718","(Random)":"87.5%"}
 	.DB $C7, $0C, $A7                                                                                                     ; x86fd  {"(Pointer)":" to x871c"}
 OFFENSE_PLAYER_REACTION_LOOP_031:
 	.DB $2B, $38, $B8                                                                                                     ; x8700  {"(Pointer)":" to x9848"}
@@ -973,9 +973,9 @@ OFFENSE_PLAYER_REACTION_144:
 	PlayerCommandData.stand $10                                                                                           ; x875d  {"(Time)":"for 0.8s"}
 	PlayerCommandData.moveBallPlacement $20, $CC                                                                          ; x875f  {"(Location)":{"down":6,"left":6.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8762 
-	.DB $C8, $72, $A7, $09                                                                                                ; x8763  {"(Pointer)":" to x8782","(Random)":"43.75%"}
-	.DB $C8, $76, $A7, $05                                                                                                ; x8767  {"(Pointer)":" to x8786","(Random)":"68.75%"}
-	.DB $C8, $7A, $A7, $02                                                                                                ; x876b  {"(Pointer)":" to x878a","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_035                                        ; x8763  {"(Pointer)":" to x8782","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_036                                        ; x8767  {"(Pointer)":" to x8786","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_037                                        ; x876b  {"(Pointer)":" to x878a","(Random)":"87.5%"}
 	.DB $C7, $7E, $A7                                                                                                     ; x876f  {"(Pointer)":" to x878e"}
 OFFENSE_PLAYER_REACTION_LOOP_034:
 	.DB $2B, $38, $B8                                                                                                     ; x8772  {"(Pointer)":" to x9848"}
@@ -1018,9 +1018,9 @@ OFFENSE_PLAYER_REACTION_147:
 	PlayerCommandData.playerTakesControl                                                                                  ; x87b7 
 	PlayerCommandData.moveBallPlacement $D0, $E0                                                                          ; x87b8  {"(Location)":{"up":4,"left":4}}
 	PlayerCommandData.moveBallPlacement $C8, $E4                                                                          ; x87bb  {"(Location)":{"up":5,"left":3.5}}
-	.DB $C8, $CD, $A7, $09                                                                                                ; x87be  {"(Pointer)":" to x87dd","(Random)":"43.75%"}
-	.DB $C8, $D1, $A7, $05                                                                                                ; x87c2  {"(Pointer)":" to x87e1","(Random)":"68.75%"}
-	.DB $C8, $D5, $A7, $02                                                                                                ; x87c6  {"(Pointer)":" to x87e5","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_039                                        ; x87be  {"(Pointer)":" to x87dd","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_040                                        ; x87c2  {"(Pointer)":" to x87e1","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_041                                        ; x87c6  {"(Pointer)":" to x87e5","(Random)":"87.5%"}
 	.DB $C7, $D9, $A7                                                                                                     ; x87ca  {"(Pointer)":" to x87e9"}
 OFFENSE_PLAYER_REACTION_LOOP_036:
 	.DB $2B, $38, $B8                                                                                                     ; x87cd  {"(Pointer)":" to x9848"}
@@ -1100,9 +1100,9 @@ OFFENSE_PLAYER_REACTION_154:
 	PlayerCommandData.moveBallPlacement $FC, $C4                                                                          ; x886a  {"(Location)":{"down":1.5,"left":7.5}}
 	PlayerCommandData.moveBallPlacement $F8, $E8                                                                          ; x886d  {"(Location)":{"down":1,"left":3}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8870 
-	.DB $C8, $7A, $A8, $09                                                                                                ; x8871  {"(Pointer)":" to x888a","(Random)":"43.75%"}
-	.DB $C8, $7E, $A8, $05                                                                                                ; x8875  {"(Pointer)":" to x888e","(Random)":"68.75%"}
-	.DB $C8, $82, $A8, $02                                                                                                ; x8879  {"(Pointer)":" to x8892","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_046                                        ; x8871  {"(Pointer)":" to x888a","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_047                                        ; x8875  {"(Pointer)":" to x888e","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_048                                        ; x8879  {"(Pointer)":" to x8892","(Random)":"87.5%"}
 	.DB $C7, $86, $A8                                                                                                     ; x887d  {"(Pointer)":" to x8896"}
 OFFENSE_PLAYER_REACTION_LOOP_038:
 	PlayerCommandData.moveBallPlacement $F8, $10                                                                          ; x8880  {"(Location)":{"down":1,"right":2}}
@@ -1153,9 +1153,9 @@ OFFENSE_PLAYER_REACTION_158:
 	PlayerCommandData.stand $3C                                                                                           ; x88cf  {"(Time)":"for 3s"}
 	PlayerCommandData.moveBallPlacement $F2, $C0                                                                          ; x88d1  {"(Location)":{"down":0.25,"left":8}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x88d4 
-	.DB $C8, $E1, $A8, $09                                                                                                ; x88d5  {"(Pointer)":" to x88f1","(Random)":"43.75%"}
-	.DB $C8, $E5, $A8, $05                                                                                                ; x88d9  {"(Pointer)":" to x88f5","(Random)":"68.75%"}
-	.DB $C8, $E9, $A8, $02                                                                                                ; x88dd  {"(Pointer)":" to x88f9","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_050                                        ; x88d5  {"(Pointer)":" to x88f1","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_051                                        ; x88d9  {"(Pointer)":" to x88f5","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_052                                        ; x88dd  {"(Pointer)":" to x88f9","(Random)":"87.5%"}
 	.DB $C7, $ED, $A8                                                                                                     ; x88e1  {"(Pointer)":" to x88fd"}
 OFFENSE_PLAYER_REACTION_LOOP_042:
 	PlayerCommandData.moveBallPlacement $FE, $E4                                                                          ; x88e4  {"(Location)":{"down":1.75,"left":3.5}}
@@ -1221,9 +1221,9 @@ OFFENSE_PLAYER_REACTION_166:
 	PlayerCommandData.moveBallPlacement $C0, $D0                                                                          ; x8950  {"(Location)":{"up":6,"left":6}}
 	.DB $63                                                                                                               ; x8953 
 	PlayerCommandData.playerTakesControl                                                                                  ; x8954 
-	.DB $C8, $64, $A9, $09                                                                                                ; x8955  {"(Pointer)":" to x8974","(Random)":"43.75%"}
-	.DB $C8, $68, $A9, $05                                                                                                ; x8959  {"(Pointer)":" to x8978","(Random)":"68.75%"}
-	.DB $C8, $6C, $A9, $02                                                                                                ; x895d  {"(Pointer)":" to x897c","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_054                                        ; x8955  {"(Pointer)":" to x8974","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_055                                        ; x8959  {"(Pointer)":" to x8978","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_056                                        ; x895d  {"(Pointer)":" to x897c","(Random)":"87.5%"}
 	.DB $C7, $70, $A9                                                                                                     ; x8961  {"(Pointer)":" to x8980"}
 OFFENSE_PLAYER_REACTION_LOOP_046:
 	.DB $2B, $38, $B8                                                                                                     ; x8964  {"(Pointer)":" to x9848"}
@@ -1282,9 +1282,9 @@ OFFENSE_PLAYER_REACTION_172:
 	PlayerCommandData.moveBallPlacement $C0, $C8                                                                          ; x89d0  {"(Location)":{"up":6,"left":7}}
 	PlayerCommandData.moveBallPlacement $D0, $B8                                                                          ; x89d3  {"(Location)":{"up":4,"left":9}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x89d6 
-	.DB $C8, $EC, $A9, $09                                                                                                ; x89d7  {"(Pointer)":" to x89fc","(Random)":"43.75%"}
-	.DB $C8, $F0, $A9, $05                                                                                                ; x89db  {"(Pointer)":" to x8a00","(Random)":"68.75%"}
-	.DB $C8, $F4, $A9, $02                                                                                                ; x89df  {"(Pointer)":" to x8a04","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_058                                        ; x89d7  {"(Pointer)":" to x89fc","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_059                                        ; x89db  {"(Pointer)":" to x8a00","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_060                                        ; x89df  {"(Pointer)":" to x8a04","(Random)":"87.5%"}
 	.DB $C7, $F8, $A9                                                                                                     ; x89e3  {"(Pointer)":" to x8a08"}
 OFFENSE_PLAYER_REACTION_LOOP_048:
 	PlayerCommandData.moveBallPlacement $E0, $B0                                                                          ; x89e6  {"(Location)":{"up":2,"left":10}}
@@ -1377,9 +1377,9 @@ OFFENSE_PLAYER_REACTION_179:
 	PlayerCommandData.moveBallPlacement $F0, $C4                                                                          ; x8a99  {"(Location)":{"up":0,"left":7.5}}
 	PlayerCommandData.moveBallPlacement $08, $D4                                                                          ; x8a9c  {"(Location)":{"down":3,"left":5.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8a9f 
-	.DB $C8, $B2, $AA, $09                                                                                                ; x8aa0  {"(Pointer)":" to x8ac2","(Random)":"43.75%"}
-	.DB $C8, $B6, $AA, $05                                                                                                ; x8aa4  {"(Pointer)":" to x8ac6","(Random)":"68.75%"}
-	.DB $C8, $BA, $AA, $02                                                                                                ; x8aa8  {"(Pointer)":" to x8aca","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_063                                        ; x8aa0  {"(Pointer)":" to x8ac2","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_064                                        ; x8aa4  {"(Pointer)":" to x8ac6","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_065                                        ; x8aa8  {"(Pointer)":" to x8aca","(Random)":"87.5%"}
 	.DB $C7, $BE, $AA                                                                                                     ; x8aac  {"(Pointer)":" to x8ace"}
 OFFENSE_PLAYER_REACTION_LOOP_051:
 	PlayerCommandData.moveBallPlacement $28, $E0                                                                          ; x8aaf  {"(Location)":{"down":7,"left":4}}
@@ -1431,9 +1431,9 @@ OFFENSE_PLAYER_REACTION_184:
 	PlayerCommandData.moveBallPlacement $30, $E0                                                                          ; x8b08  {"(Location)":{"down":8,"left":4}}
 	PlayerCommandData.moveBallPlacement $18, $CC                                                                          ; x8b0b  {"(Location)":{"down":5,"left":6.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8b0e 
-	.DB $C8, $2A, $AB, $09                                                                                                ; x8b0f  {"(Pointer)":" to x8b3a","(Random)":"43.75%"}
-	.DB $C8, $2E, $AB, $05                                                                                                ; x8b13  {"(Pointer)":" to x8b3e","(Random)":"68.75%"}
-	.DB $C8, $32, $AB, $02                                                                                                ; x8b17  {"(Pointer)":" to x8b42","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_067                                        ; x8b0f  {"(Pointer)":" to x8b3a","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_068                                        ; x8b13  {"(Pointer)":" to x8b3e","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_069                                        ; x8b17  {"(Pointer)":" to x8b42","(Random)":"87.5%"}
 	.DB $C7, $36, $AB                                                                                                     ; x8b1b  {"(Pointer)":" to x8b46"}
 OFFENSE_PLAYER_REACTION_LOOP_053:
 	PlayerCommandData.moveBallPlacement $F8, $C8                                                                          ; x8b1e  {"(Location)":{"down":1,"left":7}}
@@ -1525,9 +1525,9 @@ OFFENSE_PLAYER_REACTION_190:
 	PlayerCommandData.moveBallPlacement $F0, $C4                                                                          ; x8bdb  {"(Location)":{"up":0,"left":7.5}}
 	PlayerCommandData.moveBallPlacement $00, $D8                                                                          ; x8bde  {"(Location)":{"down":2,"left":5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8be1 
-	.DB $C8, $F1, $AB, $09                                                                                                ; x8be2  {"(Pointer)":" to x8c01","(Random)":"43.75%"}
-	.DB $C8, $F5, $AB, $05                                                                                                ; x8be6  {"(Pointer)":" to x8c05","(Random)":"68.75%"}
-	.DB $C8, $F9, $AB, $02                                                                                                ; x8bea  {"(Pointer)":" to x8c09","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_074                                        ; x8be2  {"(Pointer)":" to x8c01","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_075                                        ; x8be6  {"(Pointer)":" to x8c05","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_076                                        ; x8bea  {"(Pointer)":" to x8c09","(Random)":"87.5%"}
 	.DB $C7, $FD, $AB                                                                                                     ; x8bee  {"(Pointer)":" to x8c0d"}
 OFFENSE_PLAYER_REACTION_LOOP_055:
 	.DB $2B, $38, $B8                                                                                                     ; x8bf1  {"(Pointer)":" to x9848"}
@@ -1568,9 +1568,9 @@ OFFENSE_PLAYER_REACTION_193:
 OFFENSE_PLAYER_REACTION_194:
 	PlayerCommandData.moveBallPlacement $F8, $D4                                                                          ; x8c31  {"(Location)":{"down":1,"left":5.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8c34 
-	.DB $C8, $44, $AC, $09                                                                                                ; x8c35  {"(Pointer)":" to x8c54","(Random)":"43.75%"}
-	.DB $C8, $48, $AC, $05                                                                                                ; x8c39  {"(Pointer)":" to x8c58","(Random)":"68.75%"}
-	.DB $C8, $4C, $AC, $02                                                                                                ; x8c3d  {"(Pointer)":" to x8c5c","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_078                                        ; x8c35  {"(Pointer)":" to x8c54","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_079                                        ; x8c39  {"(Pointer)":" to x8c58","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_080                                        ; x8c3d  {"(Pointer)":" to x8c5c","(Random)":"87.5%"}
 	.DB $C7, $50, $AC                                                                                                     ; x8c41  {"(Pointer)":" to x8c60"}
 OFFENSE_PLAYER_REACTION_LOOP_057:
 	PlayerCommandData.moveBallPlacement $0C, $E4                                                                          ; x8c44  {"(Location)":{"down":3.5,"left":3.5}}
@@ -1619,9 +1619,9 @@ OFFENSE_PLAYER_REACTION_199:
 	PlayerCommandData.faceDirection $80                                                                                   ; x8c96  {"(Direction)":"90 degrees"}
 	PlayerCommandData.takeSnapFromShotgun                                                                                 ; x8c98 
 	PlayerCommandData.playerTakesControl                                                                                  ; x8c99 
-	.DB $C8, $AF, $AC, $09                                                                                                ; x8c9a  {"(Pointer)":" to x8cbf","(Random)":"43.75%"}
-	.DB $C8, $B3, $AC, $05                                                                                                ; x8c9e  {"(Pointer)":" to x8cc3","(Random)":"68.75%"}
-	.DB $C8, $B7, $AC, $02                                                                                                ; x8ca2  {"(Pointer)":" to x8cc7","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_082                                        ; x8c9a  {"(Pointer)":" to x8cbf","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_083                                        ; x8c9e  {"(Pointer)":" to x8cc3","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_084                                        ; x8ca2  {"(Pointer)":" to x8cc7","(Random)":"87.5%"}
 	.DB $C7, $BB, $AC                                                                                                     ; x8ca6  {"(Pointer)":" to x8ccb"}
 OFFENSE_PLAYER_REACTION_LOOP_060:
 	PlayerCommandData.moveBallPlacement $E4, $E0                                                                          ; x8ca9  {"(Location)":{"up":1.5,"left":4}}
@@ -1691,9 +1691,9 @@ OFFENSE_PLAYER_REACTION_209:
 	PlayerCommandData.moveBallPlacement $04, $C8                                                                          ; x8d29  {"(Location)":{"down":2.5,"left":7}}
 	PlayerCommandData.moveBallPlacement $E8, $C8                                                                          ; x8d2c  {"(Location)":{"up":1,"left":7}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8d2f 
-	.DB $C8, $45, $AD, $09                                                                                                ; x8d30  {"(Pointer)":" to x8d55","(Random)":"43.75%"}
-	.DB $C8, $49, $AD, $05                                                                                                ; x8d34  {"(Pointer)":" to x8d59","(Random)":"68.75%"}
-	.DB $C8, $4D, $AD, $02                                                                                                ; x8d38  {"(Pointer)":" to x8d5d","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_086                                        ; x8d30  {"(Pointer)":" to x8d55","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_087                                        ; x8d34  {"(Pointer)":" to x8d59","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_088                                        ; x8d38  {"(Pointer)":" to x8d5d","(Random)":"87.5%"}
 	.DB $C7, $51, $AD                                                                                                     ; x8d3c  {"(Pointer)":" to x8d61"}
 OFFENSE_PLAYER_REACTION_LOOP_062:
 	PlayerCommandData.moveBallPlacement $D8, $D0                                                                          ; x8d3f  {"(Location)":{"up":3,"left":6}}
@@ -1797,9 +1797,9 @@ OFFENSE_PLAYER_REACTION_JUMP_093:
 OFFENSE_PLAYER_REACTION_218:
 	PlayerCommandData.moveBallPlacement $20, $C4                                                                          ; x8e1a  {"(Location)":{"down":6,"left":7.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8e1d 
-	.DB $C8, $30, $AE, $09                                                                                                ; x8e1e  {"(Pointer)":" to x8e40","(Random)":"43.75%"}
-	.DB $C8, $34, $AE, $05                                                                                                ; x8e22  {"(Pointer)":" to x8e44","(Random)":"68.75%"}
-	.DB $C8, $38, $AE, $02                                                                                                ; x8e26  {"(Pointer)":" to x8e48","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_094                                        ; x8e1e  {"(Pointer)":" to x8e40","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_095                                        ; x8e22  {"(Pointer)":" to x8e44","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_096                                        ; x8e26  {"(Pointer)":" to x8e48","(Random)":"87.5%"}
 	.DB $C7, $3C, $AE                                                                                                     ; x8e2a  {"(Pointer)":" to x8e4c"}
 OFFENSE_PLAYER_REACTION_LOOP_064:
 	PlayerCommandData.moveBallPlacement $28, $CC                                                                          ; x8e2d  {"(Location)":{"down":7,"left":6.5}}
@@ -1877,9 +1877,9 @@ OFFENSE_PLAYER_REACTION_228:
 	PlayerCommandData.moveBallPlacement $04, $CC                                                                          ; x8ec7  {"(Location)":{"down":2.5,"left":6.5}}
 	PlayerCommandData.moveBallPlacement $E8, $D8                                                                          ; x8eca  {"(Location)":{"up":1,"left":5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8ecd 
-	.DB $C8, $DD, $AE, $09                                                                                                ; x8ece  {"(Pointer)":" to x8eed","(Random)":"43.75%"}
-	.DB $C8, $E1, $AE, $05                                                                                                ; x8ed2  {"(Pointer)":" to x8ef1","(Random)":"68.75%"}
-	.DB $C8, $E5, $AE, $02                                                                                                ; x8ed6  {"(Pointer)":" to x8ef5","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_098                                        ; x8ece  {"(Pointer)":" to x8eed","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_099                                        ; x8ed2  {"(Pointer)":" to x8ef1","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_100                                        ; x8ed6  {"(Pointer)":" to x8ef5","(Random)":"87.5%"}
 	.DB $C7, $E9, $AE                                                                                                     ; x8eda  {"(Pointer)":" to x8ef9"}
 OFFENSE_PLAYER_REACTION_LOOP_066:
 	PlayerCommandData.moveBallPlacement $DC, $E8                                                                          ; x8edd  {"(Location)":{"up":2.5,"left":3}}
@@ -1907,9 +1907,9 @@ OFFENSE_PLAYER_REACTION_229:
 	PlayerCommandData.stand $1E                                                                                           ; x8f01  {"(Time)":"for 1.5s"}
 	PlayerCommandData.moveBallPlacement $E8, $D4                                                                          ; x8f03  {"(Location)":{"up":1,"left":5.5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8f06 
-	.DB $C8, $16, $AF, $09                                                                                                ; x8f07  {"(Pointer)":" to x8f26","(Random)":"43.75%"}
-	.DB $C8, $1A, $AF, $05                                                                                                ; x8f0b  {"(Pointer)":" to x8f2a","(Random)":"68.75%"}
-	.DB $C8, $1E, $AF, $02                                                                                                ; x8f0f  {"(Pointer)":" to x8f2e","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_102                                        ; x8f07  {"(Pointer)":" to x8f26","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_103                                        ; x8f0b  {"(Pointer)":" to x8f2a","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_104                                        ; x8f0f  {"(Pointer)":" to x8f2e","(Random)":"87.5%"}
 	.DB $C7, $22, $AF                                                                                                     ; x8f13  {"(Pointer)":" to x8f32"}
 OFFENSE_PLAYER_REACTION_LOOP_068:
 	PlayerCommandData.moveBallPlacement $DC, $E4                                                                          ; x8f16  {"(Location)":{"up":2.5,"left":3.5}}
@@ -1937,9 +1937,9 @@ OFFENSE_PLAYER_REACTION_230:
 	PlayerCommandData.stand $10                                                                                           ; x8f3a  {"(Time)":"for 0.8s"}
 	PlayerCommandData.moveBallPlacement $D8, $C0                                                                          ; x8f3c  {"(Location)":{"up":3,"left":8}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8f3f 
-	.DB $C8, $52, $AF, $09                                                                                                ; x8f40  {"(Pointer)":" to x8f62","(Random)":"43.75%"}
-	.DB $C8, $56, $AF, $05                                                                                                ; x8f44  {"(Pointer)":" to x8f66","(Random)":"68.75%"}
-	.DB $C8, $5A, $AF, $02                                                                                                ; x8f48  {"(Pointer)":" to x8f6a","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_106                                        ; x8f40  {"(Pointer)":" to x8f62","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_107                                        ; x8f44  {"(Pointer)":" to x8f66","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_108                                        ; x8f48  {"(Pointer)":" to x8f6a","(Random)":"87.5%"}
 	.DB $C7, $5E, $AF                                                                                                     ; x8f4c  {"(Pointer)":" to x8f6e"}
 OFFENSE_PLAYER_REACTION_LOOP_070:
 	PlayerCommandData.moveBallPlacement $C8, $D0                                                                          ; x8f4f  {"(Location)":{"up":5,"left":6}}
@@ -1983,9 +1983,9 @@ OFFENSE_PLAYER_REACTION_234:
 	PlayerCommandData.moveBallPlacement $F8, $C8                                                                          ; x8f96  {"(Location)":{"down":1,"left":7}}
 	PlayerCommandData.moveBallPlacement $F8, $D8                                                                          ; x8f99  {"(Location)":{"down":1,"left":5}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8f9c 
-	.DB $C8, $A6, $AF, $09                                                                                                ; x8f9d  {"(Pointer)":" to x8fb6","(Random)":"43.75%"}
-	.DB $C8, $AA, $AF, $05                                                                                                ; x8fa1  {"(Pointer)":" to x8fba","(Random)":"68.75%"}
-	.DB $C8, $AE, $AF, $02                                                                                                ; x8fa5  {"(Pointer)":" to x8fbe","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_110                                        ; x8f9d  {"(Pointer)":" to x8fb6","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_111                                        ; x8fa1  {"(Pointer)":" to x8fba","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_112                                        ; x8fa5  {"(Pointer)":" to x8fbe","(Random)":"87.5%"}
 	.DB $C7, $B2, $AF                                                                                                     ; x8fa9  {"(Pointer)":" to x8fc2"}
 OFFENSE_PLAYER_REACTION_LOOP_072:
 	PlayerCommandData.moveBallPlacement $F8, $18                                                                          ; x8fac  {"(Location)":{"down":1,"right":3}}
@@ -2042,9 +2042,9 @@ OFFENSE_PLAYER_REACTION_JUMP_114:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_074                                                             ; x9016  {"(Amount)":"-14 bytes to x9008"}
 OFFENSE_PLAYER_REACTION_239:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9018 
-	.DB $C8, $3B, $B0, $09                                                                                                ; x9019  {"(Pointer)":" to x904b","(Random)":"43.75%"}
-	.DB $C8, $3F, $B0, $05                                                                                                ; x901d  {"(Pointer)":" to x904f","(Random)":"68.75%"}
-	.DB $C8, $43, $B0, $02                                                                                                ; x9021  {"(Pointer)":" to x9053","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_115                                        ; x9019  {"(Pointer)":" to x904b","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_116                                        ; x901d  {"(Pointer)":" to x904f","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_117                                        ; x9021  {"(Pointer)":" to x9053","(Random)":"87.5%"}
 	.DB $C7, $47, $B0                                                                                                     ; x9025  {"(Pointer)":" to x9057"}
 OFFENSE_PLAYER_REACTION_LOOP_075:
 	PlayerCommandData.moveBallPlacement $F0, $D8                                                                          ; x9028  {"(Location)":{"up":0,"left":5}}
@@ -2150,9 +2150,9 @@ OFFENSE_PLAYER_REACTION_249:
 	PlayerCommandData.stand $50                                                                                           ; x9102  {"(Time)":"for 4s"}
 	PlayerCommandData.moveBallPlacement $E4, $D0                                                                          ; x9104  {"(Location)":{"up":1.5,"left":6}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9107 
-	.DB $C8, $14, $B1, $09                                                                                                ; x9108  {"(Pointer)":" to x9124","(Random)":"43.75%"}
-	.DB $C8, $18, $B1, $05                                                                                                ; x910c  {"(Pointer)":" to x9128","(Random)":"68.75%"}
-	.DB $C8, $1C, $B1, $02                                                                                                ; x9110  {"(Pointer)":" to x912c","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_121                                        ; x9108  {"(Pointer)":" to x9124","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_122                                        ; x910c  {"(Pointer)":" to x9128","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_123                                        ; x9110  {"(Pointer)":" to x912c","(Random)":"87.5%"}
 	.DB $C7, $20, $B1                                                                                                     ; x9114  {"(Pointer)":" to x9130"}
 OFFENSE_PLAYER_REACTION_LOOP_078:
 	.DB $2B, $38, $B8                                                                                                     ; x9117  {"(Pointer)":" to x9848"}
@@ -2178,9 +2178,9 @@ OFFENSE_PLAYER_REACTION_LOOP_079:
 OFFENSE_PLAYER_REACTION_250:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9138 
 	.DB $C0, $00, $F8                                                                                                     ; x9139  {"(Location)":{"up":0,"left":0.875}}
-	.DB $C8, $49, $B1, $09                                                                                                ; x913c  {"(Pointer)":" to x9159","(Random)":"43.75%"}
-	.DB $C8, $4D, $B1, $05                                                                                                ; x9140  {"(Pointer)":" to x915d","(Random)":"68.75%"}
-	.DB $C8, $51, $B1, $02                                                                                                ; x9144  {"(Pointer)":" to x9161","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_125                                        ; x913c  {"(Pointer)":" to x9159","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_126                                        ; x9140  {"(Pointer)":" to x915d","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_127                                        ; x9144  {"(Pointer)":" to x9161","(Random)":"87.5%"}
 	.DB $C7, $55, $B1                                                                                                     ; x9148  {"(Pointer)":" to x9165"}
 OFFENSE_PLAYER_REACTION_LOOP_080:
 	PlayerCommandData.moveBallPlacement $FA, $E4                                                                          ; x914b  {"(Location)":{"down":1.25,"left":3.5}}
@@ -2222,9 +2222,9 @@ OFFENSE_PLAYER_REACTION_255:
 OFFENSE_PLAYER_REACTION_256:
 	PlayerCommandData.takeSnapFromShotgun                                                                                 ; x918b 
 	PlayerCommandData.playerTakesControl                                                                                  ; x918c 
-	.DB $C8, $A5, $B1, $09                                                                                                ; x918d  {"(Pointer)":" to x91b5","(Random)":"43.75%"}
-	.DB $C8, $A9, $B1, $05                                                                                                ; x9191  {"(Pointer)":" to x91b9","(Random)":"68.75%"}
-	.DB $C8, $AD, $B1, $02                                                                                                ; x9195  {"(Pointer)":" to x91bd","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_129                                        ; x918d  {"(Pointer)":" to x91b5","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_130                                        ; x9191  {"(Pointer)":" to x91b9","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_131                                        ; x9195  {"(Pointer)":" to x91bd","(Random)":"87.5%"}
 	.DB $C7, $B1, $B1                                                                                                     ; x9199  {"(Pointer)":" to x91c1"}
 OFFENSE_PLAYER_REACTION_LOOP_082:
 	PlayerCommandData.moveBallPlacement $E0, $BC                                                                          ; x919c  {"(Location)":{"up":2,"left":8.5}}
@@ -2312,9 +2312,9 @@ OFFENSE_PLAYER_REACTION_264:
 	PlayerCommandData.stand $64                                                                                           ; x9255  {"(Time)":"for 5s"}
 	PlayerCommandData.moveBallPlacement $B8, $D8                                                                          ; x9257  {"(Location)":{"up":7,"left":5}}
 	PlayerCommandData.moveBallPlacement $D0, $C0                                                                          ; x925a  {"(Location)":{"up":4,"left":8}}
-	.DB $C8, $73, $B2, $09                                                                                                ; x925d  {"(Pointer)":" to x9283","(Random)":"43.75%"}
-	.DB $C8, $77, $B2, $05                                                                                                ; x9261  {"(Pointer)":" to x9287","(Random)":"68.75%"}
-	.DB $C8, $7B, $B2, $02                                                                                                ; x9265  {"(Pointer)":" to x928b","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, OFFENSE_PLAYER_REACTION_JUMP_133                                        ; x925d  {"(Pointer)":" to x9283","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, OFFENSE_PLAYER_REACTION_JUMP_134                                        ; x9261  {"(Pointer)":" to x9287","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, OFFENSE_PLAYER_REACTION_JUMP_135                                        ; x9265  {"(Pointer)":" to x928b","(Random)":"87.5%"}
 	.DB $C7, $7F, $B2                                                                                                     ; x9269  {"(Pointer)":" to x928f"}
 OFFENSE_PLAYER_REACTION_LOOP_084:
 	PlayerCommandData.moveBallPlacement $E8, $B8                                                                          ; x926c  {"(Location)":{"up":1,"left":9}}
@@ -4198,7 +4198,7 @@ DEFENSE_PLAYER_REACTION_046:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xa226  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa229 
 DEFENSE_PLAYER_REACTION_JUMP_018:
-	.DB $C8, $D8, $AA, $02                                                                                                ; xa22a  {"(Pointer)":" to xaae8","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa22a  {"(Pointer)":" to xaae8","(Random)":"87.5%"}
 	PlayerCommandData.moveBallPlacement $00, $B0                                                                          ; xa22e  {"(Location)":{"down":2,"right":10}}
 	PlayerCommandData.turn $78                                                                                            ; xa231  {"(Time)":"for 6s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa233  {"(Pointer)":" to xaacc"}
@@ -4302,7 +4302,7 @@ DEFENSE_PLAYER_REACTION_061:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa2f4 
 DEFENSE_PLAYER_REACTION_JUMP_028:
 	.DB $2B, $EC, $A2                                                                                                     ; xa2f5  {"(Pointer)":" to xa2fc"}
-	.DB $C8, $DC, $AA, $06                                                                                                ; xa2f8  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa2f8  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_029:
 	PlayerCommandData.moveBallPlacement $28, $00                                                                          ; xa2fc  {"(Location)":{"down":7,"left":0}}
 	PlayerCommandData.moveBallPlacement $28, $28                                                                          ; xa2ff  {"(Location)":{"down":7,"left":5}}
@@ -4323,7 +4323,7 @@ DEFENSE_PLAYER_REACTION_064:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xa31a  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa31d 
 	.DB $27, $15, $A3                                                                                                     ; xa31e  {"(Pointer)":" to xa325"}
-	.DB $C8, $D8, $AA, $01                                                                                                ; xa321  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa321  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_031:
 	PlayerCommandData.turn $0A                                                                                            ; xa325  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $F8, $B0                                                                          ; xa327  {"(Location)":{"down":1,"right":10}}
@@ -4362,7 +4362,7 @@ DEFENSE_PLAYER_REACTION_069:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xa36b  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa36e 
 	.DB $27, $66, $A3                                                                                                     ; xa36f  {"(Pointer)":" to xa376"}
-	.DB $C8, $DC, $AA, $06                                                                                                ; xa372  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa372  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_034:
 	PlayerCommandData.moveBallPlacement $20, $00                                                                          ; xa376  {"(Location)":{"down":6,"left":0}}
 	PlayerCommandData.moveBallPlacement $20, $08                                                                          ; xa379  {"(Location)":{"down":6,"left":1}}
@@ -4386,7 +4386,7 @@ DEFENSE_PLAYER_REACTION_072:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa39d 
 DEFENSE_UNUSED_REACTION_JUMP_001:
 	.DB $24, $95, $A3                                                                                                     ; xa39e  {"(Pointer)":" to xa3a5"}
-	.DB $C8, $D8, $AA, $04                                                                                                ; xa3a1  {"(Pointer)":" to xaae8","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa3a1  {"(Pointer)":" to xaae8","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_036:
 	PlayerCommandData.moveBallPlacement $08, $B8                                                                          ; xa3a5  {"(Location)":{"down":3,"right":9}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa3a8  {"(Pointer)":" to xbdfc"}
@@ -4458,7 +4458,7 @@ DEFENSE_PLAYER_REACTION_083:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xa428  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa42b 
 	.DB $2B, $23, $A4                                                                                                     ; xa42c  {"(Pointer)":" to xa433"}
-	.DB $C8, $DC, $AA, $0A                                                                                                ; xa42f  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0A, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa42f  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_041:
 	PlayerCommandData.stand $0A                                                                                           ; xa433  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $D8, $D0                                                                          ; xa435  {"(Location)":{"up":3,"right":6}}
@@ -4526,7 +4526,7 @@ DEFENSE_PLAYER_REACTION_091:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xa4b3  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4b6 
 DEFENSE_PLAYER_REACTION_JUMP_046:
-	.DB $C8, $DC, $AA, $01                                                                                                ; xa4b7  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa4b7  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
 	PlayerCommandData.moveBallPlacement $28, $08                                                                          ; xa4bb  {"(Location)":{"down":7,"left":1}}
 	PlayerCommandData.stand $3C                                                                                           ; xa4be  {"(Time)":"for 3s"}
 	PlayerCommandData.moveBallPlacement $20, $F0                                                                          ; xa4c0  {"(Location)":{"down":6,"right":2}}
@@ -4559,7 +4559,7 @@ DEFENSE_PLAYER_REACTION_094:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xa4fc  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa4ff 
 DEFENSE_PLAYER_REACTION_JUMP_048:
-	.DB $C8, $DC, $AA, $01                                                                                                ; xa500  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa500  {"(Pointer)":" to xaaec","(Random)":"93.75%"}
 	PlayerCommandData.turn $0A                                                                                            ; xa504  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $C8, $E0                                                                          ; xa506  {"(Location)":{"up":5,"right":4}}
 	PlayerCommandData.moveBallPlacement $08, $D0                                                                          ; xa509  {"(Location)":{"down":3,"right":6}}
@@ -4628,7 +4628,7 @@ DEFENSE_PLAYER_REACTION_104:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xa589  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa58c 
 DEFENSE_PLAYER_REACTION_JUMP_052:
-	.DB $C8, $DC, $AA, $05                                                                                                ; xa58d  {"(Pointer)":" to xaaec","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa58d  {"(Pointer)":" to xaaec","(Random)":"68.75%"}
 	PlayerCommandData.moveBallPlacement $28, $08                                                                          ; xa591  {"(Location)":{"down":7,"left":1}}
 	PlayerCommandData.moveBallPlacement $28, $30                                                                          ; xa594  {"(Location)":{"down":7,"left":6}}
 	PlayerCommandData.turn $5A                                                                                            ; xa597  {"(Time)":"for 4.5s"}
@@ -4670,7 +4670,7 @@ DEFENSE_PLAYER_REACTION_108:
 DEFENSE_PLAYER_REACTION_109:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xa5e7  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa5ea 
-	.DB $C8, $ED, $A5, $06                                                                                                ; xa5eb  {"(Pointer)":" to xa5fd","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_054                                        ; xa5eb  {"(Pointer)":" to xa5fd","(Random)":"62.5%"}
 	PlayerCommandData.moveBallPlacement $D0, $E8                                                                          ; xa5ef  {"(Location)":{"up":4,"right":3}}
 	PlayerCommandData.moveBallPlacement $C0, $00                                                                          ; xa5f2  {"(Location)":{"up":6,"left":0}}
 	PlayerCommandData.turn $1E                                                                                            ; xa5f5  {"(Time)":"for 1.5s"}
@@ -4736,7 +4736,7 @@ DEFENSE_PLAYER_REACTION_118:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xa66f  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa672 
 	.DB $24, $6A, $A6                                                                                                     ; xa673  {"(Pointer)":" to xa67a"}
-	.DB $C8, $D6, $AA, $06                                                                                                ; xa676  {"(Pointer)":" to xaae6","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_088                                        ; xa676  {"(Pointer)":" to xaae6","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_057:
 	PlayerCommandData.moveBallPlacement $E0, $D8                                                                          ; xa67a  {"(Location)":{"up":2,"right":5}}
 	PlayerCommandData.turn $08                                                                                            ; xa67d  {"(Time)":"for 0.4s"}
@@ -4748,7 +4748,7 @@ DEFENSE_PLAYER_REACTION_119:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xa68a  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa68d 
 	.DB $24, $85, $A6                                                                                                     ; xa68e  {"(Pointer)":" to xa695"}
-	.DB $C8, $D6, $AA, $0A                                                                                                ; xa691  {"(Pointer)":" to xaae6","(Random)":"37.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0A, DEFENSE_PLAYER_REACTION_JUMP_088                                        ; xa691  {"(Pointer)":" to xaae6","(Random)":"37.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_058:
 	PlayerCommandData.moveBallPlacement $08, $D8                                                                          ; xa695  {"(Location)":{"down":3,"right":5}}
 	PlayerCommandData.turn $0A                                                                                            ; xa698  {"(Time)":"for 0.5s"}
@@ -5015,7 +5015,7 @@ DEFENSE_PLAYER_REACTION_151:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xa898  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa89b 
 DEFENSE_PLAYER_REACTION_JUMP_077:
-	.DB $C8, $DC, $AA, $0A                                                                                                ; xa89c  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0A, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xa89c  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	PlayerCommandData.moveBallPlacement $BC, $D8                                                                          ; xa8a0  {"(Location)":{"up":6.5,"right":5}}
 	PlayerCommandData.moveBallPlacement $BC, $81                                                                          ; xa8a3  {"(Location)":{"up":6.5,"right":15.875}}
 	PlayerCommandData.moveRelative $40, $C0                                                                               ; xa8a6  {"(Location)":{"down":8,"right":7.875}}
@@ -5024,7 +5024,7 @@ DEFENSE_PLAYER_REACTION_152:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xa8ac  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa8af 
 DEFENSE_PLAYER_REACTION_JUMP_078:
-	.DB $C8, $D8, $AA, $03                                                                                                ; xa8b0  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa8b0  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	PlayerCommandData.moveBallPlacement $E8, $90                                                                          ; xa8b4  {"(Location)":{"up":1,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xa8b7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_153:
@@ -5066,7 +5066,7 @@ DEFENSE_PLAYER_REACTION_158:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa902 
 DEFENSE_PLAYER_REACTION_LOOP_005:
 	PlayerCommandData.turn $14                                                                                            ; xa903  {"(Time)":"for 1s"}
-	.DB $C8, $D8, $AA, $01                                                                                                ; xa905  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa905  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	PlayerCommandData.turn $14                                                                                            ; xa909  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xa90b  {"(Pointer)":" to xaabd"}
 DEFENSE_PLAYER_REACTION_159:
@@ -5101,7 +5101,7 @@ DEFENSE_PLAYER_REACTION_164:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xa943  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa946 
 DEFENSE_PLAYER_REACTION_JUMP_081:
-	.DB $C8, $D8, $AA, $08                                                                                                ; xa947  {"(Pointer)":" to xaae8","(Random)":"50%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$08, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa947  {"(Pointer)":" to xaae8","(Random)":"50%"}
 	PlayerCommandData.moveBallPlacement $E8, $98                                                                          ; xa94b  {"(Location)":{"up":1,"right":13}}
 	.DB $2B, $47, $A9                                                                                                     ; xa94e  {"(Pointer)":" to xa957"}
 	PlayerCommandData.moveBallPlacement $30, $90                                                                          ; xa951  {"(Location)":{"down":8,"right":14}}
@@ -5120,13 +5120,13 @@ DEFENSE_PLAYER_REACTION_JUMP_083:
 DEFENSE_PLAYER_REACTION_165:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xa96f  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa972 
-	.DB $C8, $D8, $AA, $05                                                                                                ; xa973  {"(Pointer)":" to xaae8","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa973  {"(Pointer)":" to xaae8","(Random)":"68.75%"}
 	.DB $24, $85, $A1                                                                                                     ; xa977  {"(Pointer)":" to xa195"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_081                                                             ; xa97a  {"(Pointer)":" to xa947"}
 DEFENSE_PLAYER_REACTION_166:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xa97d  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa980 
-	.DB $C8, $D8, $AA, $01                                                                                                ; xa981  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa981  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	.DB $24, $90, $A1                                                                                                     ; xa985  {"(Pointer)":" to xa1a0"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_083                                                             ; xa988  {"(Pointer)":" to xa961"}
 DEFENSE_PLAYER_REACTION_167:
@@ -5164,7 +5164,7 @@ DEFENSE_PLAYER_REACTION_171:
 DEFENSE_PLAYER_REACTION_172:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xa9d0  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xa9d3 
-	.DB $C8, $D8, $AA, $03                                                                                                ; xa9d4  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xa9d4  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	.DB $27, $51, $A9                                                                                                     ; xa9d8  {"(Pointer)":" to xa961"}
 	PlayerCommandData.wait $14, $82                                                                                       ; xa9db  {"(Start Time, End Time)":"start in between 1s and 6.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xa9de  {"(Pointer)":" to xaacc"}
@@ -5185,7 +5185,7 @@ DEFENSE_PLAYER_REACTION_174:
 DEFENSE_PLAYER_REACTION_175:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xaa00  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa03 
-	.DB $C8, $DC, $AA, $0A                                                                                                ; xaa04  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0A, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xaa04  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	PlayerCommandData.moveBallPlacement $28, $00                                                                          ; xaa08  {"(Location)":{"down":7,"left":0}}
 	PlayerCommandData.moveBallPlacement $28, $D8                                                                          ; xaa0b  {"(Location)":{"down":7,"right":5}}
 	PlayerCommandData.moveBallPlacement $00, $B8                                                                          ; xaa0e  {"(Location)":{"down":2,"right":9}}
@@ -5249,7 +5249,7 @@ DEFENSE_PLAYER_REACTION_186:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xaa7b  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaa7e 
 DEFENSE_PLAYER_REACTION_JUMP_085:
-	.DB $C8, $D8, $AA, $03                                                                                                ; xaa7f  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xaa7f  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	PlayerCommandData.moveBallPlacement $B8, $D8                                                                          ; xaa83  {"(Location)":{"up":7,"right":5}}
 	PlayerCommandData.wait $0A, $46                                                                                       ; xaa86  {"(Start Time, End Time)":"start in between 0.5s and 3.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_191                                                                  ; xaa89  {"(Pointer)":" to xaabd"}
@@ -5266,7 +5266,7 @@ DEFENSE_PLAYER_REACTION_189:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xaa9d  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaaa0 
 DEFENSE_UNUSED_REACTION_JUMP_003:
-	.DB $C8, $D8, $AA, $07                                                                                                ; xaaa1  {"(Pointer)":" to xaae8","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xaaa1  {"(Pointer)":" to xaae8","(Random)":"56.25%"}
 	.DB $2B, $A0, $AA                                                                                                     ; xaaa5  {"(Pointer)":" to xaab0"}
 	PlayerCommandData.moveBallPlacement $C0, $C0                                                                          ; xaaa8  {"(Location)":{"up":6,"right":8}}
 	PlayerCommandData.stand $50                                                                                           ; xaaab  {"(Time)":"for 4s"}
@@ -5351,7 +5351,7 @@ DEFENSE_PLAYER_REACTION_199:
 DEFENSE_PLAYER_REACTION_200:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xab31  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab34 
-	.DB $C8, $D8, $AA, $01                                                                                                ; xab35  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xab35  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	.DB $27, $A0, $A8                                                                                                     ; xab39  {"(Pointer)":" to xa8b0"}
 	PlayerCommandData.moveBallPlacement $30, $C0                                                                          ; xab3c  {"(Location)":{"down":8,"right":8}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xab3f  {"(Pointer)":" to xbdfc"}
@@ -5360,7 +5360,7 @@ DEFENSE_PLAYER_REACTION_201:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xab45 
 	.DB $27, $C1, $A1                                                                                                     ; xab46  {"(Pointer)":" to xa1d1"}
 DEFENSE_PLAYER_REACTION_JUMP_092:
-	.DB $C8, $DC, $AA, $06                                                                                                ; xab49  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xab49  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 	PlayerCommandData.moveBallPlacement $C8, $E0                                                                          ; xab4d  {"(Location)":{"up":5,"right":4}}
 	PlayerCommandData.moveBallPlacement $D8, $C8                                                                          ; xab50  {"(Location)":{"up":3,"right":7}}
 	PlayerCommandData.turn $3C                                                                                            ; xab53  {"(Time)":"for 3s"}
@@ -5410,7 +5410,7 @@ DEFENSE_PLAYER_REACTION_209:
 DEFENSE_PLAYER_REACTION_JUMP_095:
 	.DB $2B, $9E, $AB                                                                                                     ; xaba7  {"(Pointer)":" to xabae"}
 DEFENSE_PLAYER_REACTION_JUMP_096:
-	.DB $C8, $D8, $AA, $01                                                                                                ; xabaa  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xabaa  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_097:
 	PlayerCommandData.moveBallPlacement $DC, $D8                                                                          ; xabae  {"(Location)":{"up":2.5,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xabb1  {"(Pointer)":" to xbdfc"}
@@ -5462,7 +5462,7 @@ DEFENSE_PLAYER_REACTION_215:
 	PlayerCommandData.wait $0A, $5A                                                                                       ; xac0d  {"(Start Time, End Time)":"start in between 0.5s and 4.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_103:
 	.DB $27, $07, $AC                                                                                                     ; xac10  {"(Pointer)":" to xac17"}
-	.DB $C8, $D8, $AA, $01                                                                                                ; xac13  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xac13  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_104:
 	.DB $27, $10, $AC                                                                                                     ; xac17  {"(Pointer)":" to xac20"}
 	PlayerCommandData.moveBallPlacement $E8, $D0                                                                          ; xac1a  {"(Location)":{"up":1,"right":6}}
@@ -5476,7 +5476,7 @@ DEFENSE_PLAYER_REACTION_216:
 	PlayerCommandData.wait $0A, $5A                                                                                       ; xac2a  {"(Start Time, End Time)":"start in between 0.5s and 4.5s"}
 DEFENSE_PLAYER_REACTION_JUMP_106:
 	.DB $27, $24, $AC                                                                                                     ; xac2d  {"(Pointer)":" to xac34"}
-	.DB $C8, $D8, $AA, $03                                                                                                ; xac30  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xac30  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_107:
 	.DB $27, $2D, $AC                                                                                                     ; xac34  {"(Pointer)":" to xac3d"}
 	PlayerCommandData.moveBallPlacement $00, $D0                                                                          ; xac37  {"(Location)":{"down":2,"right":6}}
@@ -5523,7 +5523,7 @@ DEFENSE_PLAYER_REACTION_222:
 DEFENSE_PLAYER_REACTION_223:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xac85  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xac88 
-	.DB $C8, $D8, $AA, $06                                                                                                ; xac89  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xac89  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
 	PlayerCommandData.stand $14                                                                                           ; xac8d  {"(Time)":"for 1s"}
 	PlayerCommandData.moveRelative $00, $E8                                                                               ; xac8f  {"(Location)":{"up":0,"right":2.875}}
 	PlayerCommandData.turn $28                                                                                            ; xac92  {"(Time)":"for 2s"}
@@ -5554,7 +5554,7 @@ DEFENSE_PLAYER_REACTION_227:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xacc0  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacc3 
 	.DB $29, $BB, $AC                                                                                                     ; xacc4  {"(Pointer)":" to xaccb"}
-	.DB $C8, $D8, $AA, $01                                                                                                ; xacc7  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xacc7  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_114:
 	.DB $29, $C6, $AC                                                                                                     ; xaccb  {"(Pointer)":" to xacd6"}
 	PlayerCommandData.turn $28                                                                                            ; xacce  {"(Time)":"for 2s"}
@@ -5568,7 +5568,7 @@ DEFENSE_PLAYER_REACTION_228:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xacde 
 	.DB $29, $73, $A4                                                                                                     ; xacdf  {"(Pointer)":" to xa483"}
 DEFENSE_PLAYER_REACTION_JUMP_116:
-	.DB $C8, $DC, $AA, $0A                                                                                                ; xace2  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0A, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xace2  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	PlayerCommandData.moveBallPlacement $20, $FC                                                                          ; xace6  {"(Location)":{"down":6,"right":0.5}}
 	PlayerCommandData.moveBallPlacement $20, $10                                                                          ; xace9  {"(Location)":{"down":6,"left":2}}
 	PlayerCommandData.turn $1E                                                                                            ; xacec  {"(Time)":"for 1.5s"}
@@ -5649,7 +5649,7 @@ DEFENSE_PLAYER_REACTION_239:
 DEFENSE_PLAYER_REACTION_240:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xad8c  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xad8f 
-	.DB $C8, $D8, $AA, $01                                                                                                ; xad90  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xad90  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	.DB $2B, $EC, $BD                                                                                                     ; xad94  {"(Pointer)":" to xbdfc"}
 	PlayerCommandData.moveMiddleOfField $36, $28                                                                          ; xad97  {"(Location)":{"up":8.25,"left":5}}
 	PlayerCommandData.turn $3C                                                                                            ; xad9a  {"(Time)":"for 3s"}
@@ -5684,7 +5684,7 @@ DEFENSE_PLAYER_REACTION_246:
 DEFENSE_PLAYER_REACTION_247:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xadd2  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xadd5 
-	.DB $C8, $9A, $B9, $03                                                                                                ; xadd6  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_225                                        ; xadd6  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xadda  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_248:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xaddd  {"(Location)":{"up":5,"right":10}}
@@ -5744,7 +5744,7 @@ DEFENSE_PLAYER_REACTION_258:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xae46  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xae49 
 	.DB $2C, $41, $AE                                                                                                     ; xae4a  {"(Pointer)":" to xae51"}
-	.DB $C8, $D8, $AA, $06                                                                                                ; xae4d  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xae4d  {"(Pointer)":" to xaae8","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_118:
 	PlayerCommandData.turn $3C                                                                                            ; xae51  {"(Time)":"for 3s"}
 	PlayerCommandData.moveMiddleOfField $36, $B0                                                                          ; xae53  {"(Location)":{"up":8.25,"right":10}}
@@ -5843,7 +5843,7 @@ DEFENSE_PLAYER_REACTION_JUMP_122:
 DEFENSE_PLAYER_REACTION_273:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xaf11  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf14 
-	.DB $C8, $88, $B9, $06                                                                                                ; xaf15  {"(Pointer)":" to xb998","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_222                                        ; xaf15  {"(Pointer)":" to xb998","(Random)":"62.5%"}
 	PlayerCommandData.turn $0A                                                                                            ; xaf19  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $F0, $D0                                                                          ; xaf1b  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.moveBallPlacement $20, $C4                                                                          ; xaf1e  {"(Location)":{"down":6,"right":7.5}}
@@ -5852,7 +5852,7 @@ DEFENSE_PLAYER_REACTION_273:
 DEFENSE_PLAYER_REACTION_274:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xaf26  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf29 
-	.DB $C8, $51, $B9, $07                                                                                                ; xaf2a  {"(Pointer)":" to xb961","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_421                                             ; xaf2a  {"(Pointer)":" to xb961","(Random)":"56.25%"}
 	PlayerCommandData.turn $0A                                                                                            ; xaf2e  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $10, $D8                                                                          ; xaf30  {"(Location)":{"down":4,"right":5}}
 	PlayerCommandData.moveBallPlacement $28, $D0                                                                          ; xaf33  {"(Location)":{"down":7,"right":6}}
@@ -5861,7 +5861,7 @@ DEFENSE_PLAYER_REACTION_274:
 DEFENSE_PLAYER_REACTION_275:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xaf3b  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf3e 
-	.DB $C8, $40, $B9, $02                                                                                                ; xaf3f  {"(Pointer)":" to xb950","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_214                                        ; xaf3f  {"(Pointer)":" to xb950","(Random)":"87.5%"}
 	PlayerCommandData.moveMiddleOfField $36, $B0                                                                          ; xaf43  {"(Location)":{"up":8.25,"right":10}}
 	PlayerCommandData.moveRelative $40, $D0                                                                               ; xaf46  {"(Location)":{"down":8,"right":5.875}}
 	PlayerCommandData.moveRelative $40, $D0                                                                               ; xaf49  {"(Location)":{"down":8,"right":5.875}}
@@ -5878,7 +5878,7 @@ DEFENSE_PLAYER_REACTION_277:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xaf5d  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaf60 
 DEFENSE_PLAYER_REACTION_JUMP_124:
-	.DB $C8, $4B, $B9, $04                                                                                                ; xaf61  {"(Pointer)":" to xb95b","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xaf61  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	PlayerCommandData.moveBallPlacement $00, $A0                                                                          ; xaf65  {"(Location)":{"down":2,"right":12}}
 	PlayerCommandData.moveBallPlacement $34, $90                                                                          ; xaf68  {"(Location)":{"down":8.5,"right":14}}
 	PlayerCommandData.turn $78                                                                                            ; xaf6b  {"(Time)":"for 6s"}
@@ -5911,7 +5911,7 @@ DEFENSE_PLAYER_REACTION_280:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xafa5  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafa8 
 DEFENSE_PLAYER_REACTION_JUMP_127:
-	.DB $C8, $8E, $B9, $05                                                                                                ; xafa9  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_223                                        ; xafa9  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
 	.DB $27, $60, $AF                                                                                                     ; xafad  {"(Pointer)":" to xaf70"}
 	PlayerCommandData.moveBallPlacement $18, $88                                                                          ; xafb0  {"(Location)":{"down":5,"right":15}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xafb3  {"(Pointer)":" to xb61c"}
@@ -5942,7 +5942,7 @@ DEFENSE_PLAYER_REACTION_285:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xafe7  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xafea 
 DEFENSE_PLAYER_REACTION_JUMP_128:
-	.DB $C8, $7C, $B9, $06                                                                                                ; xafeb  {"(Pointer)":" to xb98c","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_220                                        ; xafeb  {"(Pointer)":" to xb98c","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_129:
 	PlayerCommandData.moveRelative $00, $20                                                                               ; xafef  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.wait $5A, $C8                                                                                       ; xaff2  {"(Start Time, End Time)":"start in between 4.5s and 10s"}
@@ -5951,7 +5951,7 @@ DEFENSE_PLAYER_REACTION_286:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xaff8  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xaffb 
 DEFENSE_PLAYER_REACTION_JUMP_130:
-	.DB $C8, $82, $B9, $07                                                                                                ; xaffc  {"(Pointer)":" to xb992","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_221                                        ; xaffc  {"(Pointer)":" to xb992","(Random)":"56.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_131:
 	PlayerCommandData.moveRelative $00, $20                                                                               ; xb000  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.wait $5A, $C8                                                                                       ; xb003  {"(Start Time, End Time)":"start in between 4.5s and 10s"}
@@ -5960,7 +5960,7 @@ DEFENSE_PLAYER_REACTION_287:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xb009  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb00c 
 DEFENSE_PLAYER_REACTION_JUMP_132:
-	.DB $C8, $94, $B9, $02                                                                                                ; xb00d  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_224                                        ; xb00d  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_133:
 	PlayerCommandData.moveRelative $00, $50                                                                               ; xb011  {"(Location)":{"up":0,"left":10}}
 	PlayerCommandData.turn $14                                                                                            ; xb014  {"(Time)":"for 1s"}
@@ -5970,7 +5970,7 @@ DEFENSE_PLAYER_REACTION_288:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb01c  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb01f 
 DEFENSE_PLAYER_REACTION_JUMP_134:
-	.DB $C8, $9A, $B9, $03                                                                                                ; xb020  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_225                                        ; xb020  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_135:
 	PlayerCommandData.moveRelative $00, $50                                                                               ; xb024  {"(Location)":{"up":0,"left":10}}
 	PlayerCommandData.turn $14                                                                                            ; xb027  {"(Time)":"for 1s"}
@@ -5979,7 +5979,7 @@ DEFENSE_PLAYER_REACTION_JUMP_135:
 DEFENSE_PLAYER_REACTION_289:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb02f  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb032 
-	.DB $C8, $88, $B9, $04                                                                                                ; xb033  {"(Pointer)":" to xb998","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_222                                        ; xb033  {"(Pointer)":" to xb998","(Random)":"75%"}
 	.DB $27, $33, $B0                                                                                                     ; xb037  {"(Pointer)":" to xb043"}
 	PlayerCommandData.moveBallPlacement $C0, $00                                                                          ; xb03a  {"(Location)":{"up":6,"left":0}}
 	PlayerCommandData.wait $3C, $A0                                                                                       ; xb03d  {"(Start Time, End Time)":"start in between 3s and 8s"}
@@ -5995,7 +5995,7 @@ DEFENSE_PLAYER_REACTION_290:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb052  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb055 
 DEFENSE_PLAYER_REACTION_JUMP_138:
-	.DB $C8, $8E, $B9, $05                                                                                                ; xb056  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_223                                        ; xb056  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
 	.DB $27, $56, $B0                                                                                                     ; xb05a  {"(Pointer)":" to xb066"}
 	PlayerCommandData.moveBallPlacement $28, $00                                                                          ; xb05d  {"(Location)":{"down":7,"left":0}}
 	PlayerCommandData.wait $3C, $A0                                                                                       ; xb060  {"(Start Time, End Time)":"start in between 3s and 8s"}
@@ -6058,19 +6058,19 @@ DEFENSE_PLAYER_REACTION_297:
 DEFENSE_PLAYER_REACTION_298:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb0dd  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0e0 
-	.DB $C8, $56, $B9, $03                                                                                                ; xb0e1  {"(Pointer)":" to xb966","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_216                                        ; xb0e1  {"(Pointer)":" to xb966","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb0e5  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_299:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb0e8  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0eb 
-	.DB $C8, $66, $B9, $04                                                                                                ; xb0ec  {"(Pointer)":" to xb976","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_218                                        ; xb0ec  {"(Pointer)":" to xb976","(Random)":"75%"}
 	PlayerCommandData.moveMiddleOfField $30, $AC                                                                          ; xb0f0  {"(Location)":{"up":9,"right":10.5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb0f3  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_300:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb0f6  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb0f9 
 DEFENSE_PLAYER_REACTION_JUMP_142:
-	.DB $C8, $4B, $B9, $05                                                                                                ; xb0fa  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb0fa  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
 	PlayerCommandData.moveBallPlacement $BC, $90                                                                          ; xb0fe  {"(Location)":{"up":6.5,"right":14}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb101  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_301:
@@ -6125,14 +6125,14 @@ DEFENSE_PLAYER_REACTION_306:
 DEFENSE_PLAYER_REACTION_307:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xb16d  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb170 
-	.DB $C8, $A0, $B9, $06                                                                                                ; xb171  {"(Pointer)":" to xb9b0","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_226                                        ; xb171  {"(Pointer)":" to xb9b0","(Random)":"62.5%"}
 	PlayerCommandData.moveBallPlacement $C8, $F0                                                                          ; xb175  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb178  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_308:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xb17b  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb17e 
 DEFENSE_PLAYER_REACTION_JUMP_145:
-	.DB $C8, $AB, $B9, $07                                                                                                ; xb17f  {"(Pointer)":" to xb9bb","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_227                                        ; xb17f  {"(Pointer)":" to xb9bb","(Random)":"56.25%"}
 	PlayerCommandData.turn $0A                                                                                            ; xb183  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; xb185  {"(Location)":{"down":1,"right":4}}
 	PlayerCommandData.moveBallPlacement $D8, $E4                                                                          ; xb188  {"(Location)":{"up":3,"right":3.5}}
@@ -6142,14 +6142,14 @@ DEFENSE_PLAYER_REACTION_309:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb190  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb193 
 DEFENSE_PLAYER_REACTION_LOOP_010:
-	.DB $C8, $9A, $B9, $03                                                                                                ; xb194  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_225                                        ; xb194  {"(Pointer)":" to xb9aa","(Random)":"81.25%"}
 	PlayerCommandData.moveBallPlacement $E8, $E8                                                                          ; xb198  {"(Location)":{"up":1,"right":3}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb19b  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_310:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb19e  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1a1 
 DEFENSE_PLAYER_REACTION_JUMP_146:
-	.DB $C8, $8E, $B9, $05                                                                                                ; xb1a2  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_223                                        ; xb1a2  {"(Pointer)":" to xb99e","(Random)":"68.75%"}
 	.DB $27, $A4, $B1                                                                                                     ; xb1a6  {"(Pointer)":" to xb1b4"}
 	PlayerCommandData.moveBallPlacement $30, $88                                                                          ; xb1a9  {"(Location)":{"down":8,"right":15}}
 	PlayerCommandData.turn $14                                                                                            ; xb1ac  {"(Time)":"for 1s"}
@@ -6186,7 +6186,7 @@ DEFENSE_PLAYER_REACTION_314:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb1ed  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb1f0 
 DEFENSE_PLAYER_REACTION_JUMP_149:
-	.DB $C8, $6C, $B9, $04                                                                                                ; xb1f1  {"(Pointer)":" to xb97c","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_219                                        ; xb1f1  {"(Pointer)":" to xb97c","(Random)":"75%"}
 	PlayerCommandData.moveBallPlacement $B8, $E8                                                                          ; xb1f5  {"(Location)":{"up":7,"right":3}}
 	PlayerCommandData.moveBallPlacement $B8, $10                                                                          ; xb1f8  {"(Location)":{"up":7,"left":2}}
 	PlayerCommandData.turn $78                                                                                            ; xb1fb  {"(Time)":"for 6s"}
@@ -6246,7 +6246,7 @@ DEFENSE_PLAYER_REACTION_321:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb272  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb275 
 DEFENSE_PLAYER_REACTION_JUMP_153:
-	.DB $C8, $40, $B9, $04                                                                                                ; xb276  {"(Pointer)":" to xb950","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_214                                        ; xb276  {"(Pointer)":" to xb950","(Random)":"75%"}
 	PlayerCommandData.turn $14                                                                                            ; xb27a  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $B8, $E0                                                                          ; xb27c  {"(Location)":{"up":7,"right":4}}
 	PlayerCommandData.turn $AA                                                                                            ; xb27f  {"(Time)":"for 8.5s"}
@@ -6273,7 +6273,7 @@ DEFENSE_PLAYER_REACTION_324:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb2ab  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2ae 
 DEFENSE_PLAYER_REACTION_JUMP_155:
-	.DB $C8, $51, $B9, $05                                                                                                ; xb2af  {"(Pointer)":" to xb961","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_421                                             ; xb2af  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $27, $74, $B2                                                                                                     ; xb2b3  {"(Pointer)":" to xb284"}
 	PlayerCommandData.moveBallPlacement $00, $A0                                                                          ; xb2b6  {"(Location)":{"down":2,"right":12}}
 	PlayerCommandData.moveRelative $00, $B0                                                                               ; xb2b9  {"(Location)":{"up":0,"right":9.875}}
@@ -6298,7 +6298,7 @@ DEFENSE_PLAYER_REACTION_327:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xb2e2  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2e5 
 DEFENSE_PLAYER_REACTION_JUMP_157:
-	.DB $C8, $94, $B9, $02                                                                                                ; xb2e6  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_224                                        ; xb2e6  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
 	PlayerCommandData.turn $0A                                                                                            ; xb2ea  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $D0, $C0                                                                          ; xb2ec  {"(Location)":{"up":4,"right":8}}
 	PlayerCommandData.moveRelative $18, $B0                                                                               ; xb2ef  {"(Location)":{"down":3,"right":9.875}}
@@ -6307,7 +6307,7 @@ DEFENSE_PLAYER_REACTION_328:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb2f5  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb2f8 
 DEFENSE_PLAYER_REACTION_JUMP_158:
-	.DB $C8, $B6, $B9, $04                                                                                                ; xb2f9  {"(Pointer)":" to xb9c6","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_228                                        ; xb2f9  {"(Pointer)":" to xb9c6","(Random)":"75%"}
 	PlayerCommandData.moveRelative $48, $88                                                                               ; xb2fd  {"(Location)":{"down":9,"right":14.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb300  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_329:
@@ -6342,7 +6342,7 @@ DEFENSE_PLAYER_REACTION_JUMP_160:
 DEFENSE_PLAYER_REACTION_332:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb345  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb348 
-	.DB $C8, $40, $B9, $05                                                                                                ; xb349  {"(Pointer)":" to xb950","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_214                                        ; xb349  {"(Pointer)":" to xb950","(Random)":"68.75%"}
 	PlayerCommandData.moveRelative $E8, $C8                                                                               ; xb34d  {"(Location)":{"up":2.875,"right":6.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xb350  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_333:
@@ -6378,7 +6378,7 @@ DEFENSE_PLAYER_REACTION_337:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xb390  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb393 
 DEFENSE_PLAYER_REACTION_JUMP_163:
-	.DB $C8, $94, $B9, $04                                                                                                ; xb394  {"(Pointer)":" to xb9a4","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_224                                        ; xb394  {"(Pointer)":" to xb9a4","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_164:
 	PlayerCommandData.turn $14                                                                                            ; xb398  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $B8, $F8                                                                          ; xb39a  {"(Location)":{"up":7,"right":1}}
@@ -6388,7 +6388,7 @@ DEFENSE_PLAYER_REACTION_338:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb3a3  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3a6 
 DEFENSE_PLAYER_REACTION_JUMP_165:
-	.DB $C8, $6C, $B9, $04                                                                                                ; xb3a7  {"(Pointer)":" to xb97c","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_219                                        ; xb3a7  {"(Pointer)":" to xb97c","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_166:
 	PlayerCommandData.turn $14                                                                                            ; xb3ab  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $C8, $F0                                                                          ; xb3ad  {"(Location)":{"up":5,"right":2}}
@@ -6398,7 +6398,7 @@ DEFENSE_PLAYER_REACTION_339:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb3b6  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb3b9 
 DEFENSE_PLAYER_REACTION_JUMP_167:
-	.DB $C8, $66, $B9, $05                                                                                                ; xb3ba  {"(Pointer)":" to xb976","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_218                                        ; xb3ba  {"(Pointer)":" to xb976","(Random)":"68.75%"}
 	.DB $29, $BC, $B3                                                                                                     ; xb3be  {"(Pointer)":" to xb3cc"}
 	PlayerCommandData.turn $14                                                                                            ; xb3c1  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $D8, $E8                                                                          ; xb3c3  {"(Location)":{"up":3,"right":3}}
@@ -6436,7 +6436,7 @@ DEFENSE_PLAYER_REACTION_343:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xb405  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb408 
 DEFENSE_PLAYER_REACTION_JUMP_172:
-	.DB $C8, $4B, $B9, $02                                                                                                ; xb409  {"(Pointer)":" to xb95b","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb409  {"(Pointer)":" to xb95b","(Random)":"87.5%"}
 	PlayerCommandData.turn $32                                                                                            ; xb40d  {"(Time)":"for 2.5s"}
 	PlayerCommandData.moveBallPlacement $C8, $C8                                                                          ; xb40f  {"(Location)":{"up":5,"right":7}}
 	PlayerCommandData.moveBallPlacement $E8, $D0                                                                          ; xb412  {"(Location)":{"up":1,"right":6}}
@@ -6450,7 +6450,7 @@ DEFENSE_PLAYER_REACTION_344:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb423  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb426 
 DEFENSE_PLAYER_REACTION_JUMP_174:
-	.DB $C8, $66, $B9, $03                                                                                                ; xb427  {"(Pointer)":" to xb976","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_218                                        ; xb427  {"(Pointer)":" to xb976","(Random)":"81.25%"}
 	PlayerCommandData.turn $46                                                                                            ; xb42b  {"(Time)":"for 3.5s"}
 	PlayerCommandData.moveBallPlacement $28, $E0                                                                          ; xb42d  {"(Location)":{"down":7,"right":4}}
 	PlayerCommandData.turn $46                                                                                            ; xb430  {"(Time)":"for 3.5s"}
@@ -6514,26 +6514,26 @@ DEFENSE_PLAYER_REACTION_350:
 DEFENSE_PLAYER_REACTION_351:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xb4a9  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4ac 
-	.DB $C8, $6C, $B9, $02                                                                                                ; xb4ad  {"(Pointer)":" to xb97c","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_219                                        ; xb4ad  {"(Pointer)":" to xb97c","(Random)":"87.5%"}
 	PlayerCommandData.turn $14                                                                                            ; xb4b1  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb4b3  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_352:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb4b6  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4b9 
 DEFENSE_PLAYER_REACTION_JUMP_181:
-	.DB $C8, $8E, $B9, $03                                                                                                ; xb4ba  {"(Pointer)":" to xb99e","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_223                                        ; xb4ba  {"(Pointer)":" to xb99e","(Random)":"81.25%"}
 	PlayerCommandData.turn $1E                                                                                            ; xb4be  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb4c0  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_353:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb4c3  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4c6 
-	.DB $C8, $88, $B9, $04                                                                                                ; xb4c7  {"(Pointer)":" to xb998","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_222                                        ; xb4c7  {"(Pointer)":" to xb998","(Random)":"75%"}
 	PlayerCommandData.moveBallPlacement $E8, $81                                                                          ; xb4cb  {"(Location)":{"up":1,"right":15.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_275                                                             ; xb4ce  {"(Pointer)":" to xbe28"}
 DEFENSE_PLAYER_REACTION_354:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb4d1  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4d4 
-	.DB $C8, $4B, $B9, $05                                                                                                ; xb4d5  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb4d5  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
 	PlayerCommandData.moveRelative $00, $C8                                                                               ; xb4d9  {"(Location)":{"up":0,"right":6.875}}
 	PlayerCommandData.moveRelative $F0, $00                                                                               ; xb4dc  {"(Location)":{"up":1.875,"left":0}}
 	PlayerCommandData.turn $3C                                                                                            ; xb4df  {"(Time)":"for 3s"}
@@ -6544,7 +6544,7 @@ DEFENSE_PLAYER_REACTION_355:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xb4ea  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb4ed 
 DEFENSE_PLAYER_REACTION_JUMP_182:
-	.DB $C8, $BC, $B9, $06                                                                                                ; xb4ee  {"(Pointer)":" to xb9cc","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_229                                        ; xb4ee  {"(Pointer)":" to xb9cc","(Random)":"62.5%"}
 DEFENSE_PLAYER_REACTION_JUMP_183:
 	PlayerCommandData.moveBallPlacement $D0, $00                                                                          ; xb4f2  {"(Location)":{"up":4,"left":0}}
 	PlayerCommandData.moveBallPlacement $D0, $18                                                                          ; xb4f5  {"(Location)":{"up":4,"left":3}}
@@ -6554,7 +6554,7 @@ DEFENSE_PLAYER_REACTION_356:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xb4fe  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb501 
 DEFENSE_PLAYER_REACTION_JUMP_184:
-	.DB $C8, $CB, $B9, $07                                                                                                ; xb502  {"(Pointer)":" to xb9db","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_231                                        ; xb502  {"(Pointer)":" to xb9db","(Random)":"56.25%"}
 	PlayerCommandData.moveBallPlacement $18, $08                                                                          ; xb506  {"(Location)":{"down":5,"left":1}}
 	PlayerCommandData.moveBallPlacement $18, $18                                                                          ; xb509  {"(Location)":{"down":5,"left":3}}
 	PlayerCommandData.turn $3C                                                                                            ; xb50c  {"(Time)":"for 3s"}
@@ -6593,7 +6593,7 @@ DEFENSE_PLAYER_REACTION_361:
 DEFENSE_PLAYER_REACTION_362:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb555  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb558 
-	.DB $C8, $4B, $B9, $04                                                                                                ; xb559  {"(Pointer)":" to xb95b","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb559  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	PlayerCommandData.moveBallPlacement $C0, $E0                                                                          ; xb55d  {"(Location)":{"up":6,"right":4}}
 	PlayerCommandData.moveBallPlacement $C0, $08                                                                          ; xb560  {"(Location)":{"up":6,"left":1}}
 	PlayerCommandData.turn $C8                                                                                            ; xb563  {"(Time)":"for 10s"}
@@ -6601,7 +6601,7 @@ DEFENSE_PLAYER_REACTION_362:
 DEFENSE_PLAYER_REACTION_363:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb568  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb56b 
-	.DB $C8, $51, $B9, $05                                                                                                ; xb56c  {"(Pointer)":" to xb961","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_421                                             ; xb56c  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $27, $6B, $B5                                                                                                     ; xb570  {"(Pointer)":" to xb57b"}
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; xb573  {"(Location)":{"up":0,"right":3}}
 	PlayerCommandData.turn $6E                                                                                            ; xb576  {"(Time)":"for 5.5s"}
@@ -6656,7 +6656,7 @@ DEFENSE_PLAYER_REACTION_372:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xb5d7  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5da 
 DEFENSE_PLAYER_REACTION_JUMP_187:
-	.DB $C8, $94, $B9, $02                                                                                                ; xb5db  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_224                                        ; xb5db  {"(Pointer)":" to xb9a4","(Random)":"87.5%"}
 	PlayerCommandData.moveBallPlacement $D8, $F8                                                                          ; xb5df  {"(Location)":{"up":3,"right":1}}
 	PlayerCommandData.moveBallPlacement $E0, $08                                                                          ; xb5e2  {"(Location)":{"up":2,"left":1}}
 	PlayerCommandData.wait $5A, $C8                                                                                       ; xb5e5  {"(Start Time, End Time)":"start in between 4.5s and 10s"}
@@ -6665,7 +6665,7 @@ DEFENSE_PLAYER_REACTION_373:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb5eb  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb5ee 
 DEFENSE_PLAYER_REACTION_JUMP_188:
-	.DB $C8, $51, $B9, $03                                                                                                ; xb5ef  {"(Pointer)":" to xb961","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_421                                             ; xb5ef  {"(Pointer)":" to xb961","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_189:
 	PlayerCommandData.moveBallPlacement $10, $E8                                                                          ; xb5f3  {"(Location)":{"down":4,"right":3}}
 	PlayerCommandData.moveBallPlacement $00, $08                                                                          ; xb5f6  {"(Location)":{"down":2,"left":1}}
@@ -6674,7 +6674,7 @@ DEFENSE_PLAYER_REACTION_JUMP_189:
 DEFENSE_PLAYER_REACTION_374:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb5ff  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb602 
-	.DB $C8, $A0, $B9, $04                                                                                                ; xb603  {"(Pointer)":" to xb9b0","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_226                                        ; xb603  {"(Pointer)":" to xb9b0","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_190:
 	PlayerCommandData.moveBallPlacement $B8, $C0                                                                          ; xb607  {"(Location)":{"up":7,"right":8}}
 	PlayerCommandData.turn $C8                                                                                            ; xb60a  {"(Time)":"for 10s"}
@@ -6684,7 +6684,7 @@ DEFENSE_PLAYER_REACTION_375:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb611  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb614 
 DEFENSE_PLAYER_REACTION_JUMP_191:
-	.DB $C8, $9A, $B9, $05                                                                                                ; xb615  {"(Pointer)":" to xb9aa","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_225                                        ; xb615  {"(Pointer)":" to xb9aa","(Random)":"68.75%"}
 	PlayerCommandData.moveRelative $D8, $C8                                                                               ; xb619  {"(Location)":{"up":4.875,"right":6.875}}
 DEFENSE_PLAYER_REACTION_JUMP_192:
 	.DB $27, $EC, $BD                                                                                                     ; xb61c  {"(Pointer)":" to xbdfc"}
@@ -6694,7 +6694,7 @@ DEFENSE_PLAYER_REACTION_JUMP_192:
 DEFENSE_PLAYER_REACTION_376:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xb627  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb62a 
-	.DB $C8, $CB, $B9, $07                                                                                                ; xb62b  {"(Pointer)":" to xb9db","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_231                                        ; xb62b  {"(Pointer)":" to xb9db","(Random)":"56.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_193:
 	PlayerCommandData.moveBallPlacement $10, $08                                                                          ; xb62f  {"(Location)":{"down":4,"left":1}}
 	PlayerCommandData.wait $5A, $C8                                                                                       ; xb632  {"(Start Time, End Time)":"start in between 4.5s and 10s"}
@@ -6742,7 +6742,7 @@ DEFENSE_PLAYER_REACTION_381:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb692  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb695 
 DEFENSE_PLAYER_REACTION_JUMP_196:
-	.DB $C8, $51, $B9, $05                                                                                                ; xb696  {"(Pointer)":" to xb961","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_421                                             ; xb696  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	PlayerCommandData.moveRelative $00, $C8                                                                               ; xb69a  {"(Location)":{"up":0,"right":6.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb69d  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_382:
@@ -6781,7 +6781,7 @@ DEFENSE_PLAYER_REACTION_387:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb6e7  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6ea 
 DEFENSE_PLAYER_REACTION_JUMP_197:
-	.DB $C8, $4B, $B9, $04                                                                                                ; xb6eb  {"(Pointer)":" to xb95b","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb6eb  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	PlayerCommandData.moveBallPlacement $C8, $10                                                                          ; xb6ef  {"(Location)":{"up":5,"left":2}}
 	PlayerCommandData.turn $C8                                                                                            ; xb6f2  {"(Time)":"for 10s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_194                                                                  ; xb6f4  {"(Pointer)":" to xaacc"}
@@ -6789,7 +6789,7 @@ DEFENSE_PLAYER_REACTION_388:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb6f7  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb6fa 
 DEFENSE_PLAYER_REACTION_JUMP_198:
-	.DB $C8, $71, $B9, $05                                                                                                ; xb6fb  {"(Pointer)":" to xb981","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_422                                             ; xb6fb  {"(Pointer)":" to xb981","(Random)":"68.75%"}
 	PlayerCommandData.moveBallPlacement $F8, $81                                                                          ; xb6ff  {"(Location)":{"down":1,"right":15.875}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_192                                                             ; xb702  {"(Pointer)":" to xb61c"}
 DEFENSE_PLAYER_REACTION_389:
@@ -6853,7 +6853,7 @@ DEFENSE_PLAYER_REACTION_396:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb783  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb786 
 DEFENSE_PLAYER_REACTION_JUMP_200:
-	.DB $C8, $51, $B9, $04                                                                                                ; xb787  {"(Pointer)":" to xb961","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_421                                             ; xb787  {"(Pointer)":" to xb961","(Random)":"75%"}
 	.DB $2E, $87, $B7                                                                                                     ; xb78b  {"(Pointer)":" to xb797"}
 	PlayerCommandData.moveBallPlacement $08, $A8                                                                          ; xb78e  {"(Location)":{"down":3,"right":11}}
 	PlayerCommandData.moveBallPlacement $24, $D8                                                                          ; xb791  {"(Location)":{"down":6.5,"right":5}}
@@ -6866,7 +6866,7 @@ DEFENSE_PLAYER_REACTION_397:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb79f  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7a2 
 DEFENSE_PLAYER_REACTION_JUMP_202:
-	.DB $C8, $4B, $B9, $05                                                                                                ; xb7a3  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb7a3  {"(Pointer)":" to xb95b","(Random)":"68.75%"}
 	PlayerCommandData.turn $14                                                                                            ; xb7a7  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $28, $C8                                                                          ; xb7a9  {"(Location)":{"down":7,"right":7}}
 	PlayerCommandData.moveBallPlacement $28, $08                                                                          ; xb7ac  {"(Location)":{"down":7,"left":1}}
@@ -6906,7 +6906,7 @@ DEFENSE_PLAYER_REACTION_402:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb7f4  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb7f7 
 DEFENSE_PLAYER_REACTION_JUMP_205:
-	.DB $C8, $8E, $B9, $03                                                                                                ; xb7f8  {"(Pointer)":" to xb99e","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_223                                        ; xb7f8  {"(Pointer)":" to xb99e","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_206:
 	PlayerCommandData.turn $14                                                                                            ; xb7fc  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $28, $F8                                                                          ; xb7fe  {"(Location)":{"down":7,"right":1}}
@@ -6916,7 +6916,7 @@ DEFENSE_PLAYER_REACTION_JUMP_206:
 DEFENSE_PLAYER_REACTION_403:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb80a  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb80d 
-	.DB $C8, $AB, $B9, $05                                                                                                ; xb80e  {"(Pointer)":" to xb9bb","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_227                                        ; xb80e  {"(Pointer)":" to xb9bb","(Random)":"68.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_207:
 	.DB $27, $10, $B8                                                                                                     ; xb812  {"(Pointer)":" to xb820"}
 	PlayerCommandData.turn $14                                                                                            ; xb815  {"(Time)":"for 1s"}
@@ -6950,7 +6950,7 @@ DEFENSE_PLAYER_REACTION_406:
 DEFENSE_PLAYER_REACTION_407:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb855  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb858 
-	.DB $C8, $4B, $B9, $04                                                                                                ; xb859  {"(Pointer)":" to xb95b","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xb859  {"(Pointer)":" to xb95b","(Random)":"75%"}
 	.DB $27, $5B, $B8                                                                                                     ; xb85d  {"(Pointer)":" to xb86b"}
 	PlayerCommandData.moveBallPlacement $E8, $F8                                                                          ; xb860  {"(Location)":{"up":1,"right":1}}
 	PlayerCommandData.turn $14                                                                                            ; xb863  {"(Time)":"for 1s"}
@@ -6998,7 +6998,7 @@ DEFENSE_PLAYER_REACTION_412:
 DEFENSE_PLAYER_REACTION_413:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb8bf  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8c2 
-	.DB $C8, $51, $B9, $05                                                                                                ; xb8c3  {"(Pointer)":" to xb961","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_421                                             ; xb8c3  {"(Pointer)":" to xb961","(Random)":"68.75%"}
 	.DB $27, $86, $B6                                                                                                     ; xb8c7  {"(Pointer)":" to xb696"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_138                                                             ; xb8ca  {"(Pointer)":" to xb056"}
 DEFENSE_PLAYER_REACTION_414:
@@ -7025,7 +7025,7 @@ DEFENSE_PLAYER_REACTION_416:
 DEFENSE_PLAYER_REACTION_417:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xb8f9  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb8fc 
-	.DB $C8, $6C, $B9, $04                                                                                                ; xb8fd  {"(Pointer)":" to xb97c","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_219                                        ; xb8fd  {"(Pointer)":" to xb97c","(Random)":"75%"}
 	.DB $27, $04, $B9                                                                                                     ; xb901  {"(Pointer)":" to xb914"}
 	PlayerCommandData.turn $14                                                                                            ; xb904  {"(Time)":"for 1s"}
 	PlayerCommandData.moveBallPlacement $F4, $EC                                                                          ; xb906  {"(Location)":{"down":0.5,"right":2.5}}
@@ -7040,7 +7040,7 @@ DEFENSE_PLAYER_REACTION_418:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xb91a  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb91d 
 DEFENSE_PLAYER_REACTION_JUMP_213:
-	.DB $C8, $61, $B9, $03                                                                                                ; xb91e  {"(Pointer)":" to xb971","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_217                                        ; xb91e  {"(Pointer)":" to xb971","(Random)":"81.25%"}
 	PlayerCommandData.moveBallPlacement $20, $F0                                                                          ; xb922  {"(Location)":{"down":6,"right":2}}
 	PlayerCommandData.turn $14                                                                                            ; xb925  {"(Time)":"for 1s"}
 	PlayerCommandData.wait $50, $82                                                                                       ; xb927  {"(Start Time, End Time)":"start in between 4s and 6.5s"}
@@ -7048,7 +7048,7 @@ DEFENSE_PLAYER_REACTION_JUMP_213:
 DEFENSE_PLAYER_REACTION_419:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xb92d  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xb930 
-	.DB $C8, $40, $B9, $05                                                                                                ; xb931  {"(Pointer)":" to xb950","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_214                                        ; xb931  {"(Pointer)":" to xb950","(Random)":"68.75%"}
 	PlayerCommandData.moveBallPlacement $00, $F0                                                                          ; xb935  {"(Location)":{"down":2,"right":2}}
 	PlayerCommandData.turn $14                                                                                            ; xb938  {"(Time)":"for 1s"}
 	PlayerCommandData.wait $50, $82                                                                                       ; xb93a  {"(Start Time, End Time)":"start in between 4s and 6.5s"}
@@ -7322,7 +7322,7 @@ DEFENSE_PLAYER_REACTION_443:
 DEFENSE_PLAYER_REACTION_444:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xbb6d  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbb70 
-	.DB $C8, $61, $B9, $06                                                                                                ; xbb71  {"(Pointer)":" to xb971","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_217                                        ; xbb71  {"(Pointer)":" to xb971","(Random)":"62.5%"}
 	PlayerCommandData.moveBallPlacement $C8, $D0                                                                          ; xbb75  {"(Location)":{"up":5,"right":6}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbb78  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_445:
@@ -7428,28 +7428,28 @@ DEFENSE_PLAYER_REACTION_457:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xbc50  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc53 
 DEFENSE_PLAYER_REACTION_JUMP_250:
-	.DB $C8, $61, $B9, $03                                                                                                ; xbc54  {"(Pointer)":" to xb971","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_217                                        ; xbc54  {"(Pointer)":" to xb971","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_135                                                             ; xbc58  {"(Pointer)":" to xb024"}
 DEFENSE_PLAYER_REACTION_458:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbc5b  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc5e 
-	.DB $C8, $71, $B9, $0C                                                                                                ; xbc5f  {"(Pointer)":" to xb981","(Random)":"25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0C, DEFENSE_PLAYER_REACTION_422                                             ; xbc5f  {"(Pointer)":" to xb981","(Random)":"25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbc63  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_459:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xbc66  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc69 
 DEFENSE_PLAYER_REACTION_JUMP_251:
-	.DB $C8, $88, $B9, $02                                                                                                ; xbc6a  {"(Pointer)":" to xb998","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_222                                        ; xbc6a  {"(Pointer)":" to xb998","(Random)":"87.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_133                                                             ; xbc6e  {"(Pointer)":" to xb011"}
 DEFENSE_PLAYER_REACTION_460:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xbc71  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc74 
-	.DB $C8, $BC, $B9, $06                                                                                                ; xbc75  {"(Pointer)":" to xb9cc","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_229                                        ; xbc75  {"(Pointer)":" to xb9cc","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_129                                                             ; xbc79  {"(Pointer)":" to xafef"}
 DEFENSE_PLAYER_REACTION_461:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xbc7c  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc7f 
-	.DB $C8, $C5, $B9, $07                                                                                                ; xbc80  {"(Pointer)":" to xb9d5","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_230                                        ; xbc80  {"(Pointer)":" to xb9d5","(Random)":"56.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_131                                                             ; xbc84  {"(Pointer)":" to xb000"}
 DEFENSE_PLAYER_REACTION_462:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xbc87  {"(Location)":{"down":9,"right":5}}
@@ -7463,12 +7463,12 @@ DEFENSE_PLAYER_REACTION_463:
 DEFENSE_PLAYER_REACTION_464:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xbc98  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc9b 
-	.DB $C8, $7C, $B9, $09                                                                                                ; xbc9c  {"(Pointer)":" to xb98c","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, DEFENSE_PLAYER_REACTION_JUMP_220                                        ; xbc9c  {"(Pointer)":" to xb98c","(Random)":"43.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_203                                                             ; xbca0  {"(Pointer)":" to xb7b9"}
 DEFENSE_PLAYER_REACTION_465:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xbca3  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbca6 
-	.DB $C8, $E6, $B9, $06                                                                                                ; xbca7  {"(Pointer)":" to xb9f6","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_237                                        ; xbca7  {"(Pointer)":" to xb9f6","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_129                                                             ; xbcab  {"(Pointer)":" to xafef"}
 DEFENSE_PLAYER_REACTION_466:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xbcae  {"(Location)":{"up":8.25,"right":5}}
@@ -7477,7 +7477,7 @@ DEFENSE_PLAYER_REACTION_466:
 DEFENSE_PLAYER_REACTION_467:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xbcb5  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcb8 
-	.DB $C8, $B0, $BC, $03                                                                                                ; xbcb9  {"(Pointer)":" to xbcc0","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_253                                        ; xbcb9  {"(Pointer)":" to xbcc0","(Random)":"81.25%"}
 DEFENSE_PLAYER_REACTION_JUMP_252:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_206                                                             ; xbcbd  {"(Pointer)":" to xb7fc"}
 DEFENSE_PLAYER_REACTION_JUMP_253:
@@ -7487,7 +7487,7 @@ DEFENSE_PLAYER_REACTION_468:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xbcc6  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcc9 
 DEFENSE_PLAYER_REACTION_JUMP_254:
-	.DB $C8, $C1, $BC, $04                                                                                                ; xbcca  {"(Pointer)":" to xbcd1","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_256                                        ; xbcca  {"(Pointer)":" to xbcd1","(Random)":"75%"}
 DEFENSE_PLAYER_REACTION_JUMP_255:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_166                                                             ; xbcce  {"(Pointer)":" to xb3ab"}
 DEFENSE_PLAYER_REACTION_JUMP_256:
@@ -7502,22 +7502,22 @@ DEFENSE_PLAYER_REACTION_470:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xbcde  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbce1 
 DEFENSE_PLAYER_REACTION_JUMP_258:
-	.DB $C8, $4B, $B9, $02                                                                                                ; xbce2  {"(Pointer)":" to xb95b","(Random)":"87.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$02, DEFENSE_PLAYER_REACTION_JUMP_215                                        ; xbce2  {"(Pointer)":" to xb95b","(Random)":"87.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_133                                                             ; xbce6  {"(Pointer)":" to xb011"}
 DEFENSE_PLAYER_REACTION_471:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xbce9  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcec 
-	.DB $C8, $61, $B9, $03                                                                                                ; xbced  {"(Pointer)":" to xb971","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_217                                        ; xbced  {"(Pointer)":" to xb971","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_189                                                             ; xbcf1  {"(Pointer)":" to xb5f3"}
 DEFENSE_PLAYER_REACTION_472:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xbcf4  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbcf7 
-	.DB $C8, $56, $B9, $04                                                                                                ; xbcf8  {"(Pointer)":" to xb966","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_216                                        ; xbcf8  {"(Pointer)":" to xb966","(Random)":"75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_190                                                             ; xbcfc  {"(Pointer)":" to xb607"}
 DEFENSE_PLAYER_REACTION_473:
 	PlayerCommandData.setPositionBallPlacement $00, $18                                                                   ; xbcff  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd02 
-	.DB $C8, $FA, $BC, $07                                                                                                ; xbd03  {"(Pointer)":" to xbd0a","(Random)":"56.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_259                                        ; xbd03  {"(Pointer)":" to xbd0a","(Random)":"56.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_193                                                             ; xbd07  {"(Pointer)":" to xb62f"}
 DEFENSE_PLAYER_REACTION_JUMP_259:
 	.DB $27, $04, $BE                                                                                                     ; xbd0a  {"(Pointer)":" to xbe14"}
@@ -7526,25 +7526,25 @@ DEFENSE_PLAYER_REACTION_JUMP_259:
 DEFENSE_PLAYER_REACTION_474:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbd13  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd16 
-	.DB $C8, $40, $B9, $0C                                                                                                ; xbd17  {"(Pointer)":" to xb950","(Random)":"25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0C, DEFENSE_PLAYER_REACTION_JUMP_214                                        ; xbd17  {"(Pointer)":" to xb950","(Random)":"25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_047                                                             ; xbd1b  {"(Pointer)":" to xa4eb"}
 DEFENSE_PLAYER_REACTION_475:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xbd1e  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd21 
-	.DB $C8, $7C, $B9, $06                                                                                                ; xbd22  {"(Pointer)":" to xb98c","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_220                                        ; xbd22  {"(Pointer)":" to xb98c","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_183                                                             ; xbd26  {"(Pointer)":" to xb4f2"}
 DEFENSE_PLAYER_REACTION_476:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xbd29  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd2c 
 	.DB $29, $3B, $A1                                                                                                     ; xbd2d  {"(Pointer)":" to xa14b"}
-	.DB $C8, $DC, $AA, $06                                                                                                ; xbd30  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xbd30  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_004                                                             ; xbd34  {"(Pointer)":" to xa14b"}
 DEFENSE_PLAYER_REACTION_477:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xbd37  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd3a 
 	.DB $29, $EC, $BD                                                                                                     ; xbd3b  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_LOOP_013:
-	.DB $C8, $D8, $AA, $03                                                                                                ; xbd3e  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$03, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xbd3e  {"(Pointer)":" to xaae8","(Random)":"81.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbd42  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_478:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xbd45  {"(Location)":{"up":5,"right":10}}
@@ -7560,14 +7560,14 @@ DEFENSE_PLAYER_REACTION_480:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xbd58  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd5b 
 	.DB $2B, $53, $BD                                                                                                     ; xbd5c  {"(Pointer)":" to xbd63"}
-	.DB $C8, $DC, $AA, $09                                                                                                ; xbd5f  {"(Pointer)":" to xaaec","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xbd5f  {"(Pointer)":" to xaaec","(Random)":"43.75%"}
 DEFENSE_PLAYER_REACTION_JUMP_260:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_013                                                             ; xbd63  {"(Pointer)":" to xa1d1"}
 DEFENSE_PLAYER_REACTION_481:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xbd66  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd69 
 	.DB $2B, $01, $A2                                                                                                     ; xbd6a  {"(Pointer)":" to xa211"}
-	.DB $C8, $64, $BD, $06                                                                                                ; xbd6d  {"(Pointer)":" to xbd74","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_261                                        ; xbd6d  {"(Pointer)":" to xbd74","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_016                                                             ; xbd71  {"(Pointer)":" to xa211"}
 DEFENSE_PLAYER_REACTION_JUMP_261:
 	PlayerCommandData.turn $28                                                                                            ; xbd74  {"(Time)":"for 2s"}
@@ -7575,7 +7575,7 @@ DEFENSE_PLAYER_REACTION_JUMP_261:
 DEFENSE_PLAYER_REACTION_482:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xbd79  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd7c 
-	.DB $C8, $7A, $BD, $04                                                                                                ; xbd7d  {"(Pointer)":" to xbd8a","(Random)":"75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$04, DEFENSE_PLAYER_REACTION_JUMP_262                                        ; xbd7d  {"(Pointer)":" to xbd8a","(Random)":"75%"}
 	.DB $2C, $EC, $BD                                                                                                     ; xbd81  {"(Pointer)":" to xbdfc"}
 	.DB $25, $4A, $A8                                                                                                     ; xbd84  {"(Pointer)":" to xa85a"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_117                                                             ; xbd87  {"(Pointer)":" to xad01"}
@@ -7586,25 +7586,25 @@ DEFENSE_PLAYER_REACTION_483:
 	PlayerCommandData.setPositionBallPlacement $C8, $50                                                                   ; xbd90  {"(Location)":{"up":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbd93 
 	.DB $29, $C2, $AA                                                                                                     ; xbd94  {"(Pointer)":" to xaad2"}
-	.DB $C8, $D8, $AA, $09                                                                                                ; xbd97  {"(Pointer)":" to xaae8","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xbd97  {"(Pointer)":" to xaae8","(Random)":"43.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_LOOP_007                                                             ; xbd9b  {"(Pointer)":" to xaad2"}
 DEFENSE_PLAYER_REACTION_484:
 	PlayerCommandData.setPositionBallPlacement $18, $50                                                                   ; xbd9e  {"(Location)":{"down":5,"right":10}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbda1 
 	.DB $29, $94, $AC                                                                                                     ; xbda2  {"(Pointer)":" to xaca4"}
-	.DB $C8, $D8, $AA, $0B                                                                                                ; xbda5  {"(Pointer)":" to xaae8","(Random)":"31.25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0B, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xbda5  {"(Pointer)":" to xaae8","(Random)":"31.25%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_112                                                             ; xbda9  {"(Pointer)":" to xaca4"}
 DEFENSE_PLAYER_REACTION_485:
 	PlayerCommandData.setPositionMiddleOfField $36, $28                                                                   ; xbdac  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbdaf 
 	.DB $2B, $EC, $BD                                                                                                     ; xbdb0  {"(Pointer)":" to xbdfc"}
-	.DB $C8, $D8, $AA, $01                                                                                                ; xbdb3  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$01, DEFENSE_PLAYER_REACTION_JUMP_089                                        ; xbdb3  {"(Pointer)":" to xaae8","(Random)":"93.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbdb7  {"(Pointer)":" to xbdfc"}
 DEFENSE_PLAYER_REACTION_486:
 	PlayerCommandData.setPositionBallPlacement $E0, $18                                                                   ; xbdba  {"(Location)":{"up":2,"right":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbdbd 
 	.DB $2B, $C3, $A2                                                                                                     ; xbdbe  {"(Pointer)":" to xa2d3"}
-	.DB $C8, $B8, $BD, $05                                                                                                ; xbdc1  {"(Pointer)":" to xbdc8","(Random)":"68.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$05, DEFENSE_PLAYER_REACTION_JUMP_263                                        ; xbdc1  {"(Pointer)":" to xbdc8","(Random)":"68.75%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_025                                                             ; xbdc5  {"(Pointer)":" to xa2d3"}
 DEFENSE_PLAYER_REACTION_JUMP_263:
 	PlayerCommandData.moveBallPlacement $C6, $E8                                                                          ; xbdc8  {"(Location)":{"up":5.25,"right":3}}
@@ -7613,19 +7613,19 @@ DEFENSE_PLAYER_REACTION_487:
 	PlayerCommandData.setPositionMiddleOfField $C0, $28                                                                   ; xbdce  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbdd1 
 	.DB $2B, $04, $A3                                                                                                     ; xbdd2  {"(Pointer)":" to xa314"}
-	.DB $C8, $DC, $AA, $08                                                                                                ; xbdd5  {"(Pointer)":" to xaaec","(Random)":"50%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$08, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xbdd5  {"(Pointer)":" to xaaec","(Random)":"50%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_030                                                             ; xbdd9  {"(Pointer)":" to xa314"}
 DEFENSE_PLAYER_REACTION_488:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbddc  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbddf 
 	.DB $29, $59, $A6                                                                                                     ; xbde0  {"(Pointer)":" to xa669"}
-	.DB $C8, $DC, $AA, $06                                                                                                ; xbde3  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$06, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xbde3  {"(Pointer)":" to xaaec","(Random)":"62.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_056                                                             ; xbde7  {"(Pointer)":" to xa669"}
 DEFENSE_PLAYER_REACTION_489:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbdea  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbded 
 	.DB $29, $C4, $AB                                                                                                     ; xbdee  {"(Pointer)":" to xabd4"}
-	.DB $C8, $DC, $AA, $0A                                                                                                ; xbdf1  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0A, DEFENSE_PLAYER_REACTION_JUMP_090                                        ; xbdf1  {"(Pointer)":" to xaaec","(Random)":"37.5%"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_098                                                             ; xbdf5  {"(Pointer)":" to xabd4"}
 DEFENSE_PLAYER_REACTION_490:
 	PlayerCommandData.stand $00                                                                                           ; xbdf8  {"(Time)":"for forever"}
@@ -7770,7 +7770,7 @@ DEFENSE_PLAYER_REACTION_495:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xbef5  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbef8 
 DEFENSE_PLAYER_REACTION_JUMP_299:
-	.DB $C8, $7C, $B9, $09                                                                                                ; xbef9  {"(Pointer)":" to xb98c","(Random)":"43.75%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$09, DEFENSE_PLAYER_REACTION_JUMP_220                                        ; xbef9  {"(Pointer)":" to xb98c","(Random)":"43.75%"}
 DEFENSE_PLAYER_REACTION_LOOP_014:
 	PlayerCommandData.moveBallPlacement $C4, $00                                                                          ; xbefd  {"(Location)":{"up":5.5,"left":0}}
 	PlayerCommandData.moveBallPlacement $C4, $14                                                                          ; xbf00  {"(Location)":{"up":5.5,"left":2.5}}
@@ -7779,7 +7779,7 @@ DEFENSE_PLAYER_REACTION_LOOP_014:
 DEFENSE_PLAYER_REACTION_496:
 	PlayerCommandData.setPositionBallPlacement $C8, $10                                                                   ; xbf09  {"(Location)":{"up":5,"right":2}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf0c 
-	.DB $C8, $F1, $B9, $0C                                                                                                ; xbf0d  {"(Pointer)":" to xba01","(Random)":"25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0C, DEFENSE_PLAYER_REACTION_JUMP_238                                        ; xbf0d  {"(Pointer)":" to xba01","(Random)":"25%"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_014                                                             ; xbf11  {"(Amount)":"-20 bytes to xbefd"}
 DEFENSE_PLAYER_REACTION_497:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbf13  {"(Location)":{"down":5,"right":1.5}}
@@ -7789,7 +7789,7 @@ DEFENSE_PLAYER_REACTION_498:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbf19  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf1c 
 	.DB $29, $14, $BF                                                                                                     ; xbf1d  {"(Pointer)":" to xbf24"}
-	.DB $C8, $00, $BE, $0C                                                                                                ; xbf20  {"(Pointer)":" to xbe10","(Random)":"25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0C, DEFENSE_PLAYER_REACTION_JUMP_269                                        ; xbf20  {"(Pointer)":" to xbe10","(Random)":"25%"}
 DEFENSE_PLAYER_REACTION_LOOP_015:
 	PlayerCommandData.moveBallPlacement $1C, $08                                                                          ; xbf24  {"(Location)":{"down":5.5,"left":1}}
 	PlayerCommandData.moveBallPlacement $1C, $18                                                                          ; xbf27  {"(Location)":{"down":5.5,"left":3}}
@@ -7799,7 +7799,7 @@ DEFENSE_PLAYER_REACTION_499:
 	PlayerCommandData.setPositionBallPlacement $18, $0C                                                                   ; xbf30  {"(Location)":{"down":5,"right":1.5}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbf33 
 DEFENSE_PLAYER_REACTION_JUMP_300:
-	.DB $C8, $7C, $B9, $0C                                                                                                ; xbf34  {"(Pointer)":" to xb98c","(Random)":"25%"}
+	PlayerCommandData.basedOnJuiceCOMJumpTo #$0C, DEFENSE_PLAYER_REACTION_JUMP_220                                        ; xbf34  {"(Pointer)":" to xb98c","(Random)":"25%"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_015                                                             ; xbf38  {"(Amount)":"-20 bytes to xbf24"}
 DEFENSE_PLAYER_REACTION_500:
 	PlayerCommandData.setMS $00                                                                                           ; xbf3a  {"(Value)":6}

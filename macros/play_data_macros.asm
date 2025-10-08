@@ -10,6 +10,12 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.basedOnJuiceCOMJumpTo juiceCompareValue, newLocation
+    .DB $C8
+    .WORD newLocation
+    .DB juiceCompareValue
+.ENDM
+
 .MACRO PlayerCommandData.COACOMJumpTo newLocation
     .DB $CA
     .WORD newLocation
