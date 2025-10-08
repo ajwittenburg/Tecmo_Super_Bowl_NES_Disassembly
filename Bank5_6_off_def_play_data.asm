@@ -10,8 +10,8 @@ OFFENSE_PLAYER_REACTION_001:
 	.DB $B4, $48, $88                                                                                                     ; x8017 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x801a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.wait $01, $19                                                                                       ; x801d  {"(Start Time, End Time)":"start in between 0.05s and 1.25s"}
-	.DB $CD, $60, $28                                                                                                     ; x8020  {"(Location)":{"down":12,"right":5}}
-	.DB $CD, $0C, $7F                                                                                                     ; x8023  {"(Location)":{"down":1.5,"right":15.875}}
+	PlayerCommandData.pullRelative $60, $28                                                                               ; x8020  {"(Location)":{"down":12,"right":5}}
+	PlayerCommandData.pullRelative $0C, $7F                                                                               ; x8023  {"(Location)":{"down":1.5,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_001:
 	PlayerCommandData.pullMiddleOfField $10, $00                                                                          ; x8026  {"(Location)":{"up":13,"left":0}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_001                                                             ; x8029  {"(Amount)":"-3 bytes to x8026"}
@@ -21,8 +21,8 @@ OFFENSE_PLAYER_REACTION_002:
 	PlayerCommandData.setToGrapple %00111100, %00000000                                                                   ; x802f  {"(Player)":"LE,ROLB,RILB,LILB"}
 	.DB $B4, $60, $A0                                                                                                     ; x8032 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8035  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $F8, $10                                                                                                     ; x8038  {"(Location)":{"up":0.875,"right":2}}
-	.DB $CD, $00, $7F                                                                                                     ; x803b  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $F8, $10                                                                               ; x8038  {"(Location)":{"up":0.875,"right":2}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x803b  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_002:
 	PlayerCommandData.pullMiddleOfField $F8, $E8                                                                          ; x803e  {"(Location)":{"down":16,"left":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_002                                                             ; x8041  {"(Amount)":"-3 bytes to x803e"}
@@ -32,7 +32,7 @@ OFFENSE_PLAYER_REACTION_003:
 	PlayerCommandData.setToGrapple %10000110, %00000000                                                                   ; x8047  {"(Player)":"RE,LILB,LOLB"}
 	.DB $B4, $78, $B0                                                                                                     ; x804a 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x804d  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $00, $7F                                                                                                     ; x8050  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x8050  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_003:
 	PlayerCommandData.pullMiddleOfField $08, $E0                                                                          ; x8053  {"(Location)":{"up":14,"left":4}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_003                                                             ; x8056  {"(Amount)":"-3 bytes to x8053"}
@@ -42,8 +42,8 @@ OFFENSE_PLAYER_REACTION_004:
 	PlayerCommandData.setToGrapple %00000011, %11000000                                                                   ; x805c  {"(Player)":"LOLB,RCB,LCB,FS"}
 	.DB $B4, $90, $A0                                                                                                     ; x805f 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8062  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $08, $10                                                                                                     ; x8065  {"(Location)":{"down":1,"right":2}}
-	.DB $CD, $00, $7F                                                                                                     ; x8068  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $08, $10                                                                               ; x8065  {"(Location)":{"down":1,"right":2}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x8068  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_004:
 	PlayerCommandData.pullMiddleOfField $00, $C8                                                                          ; x806b  {"(Location)":{"up":15,"left":7}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_004                                                             ; x806e  {"(Amount)":"-3 bytes to x806b"}
@@ -54,8 +54,8 @@ OFFENSE_PLAYER_REACTION_005:
 	.DB $B4, $A8, $88                                                                                                     ; x8077 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x807a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.wait $01, $19                                                                                       ; x807d  {"(Start Time, End Time)":"start in between 0.05s and 1.25s"}
-	.DB $CD, $A8, $28                                                                                                     ; x8080  {"(Location)":{"up":10.875,"right":5}}
-	.DB $CD, $F8, $7F                                                                                                     ; x8083  {"(Location)":{"up":0.875,"right":15.875}}
+	PlayerCommandData.pullRelative $A8, $28                                                                               ; x8080  {"(Location)":{"up":10.875,"right":5}}
+	PlayerCommandData.pullRelative $F8, $7F                                                                               ; x8083  {"(Location)":{"up":0.875,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_005:
 	PlayerCommandData.pullMiddleOfField $F0, $00                                                                          ; x8086  {"(Location)":{"down":15,"left":0}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_005                                                             ; x8089  {"(Amount)":"-3 bytes to x8086"}
@@ -65,7 +65,7 @@ OFFENSE_PLAYER_REACTION_006:
 	PlayerCommandData.setToGrapple %01110000, %00000000                                                                   ; x808f  {"(Player)":"NT,LE,ROLB"}
 	.DB $B4, $50, $38                                                                                                     ; x8092 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8095  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $04, $7F                                                                                                     ; x8098  {"(Location)":{"down":0.5,"right":15.875}}
+	PlayerCommandData.pullRelative $04, $7F                                                                               ; x8098  {"(Location)":{"down":0.5,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_006:
 	PlayerCommandData.pullMiddleOfField $F8, $18                                                                          ; x809b  {"(Location)":{"down":16,"right":3}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_006                                                             ; x809e  {"(Amount)":"-3 bytes to x809b"}
@@ -75,10 +75,10 @@ OFFENSE_PLAYER_REACTION_007:
 	PlayerCommandData.setToGrapple %00001110, %00000000                                                                   ; x80a4  {"(Player)":"RILB,LILB,LOLB"}
 	.DB $B4, $68, $48                                                                                                     ; x80a7 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80aa  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $04, $7F                                                                                                     ; x80ad  {"(Location)":{"down":0.5,"right":15.875}}
-	.DB $CD, $04, $7F                                                                                                     ; x80b0  {"(Location)":{"down":0.5,"right":15.875}}
-	.DB $CD, $00, $7F                                                                                                     ; x80b3  {"(Location)":{"up":0,"right":15.875}}
-	.DB $CD, $00, $7F                                                                                                     ; x80b6  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $04, $7F                                                                               ; x80ad  {"(Location)":{"down":0.5,"right":15.875}}
+	PlayerCommandData.pullRelative $04, $7F                                                                               ; x80b0  {"(Location)":{"down":0.5,"right":15.875}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x80b3  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x80b6  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_007:
 	.DB $CC                                                                                                               ; x80b9 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_007                                                             ; x80ba  {"(Amount)":"-1 bytes to x80b9"}
@@ -88,10 +88,10 @@ OFFENSE_PLAYER_REACTION_008:
 	PlayerCommandData.setToGrapple %00000111, %00000000                                                                   ; x80c0  {"(Player)":"LILB,LOLB,RCB"}
 	.DB $B4, $88, $48                                                                                                     ; x80c3 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80c6  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $FC, $7F                                                                                                     ; x80c9  {"(Location)":{"up":0.375,"right":15.875}}
-	.DB $CD, $FC, $7F                                                                                                     ; x80cc  {"(Location)":{"up":0.375,"right":15.875}}
-	.DB $CD, $00, $7F                                                                                                     ; x80cf  {"(Location)":{"up":0,"right":15.875}}
-	.DB $CD, $00, $7F                                                                                                     ; x80d2  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $FC, $7F                                                                               ; x80c9  {"(Location)":{"up":0.375,"right":15.875}}
+	PlayerCommandData.pullRelative $FC, $7F                                                                               ; x80cc  {"(Location)":{"up":0.375,"right":15.875}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x80cf  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x80d2  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_008:
 	.DB $CC                                                                                                               ; x80d5 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_008                                                             ; x80d6  {"(Amount)":"-1 bytes to x80d5"}
@@ -100,7 +100,7 @@ OFFENSE_PLAYER_REACTION_009:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80db 
 	.DB $B4, $A0, $38                                                                                                     ; x80dc 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80df  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $04, $7F                                                                                                     ; x80e2  {"(Location)":{"down":0.5,"right":15.875}}
+	PlayerCommandData.pullRelative $04, $7F                                                                               ; x80e2  {"(Location)":{"down":0.5,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_009:
 	PlayerCommandData.pullMiddleOfField $08, $20                                                                          ; x80e5  {"(Location)":{"up":14,"right":4}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_009                                                             ; x80e8  {"(Amount)":"-3 bytes to x80e5"}
@@ -110,7 +110,7 @@ OFFENSE_PLAYER_REACTION_010:
 	.DB $B4, $88, $28                                                                                                     ; x80ee 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x80f1  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullMiddleOfField $00, $30                                                                          ; x80f4  {"(Location)":{"up":15,"right":6}}
-	.DB $CD, $00, $7F                                                                                                     ; x80f7  {"(Location)":{"up":0,"right":15.875}}
+	PlayerCommandData.pullRelative $00, $7F                                                                               ; x80f7  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_010:
 	PlayerCommandData.pullMiddleOfField $00, $B8                                                                          ; x80fa  {"(Location)":{"up":15,"left":9}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_010                                                             ; x80fd  {"(Amount)":"-3 bytes to x80fa"}
@@ -515,7 +515,7 @@ OFFENSE_PLAYER_REACTION_093:
 	PlayerCommandData.setToBlock %00001111, %11100000                                                                     ; x83a2  {"(Player)":"RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullBallPlacement $10, $50                                                                          ; x83a5  {"(Location)":{"down":4,"right":10}}
 OFFENSE_PLAYER_REACTION_LOOP_016:
-	.DB $CD, $F0, $20                                                                                                     ; x83a8  {"(Location)":{"up":1.875,"right":4}}
+	PlayerCommandData.pullRelative $F0, $20                                                                               ; x83a8  {"(Location)":{"up":1.875,"right":4}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_016                                                             ; x83ab  {"(Amount)":"-3 bytes to x83a8"}
 OFFENSE_PLAYER_REACTION_094:
 	PlayerCommandData.moveMiddleOfField $36, $18                                                                          ; x83ad  {"(Location)":{"up":8.25,"right":3}}
@@ -523,7 +523,7 @@ OFFENSE_PLAYER_REACTION_094:
 	PlayerCommandData.setToBlock %00000110, %01100000                                                                     ; x83b3  {"(Player)":"LILB,LOLB,FS,SS"}
 	PlayerCommandData.pullBallPlacement $F8, $60                                                                          ; x83b6  {"(Location)":{"down":1,"right":12}}
 OFFENSE_PLAYER_REACTION_LOOP_017:
-	.DB $CD, $08, $D0                                                                                                     ; x83b9  {"(Location)":{"down":1,"left":5.875}}
+	PlayerCommandData.pullRelative $08, $D0                                                                               ; x83b9  {"(Location)":{"down":1,"left":5.875}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_017                                                             ; x83bc  {"(Amount)":"-3 bytes to x83b9"}
 OFFENSE_PLAYER_REACTION_095:
 	PlayerCommandData.moveMiddleOfField $B0, $F8                                                                          ; x83be  {"(Location)":{"down":7,"left":1}}
@@ -967,7 +967,7 @@ OFFENSE_PLAYER_REACTION_143:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x8752  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullBallPlacement $30, $50                                                                          ; x8755  {"(Location)":{"down":8,"right":10}}
 OFFENSE_PLAYER_REACTION_LOOP_033:
-	.DB $CD, $E0, $40                                                                                                     ; x8758  {"(Location)":{"up":3.875,"right":8}}
+	PlayerCommandData.pullRelative $E0, $40                                                                               ; x8758  {"(Location)":{"up":3.875,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_033                                                             ; x875b  {"(Amount)":"-3 bytes to x8758"}
 OFFENSE_PLAYER_REACTION_144:
 	PlayerCommandData.stand $10                                                                                           ; x875d  {"(Time)":"for 0.8s"}
@@ -1609,7 +1609,7 @@ OFFENSE_PLAYER_REACTION_197:
 OFFENSE_PLAYER_REACTION_LOOP_059:
 	PlayerCommandData.setToBlock %00001101, %01100000                                                                     ; x8c83  {"(Player)":"RILB,LILB,RCB,FS,SS"}
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x8c86  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $CD, $00, $40                                                                                                     ; x8c89  {"(Location)":{"up":0,"right":8}}
+	PlayerCommandData.pullRelative $00, $40                                                                               ; x8c89  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_059                                                             ; x8c8c  {"(Amount)":"-9 bytes to x8c83"}
 OFFENSE_PLAYER_REACTION_198:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8c8e  {"(Pointer)":" to x9842"}
@@ -4001,7 +4001,7 @@ DEFENSE_PLAYER_REACTION_016:
 	PlayerCommandData.moveRelative $00, $A0                                                                               ; xa0a3  {"(Location)":{"up":0,"right":11.875}}
 DEFENSE_PLAYER_REACTION_LOOP_004:
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; xa0a6  {"(Player)":"QB1,RB1,RB2,WR1,WR2,TE1,C,LG,RG,LT,RT"}
-	.DB $CD, $00, $60                                                                                                     ; xa0a9  {"(Location)":{"up":0,"left":12}}
+	PlayerCommandData.pullRelative $00, $60                                                                               ; xa0a9  {"(Location)":{"up":0,"left":12}}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_004                                                             ; xa0ac  {"(Amount)":"-6 bytes to xa0a6"}
 DEFENSE_PLAYER_REACTION_017:
 	.DB $B4, $80, $30                                                                                                     ; xa0ae 
