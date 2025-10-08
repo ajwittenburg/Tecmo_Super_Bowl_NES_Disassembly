@@ -3904,7 +3904,7 @@ OFFENSE_UNUSED_REACTION_JUMP_001:
 	PlayerCommandData.stand $3C                                                                                           ; x9f77  {"(Time)":"for 3s"}
 	PlayerCommandData.stand $01                                                                                           ; x9f79  {"(Time)":"for 0.05s"}
 	PlayerCommandData.infiniteLoop                                                                                        ; x9f7b 
-	.DB $05, $C0                                                                                                          ; x9f7c  {"(Time)":"for 9.6s"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_LILB, $C0                                                      ; x9f7c  {"(Time)":"for 9.6s"}
 	PlayerCommandData.jumpTo OFFENSE_UNUSED_REACTION_JUMP_001                                                             ; x9f7e  {"(Pointer)":" to x9f72"}
 	PlayerCommandData.setPositionBallPlacement $70, $70                                                                   ; x9f81  {"(Location)":{"down":16,"left":14}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_313                                                                  ; x9f84  {"(Pointer)":" to x983e"}
@@ -7133,19 +7133,19 @@ DEFENSE_PLAYER_REACTION_JUMP_230:
 DEFENSE_PLAYER_REACTION_JUMP_231:
 	PlayerCommandData.randomJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_234                                                 ; xb9db  {"(Pointer)":" to xb9e8"}
 DEFENSE_PLAYER_REACTION_JUMP_232:
-	.DB $02, $0A                                                                                                          ; xb9de  {"(Time)":"for 0.5s"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_RB2, $0A                                                       ; xb9de  {"(Time)":"for 0.5s"}
 	PlayerCommandData.randomJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_235                                                 ; xb9e0  {"(Pointer)":" to xb9ed"}
 DEFENSE_PLAYER_REACTION_JUMP_233:
-	.DB $03, $0A                                                                                                          ; xb9e3  {"(Time)":"for 0.5s"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_WR1, $0A                                                       ; xb9e3  {"(Time)":"for 0.5s"}
 	PlayerCommandData.randomJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_236                                                 ; xb9e5  {"(Pointer)":" to xb9f2"}
 DEFENSE_PLAYER_REACTION_JUMP_234:
-	.DB $04, $0A                                                                                                          ; xb9e8  {"(Time)":"for 0.5s"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_WR2, $0A                                                       ; xb9e8  {"(Time)":"for 0.5s"}
 	PlayerCommandData.randomJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_232                                                 ; xb9ea  {"(Pointer)":" to xb9de"}
 DEFENSE_PLAYER_REACTION_JUMP_235:
-	.DB $05, $0A                                                                                                          ; xb9ed  {"(Time)":"for 0.5s"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_TE1, $0A                                                       ; xb9ed  {"(Time)":"for 0.5s"}
 	PlayerCommandData.randomJumpTo #$07, DEFENSE_PLAYER_REACTION_JUMP_233                                                 ; xb9ef  {"(Pointer)":" to xb9e3"}
 DEFENSE_PLAYER_REACTION_JUMP_236:
-	.DB $01, $0A                                                                                                          ; xb9f2  {"(Time)":"for 0.5s"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_RB1, $0A                                                       ; xb9f2  {"(Time)":"for 0.5s"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_231                                                             ; xb9f4  {"(Amount)":"-25 bytes to xb9db"}
 DEFENSE_PLAYER_REACTION_JUMP_237:
 	PlayerCommandData.randomJumpTo #$0B, DEFENSE_PLAYER_REACTION_JUMP_266                                                 ; xb9f6  {"(Pointer)":" to xbe04"}
@@ -7634,19 +7634,19 @@ DEFENSE_PLAYER_REACTION_JUMP_264:
 	PlayerCommandData.turn $00                                                                                            ; xbdfc  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_264                                                             ; xbdfe  {"(Amount)":"-2 bytes to xbdfc"}
 DEFENSE_PLAYER_REACTION_JUMP_265:
-	.DB $01, $00                                                                                                          ; xbe00  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_RB1, $00                                                       ; xbe00  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xbe02  {"(Amount)":"-2 bytes to xbe00"}
 DEFENSE_PLAYER_REACTION_JUMP_266:
-	.DB $02, $00                                                                                                          ; xbe04  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_RB2, $00                                                       ; xbe04  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbe06  {"(Amount)":"-2 bytes to xbe04"}
 DEFENSE_PLAYER_REACTION_JUMP_267:
-	.DB $03, $00                                                                                                          ; xbe08  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_WR1, $00                                                       ; xbe08  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_267                                                             ; xbe0a  {"(Amount)":"-2 bytes to xbe08"}
 DEFENSE_PLAYER_REACTION_JUMP_268:
-	.DB $04, $00                                                                                                          ; xbe0c  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_WR2, $00                                                       ; xbe0c  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xbe0e  {"(Amount)":"-2 bytes to xbe0c"}
 DEFENSE_PLAYER_REACTION_JUMP_269:
-	.DB $05, $00                                                                                                          ; xbe10  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageTight PLAYER_COMMAND_DATA_TE1, $00                                                       ; xbe10  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xbe12  {"(Amount)":"-2 bytes to xbe10"}
 DEFENSE_PLAYER_REACTION_JUMP_270:
 	PlayerCommandData.manCoverageLoose PLAYER_COMMAND_DATA_RB1, $00                                                       ; xbe14  {"(Time)":"for forever"}

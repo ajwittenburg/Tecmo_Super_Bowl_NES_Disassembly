@@ -44,6 +44,11 @@ PLAYER_COMMAND_DATA_SS = PLAYER_COMMAND_DATA_RT
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.manCoverageTight playerNibble, time
+    PlayerCommandData.Helper.addPlayerNibble $00, playerNibble
+    .DB time
+.ENDM
+
 .MACRO PlayerCommandData.manCoverageLoose playerNibble, time
     PlayerCommandData.Helper.addPlayerNibble $10, playerNibble
     .DB time
