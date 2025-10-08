@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.block
+    .DB $CC
+.ENDM
+
 .MACRO PlayerCommandData.pullRelative y,x
     PlayerCommandData.Helper.addCommandAndLocationXY $CD, x, y
 .ENDM
