@@ -44,6 +44,11 @@ PLAYER_COMMAND_DATA_SS = PLAYER_COMMAND_DATA_RT
 
 ;;;;;;;;;;;;;;;
 
+; This represents commands #$60-#$6F
+.MACRO PlayerCommandData.fakeHandoffToPlayer playerNibble
+    PlayerCommandData.Helper.addPlayerNibble $60, playerNibble
+.ENDM
+
 ; This represents commands #$70-#$7F
 .MACRO PlayerCommandData.pitchToPlayer playerNibble
     PlayerCommandData.Helper.addPlayerNibble $70, playerNibble
