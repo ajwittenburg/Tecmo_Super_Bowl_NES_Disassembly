@@ -10,6 +10,11 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.COACOMJumpTo newLocation
+    .DB $CA
+    .WORD newLocation
+.ENDM
+
 .MACRO PlayerCommandData.block
     .DB $CC
 .ENDM
