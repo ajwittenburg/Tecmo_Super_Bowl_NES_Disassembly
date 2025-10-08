@@ -189,7 +189,7 @@ OFFENSE_PLAYER_REACTION_024:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_446                                                                  ; x8177  {"(Pointer)":" to x9f48"}
 OFFENSE_PLAYER_REACTION_025:
 	.DB $D0, $F0, $40                                                                                                     ; x817a  {"(Location)":{"up":0,"left":8}}
-	.DB $D6                                                                                                               ; x817d 
+	PlayerCommandData.takeSnapForFGXP                                                                                     ; x817d 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x817e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_026:
 	.DB $D0, $F0, $60                                                                                                     ; x8181  {"(Location)":{"up":0,"left":12}}

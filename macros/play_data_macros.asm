@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.takeSnapForFGXP
+    .DB $D6
+.ENDM
+
 .MACRO PlayerCommandData.moveRelative y,x
     PlayerCommandData.Helper.addCommandAndLocationXY $D7, x, y
 .ENDM
