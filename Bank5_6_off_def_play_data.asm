@@ -436,7 +436,7 @@ OFFENSE_PLAYER_REACTION_085:
 	PlayerCommandData.hikeFromShotgun                                                                                     ; x830e 
 OFFENSE_PLAYER_REACTION_086:
 	.DB $D0, $F0, $06                                                                                                     ; x830f  {"(Location)":{"up":0,"left":0.75}}
-	.DB $D2                                                                                                               ; x8312 
+	PlayerCommandData.hikeUnderCenter                                                                                     ; x8312 
 OFFENSE_PLAYER_REACTION_087:
 	.DB $D0, $E4, $0C                                                                                                     ; x8313  {"(Location)":{"up":1.5,"left":1.5}}
 	PlayerCommandData.waitForSnap3PointStance                                                                             ; x8316 

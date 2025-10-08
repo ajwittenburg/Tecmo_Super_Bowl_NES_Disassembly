@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.hikeUnderCenter
+    .DB $D2
+.ENDM
+
 .MACRO PlayerCommandData.hikeFromShotgun
     .DB $D3
 .ENDM
