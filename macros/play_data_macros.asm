@@ -10,6 +10,13 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.COACOMPassTiming startTime, endTime, takeSackChance
+    .DB $C1
+    .DB startTime
+    .DB endTime
+    .DB takeSackChance
+.ENDM
+
 .MACRO PlayerCommandData.celebrate time
     .DB $C4
     .DB time

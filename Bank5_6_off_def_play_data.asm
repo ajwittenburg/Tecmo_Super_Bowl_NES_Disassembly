@@ -687,21 +687,21 @@ OFFENSE_PLAYER_REACTION_115:
 	PlayerCommandData.faceDirection $80                                                                                   ; x850c  {"(Direction)":"90 degrees"}
 	.DB $27, $17, $A5                                                                                                     ; x850e  {"(Pointer)":" to x8527"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_016                                                          ; x8511  {"(Pointer)":" to x8521"}
-	.DB $C1, $3C, $50, $7F                                                                                                ; x8514  {"(Start Time, End Time)":"start in between 3s and 4s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $3C, $50, $7F                                                                      ; x8514  {"(Start Time, End Time)":"start in between 3s and 4s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_JUMP_015:
 	.DB $92, $42, $64, $F3, $42, $B8                                                                                      ; x8518  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.75,"receiverNumber":2},{"probability":0.625,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x851e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_016:
-	.DB $C1, $3C, $50, $CC                                                                                                ; x8521  {"(Start Time, End Time)":"start in between 3s and 4s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $3C, $50, $CC                                                                      ; x8521  {"(Start Time, End Time)":"start in between 3s and 4s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_015                                                             ; x8525  {"(Amount)":"-13 bytes to x8518"}
 OFFENSE_PLAYER_REACTION_JUMP_017:
-	.DB $C1, $19, $2D, $FD                                                                                                ; x8527  {"(Start Time, End Time)":"start in between 1.25s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $19, $2D, $FD                                                                      ; x8527  {"(Start Time, End Time)":"start in between 1.25s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.moveBallPlacement $B8, $D8                                                                          ; x852b  {"(Location)":{"up":7,"left":5}}
 	.DB $27, $08, $A5                                                                                                     ; x852e  {"(Pointer)":" to x8518"}
 	PlayerCommandData.boostRP $03                                                                                         ; x8531  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x8533  {"(Boost)":{"value":3}}
 	PlayerCommandData.moveBallPlacement $B8, $F0                                                                          ; x8535  {"(Location)":{"up":7,"left":2}}
-	.DB $C1, $3C, $41, $FD                                                                                                ; x8538  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $3C, $41, $FD                                                                      ; x8538  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
 	.DB $27, $38, $B8                                                                                                     ; x853c  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_015                                                             ; x853f  {"(Amount)":"-39 bytes to x8518"}
 OFFENSE_PLAYER_REACTION_116:
@@ -799,12 +799,12 @@ OFFENSE_PLAYER_REACTION_125:
 	PlayerCommandData.turn $28                                                                                            ; x85f6  {"(Time)":"for 2s"}
 	PlayerCommandData.playerTakesControl                                                                                  ; x85f8 
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_023                                                          ; x85f9  {"(Pointer)":" to x8608"}
-	.DB $C1, $01, $78, $7F                                                                                                ; x85fc  {"(Start Time, End Time)":"start in between 0.05s and 6s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $01, $78, $7F                                                                      ; x85fc  {"(Start Time, End Time)":"start in between 0.05s and 6s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_027:
 	.DB $91, $73, $F4, $42, $B8                                                                                           ; x8600  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.5625,"receiverNumber":3},{"probability":0.0625,"receiverNumber":4}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8605  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_023:
-	.DB $C1, $01, $78, $CC                                                                                                ; x8608  {"(Start Time, End Time)":"start in between 0.05s and 6s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $01, $78, $CC                                                                      ; x8608  {"(Start Time, End Time)":"start in between 0.05s and 6s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_027                                                             ; x860c  {"(Amount)":"-12 bytes to x8600"}
 OFFENSE_PLAYER_REACTION_126:
 	PlayerCommandData.stand $14                                                                                           ; x860e  {"(Time)":"for 1s"}
@@ -890,12 +890,12 @@ OFFENSE_PLAYER_REACTION_135:
 	PlayerCommandData.moveBallPlacement $F0, $B0                                                                          ; x86ab  {"(Location)":{"up":0,"left":10}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x86ae  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_030                                                          ; x86b0  {"(Pointer)":" to x86c1"}
-	.DB $C1, $14, $78, $7F                                                                                                ; x86b3  {"(Start Time, End Time)":"start in between 1s and 6s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $14, $78, $7F                                                                      ; x86b3  {"(Start Time, End Time)":"start in between 1s and 6s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_JUMP_029:
 	.DB $93, $54, $53, $21, $F5, $42, $B8                                                                                 ; x86b7  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":4},{"probability":0.6875,"receiverNumber":3},{"probability":0.875,"receiverNumber":1},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x86be  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_030:
-	.DB $C1, $14, $78, $CC                                                                                                ; x86c1  {"(Start Time, End Time)":"start in between 1s and 6s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $14, $78, $CC                                                                      ; x86c1  {"(Start Time, End Time)":"start in between 1s and 6s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_029                                                             ; x86c5  {"(Pointer)":" to x86b7"}
 OFFENSE_PLAYER_REACTION_136:
 	.DB $A2                                                                                                               ; x86c8 
@@ -1073,12 +1073,12 @@ OFFENSE_PLAYER_REACTION_152:
 	PlayerCommandData.faceDirection $80                                                                                   ; x882a  {"(Direction)":"90 degrees"}
 	.DB $27, $36, $A8                                                                                                     ; x882c  {"(Pointer)":" to x8846"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_044                                                          ; x882f  {"(Pointer)":" to x8840"}
-	.DB $C1, $0A, $46, $7F                                                                                                ; x8832  {"(Start Time, End Time)":"start in between 0.5s and 3.5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $0A, $46, $7F                                                                      ; x8832  {"(Start Time, End Time)":"start in between 0.5s and 3.5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_JUMP_043:
 	.DB $93, $45, $31, $43, $F4, $42, $B8                                                                                 ; x8836  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.75,"receiverNumber":5},{"probability":0.8125,"receiverNumber":1},{"probability":0.75,"receiverNumber":3},{"probability":0.0625,"receiverNumber":4}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x883d  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_044:
-	.DB $C1, $0A, $46, $CC                                                                                                ; x8840  {"(Start Time, End Time)":"start in between 0.5s and 3.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $0A, $46, $CC                                                                      ; x8840  {"(Start Time, End Time)":"start in between 0.5s and 3.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_043                                                             ; x8844  {"(Amount)":"-14 bytes to x8836"}
 OFFENSE_PLAYER_REACTION_JUMP_045:
 	PlayerCommandData.boostRP $04                                                                                         ; x8846  {"(Boost)":{"value":4,"HasMaximumValue":true}}
@@ -1086,7 +1086,7 @@ OFFENSE_PLAYER_REACTION_JUMP_045:
 	PlayerCommandData.moveBallPlacement $30, $C8                                                                          ; x884a  {"(Location)":{"down":8,"left":7}}
 	.DB $27, $26, $A8                                                                                                     ; x884d  {"(Pointer)":" to x8836"}
 	PlayerCommandData.moveBallPlacement $30, $F0                                                                          ; x8850  {"(Location)":{"down":8,"left":2}}
-	.DB $C1, $3C, $41, $FD                                                                                                ; x8853  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $3C, $41, $FD                                                                      ; x8853  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_043                                                             ; x8857  {"(Amount)":"-33 bytes to x8836"}
 OFFENSE_PLAYER_REACTION_153:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8859 
@@ -1342,12 +1342,12 @@ OFFENSE_PLAYER_REACTION_176:
 	PlayerCommandData.setMS $00                                                                                           ; x8a4a  {"(Value)":6}
 	PlayerCommandData.playerTakesControl                                                                                  ; x8a4c 
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_062                                                          ; x8a4d  {"(Pointer)":" to x8a5c"}
-	.DB $C1, $0A, $6E, $7F                                                                                                ; x8a50  {"(Start Time, End Time)":"start in between 0.5s and 5.5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $0A, $6E, $7F                                                                      ; x8a50  {"(Start Time, End Time)":"start in between 0.5s and 5.5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_050:
 	.DB $91, $A4, $F1, $42, $B8                                                                                           ; x8a54  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.375,"receiverNumber":4},{"probability":0.0625,"receiverNumber":1}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8a59  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_062:
-	.DB $C1, $0A, $6E, $CC                                                                                                ; x8a5c  {"(Start Time, End Time)":"start in between 0.5s and 5.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $0A, $6E, $CC                                                                      ; x8a5c  {"(Start Time, End Time)":"start in between 0.5s and 5.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_050                                                             ; x8a60  {"(Amount)":"-12 bytes to x8a54"}
 OFFENSE_PLAYER_REACTION_177:
 	PlayerCommandData.stand $3C                                                                                           ; x8a62  {"(Time)":"for 3s"}
@@ -1495,12 +1495,12 @@ OFFENSE_PLAYER_REACTION_188:
 	PlayerCommandData.faceDirection $80                                                                                   ; x8b93  {"(Direction)":"90 degrees"}
 	.DB $27, $9F, $AB                                                                                                     ; x8b95  {"(Pointer)":" to x8baf"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_072                                                          ; x8b98  {"(Pointer)":" to x8ba9"}
-	.DB $C1, $23, $82, $7F                                                                                                ; x8b9b  {"(Start Time, End Time)":"start in between 1.75s and 6.5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $23, $82, $7F                                                                      ; x8b9b  {"(Start Time, End Time)":"start in between 1.75s and 6.5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_JUMP_071:
 	.DB $93, $32, $35, $44, $F3, $42, $B8                                                                                 ; x8b9f  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":5},{"probability":0.75,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8ba6  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_072:
-	.DB $C1, $23, $82, $CC                                                                                                ; x8ba9  {"(Start Time, End Time)":"start in between 1.75s and 6.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $23, $82, $CC                                                                      ; x8ba9  {"(Start Time, End Time)":"start in between 1.75s and 6.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_071                                                             ; x8bad  {"(Amount)":"-14 bytes to x8b9f"}
 OFFENSE_PLAYER_REACTION_JUMP_073:
 	PlayerCommandData.boostRP $04                                                                                         ; x8baf  {"(Boost)":{"value":4,"HasMaximumValue":true}}
@@ -1761,21 +1761,21 @@ OFFENSE_PLAYER_REACTION_215:
 	PlayerCommandData.faceDirection $80                                                                                   ; x8dc5  {"(Direction)":"90 degrees"}
 	.DB $2B, $D0, $AD                                                                                                     ; x8dc7  {"(Pointer)":" to x8de0"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_091                                                          ; x8dca  {"(Pointer)":" to x8dda"}
-	.DB $C1, $28, $64, $7F                                                                                                ; x8dcd  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $28, $64, $7F                                                                      ; x8dcd  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_JUMP_090:
 	.DB $92, $51, $54, $F3, $42, $B8                                                                                      ; x8dd1  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":1},{"probability":0.6875,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8dd7  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_091:
-	.DB $C1, $14, $50, $CC                                                                                                ; x8dda  {"(Start Time, End Time)":"start in between 1s and 4s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $14, $50, $CC                                                                      ; x8dda  {"(Start Time, End Time)":"start in between 1s and 4s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_090                                                             ; x8dde  {"(Amount)":"-13 bytes to x8dd1"}
 OFFENSE_PLAYER_REACTION_JUMP_092:
-	.DB $C1, $19, $2D, $FD                                                                                                ; x8de0  {"(Start Time, End Time)":"start in between 1.25s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $19, $2D, $FD                                                                      ; x8de0  {"(Start Time, End Time)":"start in between 1.25s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.moveBallPlacement $34, $C8                                                                          ; x8de4  {"(Location)":{"down":8.5,"left":7}}
 	.DB $27, $C1, $AD                                                                                                     ; x8de7  {"(Pointer)":" to x8dd1"}
 	PlayerCommandData.boostRP $03                                                                                         ; x8dea  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x8dec  {"(Boost)":{"value":3}}
 	PlayerCommandData.moveBallPlacement $34, $F0                                                                          ; x8dee  {"(Location)":{"down":8.5,"left":2}}
-	.DB $C1, $3C, $41, $FD                                                                                                ; x8df1  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $3C, $41, $FD                                                                      ; x8df1  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
 	.DB $27, $38, $B8                                                                                                     ; x8df5  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_090                                                             ; x8df8  {"(Amount)":"-39 bytes to x8dd1"}
 OFFENSE_PLAYER_REACTION_216:
@@ -2033,12 +2033,12 @@ OFFENSE_PLAYER_REACTION_238:
 	PlayerCommandData.faceDirection $80                                                                                   ; x8ffe  {"(Direction)":"90 degrees"}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9000 
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_114                                                          ; x9001  {"(Pointer)":" to x9012"}
-	.DB $C1, $3C, $6E, $7F                                                                                                ; x9004  {"(Start Time, End Time)":"start in between 3s and 5.5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $3C, $6E, $7F                                                                      ; x9004  {"(Start Time, End Time)":"start in between 3s and 5.5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_074:
 	.DB $93, $53, $34, $41, $F2, $42, $B8                                                                                 ; x9008  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":3},{"probability":0.8125,"receiverNumber":4},{"probability":0.75,"receiverNumber":1},{"probability":0.0625,"receiverNumber":2}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x900f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_114:
-	.DB $C1, $3C, $6E, $CC                                                                                                ; x9012  {"(Start Time, End Time)":"start in between 3s and 5.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $3C, $6E, $CC                                                                      ; x9012  {"(Start Time, End Time)":"start in between 3s and 5.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_074                                                             ; x9016  {"(Amount)":"-14 bytes to x9008"}
 OFFENSE_PLAYER_REACTION_239:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9018 
@@ -2134,12 +2134,12 @@ OFFENSE_PLAYER_REACTION_247:
 	PlayerCommandData.stand $01                                                                                           ; x90e1  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x90e3  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_120                                                          ; x90e5  {"(Pointer)":" to x90f5"}
-	.DB $C1, $28, $64, $7F                                                                                                ; x90e8  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $28, $64, $7F                                                                      ; x90e8  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_077:
 	.DB $92, $54, $42, $F3, $42, $B8                                                                                      ; x90ec  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":4},{"probability":0.75,"receiverNumber":2},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x90f2  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_120:
-	.DB $C1, $28, $64, $CC                                                                                                ; x90f5  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $28, $64, $CC                                                                      ; x90f5  {"(Start Time, End Time)":"start in between 2s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_077                                                             ; x90f9  {"(Amount)":"-13 bytes to x90ec"}
 OFFENSE_PLAYER_REACTION_248:
 	PlayerCommandData.takeSnapFromShotgun                                                                                 ; x90fb 
@@ -2349,15 +2349,15 @@ OFFENSE_PLAYER_REACTION_265:
 	PlayerCommandData.faceDirection $80                                                                                   ; x929f  {"(Direction)":"90 degrees"}
 	.DB $2C, $AC, $B2                                                                                                     ; x92a1  {"(Pointer)":" to x92bc"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_137                                                          ; x92a4  {"(Pointer)":" to x92b6"}
-	.DB $C1, $1E, $C8, $B3                                                                                                ; x92a7  {"(Start Time, End Time)":"start in between 1.5s and 10s","(Take Sack Chance)":"30.078125%"}
+	PlayerCommandData.COACOMPassTiming $1E, $C8, $B3                                                                      ; x92a7  {"(Start Time, End Time)":"start in between 1.5s and 10s","(Take Sack Chance)":"30.078125%"}
 OFFENSE_PLAYER_REACTION_LOOP_086:
 	.DB $94, $31, $25, $44, $32, $F3, $42, $B8                                                                            ; x92ab  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":1},{"probability":0.875,"receiverNumber":5},{"probability":0.75,"receiverNumber":4},{"probability":0.8125,"receiverNumber":2},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x92b3  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_137:
-	.DB $C1, $1E, $C8, $F3                                                                                                ; x92b6  {"(Start Time, End Time)":"start in between 1.5s and 10s","(Take Sack Chance)":"5.078125%"}
+	PlayerCommandData.COACOMPassTiming $1E, $C8, $F3                                                                      ; x92b6  {"(Start Time, End Time)":"start in between 1.5s and 10s","(Take Sack Chance)":"5.078125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_086                                                             ; x92ba  {"(Amount)":"-15 bytes to x92ab"}
 OFFENSE_PLAYER_REACTION_JUMP_138:
-	.DB $C1, $23, $2D, $FD                                                                                                ; x92bc  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x92bc  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x92c0  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x92c2  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $10, $E8                                                                          ; x92c4  {"(Location)":{"down":4,"left":3}}
@@ -2377,12 +2377,12 @@ OFFENSE_PLAYER_REACTION_266:
 	PlayerCommandData.stand $01                                                                                           ; x92e4  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x92e6  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_139                                                          ; x92e8  {"(Pointer)":" to x92f9"}
-	.DB $C1, $0A, $BE, $7F                                                                                                ; x92eb  {"(Start Time, End Time)":"start in between 0.5s and 9.5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $0A, $BE, $7F                                                                      ; x92eb  {"(Start Time, End Time)":"start in between 0.5s and 9.5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_087:
 	.DB $93, $32, $21, $54, $F3, $42, $B8                                                                                 ; x92ef  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":2},{"probability":0.875,"receiverNumber":1},{"probability":0.6875,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x92f6  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_139:
-	.DB $C1, $0A, $BE, $CC                                                                                                ; x92f9  {"(Start Time, End Time)":"start in between 0.5s and 9.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $0A, $BE, $CC                                                                      ; x92f9  {"(Start Time, End Time)":"start in between 0.5s and 9.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_087                                                             ; x92fd  {"(Amount)":"-14 bytes to x92ef"}
 OFFENSE_PLAYER_REACTION_267:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x92ff 
@@ -2393,15 +2393,15 @@ OFFENSE_PLAYER_REACTION_JUMP_140:
 	PlayerCommandData.faceDirection $80                                                                                   ; x9307  {"(Direction)":"90 degrees"}
 	.DB $2C, $13, $B3                                                                                                     ; x9309  {"(Pointer)":" to x9323"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_141                                                          ; x930c  {"(Pointer)":" to x931d"}
-	.DB $C1, $41, $8C, $7F                                                                                                ; x930f  {"(Start Time, End Time)":"start in between 3.25s and 7s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $41, $8C, $7F                                                                      ; x930f  {"(Start Time, End Time)":"start in between 3.25s and 7s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_088:
 	.DB $93, $31, $35, $44, $F3, $42, $B8                                                                                 ; x9313  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":1},{"probability":0.8125,"receiverNumber":5},{"probability":0.75,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x931a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_141:
-	.DB $C1, $41, $8C, $CC                                                                                                ; x931d  {"(Start Time, End Time)":"start in between 3.25s and 7s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $41, $8C, $CC                                                                      ; x931d  {"(Start Time, End Time)":"start in between 3.25s and 7s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_088                                                             ; x9321  {"(Amount)":"-14 bytes to x9313"}
 OFFENSE_PLAYER_REACTION_JUMP_142:
-	.DB $C1, $23, $2D, $FD                                                                                                ; x9323  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x9323  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x9327  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x9329  {"(Boost)":{"value":4}}
 	.DB $27, $26, $B3                                                                                                     ; x932b  {"(Pointer)":" to x9336"}
@@ -2419,18 +2419,18 @@ OFFENSE_PLAYER_REACTION_JUMP_144:
 	PlayerCommandData.playerTakesControl                                                                                  ; x933e 
 	.DB $2C, $51, $B3                                                                                                     ; x933f  {"(Pointer)":" to x9361"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_146                                                          ; x9342  {"(Pointer)":" to x935b"}
-	.DB $C1, $5A, $5F, $7F                                                                                                ; x9345  {"(Start Time, End Time)":"start in between 4.5s and 4.75s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $5A, $5F, $7F                                                                      ; x9345  {"(Start Time, End Time)":"start in between 4.5s and 4.75s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_090:
 	.DB $27, $40, $B3                                                                                                     ; x9349  {"(Pointer)":" to x9350"}
-	.DB $C1, $5A, $96, $CC                                                                                                ; x934c  {"(Start Time, End Time)":"start in between 4.5s and 7.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $5A, $96, $CC                                                                      ; x934c  {"(Start Time, End Time)":"start in between 4.5s and 7.5s","(Take Sack Chance)":"20.3125%"}
 OFFENSE_PLAYER_REACTION_JUMP_145:
 	.DB $94, $35, $34, $33, $32, $F1, $42, $B8                                                                            ; x9350  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":5},{"probability":0.8125,"receiverNumber":4},{"probability":0.8125,"receiverNumber":3},{"probability":0.8125,"receiverNumber":2},{"probability":0.0625,"receiverNumber":1}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9358  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_146:
-	.DB $C1, $5A, $5F, $CC                                                                                                ; x935b  {"(Start Time, End Time)":"start in between 4.5s and 4.75s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $5A, $5F, $CC                                                                      ; x935b  {"(Start Time, End Time)":"start in between 4.5s and 4.75s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_090                                                             ; x935f  {"(Amount)":"-22 bytes to x9349"}
 OFFENSE_PLAYER_REACTION_JUMP_147:
-	.DB $C1, $2D, $37, $FD                                                                                                ; x9361  {"(Start Time, End Time)":"start in between 2.25s and 2.75s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $2D, $37, $FD                                                                      ; x9361  {"(Start Time, End Time)":"start in between 2.25s and 2.75s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $03                                                                                         ; x9365  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x9367  {"(Boost)":{"value":3}}
 	PlayerCommandData.moveBallPlacement $E6, $F0                                                                          ; x9369  {"(Location)":{"up":1.25,"left":2}}
@@ -2445,15 +2445,15 @@ OFFENSE_PLAYER_REACTION_269:
 	PlayerCommandData.faceDirection $80                                                                                   ; x937b  {"(Direction)":"90 degrees"}
 	.DB $2C, $87, $B3                                                                                                     ; x937d  {"(Pointer)":" to x9397"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_148                                                          ; x9380  {"(Pointer)":" to x9391"}
-	.DB $C1, $50, $AA, $7F                                                                                                ; x9383  {"(Start Time, End Time)":"start in between 4s and 8.5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $50, $AA, $7F                                                                      ; x9383  {"(Start Time, End Time)":"start in between 4s and 8.5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_091:
 	.DB $93, $32, $35, $54, $F3, $42, $B8                                                                                 ; x9387  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":5},{"probability":0.6875,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x938e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_148:
-	.DB $C1, $50, $AA, $CC                                                                                                ; x9391  {"(Start Time, End Time)":"start in between 4s and 8.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $50, $AA, $CC                                                                      ; x9391  {"(Start Time, End Time)":"start in between 4s and 8.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_091                                                             ; x9395  {"(Amount)":"-14 bytes to x9387"}
 OFFENSE_PLAYER_REACTION_JUMP_149:
-	.DB $C1, $23, $2D, $FD                                                                                                ; x9397  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x9397  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x939b  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x939d  {"(Boost)":{"value":4}}
 	.DB $27, $9A, $B3                                                                                                     ; x939f  {"(Pointer)":" to x93aa"}
@@ -2471,12 +2471,12 @@ OFFENSE_PLAYER_REACTION_270:
 	.DB $C0, $00, $F0                                                                                                     ; x93b4  {"(Location)":{"up":0,"left":1.875}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x93b7  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_151                                                          ; x93b9  {"(Pointer)":" to x93cb"}
-	.DB $C1, $3C, $8C, $7F                                                                                                ; x93bc  {"(Start Time, End Time)":"start in between 3s and 7s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $3C, $8C, $7F                                                                      ; x93bc  {"(Start Time, End Time)":"start in between 3s and 7s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_093:
 	.DB $94, $23, $22, $44, $35, $F1, $42, $B8                                                                            ; x93c0  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.875,"receiverNumber":3},{"probability":0.875,"receiverNumber":2},{"probability":0.75,"receiverNumber":4},{"probability":0.8125,"receiverNumber":5},{"probability":0.0625,"receiverNumber":1}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x93c8  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_151:
-	.DB $C1, $3C, $8C, $CC                                                                                                ; x93cb  {"(Start Time, End Time)":"start in between 3s and 7s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $3C, $8C, $CC                                                                      ; x93cb  {"(Start Time, End Time)":"start in between 3s and 7s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_093                                                             ; x93cf  {"(Amount)":"-15 bytes to x93c0"}
 OFFENSE_PLAYER_REACTION_271:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x93d1 
@@ -2486,15 +2486,15 @@ OFFENSE_PLAYER_REACTION_271:
 	PlayerCommandData.faceDirection $80                                                                                   ; x93d9  {"(Direction)":"90 degrees"}
 	.DB $2C, $E5, $B3                                                                                                     ; x93db  {"(Pointer)":" to x93f5"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_152                                                          ; x93de  {"(Pointer)":" to x93ef"}
-	.DB $C1, $5A, $8C, $99                                                                                                ; x93e1  {"(Start Time, End Time)":"start in between 4.5s and 7s","(Take Sack Chance)":"40.234375%"}
+	PlayerCommandData.COACOMPassTiming $5A, $8C, $99                                                                      ; x93e1  {"(Start Time, End Time)":"start in between 4.5s and 7s","(Take Sack Chance)":"40.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_094:
 	.DB $93, $32, $31, $53, $F4, $42, $B8                                                                                 ; x93e5  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":1},{"probability":0.6875,"receiverNumber":3},{"probability":0.0625,"receiverNumber":4}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x93ec  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_152:
-	.DB $C1, $5A, $8C, $CC                                                                                                ; x93ef  {"(Start Time, End Time)":"start in between 4.5s and 7s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $5A, $8C, $CC                                                                      ; x93ef  {"(Start Time, End Time)":"start in between 4.5s and 7s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_094                                                             ; x93f3  {"(Amount)":"-14 bytes to x93e5"}
 OFFENSE_PLAYER_REACTION_JUMP_153:
-	.DB $C1, $19, $1E, $FD                                                                                                ; x93f5  {"(Start Time, End Time)":"start in between 1.25s and 1.5s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $19, $1E, $FD                                                                      ; x93f5  {"(Start Time, End Time)":"start in between 1.25s and 1.5s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x93f9  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x93fb  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $F9, $F0                                                                          ; x93fd  {"(Location)":{"down":1.125,"left":2}}
@@ -2508,15 +2508,15 @@ OFFENSE_PLAYER_REACTION_272:
 	PlayerCommandData.faceDirection $80                                                                                   ; x940d  {"(Direction)":"90 degrees"}
 	.DB $2D, $19, $B4                                                                                                     ; x940f  {"(Pointer)":" to x9429"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_154                                                          ; x9412  {"(Pointer)":" to x9423"}
-	.DB $C1, $82, $AA, $99                                                                                                ; x9415  {"(Start Time, End Time)":"start in between 6.5s and 8.5s","(Take Sack Chance)":"40.234375%"}
+	PlayerCommandData.COACOMPassTiming $82, $AA, $99                                                                      ; x9415  {"(Start Time, End Time)":"start in between 6.5s and 8.5s","(Take Sack Chance)":"40.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_095:
 	.DB $93, $34, $31, $42, $F3, $42, $B8                                                                                 ; x9419  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":4},{"probability":0.8125,"receiverNumber":1},{"probability":0.75,"receiverNumber":2},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9420  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_154:
-	.DB $C1, $82, $AA, $CC                                                                                                ; x9423  {"(Start Time, End Time)":"start in between 6.5s and 8.5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $82, $AA, $CC                                                                      ; x9423  {"(Start Time, End Time)":"start in between 6.5s and 8.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_095                                                             ; x9427  {"(Amount)":"-14 bytes to x9419"}
 OFFENSE_PLAYER_REACTION_JUMP_155:
-	.DB $C1, $19, $23, $FD                                                                                                ; x9429  {"(Start Time, End Time)":"start in between 1.25s and 1.75s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $19, $23, $FD                                                                      ; x9429  {"(Start Time, End Time)":"start in between 1.25s and 1.75s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x942d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x942f  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $16, $F0                                                                          ; x9431  {"(Location)":{"down":4.75,"left":2}}
@@ -2536,15 +2536,15 @@ OFFENSE_PLAYER_REACTION_274:
 	PlayerCommandData.faceDirection $80                                                                                   ; x944e  {"(Direction)":"90 degrees"}
 	.DB $2C, $59, $B4                                                                                                     ; x9450  {"(Pointer)":" to x9469"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_156                                                          ; x9453  {"(Pointer)":" to x9463"}
-	.DB $C1, $2D, $8C, $7F                                                                                                ; x9456  {"(Start Time, End Time)":"start in between 2.25s and 7s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $2D, $8C, $7F                                                                      ; x9456  {"(Start Time, End Time)":"start in between 2.25s and 7s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_096:
 	.DB $92, $32, $54, $F3, $42, $B8                                                                                      ; x945a  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":2},{"probability":0.6875,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9460  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_156:
-	.DB $C1, $2D, $8C, $CC                                                                                                ; x9463  {"(Start Time, End Time)":"start in between 2.25s and 7s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $2D, $8C, $CC                                                                      ; x9463  {"(Start Time, End Time)":"start in between 2.25s and 7s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_096                                                             ; x9467  {"(Amount)":"-13 bytes to x945a"}
 OFFENSE_PLAYER_REACTION_JUMP_157:
-	.DB $C1, $23, $2D, $FD                                                                                                ; x9469  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x9469  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x946d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x946f  {"(Boost)":{"value":4}}
 	.DB $27, $6C, $B4                                                                                                     ; x9471  {"(Pointer)":" to x947c"}
@@ -2566,12 +2566,12 @@ OFFENSE_PLAYER_REACTION_275:
 	PlayerCommandData.stand $01                                                                                           ; x948e  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x9490  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_159                                                          ; x9492  {"(Pointer)":" to x94a2"}
-	.DB $C1, $1E, $64, $7F                                                                                                ; x9495  {"(Start Time, End Time)":"start in between 1.5s and 5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $1E, $64, $7F                                                                      ; x9495  {"(Start Time, End Time)":"start in between 1.5s and 5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_098:
 	.DB $92, $73, $32, $F4, $42, $B8                                                                                      ; x9499  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.5625,"receiverNumber":3},{"probability":0.8125,"receiverNumber":2},{"probability":0.0625,"receiverNumber":4}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x949f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_159:
-	.DB $C1, $1E, $64, $CC                                                                                                ; x94a2  {"(Start Time, End Time)":"start in between 1.5s and 5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $1E, $64, $CC                                                                      ; x94a2  {"(Start Time, End Time)":"start in between 1.5s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_098                                                             ; x94a6  {"(Amount)":"-13 bytes to x9499"}
 OFFENSE_PLAYER_REACTION_276:
 	PlayerCommandData.stand $14                                                                                           ; x94a8  {"(Time)":"for 1s"}
@@ -2589,20 +2589,20 @@ OFFENSE_PLAYER_REACTION_277:
 	PlayerCommandData.faceDirection $80                                                                                   ; x94c1  {"(Direction)":"90 degrees"}
 	.DB $2C, $DD, $B4                                                                                                     ; x94c3  {"(Pointer)":" to x94ed"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_161                                                          ; x94c6  {"(Pointer)":" to x94e7"}
-	.DB $C1, $36, $39, $7F                                                                                                ; x94c9  {"(Start Time, End Time)":"start in between 2.7s and 2.85s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $36, $39, $7F                                                                      ; x94c9  {"(Start Time, End Time)":"start in between 2.7s and 2.85s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_099:
 	.DB $27, $C8, $B4                                                                                                     ; x94cd  {"(Pointer)":" to x94d8"}
 	.DB $91, $F4, $F3, $42, $B8                                                                                           ; x94d0  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.0625,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x94d5  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_160:
-	.DB $C1, $28, $5A, $B3                                                                                                ; x94d8  {"(Start Time, End Time)":"start in between 2s and 4.5s","(Take Sack Chance)":"30.078125%"}
+	PlayerCommandData.COACOMPassTiming $28, $5A, $B3                                                                      ; x94d8  {"(Start Time, End Time)":"start in between 2s and 4.5s","(Take Sack Chance)":"30.078125%"}
 	.DB $94, $24, $31, $32, $33, $F5, $42, $B8                                                                            ; x94dc  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.875,"receiverNumber":4},{"probability":0.8125,"receiverNumber":1},{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":3},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x94e4  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_161:
-	.DB $C1, $36, $39, $CC                                                                                                ; x94e7  {"(Start Time, End Time)":"start in between 2.7s and 2.85s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $36, $39, $CC                                                                      ; x94e7  {"(Start Time, End Time)":"start in between 2.7s and 2.85s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_099                                                             ; x94eb  {"(Amount)":"-30 bytes to x94cd"}
 OFFENSE_PLAYER_REACTION_JUMP_162:
-	.DB $C1, $23, $2D, $FD                                                                                                ; x94ed  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x94ed  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x94f1  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x94f3  {"(Boost)":{"value":4}}
 	.DB $27, $F0, $B4                                                                                                     ; x94f5  {"(Pointer)":" to x9500"}
@@ -2621,15 +2621,15 @@ OFFENSE_PLAYER_REACTION_278:
 	PlayerCommandData.faceDirection $80                                                                                   ; x950d  {"(Direction)":"90 degrees"}
 	.DB $2C, $19, $B5                                                                                                     ; x950f  {"(Pointer)":" to x9529"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_164                                                          ; x9512  {"(Pointer)":" to x9523"}
-	.DB $C1, $28, $C8, $99                                                                                                ; x9515  {"(Start Time, End Time)":"start in between 2s and 10s","(Take Sack Chance)":"40.234375%"}
+	PlayerCommandData.COACOMPassTiming $28, $C8, $99                                                                      ; x9515  {"(Start Time, End Time)":"start in between 2s and 10s","(Take Sack Chance)":"40.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_101:
 	.DB $93, $53, $54, $22, $F5, $42, $B8                                                                                 ; x9519  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":3},{"probability":0.6875,"receiverNumber":4},{"probability":0.875,"receiverNumber":2},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9520  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_164:
-	.DB $C1, $28, $C8, $CC                                                                                                ; x9523  {"(Start Time, End Time)":"start in between 2s and 10s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $28, $C8, $CC                                                                      ; x9523  {"(Start Time, End Time)":"start in between 2s and 10s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_101                                                             ; x9527  {"(Amount)":"-14 bytes to x9519"}
 OFFENSE_PLAYER_REACTION_JUMP_165:
-	.DB $C1, $0F, $19, $FD                                                                                                ; x9529  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $0F, $19, $FD                                                                      ; x9529  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x952d  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x952f  {"(Boost)":{"value":4}}
 	.DB $27, $2C, $B5                                                                                                     ; x9531  {"(Pointer)":" to x953c"}
@@ -2661,12 +2661,12 @@ OFFENSE_PLAYER_REACTION_280:
 	PlayerCommandData.stand $01                                                                                           ; x9564  {"(Time)":"for 0.05s"}
 	PlayerCommandData.faceDirection $80                                                                                   ; x9566  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_167                                                          ; x9568  {"(Pointer)":" to x9578"}
-	.DB $C1, $3C, $64, $7F                                                                                                ; x956b  {"(Start Time, End Time)":"start in between 3s and 5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $3C, $64, $7F                                                                      ; x956b  {"(Start Time, End Time)":"start in between 3s and 5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_103:
 	.DB $92, $74, $53, $F2, $42, $B8                                                                                      ; x956f  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.5625,"receiverNumber":4},{"probability":0.6875,"receiverNumber":3},{"probability":0.0625,"receiverNumber":2}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9575  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_167:
-	.DB $C1, $3C, $64, $CC                                                                                                ; x9578  {"(Start Time, End Time)":"start in between 3s and 5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $3C, $64, $CC                                                                      ; x9578  {"(Start Time, End Time)":"start in between 3s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_103                                                             ; x957c  {"(Amount)":"-13 bytes to x956f"}
 OFFENSE_PLAYER_REACTION_281:
 	PlayerCommandData.stand $14                                                                                           ; x957e  {"(Time)":"for 1s"}
@@ -2685,18 +2685,18 @@ OFFENSE_PLAYER_REACTION_282:
 	PlayerCommandData.faceDirection $80                                                                                   ; x959a  {"(Direction)":"90 degrees"}
 	.DB $2C, $AD, $B5                                                                                                     ; x959c  {"(Pointer)":" to x95bd"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_168                                                          ; x959f  {"(Pointer)":" to x95b7"}
-	.DB $C1, $3C, $41, $7F                                                                                                ; x95a2  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $3C, $41, $7F                                                                      ; x95a2  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_104:
 	.DB $27, $9D, $B5                                                                                                     ; x95a6  {"(Pointer)":" to x95ad"}
-	.DB $C1, $46, $5A, $B3                                                                                                ; x95a9  {"(Start Time, End Time)":"start in between 3.5s and 4.5s","(Take Sack Chance)":"30.078125%"}
+	PlayerCommandData.COACOMPassTiming $46, $5A, $B3                                                                      ; x95a9  {"(Start Time, End Time)":"start in between 3.5s and 4.5s","(Take Sack Chance)":"30.078125%"}
 OFFENSE_PLAYER_REACTION_LOOP_105:
 	.DB $93, $54, $43, $32, $F5, $42, $B8                                                                                 ; x95ad  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":4},{"probability":0.75,"receiverNumber":3},{"probability":0.8125,"receiverNumber":2},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x95b4  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_168:
-	.DB $C1, $3C, $41, $CC                                                                                                ; x95b7  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $3C, $41, $CC                                                                      ; x95b7  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_104                                                             ; x95bb  {"(Amount)":"-21 bytes to x95a6"}
 OFFENSE_PLAYER_REACTION_JUMP_169:
-	.DB $C1, $0F, $19, $FD                                                                                                ; x95bd  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $0F, $19, $FD                                                                      ; x95bd  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x95c1  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x95c3  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $16, $F0                                                                          ; x95c5  {"(Location)":{"down":4.75,"left":2}}
@@ -2709,15 +2709,15 @@ OFFENSE_PLAYER_REACTION_283:
 	PlayerCommandData.faceDirection $80                                                                                   ; x95d2  {"(Direction)":"90 degrees"}
 	.DB $2C, $DF, $B5                                                                                                     ; x95d4  {"(Pointer)":" to x95ef"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_170                                                          ; x95d7  {"(Pointer)":" to x95e9"}
-	.DB $C1, $64, $B4, $99                                                                                                ; x95da  {"(Start Time, End Time)":"start in between 5s and 9s","(Take Sack Chance)":"40.234375%"}
+	PlayerCommandData.COACOMPassTiming $64, $B4, $99                                                                      ; x95da  {"(Start Time, End Time)":"start in between 5s and 9s","(Take Sack Chance)":"40.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_106:
 	.DB $94, $44, $33, $31, $25, $F2, $42, $B8                                                                            ; x95de  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.75,"receiverNumber":4},{"probability":0.8125,"receiverNumber":3},{"probability":0.8125,"receiverNumber":1},{"probability":0.875,"receiverNumber":5},{"probability":0.0625,"receiverNumber":2}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x95e6  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_170:
-	.DB $C1, $64, $B4, $CC                                                                                                ; x95e9  {"(Start Time, End Time)":"start in between 5s and 9s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $64, $B4, $CC                                                                      ; x95e9  {"(Start Time, End Time)":"start in between 5s and 9s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_106                                                             ; x95ed  {"(Amount)":"-15 bytes to x95de"}
 OFFENSE_PLAYER_REACTION_JUMP_171:
-	.DB $C1, $0F, $19, $FD                                                                                                ; x95ef  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $0F, $19, $FD                                                                      ; x95ef  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x95f3  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x95f5  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $14, $F0                                                                          ; x95f7  {"(Location)":{"down":4.5,"left":2}}
@@ -2730,15 +2730,15 @@ OFFENSE_PLAYER_REACTION_284:
 	PlayerCommandData.faceDirection $80                                                                                   ; x9604  {"(Direction)":"90 degrees"}
 	.DB $2C, $11, $B6                                                                                                     ; x9606  {"(Pointer)":" to x9621"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_172                                                          ; x9609  {"(Pointer)":" to x961b"}
-	.DB $C1, $A0, $FF, $D9                                                                                                ; x960c  {"(Start Time, End Time)":"start in between 8s and 12.75s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $A0, $FF, $D9                                                                      ; x960c  {"(Start Time, End Time)":"start in between 8s and 12.75s","(Take Sack Chance)":"15.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_107:
 	.DB $94, $34, $33, $25, $21, $F2, $42, $B8                                                                            ; x9610  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":4},{"probability":0.8125,"receiverNumber":3},{"probability":0.875,"receiverNumber":5},{"probability":0.875,"receiverNumber":1},{"probability":0.0625,"receiverNumber":2}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9618  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_172:
-	.DB $C1, $A0, $FF, $F3                                                                                                ; x961b  {"(Start Time, End Time)":"start in between 8s and 12.75s","(Take Sack Chance)":"5.078125%"}
+	PlayerCommandData.COACOMPassTiming $A0, $FF, $F3                                                                      ; x961b  {"(Start Time, End Time)":"start in between 8s and 12.75s","(Take Sack Chance)":"5.078125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_107                                                             ; x961f  {"(Amount)":"-15 bytes to x9610"}
 OFFENSE_PLAYER_REACTION_JUMP_173:
-	.DB $C1, $05, $0A, $FD                                                                                                ; x9621  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $05, $0A, $FD                                                                      ; x9621  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x9625  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x9627  {"(Boost)":{"value":4}}
 	.DB $27, $24, $B6                                                                                                     ; x9629  {"(Pointer)":" to x9634"}
@@ -2757,15 +2757,15 @@ OFFENSE_PLAYER_REACTION_285:
 	.DB $C0, $00, $E0                                                                                                     ; x9641  {"(Location)":{"up":0,"left":3.875}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x9644  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_175                                                          ; x9646  {"(Pointer)":" to x9658"}
-	.DB $C1, $1E, $F0, $BF                                                                                                ; x9649  {"(Start Time, End Time)":"start in between 1.5s and 12s","(Take Sack Chance)":"25.390625%"}
+	PlayerCommandData.COACOMPassTiming $1E, $F0, $BF                                                                      ; x9649  {"(Start Time, End Time)":"start in between 1.5s and 12s","(Take Sack Chance)":"25.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_109:
 	.DB $94, $35, $33, $34, $21, $F2, $42, $B8                                                                            ; x964d  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.8125,"receiverNumber":5},{"probability":0.8125,"receiverNumber":3},{"probability":0.8125,"receiverNumber":4},{"probability":0.875,"receiverNumber":1},{"probability":0.0625,"receiverNumber":2}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9655  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_175:
-	.DB $C1, $1E, $F0, $D9                                                                                                ; x9658  {"(Start Time, End Time)":"start in between 1.5s and 12s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $1E, $F0, $D9                                                                      ; x9658  {"(Start Time, End Time)":"start in between 1.5s and 12s","(Take Sack Chance)":"15.234375%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_109                                                             ; x965c  {"(Amount)":"-15 bytes to x964d"}
 OFFENSE_PLAYER_REACTION_JUMP_176:
-	.DB $C1, $05, $0A, $FD                                                                                                ; x965e  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $05, $0A, $FD                                                                      ; x965e  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $03                                                                                         ; x9662  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x9664  {"(Boost)":{"value":3}}
 	.DB $27, $61, $B6                                                                                                     ; x9666  {"(Pointer)":" to x9671"}
@@ -2784,15 +2784,15 @@ OFFENSE_PLAYER_REACTION_286:
 	.DB $C0, $00, $E0                                                                                                     ; x967e  {"(Location)":{"up":0,"left":3.875}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x9681  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_178                                                          ; x9683  {"(Pointer)":" to x9695"}
-	.DB $C1, $50, $F0, $D9                                                                                                ; x9686  {"(Start Time, End Time)":"start in between 4s and 12s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $50, $F0, $D9                                                                      ; x9686  {"(Start Time, End Time)":"start in between 4s and 12s","(Take Sack Chance)":"15.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_111:
 	.DB $94, $43, $34, $31, $22, $F5, $42, $B8                                                                            ; x968a  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.75,"receiverNumber":3},{"probability":0.8125,"receiverNumber":4},{"probability":0.8125,"receiverNumber":1},{"probability":0.875,"receiverNumber":2},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9692  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_178:
-	.DB $C1, $50, $F0, $F3                                                                                                ; x9695  {"(Start Time, End Time)":"start in between 4s and 12s","(Take Sack Chance)":"5.078125%"}
+	PlayerCommandData.COACOMPassTiming $50, $F0, $F3                                                                      ; x9695  {"(Start Time, End Time)":"start in between 4s and 12s","(Take Sack Chance)":"5.078125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_111                                                             ; x9699  {"(Amount)":"-15 bytes to x968a"}
 OFFENSE_PLAYER_REACTION_JUMP_179:
-	.DB $C1, $05, $0A, $FD                                                                                                ; x969b  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $05, $0A, $FD                                                                      ; x969b  {"(Start Time, End Time)":"start in between 0.25s and 0.5s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $03                                                                                         ; x969f  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x96a1  {"(Boost)":{"value":3}}
 	PlayerCommandData.moveBallPlacement $17, $F0                                                                          ; x96a3  {"(Location)":{"down":4.875,"left":2}}
@@ -2806,20 +2806,20 @@ OFFENSE_PLAYER_REACTION_287:
 	PlayerCommandData.faceDirection $80                                                                                   ; x96b3  {"(Direction)":"90 degrees"}
 	.DB $2F, $CF, $B6                                                                                                     ; x96b5  {"(Pointer)":" to x96df"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_181                                                          ; x96b8  {"(Pointer)":" to x96d9"}
-	.DB $C1, $05, $19, $7F                                                                                                ; x96bb  {"(Start Time, End Time)":"start in between 0.25s and 1.25s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $05, $19, $7F                                                                      ; x96bb  {"(Start Time, End Time)":"start in between 0.25s and 1.25s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_112:
 	.DB $2A, $BA, $B6                                                                                                     ; x96bf  {"(Pointer)":" to x96ca"}
 	.DB $91, $F4, $F3, $42, $B8                                                                                           ; x96c2  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.0625,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x96c7  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_180:
-	.DB $C1, $55, $D2, $D9                                                                                                ; x96ca  {"(Start Time, End Time)":"start in between 4.25s and 10.5s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $55, $D2, $D9                                                                      ; x96ca  {"(Start Time, End Time)":"start in between 4.25s and 10.5s","(Take Sack Chance)":"15.234375%"}
 	.DB $94, $24, $43, $32, $31, $F5, $42, $B8                                                                            ; x96ce  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.875,"receiverNumber":4},{"probability":0.75,"receiverNumber":3},{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":1},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x96d6  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_181:
-	.DB $C1, $05, $19, $CC                                                                                                ; x96d9  {"(Start Time, End Time)":"start in between 0.25s and 1.25s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $05, $19, $CC                                                                      ; x96d9  {"(Start Time, End Time)":"start in between 0.25s and 1.25s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_180                                                             ; x96dd  {"(Amount)":"-19 bytes to x96ca"}
 OFFENSE_PLAYER_REACTION_JUMP_182:
-	.DB $C1, $0F, $19, $FD                                                                                                ; x96df  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $0F, $19, $FD                                                                      ; x96df  {"(Start Time, End Time)":"start in between 0.75s and 1.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x96e3  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x96e5  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $CC, $F0                                                                          ; x96e7  {"(Location)":{"up":4.5,"left":2}}
@@ -2833,16 +2833,16 @@ OFFENSE_PLAYER_REACTION_288:
 	.DB $C0, $00, $E0                                                                                                     ; x96f7  {"(Location)":{"up":0,"left":3.875}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x96fa  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_183                                                          ; x96fc  {"(Pointer)":" to x970d"}
-	.DB $C1, $5A, $D2, $D9                                                                                                ; x96ff  {"(Start Time, End Time)":"start in between 4.5s and 10.5s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $5A, $D2, $D9                                                                      ; x96ff  {"(Start Time, End Time)":"start in between 4.5s and 10.5s","(Take Sack Chance)":"15.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_113:
 	.DB $93, $54, $42, $31, $F3, $42, $B8                                                                                 ; x9703  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.6875,"receiverNumber":4},{"probability":0.75,"receiverNumber":2},{"probability":0.8125,"receiverNumber":1},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x970a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_183:
-	.DB $C1, $5A, $D2, $F3                                                                                                ; x970d  {"(Start Time, End Time)":"start in between 4.5s and 10.5s","(Take Sack Chance)":"5.078125%"}
+	PlayerCommandData.COACOMPassTiming $5A, $D2, $F3                                                                      ; x970d  {"(Start Time, End Time)":"start in between 4.5s and 10.5s","(Take Sack Chance)":"5.078125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_113                                                             ; x9711  {"(Amount)":"-14 bytes to x9703"}
 OFFENSE_PLAYER_REACTION_JUMP_184:
 	PlayerCommandData.faceDirection $80                                                                                   ; x9713  {"(Direction)":"90 degrees"}
-	.DB $C1, $23, $2D, $FD                                                                                                ; x9715  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x9715  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $03                                                                                         ; x9719  {"(Boost)":{"value":3,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $03                                                                                         ; x971b  {"(Boost)":{"value":3}}
 	PlayerCommandData.moveBallPlacement $FB, $F0                                                                          ; x971d  {"(Location)":{"down":1.375,"left":2}}
@@ -2854,16 +2854,16 @@ OFFENSE_PLAYER_REACTION_289:
 	PlayerCommandData.playerTakesControl                                                                                  ; x9729 
 	PlayerCommandData.faceDirection $80                                                                                   ; x972a  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_185                                                          ; x972c  {"(Pointer)":" to x974d"}
-	.DB $C1, $3A, $3C, $7F                                                                                                ; x972f  {"(Start Time, End Time)":"start in between 2.9s and 3s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $3A, $3C, $7F                                                                      ; x972f  {"(Start Time, End Time)":"start in between 2.9s and 3s","(Take Sack Chance)":"50.390625%"}
 	.DB $27, $2E, $B7                                                                                                     ; x9733  {"(Pointer)":" to x973e"}
 	.DB $91, $F4, $F3, $42, $B8                                                                                           ; x9736  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.0625,"receiverNumber":4},{"probability":0.0625,"receiverNumber":3}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x973b  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_LOOP_114:
-	.DB $C1, $28, $C8, $D9                                                                                                ; x973e  {"(Start Time, End Time)":"start in between 2s and 10s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $28, $C8, $D9                                                                      ; x973e  {"(Start Time, End Time)":"start in between 2s and 10s","(Take Sack Chance)":"15.234375%"}
 	.DB $94, $04, $33, $32, $31, $F5, $42, $B8                                                                            ; x9742  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":1,"receiverNumber":4},{"probability":0.8125,"receiverNumber":3},{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":1},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x974a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_185:
-	.DB $C1, $3A, $3C, $CC                                                                                                ; x974d  {"(Start Time, End Time)":"start in between 2.9s and 3s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $3A, $3C, $CC                                                                      ; x974d  {"(Start Time, End Time)":"start in between 2.9s and 3s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_114                                                             ; x9751  {"(Amount)":"-19 bytes to x973e"}
 OFFENSE_PLAYER_REACTION_290:
 	PlayerCommandData.takeSnapFromShotgun                                                                                 ; x9753 
@@ -2872,15 +2872,15 @@ OFFENSE_PLAYER_REACTION_290:
 	PlayerCommandData.faceDirection $80                                                                                   ; x9758  {"(Direction)":"90 degrees"}
 	.DB $2C, $65, $B7                                                                                                     ; x975a  {"(Pointer)":" to x9775"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_186                                                          ; x975d  {"(Pointer)":" to x976f"}
-	.DB $C1, $5A, $FF, $D9                                                                                                ; x9760  {"(Start Time, End Time)":"start in between 4.5s and 12.75s","(Take Sack Chance)":"15.234375%"}
+	PlayerCommandData.COACOMPassTiming $5A, $FF, $D9                                                                      ; x9760  {"(Start Time, End Time)":"start in between 4.5s and 12.75s","(Take Sack Chance)":"15.234375%"}
 OFFENSE_PLAYER_REACTION_LOOP_115:
 	.DB $94, $44, $32, $31, $23, $F5, $42, $B8                                                                            ; x9764  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.75,"receiverNumber":4},{"probability":0.8125,"receiverNumber":2},{"probability":0.8125,"receiverNumber":1},{"probability":0.875,"receiverNumber":3},{"probability":0.0625,"receiverNumber":5}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x976c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_186:
-	.DB $C1, $5A, $FF, $F3                                                                                                ; x976f  {"(Start Time, End Time)":"start in between 4.5s and 12.75s","(Take Sack Chance)":"5.078125%"}
+	PlayerCommandData.COACOMPassTiming $5A, $FF, $F3                                                                      ; x976f  {"(Start Time, End Time)":"start in between 4.5s and 12.75s","(Take Sack Chance)":"5.078125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_115                                                             ; x9773  {"(Amount)":"-15 bytes to x9764"}
 OFFENSE_PLAYER_REACTION_JUMP_187:
-	.DB $C1, $23, $2D, $FD                                                                                                ; x9775  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
+	PlayerCommandData.COACOMPassTiming $23, $2D, $FD                                                                      ; x9775  {"(Start Time, End Time)":"start in between 1.75s and 2.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.boostRP $04                                                                                         ; x9779  {"(Boost)":{"value":4,"HasMaximumValue":true}}
 	PlayerCommandData.boostRS $04                                                                                         ; x977b  {"(Boost)":{"value":4}}
 	PlayerCommandData.moveBallPlacement $CE, $F0                                                                          ; x977d  {"(Location)":{"up":4.25,"left":2}}
@@ -2968,12 +2968,12 @@ OFFENSE_PLAYER_REACTION_311:
 	PlayerCommandData.moveBallPlacement $F0, $B0                                                                          ; x981b  {"(Location)":{"up":0,"left":10}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x981e  {"(Direction)":"90 degrees"}
 	PlayerCommandData.COMJumpTo OFFENSE_PLAYER_REACTION_JUMP_188                                                          ; x9820  {"(Pointer)":" to x9830"}
-	.DB $C1, $01, $64, $7F                                                                                                ; x9823  {"(Start Time, End Time)":"start in between 0.05s and 5s","(Take Sack Chance)":"50.390625%"}
+	PlayerCommandData.COACOMPassTiming $01, $64, $7F                                                                      ; x9823  {"(Start Time, End Time)":"start in between 0.05s and 5s","(Take Sack Chance)":"50.390625%"}
 OFFENSE_PLAYER_REACTION_LOOP_117:
 	.DB $92, $84, $53, $F1, $42, $B8                                                                                      ; x9827  {"(Pointer)":" to x9852","(Chance\/Receivers)":[{"probability":0.5,"receiverNumber":4},{"probability":0.6875,"receiverNumber":3},{"probability":0.0625,"receiverNumber":1}]}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x982d  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_JUMP_188:
-	.DB $C1, $01, $64, $CC                                                                                                ; x9830  {"(Start Time, End Time)":"start in between 0.05s and 5s","(Take Sack Chance)":"20.3125%"}
+	PlayerCommandData.COACOMPassTiming $01, $64, $CC                                                                      ; x9830  {"(Start Time, End Time)":"start in between 0.05s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_117                                                             ; x9834  {"(Amount)":"-13 bytes to x9827"}
 OFFENSE_PLAYER_REACTION_312:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9836 
