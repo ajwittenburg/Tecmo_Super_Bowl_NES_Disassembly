@@ -3814,47 +3814,47 @@ OFFENSE_PLAYER_REACTION_JUMP_198:
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9efc  {"(Amount)":"-4 bytes to x9ef8"}
 OFFENSE_UNUSED_REACTION_LOOP_001:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9efe  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $40                                                                                                               ; x9f01 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_RE                                                              ; x9f01 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_001                                                             ; x9f02  {"(Amount)":"-4 bytes to x9efe"}
 OFFENSE_UNUSED_REACTION_LOOP_002:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f04  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $41                                                                                                               ; x9f07 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_NT                                                              ; x9f07 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_002                                                             ; x9f08  {"(Amount)":"-4 bytes to x9f04"}
 OFFENSE_UNUSED_REACTION_LOOP_003:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f0a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $42                                                                                                               ; x9f0d 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_LE                                                              ; x9f0d 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_003                                                             ; x9f0e  {"(Amount)":"-4 bytes to x9f0a"}
 OFFENSE_UNUSED_REACTION_LOOP_004:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f10  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $43                                                                                                               ; x9f13 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_ROLB                                                            ; x9f13 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_004                                                             ; x9f14  {"(Amount)":"-4 bytes to x9f10"}
 OFFENSE_UNUSED_REACTION_LOOP_005:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f16  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $44                                                                                                               ; x9f19 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_RILB                                                            ; x9f19 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_005                                                             ; x9f1a  {"(Amount)":"-4 bytes to x9f16"}
 OFFENSE_UNUSED_REACTION_LOOP_006:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f1c  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $45                                                                                                               ; x9f1f 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_LILB                                                            ; x9f1f 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_006                                                             ; x9f20  {"(Amount)":"-4 bytes to x9f1c"}
 OFFENSE_UNUSED_REACTION_LOOP_007:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f22  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $46                                                                                                               ; x9f25 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_LOLB                                                            ; x9f25 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_007                                                             ; x9f26  {"(Amount)":"-4 bytes to x9f22"}
 OFFENSE_UNUSED_REACTION_LOOP_008:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f28  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $47                                                                                                               ; x9f2b 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_RCB                                                             ; x9f2b 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_008                                                             ; x9f2c  {"(Amount)":"-4 bytes to x9f28"}
 OFFENSE_UNUSED_REACTION_LOOP_009:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f2e  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $48                                                                                                               ; x9f31 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_LCB                                                             ; x9f31 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_009                                                             ; x9f32  {"(Amount)":"-4 bytes to x9f2e"}
 OFFENSE_UNUSED_REACTION_LOOP_010:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f34  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $49                                                                                                               ; x9f37 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_FS                                                              ; x9f37 
 	PlayerCommandData.loopTo OFFENSE_UNUSED_REACTION_LOOP_010                                                             ; x9f38  {"(Amount)":"-4 bytes to x9f34"}
 OFFENSE_PLAYER_REACTION_444:
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x9f3a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $4A                                                                                                               ; x9f3d 
+	PlayerCommandData.chopBlockPlayer PLAYER_COMMAND_DATA_SS                                                              ; x9f3d 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_444                                                                  ; x9f3e  {"(Amount)":"-4 bytes to x9f3a"}
 OFFENSE_PLAYER_REACTION_445:
 	PlayerCommandData.boostRS $11                                                                                         ; x9f40  {"(Boost)":{"value":17}}
