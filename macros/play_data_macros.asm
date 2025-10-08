@@ -44,6 +44,11 @@ PLAYER_COMMAND_DATA_SS = PLAYER_COMMAND_DATA_RT
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.manCoverageLoose playerNibble, time
+    PlayerCommandData.Helper.addPlayerNibble $10, playerNibble
+    .DB time
+.ENDM
+
 ; This represents commands #$20-#$2F
 .MACRO PlayerCommandData.randomJumpTo probabilityNibble,newLocation
     IF probabilityNibble > #$0F

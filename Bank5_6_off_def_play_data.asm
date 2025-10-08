@@ -7649,19 +7649,19 @@ DEFENSE_PLAYER_REACTION_JUMP_269:
 	.DB $05, $00                                                                                                          ; xbe10  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xbe12  {"(Amount)":"-2 bytes to xbe10"}
 DEFENSE_PLAYER_REACTION_JUMP_270:
-	.DB $11, $00                                                                                                          ; xbe14  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageLoose PLAYER_COMMAND_DATA_RB1, $00                                                       ; xbe14  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_265                                                             ; xbe16  {"(Amount)":"-22 bytes to xbe00"}
 DEFENSE_PLAYER_REACTION_JUMP_271:
-	.DB $12, $00                                                                                                          ; xbe18  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageLoose PLAYER_COMMAND_DATA_RB2, $00                                                       ; xbe18  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbe1a  {"(Amount)":"-22 bytes to xbe04"}
 DEFENSE_PLAYER_REACTION_JUMP_272:
-	.DB $13, $00                                                                                                          ; xbe1c  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageLoose PLAYER_COMMAND_DATA_WR1, $00                                                       ; xbe1c  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_267                                                             ; xbe1e  {"(Amount)":"-22 bytes to xbe08"}
 DEFENSE_PLAYER_REACTION_JUMP_273:
-	.DB $14, $00                                                                                                          ; xbe20  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageLoose PLAYER_COMMAND_DATA_WR2, $00                                                       ; xbe20  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_268                                                             ; xbe22  {"(Amount)":"-22 bytes to xbe0c"}
 DEFENSE_PLAYER_REACTION_JUMP_274:
-	.DB $15, $00                                                                                                          ; xbe24  {"(Time)":"for forever"}
+	PlayerCommandData.manCoverageLoose PLAYER_COMMAND_DATA_TE1, $00                                                       ; xbe24  {"(Time)":"for forever"}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_JUMP_269                                                             ; xbe26  {"(Amount)":"-22 bytes to xbe10"}
 DEFENSE_PLAYER_REACTION_JUMP_275:
 	PlayerCommandData.moveRelative $00, $C0                                                                               ; xbe28  {"(Location)":{"up":0,"right":7.875}}
