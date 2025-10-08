@@ -44,6 +44,15 @@ PLAYER_COMMAND_DATA_SS = PLAYER_COMMAND_DATA_RT
 
 ;;;;;;;;;;;;;;;
 
+; This represents commands #$20-#$2F
+.MACRO PlayerCommandData.randomJumpTo probabilityNibble,newLocation
+    IF probabilityNibble > #$0F
+        ERROR "probabilityNibble is greater than x0f"
+    ENDIF
+    .DB $20 + probabilityNibble
+    .WORD newLocation
+.ENDM
+
 ; This represents commands #$30-#$3F
 .MACRO PlayerCommandData.blockPlayer playerNibble
     PlayerCommandData.Helper.addPlayerNibble $30, playerNibble
