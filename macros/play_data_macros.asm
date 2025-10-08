@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.moveDuringKickoff y,x
+    PlayerCommandData.Helper.addCommandAndLocationXY $B4, x, y    
+.ENDM
+
 .MACRO PlayerCommandData.dropback y,x
     PlayerCommandData.Helper.addCommandAndLocationXY $C0, x, y
 .ENDM

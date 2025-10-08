@@ -7,7 +7,7 @@ OFFENSE_PLAYER_REACTION_001:
 	.DB $B0, $CC, $98                                                                                                     ; x8010 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8013 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x8014  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
-	.DB $B4, $48, $88                                                                                                     ; x8017 
+	PlayerCommandData.moveDuringKickoff $48, $88                                                                          ; x8017 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x801a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.wait $01, $19                                                                                       ; x801d  {"(Start Time, End Time)":"start in between 0.05s and 1.25s"}
 	PlayerCommandData.pullRelative $60, $28                                                                               ; x8020  {"(Location)":{"down":12,"right":5}}
@@ -19,7 +19,7 @@ OFFENSE_PLAYER_REACTION_002:
 	.DB $B0, $DC, $88                                                                                                     ; x802b 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x802e 
 	PlayerCommandData.setToGrapple %00111100, %00000000                                                                   ; x802f  {"(Player)":"LE,ROLB,RILB,LILB"}
-	.DB $B4, $60, $A0                                                                                                     ; x8032 
+	PlayerCommandData.moveDuringKickoff $60, $A0                                                                          ; x8032 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8035  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $F8, $10                                                                               ; x8038  {"(Location)":{"up":0.875,"right":2}}
 	PlayerCommandData.pullRelative $00, $7F                                                                               ; x803b  {"(Location)":{"up":0,"right":15.875}}
@@ -30,7 +30,7 @@ OFFENSE_PLAYER_REACTION_003:
 	.DB $B0, $F0, $80                                                                                                     ; x8043 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8046 
 	PlayerCommandData.setToGrapple %10000110, %00000000                                                                   ; x8047  {"(Player)":"RE,LILB,LOLB"}
-	.DB $B4, $78, $B0                                                                                                     ; x804a 
+	PlayerCommandData.moveDuringKickoff $78, $B0                                                                          ; x804a 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x804d  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $00, $7F                                                                               ; x8050  {"(Location)":{"up":0,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_003:
@@ -40,7 +40,7 @@ OFFENSE_PLAYER_REACTION_004:
 	.DB $B0, $04, $88                                                                                                     ; x8058 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x805b 
 	PlayerCommandData.setToGrapple %00000011, %11000000                                                                   ; x805c  {"(Player)":"LOLB,RCB,LCB,FS"}
-	.DB $B4, $90, $A0                                                                                                     ; x805f 
+	PlayerCommandData.moveDuringKickoff $90, $A0                                                                          ; x805f 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8062  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $08, $10                                                                               ; x8065  {"(Location)":{"down":1,"right":2}}
 	PlayerCommandData.pullRelative $00, $7F                                                                               ; x8068  {"(Location)":{"up":0,"right":15.875}}
@@ -51,7 +51,7 @@ OFFENSE_PLAYER_REACTION_005:
 	.DB $B0, $18, $98                                                                                                     ; x8070 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8073 
 	PlayerCommandData.setToGrapple %00000000, %11100000                                                                   ; x8074  {"(Player)":"LCB,FS,SS"}
-	.DB $B4, $A8, $88                                                                                                     ; x8077 
+	PlayerCommandData.moveDuringKickoff $A8, $88                                                                          ; x8077 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x807a  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.wait $01, $19                                                                                       ; x807d  {"(Start Time, End Time)":"start in between 0.05s and 1.25s"}
 	PlayerCommandData.pullRelative $A8, $28                                                                               ; x8080  {"(Location)":{"up":10.875,"right":5}}
@@ -63,7 +63,7 @@ OFFENSE_PLAYER_REACTION_006:
 	.DB $B1, $CC, $00                                                                                                     ; x808b 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x808e 
 	PlayerCommandData.setToGrapple %01110000, %00000000                                                                   ; x808f  {"(Player)":"NT,LE,ROLB"}
-	.DB $B4, $50, $38                                                                                                     ; x8092 
+	PlayerCommandData.moveDuringKickoff $50, $38                                                                          ; x8092 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x8095  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $04, $7F                                                                               ; x8098  {"(Location)":{"down":0.5,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_006:
@@ -73,7 +73,7 @@ OFFENSE_PLAYER_REACTION_007:
 	.DB $B1, $E4, $00                                                                                                     ; x80a0 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80a3 
 	PlayerCommandData.setToGrapple %00001110, %00000000                                                                   ; x80a4  {"(Player)":"RILB,LILB,LOLB"}
-	.DB $B4, $68, $48                                                                                                     ; x80a7 
+	PlayerCommandData.moveDuringKickoff $68, $48                                                                          ; x80a7 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80aa  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $04, $7F                                                                               ; x80ad  {"(Location)":{"down":0.5,"right":15.875}}
 	PlayerCommandData.pullRelative $04, $7F                                                                               ; x80b0  {"(Location)":{"down":0.5,"right":15.875}}
@@ -86,7 +86,7 @@ OFFENSE_PLAYER_REACTION_008:
 	.DB $B1, $FC, $00                                                                                                     ; x80bc 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80bf 
 	PlayerCommandData.setToGrapple %00000111, %00000000                                                                   ; x80c0  {"(Player)":"LILB,LOLB,RCB"}
-	.DB $B4, $88, $48                                                                                                     ; x80c3 
+	PlayerCommandData.moveDuringKickoff $88, $48                                                                          ; x80c3 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80c6  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $FC, $7F                                                                               ; x80c9  {"(Location)":{"up":0.375,"right":15.875}}
 	PlayerCommandData.pullRelative $FC, $7F                                                                               ; x80cc  {"(Location)":{"up":0.375,"right":15.875}}
@@ -98,7 +98,7 @@ OFFENSE_PLAYER_REACTION_LOOP_008:
 OFFENSE_PLAYER_REACTION_009:
 	.DB $B1, $14, $00                                                                                                     ; x80d8 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80db 
-	.DB $B4, $A0, $38                                                                                                     ; x80dc 
+	PlayerCommandData.moveDuringKickoff $A0, $38                                                                          ; x80dc 
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x80df  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullRelative $04, $7F                                                                               ; x80e2  {"(Location)":{"down":0.5,"right":15.875}}
 OFFENSE_PLAYER_REACTION_LOOP_009:
@@ -107,7 +107,7 @@ OFFENSE_PLAYER_REACTION_LOOP_009:
 OFFENSE_PLAYER_REACTION_010:
 	.DB $B1, $E0, $78                                                                                                     ; x80ea 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x80ed 
-	.DB $B4, $88, $28                                                                                                     ; x80ee 
+	PlayerCommandData.moveDuringKickoff $88, $28                                                                          ; x80ee 
 	PlayerCommandData.setToGrapple %11111111, %11100000                                                                   ; x80f1  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.pullMiddleOfField $00, $30                                                                          ; x80f4  {"(Location)":{"up":15,"right":6}}
 	PlayerCommandData.pullRelative $00, $7F                                                                               ; x80f7  {"(Location)":{"up":0,"right":15.875}}
@@ -4004,7 +4004,7 @@ DEFENSE_PLAYER_REACTION_LOOP_004:
 	PlayerCommandData.pullRelative $00, $60                                                                               ; xa0a9  {"(Location)":{"up":0,"left":12}}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_004                                                             ; xa0ac  {"(Amount)":"-6 bytes to xa0a6"}
 DEFENSE_PLAYER_REACTION_017:
-	.DB $B4, $80, $30                                                                                                     ; xa0ae 
+	PlayerCommandData.moveDuringKickoff $80, $30                                                                          ; xa0ae 
 	PlayerCommandData.boostHP $06                                                                                         ; xa0b1  {"(Boost)":{"value":6}}
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_LOOP_004                                                             ; xa0b3  {"(Amount)":"-13 bytes to xa0a6"}
 DEFENSE_PLAYER_REACTION_018:
