@@ -10,6 +10,16 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.passChance5ReceiversAndPostCatch postCatchLocation, receiverOne, receiverTwo, receiverThree, receiverFour, receiverFive
+    .DB $94
+    .DB receiverOne
+    .DB receiverTwo
+    .DB receiverThree
+    .DB receiverFour
+    .DB receiverFive
+    .WORD postCatchLocation
+.ENDM
+
 .MACRO PlayerCommandData.setRouteNumber routeNumber
     IF routeNumber > $0F 
         ERROR "routeNumber needs to be smaller than $0F - generally it's at most $04"
