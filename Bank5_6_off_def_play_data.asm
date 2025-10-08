@@ -712,14 +712,14 @@ OFFENSE_PLAYER_REACTION_116:
 	PlayerCommandData.moveBallPlacement $30, $F8                                                                          ; x854c  {"(Location)":{"down":8,"left":1}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x854f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_117:
-	.DB $A0                                                                                                               ; x8552 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x8552 
 	PlayerCommandData.moveBallPlacement $0C, $D0                                                                          ; x8553  {"(Location)":{"down":3.5,"left":6}}
 	PlayerCommandData.moveBallPlacement $E0, $E0                                                                          ; x8556  {"(Location)":{"up":2,"left":4}}
 	PlayerCommandData.moveMiddleOfField $40, $20                                                                          ; x8559  {"(Location)":{"up":7,"right":4}}
 	PlayerCommandData.moveMiddleOfField $40, $28                                                                          ; x855c  {"(Location)":{"up":7,"right":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x855f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_118:
-	.DB $A1                                                                                                               ; x8562 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x8562 
 	PlayerCommandData.moveMiddleOfField $C0, $48                                                                          ; x8563  {"(Location)":{"down":9,"right":9}}
 	PlayerCommandData.moveMiddleOfField $68, $68                                                                          ; x8566  {"(Location)":{"up":2,"right":13}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8569  {"(Pointer)":" to x9842"}
@@ -898,7 +898,7 @@ OFFENSE_PLAYER_REACTION_JUMP_030:
 	PlayerCommandData.COACOMPassTiming $14, $78, $CC                                                                      ; x86c1  {"(Start Time, End Time)":"start in between 1s and 6s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_029                                                             ; x86c5  {"(Pointer)":" to x86b7"}
 OFFENSE_PLAYER_REACTION_136:
-	.DB $A2                                                                                                               ; x86c8 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x86c8 
 	PlayerCommandData.stand $05                                                                                           ; x86c9  {"(Time)":"for 0.25s"}
 	PlayerCommandData.moveBallPlacement $EC, $D4                                                                          ; x86cb  {"(Location)":{"up":0.5,"left":5.5}}
 	PlayerCommandData.moveBallPlacement $E0, $E4                                                                          ; x86ce  {"(Location)":{"up":2,"left":3.5}}
@@ -2994,7 +2994,7 @@ OFFENSE_PLAYER_REACTION_LOOP_118:
 	PlayerCommandData.computerTakesControl                                                                                ; x9849 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_118                                                             ; x984a  {"(Amount)":"-1 bytes to x9849"}
 OFFENSE_PLAYER_REACTION_316:
-	.DB $A2                                                                                                               ; x984c 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x984c 
 OFFENSE_PLAYER_REACTION_LOOP_119:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x984d  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_119                                                             ; x9850  {"(Amount)":"-3 bytes to x984d"}
@@ -3004,17 +3004,17 @@ OFFENSE_PLAYER_REACTION_LOOP_120:
 	PlayerCommandData.computerTakesControl                                                                                ; x9853 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_120                                                             ; x9854  {"(Amount)":"-1 bytes to x9853"}
 OFFENSE_PLAYER_REACTION_317:
-	.DB $A1                                                                                                               ; x9856 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9856 
 	PlayerCommandData.moveRelative $00, $6C                                                                               ; x9857  {"(Location)":{"up":0,"right":13.5}}
 	PlayerCommandData.moveRelative $E8, $20                                                                               ; x985a  {"(Location)":{"up":2.875,"right":4}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_199                                                             ; x985d  {"(Pointer)":" to x9f6d"}
 OFFENSE_PLAYER_REACTION_318:
-	.DB $A3                                                                                                               ; x9860 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9860 
 	PlayerCommandData.moveRelative $00, $4C                                                                               ; x9861  {"(Location)":{"up":0,"right":9.5}}
 	PlayerCommandData.moveRelative $EC, $20                                                                               ; x9864  {"(Location)":{"up":2.375,"right":4}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9867  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_319:
-	.DB $A2                                                                                                               ; x986a 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x986a 
 	PlayerCommandData.stand $21                                                                                           ; x986b  {"(Time)":"for 1.65s"}
 	PlayerCommandData.moveBallPlacement $F0, $C0                                                                          ; x986d  {"(Location)":{"up":0,"left":8}}
 	PlayerCommandData.moveBallPlacement $E8, $D4                                                                          ; x9870  {"(Location)":{"up":1,"left":5.5}}
@@ -3024,12 +3024,12 @@ OFFENSE_PLAYER_REACTION_319:
 	PlayerCommandData.moveBallPlacement $B8, $00                                                                          ; x987c  {"(Location)":{"up":7,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_199                                                             ; x987f  {"(Pointer)":" to x9f6d"}
 OFFENSE_PLAYER_REACTION_320:
-	.DB $A0                                                                                                               ; x9882 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9882 
 	PlayerCommandData.moveRelative $00, $6C                                                                               ; x9883  {"(Location)":{"up":0,"right":13.5}}
 	PlayerCommandData.moveRelative $2C, $30                                                                               ; x9886  {"(Location)":{"down":5.5,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9889  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_321:
-	.DB $A0                                                                                                               ; x988c 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x988c 
 	PlayerCommandData.moveRelative $00, $6C                                                                               ; x988d  {"(Location)":{"up":0,"right":13.5}}
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x9890  {"(Location)":{"up":0,"right":10}}
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x9893  {"(Location)":{"up":0,"right":10}}
@@ -3037,18 +3037,18 @@ OFFENSE_PLAYER_REACTION_321:
 	PlayerCommandData.moveRelative $D0, $70                                                                               ; x9899  {"(Location)":{"up":5.875,"right":14}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x989c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_322:
-	.DB $A1                                                                                                               ; x989f 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x989f 
 	PlayerCommandData.stand $3C                                                                                           ; x98a0  {"(Time)":"for 3s"}
 	PlayerCommandData.moveBallPlacement $14, $18                                                                          ; x98a2  {"(Location)":{"down":4.5,"right":3}}
 	PlayerCommandData.moveBallPlacement $30, $38                                                                          ; x98a5  {"(Location)":{"down":8,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98a8  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_323:
-	.DB $A1                                                                                                               ; x98ab 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x98ab 
 	PlayerCommandData.moveRelative $00, $5C                                                                               ; x98ac  {"(Location)":{"up":0,"right":11.5}}
 	PlayerCommandData.moveRelative $4C, $00                                                                               ; x98af  {"(Location)":{"down":9.5,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98b2  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_324:
-	.DB $A1                                                                                                               ; x98b5 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x98b5 
 	PlayerCommandData.stand $1E                                                                                           ; x98b6  {"(Time)":"for 1.5s"}
 	PlayerCommandData.moveBallPlacement $D8, $C0                                                                          ; x98b8  {"(Location)":{"up":3,"left":8}}
 	PlayerCommandData.moveBallPlacement $C0, $D0                                                                          ; x98bb  {"(Location)":{"up":6,"left":6}}
@@ -3063,29 +3063,29 @@ OFFENSE_PLAYER_REACTION_324:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x98d2  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98d5  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_325:
-	.DB $A0                                                                                                               ; x98d8 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x98d8 
 	PlayerCommandData.moveRelative $00, $38                                                                               ; x98d9  {"(Location)":{"up":0,"right":7}}
 	PlayerCommandData.moveRelative $F0, $08                                                                               ; x98dc  {"(Location)":{"up":1.875,"right":1}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98df  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_326:
-	.DB $A1                                                                                                               ; x98e2 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x98e2 
 	PlayerCommandData.moveBallPlacement $14, $20                                                                          ; x98e3  {"(Location)":{"down":4.5,"right":4}}
 	PlayerCommandData.moveBallPlacement $D8, $48                                                                          ; x98e6  {"(Location)":{"up":3,"right":9}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98e9  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_327:
-	.DB $A2                                                                                                               ; x98ec 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x98ec 
 	PlayerCommandData.moveRelative $00, $70                                                                               ; x98ed  {"(Location)":{"up":0,"right":14}}
 	PlayerCommandData.moveBallPlacement $E8, $7F                                                                          ; x98f0  {"(Location)":{"up":1,"right":15.875}}
 	PlayerCommandData.moveRelative $00, $10                                                                               ; x98f3  {"(Location)":{"up":0,"right":2}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x98f6  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_328:
-	.DB $A2                                                                                                               ; x98f9 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x98f9 
 	PlayerCommandData.moveBallPlacement $D4, $D0                                                                          ; x98fa  {"(Location)":{"up":3.5,"left":6}}
 	PlayerCommandData.moveBallPlacement $10, $E8                                                                          ; x98fd  {"(Location)":{"down":4,"left":3}}
 	PlayerCommandData.moveBallPlacement $34, $18                                                                          ; x9900  {"(Location)":{"down":8.5,"right":3}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9903  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_329:
-	.DB $A1                                                                                                               ; x9906 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9906 
 	PlayerCommandData.moveRelative $00, $1C                                                                               ; x9907  {"(Location)":{"up":0,"right":3.5}}
 	PlayerCommandData.moveRelative $F0, $40                                                                               ; x990a  {"(Location)":{"up":1.875,"right":8}}
 	PlayerCommandData.moveRelative $EC, $18                                                                               ; x990d  {"(Location)":{"up":2.375,"right":3}}
@@ -3095,12 +3095,12 @@ OFFENSE_PLAYER_REACTION_329:
 	PlayerCommandData.moveRelative $08, $FC                                                                               ; x9919  {"(Location)":{"down":1,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x991c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_330:
-	.DB $A2                                                                                                               ; x991f 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x991f 
 	PlayerCommandData.moveRelative $08, $10                                                                               ; x9920  {"(Location)":{"down":1,"right":2}}
 	PlayerCommandData.moveRelative $00, $30                                                                               ; x9923  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_316                                                                  ; x9926  {"(Pointer)":" to x984c"}
 OFFENSE_PLAYER_REACTION_331:
-	.DB $A1                                                                                                               ; x9929 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9929 
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x992a  {"(Location)":{"up":0,"right":10}}
 	PlayerCommandData.moveRelative $04, $04                                                                               ; x992d  {"(Location)":{"down":0.5,"right":0.5}}
 	PlayerCommandData.moveRelative $04, $00                                                                               ; x9930  {"(Location)":{"down":0.5,"left":0}}
@@ -3108,13 +3108,13 @@ OFFENSE_PLAYER_REACTION_331:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9936  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9939  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_332:
-	.DB $A2                                                                                                               ; x993c 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x993c 
 OFFENSE_PLAYER_REACTION_JUMP_191:
 	PlayerCommandData.moveRelative $00, $6C                                                                               ; x993d  {"(Location)":{"up":0,"right":13.5}}
 	PlayerCommandData.moveRelative $D8, $00                                                                               ; x9940  {"(Location)":{"up":4.875,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9943  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_333:
-	.DB $A1                                                                                                               ; x9946 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9946 
 	PlayerCommandData.moveBallPlacement $F8, $C8                                                                          ; x9947  {"(Location)":{"down":1,"left":7}}
 	PlayerCommandData.moveBallPlacement $F8, $08                                                                          ; x994a  {"(Location)":{"down":1,"right":1}}
 	PlayerCommandData.moveBallPlacement $F8, $40                                                                          ; x994d  {"(Location)":{"down":1,"right":8}}
@@ -3124,7 +3124,7 @@ OFFENSE_PLAYER_REACTION_333:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9959  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x995c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_334:
-	.DB $A2                                                                                                               ; x995f 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x995f 
 	PlayerCommandData.moveMiddleOfField $C0, $68                                                                          ; x9960  {"(Location)":{"down":9,"right":13}}
 	PlayerCommandData.moveRelative $FC, $04                                                                               ; x9963  {"(Location)":{"up":0.375,"right":0.5}}
 	PlayerCommandData.moveRelative $FC, $00                                                                               ; x9966  {"(Location)":{"up":0.375,"left":0}}
@@ -3132,7 +3132,7 @@ OFFENSE_PLAYER_REACTION_334:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x996c  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x996f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_335:
-	.DB $A1                                                                                                               ; x9972 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9972 
 	PlayerCommandData.moveBallPlacement $E8, $C8                                                                          ; x9973  {"(Location)":{"up":1,"left":7}}
 	PlayerCommandData.moveBallPlacement $E0, $F0                                                                          ; x9976  {"(Location)":{"up":2,"left":2}}
 	PlayerCommandData.wait $08, $32                                                                                       ; x9979  {"(Start Time, End Time)":"start in between 0.4s and 2.5s"}
@@ -3142,13 +3142,13 @@ OFFENSE_PLAYER_REACTION_335:
 	PlayerCommandData.moveBallPlacement $C0, $38                                                                          ; x9985  {"(Location)":{"up":6,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9988  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_336:
-	.DB $A2                                                                                                               ; x998b 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x998b 
 	PlayerCommandData.stand $0A                                                                                           ; x998c  {"(Time)":"for 0.5s"}
 	PlayerCommandData.moveBallPlacement $C4, $10                                                                          ; x998e  {"(Location)":{"up":5.5,"right":2}}
 	PlayerCommandData.moveBallPlacement $FC, $30                                                                          ; x9991  {"(Location)":{"down":1.5,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9994  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_337:
-	.DB $A0                                                                                                               ; x9997 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9997 
 	PlayerCommandData.moveMiddleOfField $36, $28                                                                          ; x9998  {"(Location)":{"up":8.25,"right":5}}
 	PlayerCommandData.moveMiddleOfField $3C, $30                                                                          ; x999b  {"(Location)":{"up":7.5,"right":6}}
 	PlayerCommandData.moveMiddleOfField $36, $38                                                                          ; x999e  {"(Location)":{"up":8.25,"right":7}}
@@ -3156,7 +3156,7 @@ OFFENSE_PLAYER_REACTION_LOOP_121:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x99a1  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_121                                                             ; x99a4  {"(Amount)":"-3 bytes to x99a1"}
 OFFENSE_PLAYER_REACTION_338:
-	.DB $A3                                                                                                               ; x99a6 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x99a6 
 	PlayerCommandData.moveBallPlacement $20, $08                                                                          ; x99a7  {"(Location)":{"down":6,"right":1}}
 	PlayerCommandData.moveBallPlacement $14, $18                                                                          ; x99aa  {"(Location)":{"down":4.5,"right":3}}
 	PlayerCommandData.moveBallPlacement $12, $28                                                                          ; x99ad  {"(Location)":{"down":4.25,"right":5}}
@@ -3164,7 +3164,7 @@ OFFENSE_PLAYER_REACTION_JUMP_192:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x99b0  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_192                                                             ; x99b3  {"(Pointer)":" to x99b0"}
 OFFENSE_PLAYER_REACTION_339:
-	.DB $A4                                                                                                               ; x99b6 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x99b6 
 	PlayerCommandData.stand $28                                                                                           ; x99b7  {"(Time)":"for 2s"}
 	PlayerCommandData.moveBallPlacement $1C, $F8                                                                          ; x99b9  {"(Location)":{"down":5.5,"left":1}}
 	PlayerCommandData.moveBallPlacement $20, $00                                                                          ; x99bc  {"(Location)":{"down":6,"left":0}}
@@ -3176,7 +3176,7 @@ OFFENSE_PLAYER_REACTION_340:
 	PlayerCommandData.moveBallPlacement $00, $CC                                                                          ; x99cb  {"(Location)":{"down":2,"left":6.5}}
 	PlayerCommandData.moveBallPlacement $F8, $E8                                                                          ; x99ce  {"(Location)":{"down":1,"left":3}}
 	PlayerCommandData.moveBallPlacement $F8, $00                                                                          ; x99d1  {"(Location)":{"down":1,"left":0}}
-	.DB $A2                                                                                                               ; x99d4 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x99d4 
 	PlayerCommandData.moveBallPlacement $F8, $50                                                                          ; x99d5  {"(Location)":{"down":1,"right":10}}
 	PlayerCommandData.moveBallPlacement $F4, $54                                                                          ; x99d8  {"(Location)":{"down":0.5,"right":10.5}}
 	PlayerCommandData.moveBallPlacement $F0, $54                                                                          ; x99db  {"(Location)":{"up":0,"right":10.5}}
@@ -3184,7 +3184,7 @@ OFFENSE_PLAYER_REACTION_340:
 	PlayerCommandData.moveBallPlacement $EC, $48                                                                          ; x99e1  {"(Location)":{"up":0.5,"right":9}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x99e4  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_341:
-	.DB $A3                                                                                                               ; x99e7 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x99e7 
 	PlayerCommandData.moveBallPlacement $E0, $B0                                                                          ; x99e8  {"(Location)":{"up":2,"left":10}}
 	PlayerCommandData.moveBallPlacement $F4, $B0                                                                          ; x99eb  {"(Location)":{"down":0.5,"left":10}}
 	PlayerCommandData.moveBallPlacement $10, $B6                                                                          ; x99ee  {"(Location)":{"down":4,"left":9.25}}
@@ -3195,7 +3195,7 @@ OFFENSE_PLAYER_REACTION_341:
 	PlayerCommandData.moveBallPlacement $30, $78                                                                          ; x99fd  {"(Location)":{"down":8,"right":15}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a00  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_342:
-	.DB $A0                                                                                                               ; x9a03 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9a03 
 OFFENSE_PLAYER_REACTION_JUMP_193:
 	PlayerCommandData.wait $3C, $50                                                                                       ; x9a04  {"(Start Time, End Time)":"start in between 3s and 4s"}
 	PlayerCommandData.moveBallPlacement $C8, $C0                                                                          ; x9a07  {"(Location)":{"up":5,"left":8}}
@@ -3206,7 +3206,7 @@ OFFENSE_PLAYER_REACTION_JUMP_193:
 	PlayerCommandData.moveBallPlacement $B4, $30                                                                          ; x9a15  {"(Location)":{"up":7.5,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a18  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_343:
-	.DB $A3                                                                                                               ; x9a1b 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9a1b 
 	PlayerCommandData.moveRelative $00, $5C                                                                               ; x9a1c  {"(Location)":{"up":0,"right":11.5}}
 	PlayerCommandData.moveRelative $00, $18                                                                               ; x9a1f  {"(Location)":{"up":0,"right":3}}
 	PlayerCommandData.moveRelative $FE, $02                                                                               ; x9a22  {"(Location)":{"up":0.125,"right":0.25}}
@@ -3215,13 +3215,13 @@ OFFENSE_PLAYER_REACTION_343:
 	PlayerCommandData.moveRelative $00, $FE                                                                               ; x9a2b  {"(Location)":{"up":0,"left":0.125}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a2e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_344:
-	.DB $A2                                                                                                               ; x9a31 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9a31 
 OFFENSE_PLAYER_REACTION_JUMP_194:
 	PlayerCommandData.moveBallPlacement $CC, $20                                                                          ; x9a32  {"(Location)":{"up":4.5,"right":4}}
 	PlayerCommandData.moveBallPlacement $F0, $40                                                                          ; x9a35  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a38  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_345:
-	.DB $A1                                                                                                               ; x9a3b 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9a3b 
 	PlayerCommandData.moveBallPlacement $C0, $30                                                                          ; x9a3c  {"(Location)":{"up":6,"right":6}}
 	PlayerCommandData.moveRelative $04, $04                                                                               ; x9a3f  {"(Location)":{"down":0.5,"right":0.5}}
 	PlayerCommandData.moveRelative $04, $00                                                                               ; x9a42  {"(Location)":{"down":0.5,"left":0}}
@@ -3229,7 +3229,7 @@ OFFENSE_PLAYER_REACTION_345:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9a48  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a4b  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_346:
-	.DB $A2                                                                                                               ; x9a4e 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9a4e 
 	PlayerCommandData.moveBallPlacement $20, $30                                                                          ; x9a4f  {"(Location)":{"down":6,"right":6}}
 	PlayerCommandData.moveRelative $FC, $04                                                                               ; x9a52  {"(Location)":{"up":0.375,"right":0.5}}
 	PlayerCommandData.moveRelative $FC, $00                                                                               ; x9a55  {"(Location)":{"up":0.375,"left":0}}
@@ -3237,7 +3237,7 @@ OFFENSE_PLAYER_REACTION_346:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9a5b  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a5e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_347:
-	.DB $A0                                                                                                               ; x9a61 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9a61 
 OFFENSE_PLAYER_REACTION_JUMP_195:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9a62  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.moveRelative $00, $4C                                                                               ; x9a65  {"(Location)":{"up":0,"right":9.5}}
@@ -3247,7 +3247,7 @@ OFFENSE_PLAYER_REACTION_JUMP_195:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9a71  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a74  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_348:
-	.DB $A3                                                                                                               ; x9a77 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9a77 
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9a78  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.moveRelative $00, $4C                                                                               ; x9a7b  {"(Location)":{"up":0,"right":9.5}}
 	PlayerCommandData.moveRelative $FC, $04                                                                               ; x9a7e  {"(Location)":{"up":0.375,"right":0.5}}
@@ -3256,12 +3256,12 @@ OFFENSE_PLAYER_REACTION_348:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9a87  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a8a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_349:
-	.DB $A3                                                                                                               ; x9a8d 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9a8d 
 	PlayerCommandData.moveBallPlacement $1C, $50                                                                          ; x9a8e  {"(Location)":{"down":5.5,"right":10}}
 	PlayerCommandData.moveRelative $08, $00                                                                               ; x9a91  {"(Location)":{"down":1,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9a94  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_350:
-	.DB $A4                                                                                                               ; x9a97 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9a97 
 	PlayerCommandData.moveBallPlacement $28, $D0                                                                          ; x9a98  {"(Location)":{"down":7,"left":6}}
 	PlayerCommandData.moveMiddleOfField $C0, $E4                                                                          ; x9a9b  {"(Location)":{"down":9,"left":3.5}}
 	PlayerCommandData.moveRelative $04, $FC                                                                               ; x9a9e  {"(Location)":{"down":0.5,"left":0.375}}
@@ -3274,14 +3274,14 @@ OFFENSE_PLAYER_REACTION_350:
 	PlayerCommandData.moveMiddleOfField $C0, $60                                                                          ; x9ab2  {"(Location)":{"down":9,"right":12}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9ab5  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_351:
-	.DB $A0                                                                                                               ; x9ab8 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9ab8 
 OFFENSE_PLAYER_REACTION_JUMP_196:
 	PlayerCommandData.moveRelative $00, $60                                                                               ; x9ab9  {"(Location)":{"up":0,"right":12}}
 	PlayerCommandData.moveRelative $00, $70                                                                               ; x9abc  {"(Location)":{"up":0,"right":14}}
 	PlayerCommandData.moveRelative $1C, $7F                                                                               ; x9abf  {"(Location)":{"down":3.5,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9ac2  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_352:
-	.DB $A2                                                                                                               ; x9ac5 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9ac5 
 	PlayerCommandData.moveRelative $E8, $44                                                                               ; x9ac6  {"(Location)":{"up":2.875,"right":8.5}}
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x9ac9  {"(Location)":{"up":0,"right":10}}
 	PlayerCommandData.moveRelative $0C, $7F                                                                               ; x9acc  {"(Location)":{"down":1.5,"right":15.875}}
@@ -3289,7 +3289,7 @@ OFFENSE_PLAYER_REACTION_LOOP_122:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9acf  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_122                                                             ; x9ad2  {"(Amount)":"-3 bytes to x9acf"}
 OFFENSE_PLAYER_REACTION_353:
-	.DB $A2                                                                                                               ; x9ad4 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9ad4 
 	PlayerCommandData.moveBallPlacement $10, $DC                                                                          ; x9ad5  {"(Location)":{"down":4,"left":4.5}}
 	PlayerCommandData.moveBallPlacement $18, $F0                                                                          ; x9ad8  {"(Location)":{"down":5,"left":2}}
 	PlayerCommandData.moveBallPlacement $18, $10                                                                          ; x9adb  {"(Location)":{"down":5,"right":2}}
@@ -3298,7 +3298,7 @@ OFFENSE_PLAYER_REACTION_353:
 	PlayerCommandData.moveBallPlacement $F8, $38                                                                          ; x9ae4  {"(Location)":{"down":1,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9ae7  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_354:
-	.DB $A3                                                                                                               ; x9aea 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9aea 
 	PlayerCommandData.moveBallPlacement $20, $C0                                                                          ; x9aeb  {"(Location)":{"down":6,"left":8}}
 	PlayerCommandData.moveBallPlacement $30, $D0                                                                          ; x9aee  {"(Location)":{"down":8,"left":6}}
 	PlayerCommandData.moveMiddleOfField $C0, $00                                                                          ; x9af1  {"(Location)":{"down":9,"left":0}}
@@ -3306,7 +3306,7 @@ OFFENSE_PLAYER_REACTION_354:
 	PlayerCommandData.moveMiddleOfField $C0, $28                                                                          ; x9af6  {"(Location)":{"down":9,"right":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9af9  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_355:
-	.DB $A3                                                                                                               ; x9afc 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9afc 
 	PlayerCommandData.moveBallPlacement $18, $D0                                                                          ; x9afd  {"(Location)":{"down":5,"left":6}}
 	PlayerCommandData.moveBallPlacement $18, $08                                                                          ; x9b00  {"(Location)":{"down":5,"right":1}}
 	PlayerCommandData.moveBallPlacement $10, $10                                                                          ; x9b03  {"(Location)":{"down":4,"right":2}}
@@ -3317,35 +3317,35 @@ OFFENSE_PLAYER_REACTION_355:
 	PlayerCommandData.moveBallPlacement $20, $34                                                                          ; x9b12  {"(Location)":{"down":6,"right":6.5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b15  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_356:
-	.DB $A2                                                                                                               ; x9b18 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9b18 
 	PlayerCommandData.moveMiddleOfField $B0, $10                                                                          ; x9b19  {"(Location)":{"down":7,"right":2}}
 OFFENSE_PLAYER_REACTION_LOOP_123:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9b1c  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_123                                                             ; x9b1f  {"(Amount)":"-3 bytes to x9b1c"}
 OFFENSE_PLAYER_REACTION_357:
-	.DB $A0                                                                                                               ; x9b21 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9b21 
 	PlayerCommandData.moveBallPlacement $C0, $30                                                                          ; x9b22  {"(Location)":{"up":6,"right":6}}
 	PlayerCommandData.moveBallPlacement $C0, $60                                                                          ; x9b25  {"(Location)":{"up":6,"right":12}}
 	PlayerCommandData.moveRelative $F8, $7F                                                                               ; x9b28  {"(Location)":{"up":0.875,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b2b  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_358:
-	.DB $A1                                                                                                               ; x9b2e 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9b2e 
 	PlayerCommandData.moveRelative $00, $18                                                                               ; x9b2f  {"(Location)":{"up":0,"right":3}}
 	PlayerCommandData.moveRelative $F0, $38                                                                               ; x9b32  {"(Location)":{"up":1.875,"right":7}}
 	PlayerCommandData.moveMiddleOfField $68, $48                                                                          ; x9b35  {"(Location)":{"up":2,"right":9}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b38  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_359:
-	.DB $A2                                                                                                               ; x9b3b 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9b3b 
 	PlayerCommandData.moveBallPlacement $C8, $20                                                                          ; x9b3c  {"(Location)":{"up":5,"right":4}}
 	PlayerCommandData.moveBallPlacement $E8, $38                                                                          ; x9b3f  {"(Location)":{"up":1,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b42  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_360:
-	.DB $A0                                                                                                               ; x9b45 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9b45 
 	PlayerCommandData.moveMiddleOfField $C0, $60                                                                          ; x9b46  {"(Location)":{"down":9,"right":12}}
 	PlayerCommandData.moveRelative $E0, $7F                                                                               ; x9b49  {"(Location)":{"up":3.875,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b4c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_361:
-	.DB $A1                                                                                                               ; x9b4f 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9b4f 
 	PlayerCommandData.moveBallPlacement $0C, $D0                                                                          ; x9b50  {"(Location)":{"down":3.5,"left":6}}
 	PlayerCommandData.moveBallPlacement $E0, $E0                                                                          ; x9b53  {"(Location)":{"up":2,"left":4}}
 	PlayerCommandData.moveBallPlacement $B8, $20                                                                          ; x9b56  {"(Location)":{"up":7,"right":4}}
@@ -3354,7 +3354,7 @@ OFFENSE_PLAYER_REACTION_361:
 	PlayerCommandData.moveBallPlacement $B8, $40                                                                          ; x9b5e  {"(Location)":{"up":7,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b61  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_362:
-	.DB $A4                                                                                                               ; x9b64 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9b64 
 	PlayerCommandData.stand $1E                                                                                           ; x9b65  {"(Time)":"for 1.5s"}
 	PlayerCommandData.moveBallPlacement $C8, $D0                                                                          ; x9b67  {"(Location)":{"up":5,"left":6}}
 	PlayerCommandData.moveBallPlacement $BC, $E0                                                                          ; x9b6a  {"(Location)":{"up":6.5,"left":4}}
@@ -3363,17 +3363,17 @@ OFFENSE_PLAYER_REACTION_362:
 	PlayerCommandData.moveRelative $00, $08                                                                               ; x9b73  {"(Location)":{"up":0,"right":1}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b76  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_363:
-	.DB $A3                                                                                                               ; x9b79 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9b79 
 	PlayerCommandData.moveBallPlacement $C0, $28                                                                          ; x9b7a  {"(Location)":{"up":6,"right":5}}
 	PlayerCommandData.moveRelative $FC, $00                                                                               ; x9b7d  {"(Location)":{"up":0.375,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b80  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_364:
-	.DB $A0                                                                                                               ; x9b83 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9b83 
 	PlayerCommandData.moveBallPlacement $20, $40                                                                          ; x9b84  {"(Location)":{"down":6,"right":8}}
 	PlayerCommandData.moveBallPlacement $08, $50                                                                          ; x9b87  {"(Location)":{"down":3,"right":10}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9b8a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_365:
-	.DB $A1                                                                                                               ; x9b8d 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9b8d 
 	PlayerCommandData.moveBallPlacement $18, $10                                                                          ; x9b8e  {"(Location)":{"down":5,"right":2}}
 	PlayerCommandData.moveBallPlacement $14, $20                                                                          ; x9b91  {"(Location)":{"down":4.5,"right":4}}
 	PlayerCommandData.moveBallPlacement $10, $24                                                                          ; x9b94  {"(Location)":{"down":4,"right":4.5}}
@@ -3386,29 +3386,29 @@ OFFENSE_PLAYER_REACTION_LOOP_124:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9ba6  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_124                                                             ; x9ba9  {"(Amount)":"-3 bytes to x9ba6"}
 OFFENSE_PLAYER_REACTION_366:
-	.DB $A2                                                                                                               ; x9bab 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9bab 
 	PlayerCommandData.moveMiddleOfField $B2, $50                                                                          ; x9bac  {"(Location)":{"down":7.25,"right":10}}
 	PlayerCommandData.moveBallPlacement $F8, $50                                                                          ; x9baf  {"(Location)":{"down":1,"right":10}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9bb2  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_367:
-	.DB $A1                                                                                                               ; x9bb5 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9bb5 
 OFFENSE_PLAYER_REACTION_JUMP_197:
 	PlayerCommandData.moveBallPlacement $C8, $28                                                                          ; x9bb6  {"(Location)":{"up":5,"right":5}}
 	PlayerCommandData.moveRelative $F8, $00                                                                               ; x9bb9  {"(Location)":{"up":0.875,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9bbc  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_368:
-	.DB $A2                                                                                                               ; x9bbf 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9bbf 
 	PlayerCommandData.moveMiddleOfField $36, $60                                                                          ; x9bc0  {"(Location)":{"up":8.25,"right":12}}
 	PlayerCommandData.moveBallPlacement $E8, $60                                                                          ; x9bc3  {"(Location)":{"up":1,"right":12}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9bc6  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_369:
-	.DB $A0                                                                                                               ; x9bc9 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9bc9 
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x9bca  {"(Location)":{"up":0,"right":10}}
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9bcd  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.moveRelative $F0, $7F                                                                               ; x9bd0  {"(Location)":{"up":1.875,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9bd3  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_370:
-	.DB $A2                                                                                                               ; x9bd6 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9bd6 
 	PlayerCommandData.moveBallPlacement $20, $D0                                                                          ; x9bd7  {"(Location)":{"down":6,"left":6}}
 	PlayerCommandData.moveBallPlacement $28, $E8                                                                          ; x9bda  {"(Location)":{"down":7,"left":3}}
 	PlayerCommandData.moveBallPlacement $28, $00                                                                          ; x9bdd  {"(Location)":{"down":7,"left":0}}
@@ -3417,12 +3417,12 @@ OFFENSE_PLAYER_REACTION_370:
 	PlayerCommandData.moveBallPlacement $F0, $40                                                                          ; x9be6  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9be9  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_371:
-	.DB $A1                                                                                                               ; x9bec 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9bec 
 	PlayerCommandData.moveBallPlacement $CC, $60                                                                          ; x9bed  {"(Location)":{"up":4.5,"right":12}}
 	PlayerCommandData.moveRelative $30, $7F                                                                               ; x9bf0  {"(Location)":{"down":6,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9bf3  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_372:
-	.DB $A4                                                                                                               ; x9bf6 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9bf6 
 	PlayerCommandData.moveBallPlacement $20, $CC                                                                          ; x9bf7  {"(Location)":{"down":6,"left":6.5}}
 	PlayerCommandData.moveBallPlacement $24, $D8                                                                          ; x9bfa  {"(Location)":{"down":6.5,"left":5}}
 	PlayerCommandData.moveBallPlacement $24, $08                                                                          ; x9bfd  {"(Location)":{"down":6.5,"right":1}}
@@ -3430,7 +3430,7 @@ OFFENSE_PLAYER_REACTION_372:
 	PlayerCommandData.moveBallPlacement $30, $28                                                                          ; x9c03  {"(Location)":{"down":8,"right":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c06  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_373:
-	.DB $A3                                                                                                               ; x9c09 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9c09 
 	PlayerCommandData.moveMiddleOfField $B2, $60                                                                          ; x9c0a  {"(Location)":{"down":7.25,"right":12}}
 	PlayerCommandData.moveMiddleOfField $B0, $68                                                                          ; x9c0d  {"(Location)":{"down":7,"right":13}}
 	PlayerCommandData.moveRelative $FC, $04                                                                               ; x9c10  {"(Location)":{"up":0.375,"right":0.5}}
@@ -3439,28 +3439,28 @@ OFFENSE_PLAYER_REACTION_373:
 	PlayerCommandData.moveRelative $00, $FC                                                                               ; x9c19  {"(Location)":{"up":0,"left":0.375}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c1c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_374:
-	.DB $A1                                                                                                               ; x9c1f 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9c1f 
 	PlayerCommandData.moveBallPlacement $CC, $30                                                                          ; x9c20  {"(Location)":{"up":4.5,"right":6}}
 	PlayerCommandData.moveRelative $F0, $7F                                                                               ; x9c23  {"(Location)":{"up":1.875,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c26  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_375:
-	.DB $A0                                                                                                               ; x9c29 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9c29 
 	PlayerCommandData.moveMiddleOfField $C4, $70                                                                          ; x9c2a  {"(Location)":{"down":9.5,"right":14}}
 	PlayerCommandData.moveRelative $E0, $7F                                                                               ; x9c2d  {"(Location)":{"up":3.875,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c30  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_376:
-	.DB $A2                                                                                                               ; x9c33 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9c33 
 	PlayerCommandData.moveBallPlacement $18, $40                                                                          ; x9c34  {"(Location)":{"down":5,"right":8}}
 	PlayerCommandData.moveBallPlacement $F0, $40                                                                          ; x9c37  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c3a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_377:
-	.DB $A3                                                                                                               ; x9c3d 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9c3d 
 	PlayerCommandData.moveBallPlacement $D8, $00                                                                          ; x9c3e  {"(Location)":{"up":3,"left":0}}
 	PlayerCommandData.moveBallPlacement $D8, $50                                                                          ; x9c41  {"(Location)":{"up":3,"right":10}}
 	PlayerCommandData.moveRelative $18, $28                                                                               ; x9c44  {"(Location)":{"down":3,"right":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c47  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_378:
-	.DB $A4                                                                                                               ; x9c4a 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9c4a 
 	PlayerCommandData.stand $3C                                                                                           ; x9c4b  {"(Time)":"for 3s"}
 	PlayerCommandData.moveBallPlacement $20, $10                                                                          ; x9c4d  {"(Location)":{"down":6,"right":2}}
 	PlayerCommandData.moveBallPlacement $28, $20                                                                          ; x9c50  {"(Location)":{"down":7,"right":4}}
@@ -3470,7 +3470,7 @@ OFFENSE_PLAYER_REACTION_378:
 	PlayerCommandData.moveRelative $E0, $7F                                                                               ; x9c5c  {"(Location)":{"up":3.875,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c5f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_379:
-	.DB $A2                                                                                                               ; x9c62 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9c62 
 	PlayerCommandData.moveBallPlacement $E8, $B8                                                                          ; x9c63  {"(Location)":{"up":1,"left":9}}
 	PlayerCommandData.moveBallPlacement $D8, $C0                                                                          ; x9c66  {"(Location)":{"up":3,"left":8}}
 	PlayerCommandData.moveBallPlacement $C8, $D0                                                                          ; x9c69  {"(Location)":{"up":5,"left":6}}
@@ -3481,17 +3481,17 @@ OFFENSE_PLAYER_REACTION_379:
 	PlayerCommandData.moveBallPlacement $B8, $78                                                                          ; x9c77  {"(Location)":{"up":7,"right":15}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c7a  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_380:
-	.DB $A3                                                                                                               ; x9c7d 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9c7d 
 	PlayerCommandData.moveBallPlacement $C4, $20                                                                          ; x9c7e  {"(Location)":{"up":5.5,"right":4}}
 	PlayerCommandData.moveBallPlacement $F0, $40                                                                          ; x9c81  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c84  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_381:
-	.DB $A0                                                                                                               ; x9c87 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9c87 
 	PlayerCommandData.moveMiddleOfField $C0, $60                                                                          ; x9c88  {"(Location)":{"down":9,"right":12}}
 	PlayerCommandData.moveRelative $04, $7F                                                                               ; x9c8b  {"(Location)":{"down":0.5,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9c8e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_382:
-	.DB $A4                                                                                                               ; x9c91 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9c91 
 	PlayerCommandData.moveBallPlacement $10, $B8                                                                          ; x9c92  {"(Location)":{"down":4,"left":9}}
 	PlayerCommandData.moveBallPlacement $18, $C4                                                                          ; x9c95  {"(Location)":{"down":5,"left":7.5}}
 	PlayerCommandData.moveBallPlacement $18, $D0                                                                          ; x9c98  {"(Location)":{"down":5,"left":6}}
@@ -3501,48 +3501,48 @@ OFFENSE_PLAYER_REACTION_382:
 	PlayerCommandData.moveBallPlacement $F0, $40                                                                          ; x9ca4  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9ca7  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_383:
-	.DB $A1                                                                                                               ; x9caa 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9caa 
 	PlayerCommandData.moveMiddleOfField $36, $40                                                                          ; x9cab  {"(Location)":{"up":8.25,"right":8}}
 	PlayerCommandData.moveRelative $10, $18                                                                               ; x9cae  {"(Location)":{"down":2,"right":3}}
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9cb1  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.moveRelative $F4, $7F                                                                               ; x9cb4  {"(Location)":{"up":1.375,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9cb7  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_384:
-	.DB $A3                                                                                                               ; x9cba 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9cba 
 	PlayerCommandData.moveBallPlacement $14, $68                                                                          ; x9cbb  {"(Location)":{"down":4.5,"right":13}}
 	PlayerCommandData.moveBallPlacement $00, $78                                                                          ; x9cbe  {"(Location)":{"down":2,"right":15}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9cc1  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_385:
-	.DB $A3                                                                                                               ; x9cc4 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9cc4 
 	PlayerCommandData.moveMiddleOfField $C4, $00                                                                          ; x9cc5  {"(Location)":{"down":9.5,"left":0}}
 	PlayerCommandData.moveRelative $00, $50                                                                               ; x9cc8  {"(Location)":{"up":0,"right":10}}
 	PlayerCommandData.moveRelative $00, $48                                                                               ; x9ccb  {"(Location)":{"up":0,"right":9}}
 	PlayerCommandData.moveRelative $F0, $70                                                                               ; x9cce  {"(Location)":{"up":1.875,"right":14}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9cd1  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_386:
-	.DB $A2                                                                                                               ; x9cd4 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9cd4 
 	PlayerCommandData.moveBallPlacement $20, $E8                                                                          ; x9cd5  {"(Location)":{"down":6,"left":3}}
 	PlayerCommandData.moveMiddleOfField $C0, $F0                                                                          ; x9cd8  {"(Location)":{"down":9,"left":2}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9cdb  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_387:
-	.DB $A4                                                                                                               ; x9cde 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9cde 
 	PlayerCommandData.moveMiddleOfField $38, $28                                                                          ; x9cdf  {"(Location)":{"up":8,"right":5}}
 	PlayerCommandData.moveMiddleOfField $40, $60                                                                          ; x9ce2  {"(Location)":{"up":7,"right":12}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_199                                                             ; x9ce5  {"(Pointer)":" to x9f6d"}
 OFFENSE_PLAYER_REACTION_388:
-	.DB $A0                                                                                                               ; x9ce8 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9ce8 
 	PlayerCommandData.moveMiddleOfField $4C, $10                                                                          ; x9ce9  {"(Location)":{"up":5.5,"right":2}}
 	PlayerCommandData.moveMiddleOfField $50, $30                                                                          ; x9cec  {"(Location)":{"up":5,"right":6}}
 	PlayerCommandData.moveMiddleOfField $58, $44                                                                          ; x9cef  {"(Location)":{"up":4,"right":8.5}}
 	PlayerCommandData.moveMiddleOfField $80, $70                                                                          ; x9cf2  {"(Location)":{"down":1,"right":14}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9cf5  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_389:
-	.DB $A1                                                                                                               ; x9cf8 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9cf8 
 	PlayerCommandData.moveBallPlacement $14, $20                                                                          ; x9cf9  {"(Location)":{"down":4.5,"right":4}}
 	PlayerCommandData.moveMiddleOfField $B8, $40                                                                          ; x9cfc  {"(Location)":{"down":8,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9cff  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_390:
-	.DB $A2                                                                                                               ; x9d02 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9d02 
 	PlayerCommandData.moveRelative $00, $28                                                                               ; x9d03  {"(Location)":{"up":0,"right":5}}
 	PlayerCommandData.moveRelative $04, $08                                                                               ; x9d06  {"(Location)":{"down":0.5,"right":1}}
 	PlayerCommandData.moveRelative $14, $08                                                                               ; x9d09  {"(Location)":{"down":2.5,"right":1}}
@@ -3551,13 +3551,13 @@ OFFENSE_PLAYER_REACTION_390:
 	PlayerCommandData.moveMiddleOfField $38, $28                                                                          ; x9d12  {"(Location)":{"up":8,"right":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d15  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_391:
-	.DB $A3                                                                                                               ; x9d18 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9d18 
 	PlayerCommandData.moveRelative $00, $1C                                                                               ; x9d19  {"(Location)":{"up":0,"right":3.5}}
 	PlayerCommandData.moveRelative $F8, $20                                                                               ; x9d1c  {"(Location)":{"up":0.875,"right":4}}
 	PlayerCommandData.moveBallPlacement $E8, $38                                                                          ; x9d1f  {"(Location)":{"up":1,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_199                                                             ; x9d22  {"(Pointer)":" to x9f6d"}
 OFFENSE_PLAYER_REACTION_392:
-	.DB $A4                                                                                                               ; x9d25 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9d25 
 	PlayerCommandData.moveBallPlacement $B8, $C0                                                                          ; x9d26  {"(Location)":{"up":7,"left":8}}
 	PlayerCommandData.moveBallPlacement $B6, $C2                                                                          ; x9d29  {"(Location)":{"up":7.25,"left":7.75}}
 	PlayerCommandData.moveBallPlacement $B6, $C4                                                                          ; x9d2c  {"(Location)":{"up":7.25,"left":7.5}}
@@ -3565,12 +3565,12 @@ OFFENSE_PLAYER_REACTION_392:
 	PlayerCommandData.moveBallPlacement $BA, $C6                                                                          ; x9d32  {"(Location)":{"up":6.75,"left":7.25}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d35  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_393:
-	.DB $A3                                                                                                               ; x9d38 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9d38 
 	PlayerCommandData.moveBallPlacement $C0, $60                                                                          ; x9d39  {"(Location)":{"up":6,"right":12}}
 	PlayerCommandData.moveRelative $18, $28                                                                               ; x9d3c  {"(Location)":{"down":3,"right":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d3f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_394:
-	.DB $A2                                                                                                               ; x9d42 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9d42 
 	PlayerCommandData.moveMiddleOfField $36, $40                                                                          ; x9d43  {"(Location)":{"up":8.25,"right":8}}
 	PlayerCommandData.moveMiddleOfField $3A, $40                                                                          ; x9d46  {"(Location)":{"up":7.75,"right":8}}
 	PlayerCommandData.moveMiddleOfField $3A, $58                                                                          ; x9d49  {"(Location)":{"up":7.75,"right":11}}
@@ -3580,12 +3580,12 @@ OFFENSE_PLAYER_REACTION_LOOP_125:
 	PlayerCommandData.moveRelative $00, $40                                                                               ; x9d52  {"(Location)":{"up":0,"right":8}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_125                                                             ; x9d55  {"(Amount)":"-3 bytes to x9d52"}
 OFFENSE_PLAYER_REACTION_395:
-	.DB $A0                                                                                                               ; x9d57 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9d57 
 	PlayerCommandData.moveMiddleOfField $A8, $48                                                                          ; x9d58  {"(Location)":{"down":6,"right":9}}
 	PlayerCommandData.moveMiddleOfField $80, $48                                                                          ; x9d5b  {"(Location)":{"down":1,"right":9}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d5e  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_396:
-	.DB $A4                                                                                                               ; x9d61 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9d61 
 	PlayerCommandData.moveBallPlacement $08, $C4                                                                          ; x9d62  {"(Location)":{"down":3,"left":7.5}}
 	PlayerCommandData.moveBallPlacement $D4, $C4                                                                          ; x9d65  {"(Location)":{"up":3.5,"left":7.5}}
 	PlayerCommandData.moveBallPlacement $C8, $C8                                                                          ; x9d68  {"(Location)":{"up":5,"left":7}}
@@ -3596,7 +3596,7 @@ OFFENSE_PLAYER_REACTION_396:
 	PlayerCommandData.moveBallPlacement $B8, $30                                                                          ; x9d76  {"(Location)":{"up":7,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d79  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_397:
-	.DB $A3                                                                                                               ; x9d7c 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9d7c 
 	PlayerCommandData.moveMiddleOfField $48, $28                                                                          ; x9d7d  {"(Location)":{"up":6,"right":5}}
 	PlayerCommandData.moveBallPlacement $C8, $40                                                                          ; x9d80  {"(Location)":{"up":5,"right":8}}
 	PlayerCommandData.moveBallPlacement $D0, $58                                                                          ; x9d83  {"(Location)":{"up":4,"right":11}}
@@ -3604,7 +3604,7 @@ OFFENSE_PLAYER_REACTION_397:
 	PlayerCommandData.moveBallPlacement $00, $7F                                                                          ; x9d89  {"(Location)":{"down":2,"right":15.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d8c  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_398:
-	.DB $A0                                                                                                               ; x9d8f 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9d8f 
 	PlayerCommandData.moveRelative $00, $10                                                                               ; x9d90  {"(Location)":{"up":0,"right":2}}
 	PlayerCommandData.moveRelative $04, $10                                                                               ; x9d93  {"(Location)":{"down":0.5,"right":2}}
 	PlayerCommandData.moveRelative $10, $18                                                                               ; x9d96  {"(Location)":{"down":2,"right":3}}
@@ -3612,54 +3612,54 @@ OFFENSE_PLAYER_REACTION_398:
 	PlayerCommandData.moveBallPlacement $10, $40                                                                          ; x9d9c  {"(Location)":{"down":4,"right":8}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9d9f  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_399:
-	.DB $A3                                                                                                               ; x9da2 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9da2 
 	PlayerCommandData.moveRelative $00, $4C                                                                               ; x9da3  {"(Location)":{"up":0,"right":9.5}}
 	PlayerCommandData.moveRelative $40, $38                                                                               ; x9da6  {"(Location)":{"down":8,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9da9  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_400:
-	.DB $A3                                                                                                               ; x9dac 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9dac 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_LOOP_119                                                             ; x9dad  {"(Pointer)":" to x984d"}
 OFFENSE_PLAYER_REACTION_401:
-	.DB $A0                                                                                                               ; x9db0 
+	PlayerCommandData.setRouteNumber $00                                                                                  ; x9db0 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_LOOP_119                                                             ; x9db1  {"(Pointer)":" to x984d"}
 OFFENSE_PLAYER_REACTION_402:
-	.DB $A1                                                                                                               ; x9db4 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9db4 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_LOOP_119                                                             ; x9db5  {"(Pointer)":" to x984d"}
 OFFENSE_PLAYER_REACTION_403:
-	.DB $A4                                                                                                               ; x9db8 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9db8 
 	PlayerCommandData.wait $3C, $50                                                                                       ; x9db9  {"(Start Time, End Time)":"start in between 3s and 4s"}
 	PlayerCommandData.moveBallPlacement $C8, $C0                                                                          ; x9dbc  {"(Location)":{"up":5,"left":8}}
 	PlayerCommandData.moveBallPlacement $B8, $C8                                                                          ; x9dbf  {"(Location)":{"up":7,"left":7}}
 	PlayerCommandData.moveBallPlacement $B4, $D8                                                                          ; x9dc2  {"(Location)":{"up":7.5,"left":5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9dc5  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_404:
-	.DB $A1                                                                                                               ; x9dc8 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9dc8 
 	PlayerCommandData.moveMiddleOfField $36, $50                                                                          ; x9dc9  {"(Location)":{"up":8.25,"right":10}}
 	PlayerCommandData.moveRelative $08, $00                                                                               ; x9dcc  {"(Location)":{"down":1,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9dcf  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_405:
-	.DB $A3                                                                                                               ; x9dd2 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9dd2 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_193                                                             ; x9dd3  {"(Pointer)":" to x9a04"}
 OFFENSE_PLAYER_REACTION_406:
-	.DB $A1                                                                                                               ; x9dd6 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9dd6 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_194                                                             ; x9dd7  {"(Pointer)":" to x9a32"}
 OFFENSE_PLAYER_REACTION_407:
-	.DB $A1                                                                                                               ; x9dda 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9dda 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_195                                                             ; x9ddb  {"(Pointer)":" to x9a62"}
 OFFENSE_PLAYER_REACTION_408:
-	.DB $A3                                                                                                               ; x9dde 
+	PlayerCommandData.setRouteNumber $03                                                                                  ; x9dde 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_191                                                             ; x9ddf  {"(Pointer)":" to x993d"}
 OFFENSE_PLAYER_REACTION_409:
-	.DB $A4                                                                                                               ; x9de2 
+	PlayerCommandData.setRouteNumber $04                                                                                  ; x9de2 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_LOOP_119                                                             ; x9de3  {"(Pointer)":" to x984d"}
 OFFENSE_PLAYER_REACTION_410:
-	.DB $A1                                                                                                               ; x9de6 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9de6 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_196                                                             ; x9de7  {"(Pointer)":" to x9ab9"}
 OFFENSE_PLAYER_REACTION_411:
-	.DB $A2                                                                                                               ; x9dea 
+	PlayerCommandData.setRouteNumber $02                                                                                  ; x9dea 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_197                                                             ; x9deb  {"(Pointer)":" to x9bb6"}
 OFFENSE_PLAYER_REACTION_412:
-	.DB $A1                                                                                                               ; x9dee 
+	PlayerCommandData.setRouteNumber $01                                                                                  ; x9dee 
 	PlayerCommandData.moveRelative $00, $64                                                                               ; x9def  {"(Location)":{"up":0,"right":12.5}}
 	PlayerCommandData.moveRelative $24, $38                                                                               ; x9df2  {"(Location)":{"down":4.5,"right":7}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x9df5  {"(Pointer)":" to x9842"}

@@ -10,6 +10,13 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.setRouteNumber routeNumber
+    IF routeNumber > $0F 
+        ERROR "routeNumber needs to be smaller than $0F - generally it's at most $04"
+    ENDIF
+    .DB $A0 + routeNumber
+.ENDM
+
 .MACRO PlayerCommandData.setPositionFromKickoffB0 y,x
     PlayerCommandData.Helper.addCommandAndLocationXY $B0, x, y
 .ENDM
