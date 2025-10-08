@@ -2,6 +2,40 @@
 
 _F{_PLAY_DATA_MACROS
 
+PLAYER_COMMAND_DATA_QB1 = $00
+PLAYER_COMMAND_DATA_RB1 = $01
+PLAYER_COMMAND_DATA_RB2 = $02
+PLAYER_COMMAND_DATA_WR1 = $03
+PLAYER_COMMAND_DATA_WR2 = $04
+PLAYER_COMMAND_DATA_TE1 = $05
+PLAYER_COMMAND_DATA_C = $06
+PLAYER_COMMAND_DATA_LG = $07
+PLAYER_COMMAND_DATA_RG = $08
+PLAYER_COMMAND_DATA_LT = $09
+PLAYER_COMMAND_DATA_RT = $0A
+
+PLAYER_COMMAND_DATA_RE = PLAYER_COMMAND_DATA_QB1
+PLAYER_COMMAND_DATA_NT = PLAYER_COMMAND_DATA_RB1
+PLAYER_COMMAND_DATA_LE = PLAYER_COMMAND_DATA_RB2
+PLAYER_COMMAND_DATA_ROLB = PLAYER_COMMAND_DATA_WR1
+PLAYER_COMMAND_DATA_RILB = PLAYER_COMMAND_DATA_WR2
+PLAYER_COMMAND_DATA_LILB = PLAYER_COMMAND_DATA_TE1
+PLAYER_COMMAND_DATA_LOLB = PLAYER_COMMAND_DATA_C
+PLAYER_COMMAND_DATA_RCB = PLAYER_COMMAND_DATA_LG
+PLAYER_COMMAND_DATA_LCB = PLAYER_COMMAND_DATA_RG
+PLAYER_COMMAND_DATA_FS = PLAYER_COMMAND_DATA_LT
+PLAYER_COMMAND_DATA_SS = PLAYER_COMMAND_DATA_RT
+
+.MACRO PlayerCommandData.Helper.addPlayerNibble commandByteBase, playerNibble
+    IF playerNibble > #$0A
+        ERROR "playerNibble is greater than x0A"
+    ENDIF
+    IF commandByteBase > $FF
+        ERROR "commandByteBase is greater than xFF"
+    ENDIF
+    .DB commandByteBase + playerNibble
+.ENDM
+
 .MACRO PlayerCommandData.Helper.addCommandAndLocationXY commandByte, xByte, yByte
     .DB commandByte
     .DB yByte
@@ -9,6 +43,11 @@ _F{_PLAY_DATA_MACROS
 .ENDM
 
 ;;;;;;;;;;;;;;;
+
+; This represents commands #$80-#$8F
+.MACRO PlayerCommandData.motionFollowingPlayer playerNibble
+    PlayerCommandData.Helper.addPlayerNibble $80, playerNibble
+.ENDM
 
 .MACRO PlayerCommandData.passChance2ReceiversAndPostCatch postCatchLocation, receiverOne, receiverTwo
     .DB $91

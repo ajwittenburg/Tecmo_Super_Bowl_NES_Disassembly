@@ -7185,7 +7185,7 @@ DEFENSE_PLAYER_REACTION_426:
 	.DB $26, $40, $BA                                                                                                     ; xba42  {"(Pointer)":" to xba50"}
 	PlayerCommandData.motion $14                                                                                          ; xba45  {"(Time)":"for 1s"}
 	PlayerCommandData.moveRelative $02, $04                                                                               ; xba47  {"(Location)":{"down":0.25,"left":0.5}}
-	.DB $84                                                                                                               ; xba4a 
+	PlayerCommandData.motionFollowingPlayer PLAYER_COMMAND_DATA_WR2                                                       ; xba4a 
 	PlayerCommandData.turn $28                                                                                            ; xba4b  {"(Time)":"for 2s"}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_282                                                             ; xba4d  {"(Pointer)":" to xbe51"}
 DEFENSE_PLAYER_REACTION_JUMP_240:
@@ -7390,7 +7390,7 @@ DEFENSE_PLAYER_REACTION_453:
 	.DB $27, $FF, $BB                                                                                                     ; xbc03  {"(Pointer)":" to xbc0f"}
 	PlayerCommandData.motion $82                                                                                          ; xbc06  {"(Time)":"for 6.5s"}
 	PlayerCommandData.moveRelative $02, $04                                                                               ; xbc08  {"(Location)":{"down":0.25,"left":0.5}}
-	.DB $82                                                                                                               ; xbc0b 
+	PlayerCommandData.motionFollowingPlayer PLAYER_COMMAND_DATA_RB2                                                       ; xbc0b 
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbc0c  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_JUMP_247:
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc0f 
@@ -7406,7 +7406,7 @@ DEFENSE_PLAYER_REACTION_454:
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_266                                                             ; xbc26  {"(Pointer)":" to xbe04"}
 DEFENSE_PLAYER_REACTION_JUMP_248:
 	PlayerCommandData.motion $64                                                                                          ; xbc29  {"(Time)":"for 5s"}
-	.DB $83                                                                                                               ; xbc2b 
+	PlayerCommandData.motionFollowingPlayer PLAYER_COMMAND_DATA_WR1                                                       ; xbc2b 
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; xbc2c 
 	PlayerCommandData.moveBallPlacement $F0, $D8                                                                          ; xbc2d  {"(Location)":{"up":0,"right":5}}
 	PlayerCommandData.jumpTo DEFENSE_PLAYER_REACTION_JUMP_267                                                             ; xbc30  {"(Pointer)":" to xbe08"}
