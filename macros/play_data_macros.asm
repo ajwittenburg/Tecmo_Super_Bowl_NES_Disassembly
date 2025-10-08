@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.setPositionMiddleOfField y,x
+    PlayerCommandData.Helper.addCommandAndLocationXY $D1, x, y
+.ENDM
+
 .MACRO PlayerCommandData.hikeUnderCenter
     .DB $D2
 .ENDM
