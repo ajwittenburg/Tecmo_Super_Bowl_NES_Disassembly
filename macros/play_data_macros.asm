@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.moveBallPlacement y,x
+    PlayerCommandData.Helper.addCommandAndLocationXY $D8, x, y    
+.ENDM
+
 .MACRO PlayerCommandData.moveMiddleOfField y,x
     PlayerCommandData.Helper.addCommandAndLocationXY $D9, x, y
 .ENDM
