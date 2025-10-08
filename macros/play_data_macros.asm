@@ -10,6 +10,10 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.takeSnapUnderCenter
+    .DB $D4
+.ENDM
+
 .MACRO PlayerCommandData.takeSnapFromShotgun
     .DB $D5
 .ENDM

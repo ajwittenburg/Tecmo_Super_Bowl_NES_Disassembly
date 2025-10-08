@@ -468,7 +468,7 @@ OFFENSE_PLAYER_REACTION_090:
 	.DB $D0, $F0, $06                                                                                                     ; x8346  {"(Location)":{"up":0,"left":0.75}}
 	.DB $D3                                                                                                               ; x8349 
 OFFENSE_PLAYER_REACTION_091:
-	.DB $D4                                                                                                               ; x834a 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x834a 
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; x834b  {"(Location)":{"down":1,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $DC                                                                          ; x834e  {"(Location)":{"down":1,"left":4.5}}
 	.DB $62                                                                                                               ; x8351 
@@ -552,7 +552,7 @@ OFFENSE_PLAYER_REACTION_101:
 	PlayerCommandData.moveBallPlacement $10, $00                                                                          ; x83f0  {"(Location)":{"down":4,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_427                                                                  ; x83f3  {"(Pointer)":" to x9e46"}
 OFFENSE_PLAYER_REACTION_102:
-	.DB $D4                                                                                                               ; x83f6 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x83f6 
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; x83f7  {"(Location)":{"down":1,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $DC                                                                          ; x83fa  {"(Location)":{"down":1,"left":4.5}}
 	.DB $52                                                                                                               ; x83fd 
@@ -595,7 +595,7 @@ OFFENSE_PLAYER_REACTION_LOOP_019:
 	PlayerCommandData.boostRP $12                                                                                         ; x8449  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_018                                                             ; x844b  {"(Amount)":"-28 bytes to x842f"}
 OFFENSE_PLAYER_REACTION_105:
-	.DB $D4                                                                                                               ; x844d 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x844d 
 	PlayerCommandData.moveBallPlacement $F0, $D0                                                                          ; x844e  {"(Location)":{"up":0,"left":6}}
 	.DB $51                                                                                                               ; x8451 
 	PlayerCommandData.moveBallPlacement $E0, $C0                                                                          ; x8452  {"(Location)":{"up":2,"left":8}}
@@ -677,7 +677,7 @@ OFFENSE_PLAYER_REACTION_114:
 	PlayerCommandData.moveBallPlacement $E8, $F8                                                                          ; x84f7  {"(Location)":{"up":1,"left":1}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_426                                                                  ; x84fa  {"(Pointer)":" to x9e40"}
 OFFENSE_PLAYER_REACTION_115:
-	.DB $D4                                                                                                               ; x84fd 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x84fd 
 	PlayerCommandData.moveBallPlacement $F0, $D0                                                                          ; x84fe  {"(Location)":{"up":0,"left":6}}
 	.DB $61                                                                                                               ; x8501 
 	PlayerCommandData.moveBallPlacement $E0, $C0                                                                          ; x8502  {"(Location)":{"up":2,"left":8}}
@@ -724,7 +724,7 @@ OFFENSE_PLAYER_REACTION_118:
 	PlayerCommandData.moveMiddleOfField $68, $68                                                                          ; x8566  {"(Location)":{"up":2,"right":13}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x8569  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_119:
-	.DB $D4                                                                                                               ; x856c 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x856c 
 	PlayerCommandData.moveBallPlacement $F0, $D8                                                                          ; x856d  {"(Location)":{"up":0,"left":5}}
 	.DB $51                                                                                                               ; x8570 
 	PlayerCommandData.moveRelative $00, $C8                                                                               ; x8571  {"(Location)":{"up":0,"left":6.875}}
@@ -792,7 +792,7 @@ OFFENSE_PLAYER_REACTION_JUMP_022:
 	.DB $CC                                                                                                               ; x85ea 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_022                                                             ; x85eb  {"(Pointer)":" to x85e4"}
 OFFENSE_PLAYER_REACTION_125:
-	.DB $D4                                                                                                               ; x85ee 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x85ee 
 	PlayerCommandData.moveBallPlacement $F0, $D8                                                                          ; x85ef  {"(Location)":{"up":0,"left":5}}
 	.DB $51                                                                                                               ; x85f2 
 	PlayerCommandData.moveBallPlacement $F0, $BC                                                                          ; x85f3  {"(Location)":{"up":0,"left":8.5}}
@@ -819,7 +819,7 @@ OFFENSE_PLAYER_REACTION_LOOP_028:
 	.DB $CC                                                                                                               ; x8622 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_028                                                             ; x8623  {"(Amount)":"-7 bytes to x861c"}
 OFFENSE_PLAYER_REACTION_127:
-	.DB $D4                                                                                                               ; x8625 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8625 
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; x8626  {"(Location)":{"up":0,"left":3}}
 	PlayerCommandData.moveBallPlacement $EC, $DC                                                                          ; x8629  {"(Location)":{"up":0.5,"left":4.5}}
 	.DB $51                                                                                                               ; x862c 
@@ -881,7 +881,7 @@ OFFENSE_PLAYER_REACTION_134:
 	PlayerCommandData.moveBallPlacement $FC, $00                                                                          ; x8699  {"(Location)":{"down":1.5,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_426                                                                  ; x869c  {"(Pointer)":" to x9e40"}
 OFFENSE_PLAYER_REACTION_135:
-	.DB $D4                                                                                                               ; x869f 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x869f 
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; x86a0  {"(Location)":{"up":0,"left":3}}
 	PlayerCommandData.moveBallPlacement $EC, $DC                                                                          ; x86a3  {"(Location)":{"up":0.5,"left":4.5}}
 	.DB $61                                                                                                               ; x86a6 
@@ -907,7 +907,7 @@ OFFENSE_PLAYER_REACTION_136:
 	PlayerCommandData.moveRelative $00, $30                                                                               ; x86d7  {"(Location)":{"up":0,"right":6}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_313                                                                  ; x86da  {"(Pointer)":" to x983e"}
 OFFENSE_PLAYER_REACTION_137:
-	.DB $D4                                                                                                               ; x86dd 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x86dd 
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; x86de  {"(Location)":{"up":0,"left":3}}
 	.DB $71                                                                                                               ; x86e1 
 	PlayerCommandData.moveBallPlacement $F0, $D0                                                                          ; x86e2  {"(Location)":{"up":0,"left":6}}
@@ -1003,7 +1003,7 @@ OFFENSE_PLAYER_REACTION_145:
 	PlayerCommandData.stand $06                                                                                           ; x8796  {"(Time)":"for 0.3s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x8798  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_146:
-	.DB $D4                                                                                                               ; x879b 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x879b 
 	PlayerCommandData.moveBallPlacement $EC, $D4                                                                          ; x879c  {"(Location)":{"up":0.5,"left":5.5}}
 	.DB $51                                                                                                               ; x879f 
 	PlayerCommandData.moveBallPlacement $F8, $B8                                                                          ; x87a0  {"(Location)":{"down":1,"left":9}}
@@ -1062,7 +1062,7 @@ OFFENSE_PLAYER_REACTION_151:
 	PlayerCommandData.moveBallPlacement $C0, $60                                                                          ; x8812  {"(Location)":{"up":6,"right":12}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_434                                                                  ; x8815  {"(Pointer)":" to x9e70"}
 OFFENSE_PLAYER_REACTION_152:
-	.DB $D4                                                                                                               ; x8818 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8818 
 	PlayerCommandData.moveBallPlacement $EC, $D4                                                                          ; x8819  {"(Location)":{"up":0.5,"left":5.5}}
 	.DB $61                                                                                                               ; x881c 
 	PlayerCommandData.moveBallPlacement $F8, $B8                                                                          ; x881d  {"(Location)":{"down":1,"left":9}}
@@ -1089,7 +1089,7 @@ OFFENSE_PLAYER_REACTION_JUMP_045:
 	.DB $C1, $3C, $41, $FD                                                                                                ; x8853  {"(Start Time, End Time)":"start in between 3s and 3.25s","(Take Sack Chance)":"1.171875%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_JUMP_043                                                             ; x8857  {"(Amount)":"-33 bytes to x8836"}
 OFFENSE_PLAYER_REACTION_153:
-	.DB $D4                                                                                                               ; x8859 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8859 
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; x885a  {"(Location)":{"down":1,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $DC                                                                          ; x885d  {"(Location)":{"down":1,"left":4.5}}
 	.DB $51                                                                                                               ; x8860 
@@ -1144,7 +1144,7 @@ OFFENSE_PLAYER_REACTION_LOOP_041:
 	.DB $CC                                                                                                               ; x88c1 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_041                                                             ; x88c2  {"(Amount)":"-7 bytes to x88bb"}
 OFFENSE_PLAYER_REACTION_157:
-	.DB $D4                                                                                                               ; x88c4 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x88c4 
 	.DB $C0, $00, $D4                                                                                                     ; x88c5  {"(Location)":{"up":0,"left":5.375}}
 	.DB $51                                                                                                               ; x88c8 
 	PlayerCommandData.moveBallPlacement $F0, $A8                                                                          ; x88c9  {"(Location)":{"up":0,"left":11}}
@@ -1210,7 +1210,7 @@ OFFENSE_PLAYER_REACTION_LOOP_045:
 	.DB $CC                                                                                                               ; x893d 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_045                                                             ; x893e  {"(Amount)":"-7 bytes to x8937"}
 OFFENSE_PLAYER_REACTION_165:
-	.DB $D4                                                                                                               ; x8940 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8940 
 	PlayerCommandData.moveBallPlacement $F0, $E0                                                                          ; x8941  {"(Location)":{"up":0,"left":4}}
 	.DB $71                                                                                                               ; x8944 
 	PlayerCommandData.moveBallPlacement $F0, $9C                                                                          ; x8945  {"(Location)":{"up":0,"left":12.5}}
@@ -1329,7 +1329,7 @@ OFFENSE_PLAYER_REACTION_175:
 	PlayerCommandData.stand $1E                                                                                           ; x8a31  {"(Time)":"for 1.5s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x8a33  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_176:
-	.DB $D4                                                                                                               ; x8a36 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8a36 
 	PlayerCommandData.moveBallPlacement $F0, $E0                                                                          ; x8a37  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.setRS $04                                                                                           ; x8a3a  {"(Value)":31}
 	PlayerCommandData.setMS $03                                                                                           ; x8a3c  {"(Value)":25}
@@ -1361,7 +1361,7 @@ OFFENSE_PLAYER_REACTION_177:
 	PlayerCommandData.setToBlock %10011001, %00000000                                                                     ; x8a74  {"(Player)":"RE,ROLB,RILB,RCB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8a77  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_178:
-	.DB $D4                                                                                                               ; x8a7a 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8a7a 
 	PlayerCommandData.moveBallPlacement $F8, $D8                                                                          ; x8a7b  {"(Location)":{"down":1,"left":5}}
 	PlayerCommandData.moveBallPlacement $F8, $D4                                                                          ; x8a7e  {"(Location)":{"down":1,"left":5.5}}
 	.DB $51                                                                                                               ; x8a81 
@@ -1462,7 +1462,7 @@ OFFENSE_PLAYER_REACTION_LOOP_054:
 	PlayerCommandData.boostRP $12                                                                                         ; x8b4a  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_053                                                             ; x8b4c  {"(Amount)":"-46 bytes to x8b1e"}
 OFFENSE_PLAYER_REACTION_185:
-	.DB $D4                                                                                                               ; x8b4e 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8b4e 
 	PlayerCommandData.moveBallPlacement $F8, $D4                                                                          ; x8b4f  {"(Location)":{"down":1,"left":5.5}}
 	.DB $51                                                                                                               ; x8b52 
 	PlayerCommandData.moveBallPlacement $F8, $C8                                                                          ; x8b53  {"(Location)":{"down":1,"left":7}}
@@ -1483,7 +1483,7 @@ OFFENSE_PLAYER_REACTION_187:
 	PlayerCommandData.moveBallPlacement $28, $00                                                                          ; x8b78  {"(Location)":{"down":7,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_433                                                                  ; x8b7b  {"(Pointer)":" to x9e6a"}
 OFFENSE_PLAYER_REACTION_188:
-	.DB $D4                                                                                                               ; x8b7e 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8b7e 
 	PlayerCommandData.moveBallPlacement $F8, $D4                                                                          ; x8b7f  {"(Location)":{"down":1,"left":5.5}}
 	.DB $61                                                                                                               ; x8b82 
 	PlayerCommandData.moveBallPlacement $F8, $C8                                                                          ; x8b83  {"(Location)":{"down":1,"left":7}}
@@ -1560,7 +1560,7 @@ OFFENSE_PLAYER_REACTION_192:
 	PlayerCommandData.moveBallPlacement $10, $F8                                                                          ; x8c20  {"(Location)":{"down":4,"left":1}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_431                                                                  ; x8c23  {"(Pointer)":" to x9e5e"}
 OFFENSE_PLAYER_REACTION_193:
-	.DB $D4                                                                                                               ; x8c26 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8c26 
 	PlayerCommandData.moveBallPlacement $F0, $D8                                                                          ; x8c27  {"(Location)":{"up":0,"left":5}}
 	.DB $51                                                                                                               ; x8c2a 
 	PlayerCommandData.moveBallPlacement $F0, $C0                                                                          ; x8c2b  {"(Location)":{"up":0,"left":8}}
@@ -1672,7 +1672,7 @@ OFFENSE_PLAYER_REACTION_206:
 	PlayerCommandData.moveBallPlacement $10, $00                                                                          ; x8cfe  {"(Location)":{"down":4,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x8d01  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_207:
-	.DB $D4                                                                                                               ; x8d04 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8d04 
 	PlayerCommandData.moveBallPlacement $F0, $E0                                                                          ; x8d05  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $D0                                                                          ; x8d08  {"(Location)":{"down":1,"left":6}}
 	.DB $52                                                                                                               ; x8d0b 
@@ -1749,7 +1749,7 @@ OFFENSE_PLAYER_REACTION_214:
 	PlayerCommandData.moveBallPlacement $00, $00                                                                          ; x8daa  {"(Location)":{"down":2,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_430                                                                  ; x8dad  {"(Pointer)":" to x9e58"}
 OFFENSE_PLAYER_REACTION_215:
-	.DB $D4                                                                                                               ; x8db0 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8db0 
 	PlayerCommandData.moveBallPlacement $F0, $E0                                                                          ; x8db1  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $D0                                                                          ; x8db4  {"(Location)":{"down":1,"left":6}}
 	.DB $62                                                                                                               ; x8db7 
@@ -1788,7 +1788,7 @@ OFFENSE_PLAYER_REACTION_216:
 	PlayerCommandData.setToBlock %11011001, %00000000                                                                     ; x8e09  {"(Player)":"RE,NT,ROLB,RILB,RCB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8e0c  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_217:
-	.DB $D4                                                                                                               ; x8e0f 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8e0f 
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; x8e10  {"(Location)":{"up":0,"left":3}}
 	.DB $71                                                                                                               ; x8e13 
 OFFENSE_PLAYER_REACTION_JUMP_093:
@@ -1859,7 +1859,7 @@ OFFENSE_PLAYER_REACTION_225:
 	PlayerCommandData.moveBallPlacement $00, $00                                                                          ; x8e9f  {"(Location)":{"down":2,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_427                                                                  ; x8ea2  {"(Pointer)":" to x9e46"}
 OFFENSE_PLAYER_REACTION_226:
-	.DB $D4                                                                                                               ; x8ea5 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8ea5 
 	PlayerCommandData.moveBallPlacement $FC, $D8                                                                          ; x8ea6  {"(Location)":{"down":1.5,"left":5}}
 	.DB $52                                                                                                               ; x8ea9 
 	PlayerCommandData.moveBallPlacement $00, $C0                                                                          ; x8eaa  {"(Location)":{"down":2,"left":8}}
@@ -1973,7 +1973,7 @@ OFFENSE_PLAYER_REACTION_232:
 	.DB $CE, $E0, $58                                                                                                     ; x8f82  {"(Location)":{"up":2,"right":11}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x8f85  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_233:
-	.DB $D4                                                                                                               ; x8f88 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8f88 
 	PlayerCommandData.moveBallPlacement $F6, $E4                                                                          ; x8f89  {"(Location)":{"down":0.75,"left":3.5}}
 	PlayerCommandData.moveBallPlacement $F6, $E0                                                                          ; x8f8c  {"(Location)":{"down":0.75,"left":4}}
 	.DB $51                                                                                                               ; x8f8f 
@@ -2024,7 +2024,7 @@ OFFENSE_PLAYER_REACTION_237:
 	PlayerCommandData.moveBallPlacement $18, $FC                                                                          ; x8feb  {"(Location)":{"down":5,"left":0.5}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_431                                                                  ; x8fee  {"(Pointer)":" to x9e5e"}
 OFFENSE_PLAYER_REACTION_238:
-	.DB $D4                                                                                                               ; x8ff1 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x8ff1 
 	PlayerCommandData.moveBallPlacement $F6, $E4                                                                          ; x8ff2  {"(Location)":{"down":0.75,"left":3.5}}
 	PlayerCommandData.moveBallPlacement $F6, $E0                                                                          ; x8ff5  {"(Location)":{"down":0.75,"left":4}}
 	.DB $61                                                                                                               ; x8ff8 
@@ -2041,7 +2041,7 @@ OFFENSE_PLAYER_REACTION_JUMP_114:
 	.DB $C1, $3C, $6E, $CC                                                                                                ; x9012  {"(Start Time, End Time)":"start in between 3s and 5.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_074                                                             ; x9016  {"(Amount)":"-14 bytes to x9008"}
 OFFENSE_PLAYER_REACTION_239:
-	.DB $D4                                                                                                               ; x9018 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9018 
 	.DB $C8, $3B, $B0, $09                                                                                                ; x9019  {"(Pointer)":" to x904b","(Random)":"43.75%"}
 	.DB $C8, $3F, $B0, $05                                                                                                ; x901d  {"(Pointer)":" to x904f","(Random)":"68.75%"}
 	.DB $C8, $43, $B0, $02                                                                                                ; x9021  {"(Pointer)":" to x9053","(Random)":"87.5%"}
@@ -2117,14 +2117,14 @@ OFFENSE_PLAYER_REACTION_245:
 	.DB $CE, $00, $50                                                                                                     ; x90be  {"(Location)":{"down":2,"right":10}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x90c1  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_246:
-	.DB $D4                                                                                                               ; x90c4 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x90c4 
 	PlayerCommandData.moveBallPlacement $F6, $E4                                                                          ; x90c5  {"(Location)":{"down":0.75,"left":3.5}}
 	PlayerCommandData.moveBallPlacement $F6, $E0                                                                          ; x90c8  {"(Location)":{"down":0.75,"left":4}}
 	.DB $52                                                                                                               ; x90cb 
 	PlayerCommandData.moveBallPlacement $F6, $B0                                                                          ; x90cc  {"(Location)":{"down":0.75,"left":10}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_314                                                                  ; x90cf  {"(Pointer)":" to x9842"}
 OFFENSE_PLAYER_REACTION_247:
-	.DB $D4                                                                                                               ; x90d2 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x90d2 
 	PlayerCommandData.moveBallPlacement $F6, $E4                                                                          ; x90d3  {"(Location)":{"down":0.75,"left":3.5}}
 	PlayerCommandData.moveBallPlacement $F6, $E0                                                                          ; x90d6  {"(Location)":{"down":0.75,"left":4}}
 	.DB $62                                                                                                               ; x90d9 
@@ -2176,7 +2176,7 @@ OFFENSE_PLAYER_REACTION_LOOP_079:
 	PlayerCommandData.boostRP $12                                                                                         ; x9134  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_078                                                             ; x9136  {"(Amount)":"-31 bytes to x9117"}
 OFFENSE_PLAYER_REACTION_250:
-	.DB $D4                                                                                                               ; x9138 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9138 
 	.DB $C0, $00, $F8                                                                                                     ; x9139  {"(Location)":{"up":0,"left":0.875}}
 	.DB $C8, $49, $B1, $09                                                                                                ; x913c  {"(Pointer)":" to x9159","(Random)":"43.75%"}
 	.DB $C8, $4D, $B1, $05                                                                                                ; x9140  {"(Pointer)":" to x915d","(Random)":"68.75%"}
@@ -2279,7 +2279,7 @@ OFFENSE_PLAYER_REACTION_260:
 	PlayerCommandData.moveBallPlacement $E4, $E0                                                                          ; x9205  {"(Location)":{"up":1.5,"left":4}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_429                                                                  ; x9208  {"(Pointer)":" to x9e52"}
 OFFENSE_PLAYER_REACTION_261:
-	.DB $D4                                                                                                               ; x920b 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x920b 
 	PlayerCommandData.moveBallPlacement $F0, $E0                                                                          ; x920c  {"(Location)":{"up":0,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $D0                                                                          ; x920f  {"(Location)":{"down":1,"left":6}}
 	.DB $52                                                                                                               ; x9212 
@@ -2342,7 +2342,7 @@ OFFENSE_PLAYER_REACTION_LOOP_085:
 	PlayerCommandData.boostRP $12                                                                                         ; x9293  {"(Boost)":{"value":18,"HasMaximumValue":true}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_084                                                             ; x9295  {"(Amount)":"-41 bytes to x926c"}
 OFFENSE_PLAYER_REACTION_265:
-	.DB $D4                                                                                                               ; x9297 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9297 
 	.DB $C0, $00, $DC                                                                                                     ; x9298  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x929b 
 	.DB $C0, $00, $F0                                                                                                     ; x929c  {"(Location)":{"up":0,"left":1.875}}
@@ -2365,7 +2365,7 @@ OFFENSE_PLAYER_REACTION_JUMP_138:
 	.DB $27, $38, $B8                                                                                                     ; x92ca  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_086                                                             ; x92cd  {"(Amount)":"-34 bytes to x92ab"}
 OFFENSE_PLAYER_REACTION_266:
-	.DB $D4                                                                                                               ; x92cf 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x92cf 
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; x92d0  {"(Location)":{"down":1,"left":4}}
 	PlayerCommandData.moveBallPlacement $F8, $DC                                                                          ; x92d3  {"(Location)":{"down":1,"left":4.5}}
 	.DB $62                                                                                                               ; x92d6 
@@ -2385,7 +2385,7 @@ OFFENSE_PLAYER_REACTION_JUMP_139:
 	.DB $C1, $0A, $BE, $CC                                                                                                ; x92f9  {"(Start Time, End Time)":"start in between 0.5s and 9.5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_087                                                             ; x92fd  {"(Amount)":"-14 bytes to x92ef"}
 OFFENSE_PLAYER_REACTION_267:
-	.DB $D4                                                                                                               ; x92ff 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x92ff 
 OFFENSE_PLAYER_REACTION_JUMP_140:
 	.DB $C0, $00, $DC                                                                                                     ; x9300  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9303 
@@ -2438,7 +2438,7 @@ OFFENSE_PLAYER_REACTION_JUMP_147:
 	PlayerCommandData.stand $1E                                                                                           ; x936f  {"(Time)":"for 1.5s"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_090                                                             ; x9371  {"(Amount)":"-40 bytes to x9349"}
 OFFENSE_PLAYER_REACTION_269:
-	.DB $D4                                                                                                               ; x9373 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9373 
 	.DB $C0, $00, $DC                                                                                                     ; x9374  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9377 
 	.DB $C0, $00, $F0                                                                                                     ; x9378  {"(Location)":{"up":0,"left":1.875}}
@@ -2465,7 +2465,7 @@ OFFENSE_PLAYER_REACTION_JUMP_150:
 	PlayerCommandData.moveBallPlacement $CC, $F0                                                                          ; x93aa  {"(Location)":{"up":4.5,"left":2}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_092                                                             ; x93ad  {"(Amount)":"-8 bytes to x93a5"}
 OFFENSE_PLAYER_REACTION_270:
-	.DB $D4                                                                                                               ; x93af 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x93af 
 	.DB $C0, $00, $DC                                                                                                     ; x93b0  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x93b3 
 	.DB $C0, $00, $F0                                                                                                     ; x93b4  {"(Location)":{"up":0,"left":1.875}}
@@ -2479,7 +2479,7 @@ OFFENSE_PLAYER_REACTION_JUMP_151:
 	.DB $C1, $3C, $8C, $CC                                                                                                ; x93cb  {"(Start Time, End Time)":"start in between 3s and 7s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_093                                                             ; x93cf  {"(Amount)":"-15 bytes to x93c0"}
 OFFENSE_PLAYER_REACTION_271:
-	.DB $D4                                                                                                               ; x93d1 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x93d1 
 	.DB $C0, $00, $DC                                                                                                     ; x93d2  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x93d5 
 	.DB $C0, $00, $F0                                                                                                     ; x93d6  {"(Location)":{"up":0,"left":1.875}}
@@ -2501,7 +2501,7 @@ OFFENSE_PLAYER_REACTION_JUMP_153:
 	.DB $27, $38, $B8                                                                                                     ; x9400  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_094                                                             ; x9403  {"(Amount)":"-30 bytes to x93e5"}
 OFFENSE_PLAYER_REACTION_272:
-	.DB $D4                                                                                                               ; x9405 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9405 
 	.DB $C0, $00, $DC                                                                                                     ; x9406  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9409 
 	.DB $C0, $00, $F0                                                                                                     ; x940a  {"(Location)":{"up":0,"left":1.875}}
@@ -2529,7 +2529,7 @@ OFFENSE_PLAYER_REACTION_273:
 	PlayerCommandData.setToBlock %10011001, %00000000                                                                     ; x9440  {"(Player)":"RE,ROLB,RILB,RCB"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9443  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_274:
-	.DB $D4                                                                                                               ; x9446 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9446 
 	.DB $C0, $00, $DC                                                                                                     ; x9447  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x944a 
 	.DB $C0, $00, $F0                                                                                                     ; x944b  {"(Location)":{"up":0,"left":1.875}}
@@ -2556,7 +2556,7 @@ OFFENSE_PLAYER_REACTION_JUMP_158:
 	PlayerCommandData.moveBallPlacement $CC, $F0                                                                          ; x947c  {"(Location)":{"up":4.5,"left":2}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_097                                                             ; x947f  {"(Amount)":"-8 bytes to x9477"}
 OFFENSE_PLAYER_REACTION_275:
-	.DB $D4                                                                                                               ; x9481 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9481 
 	PlayerCommandData.moveBallPlacement $F0, $D0                                                                          ; x9482  {"(Location)":{"up":0,"left":6}}
 	.DB $51                                                                                                               ; x9485 
 	PlayerCommandData.moveBallPlacement $F0, $B8                                                                          ; x9486  {"(Location)":{"up":0,"left":9}}
@@ -2614,7 +2614,7 @@ OFFENSE_PLAYER_REACTION_JUMP_163:
 	PlayerCommandData.moveBallPlacement $CE, $F0                                                                          ; x9500  {"(Location)":{"up":4.25,"left":2}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_100                                                             ; x9503  {"(Amount)":"-8 bytes to x94fb"}
 OFFENSE_PLAYER_REACTION_278:
-	.DB $D4                                                                                                               ; x9505 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9505 
 	.DB $C0, $00, $DC                                                                                                     ; x9506  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9509 
 	.DB $C0, $00, $F0                                                                                                     ; x950a  {"(Location)":{"up":0,"left":1.875}}
@@ -2646,7 +2646,7 @@ OFFENSE_PLAYER_REACTION_279:
 	PlayerCommandData.setToBlock %11111111, %11100000                                                                     ; x9546  {"(Player)":"RE,NT,LE,ROLB,RILB,LILB,LOLB,RCB,LCB,FS,SS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x9549  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_280:
-	.DB $D4                                                                                                               ; x954c 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x954c 
 	PlayerCommandData.moveBallPlacement $F8, $D4                                                                          ; x954d  {"(Location)":{"down":1,"left":5.5}}
 	.DB $51                                                                                                               ; x9550 
 	PlayerCommandData.setRS $07                                                                                           ; x9551  {"(Value)":50}
@@ -2678,7 +2678,7 @@ OFFENSE_PLAYER_REACTION_281:
 	PlayerCommandData.setToBlock %11101110, %10100000                                                                     ; x958c  {"(Player)":"RE,NT,LE,RILB,LILB,LOLB,LCB,SS"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_198                                                             ; x958f  {"(Pointer)":" to x9ef8"}
 OFFENSE_PLAYER_REACTION_282:
-	.DB $D4                                                                                                               ; x9592 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9592 
 	.DB $C0, $00, $DC                                                                                                     ; x9593  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x9596 
 	.DB $C0, $00, $F0                                                                                                     ; x9597  {"(Location)":{"up":0,"left":1.875}}
@@ -2750,7 +2750,7 @@ OFFENSE_PLAYER_REACTION_JUMP_174:
 	PlayerCommandData.moveBallPlacement $D1, $F0                                                                          ; x9634  {"(Location)":{"up":3.875,"left":2}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_108                                                             ; x9637  {"(Amount)":"-8 bytes to x962f"}
 OFFENSE_PLAYER_REACTION_285:
-	.DB $D4                                                                                                               ; x9639 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9639 
 	.DB $C0, $00, $DC                                                                                                     ; x963a  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x963d 
 	.DB $2C, $4E, $B6                                                                                                     ; x963e  {"(Pointer)":" to x965e"}
@@ -2777,7 +2777,7 @@ OFFENSE_PLAYER_REACTION_JUMP_177:
 	PlayerCommandData.moveBallPlacement $CC, $F0                                                                          ; x9671  {"(Location)":{"up":4.5,"left":2}}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_110                                                             ; x9674  {"(Amount)":"-8 bytes to x966c"}
 OFFENSE_PLAYER_REACTION_286:
-	.DB $D4                                                                                                               ; x9676 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9676 
 	.DB $C0, $00, $DC                                                                                                     ; x9677  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x967a 
 	.DB $2C, $8B, $B6                                                                                                     ; x967b  {"(Pointer)":" to x969b"}
@@ -2799,7 +2799,7 @@ OFFENSE_PLAYER_REACTION_JUMP_179:
 	.DB $27, $38, $B8                                                                                                     ; x96a6  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_111                                                             ; x96a9  {"(Amount)":"-31 bytes to x968a"}
 OFFENSE_PLAYER_REACTION_287:
-	.DB $D4                                                                                                               ; x96ab 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x96ab 
 	.DB $C0, $00, $DC                                                                                                     ; x96ac  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x96af 
 	.DB $C0, $00, $F0                                                                                                     ; x96b0  {"(Location)":{"up":0,"left":1.875}}
@@ -2826,7 +2826,7 @@ OFFENSE_PLAYER_REACTION_JUMP_182:
 	.DB $27, $38, $B8                                                                                                     ; x96ea  {"(Pointer)":" to x9848"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_112                                                             ; x96ed  {"(Amount)":"-46 bytes to x96bf"}
 OFFENSE_PLAYER_REACTION_288:
-	.DB $D4                                                                                                               ; x96ef 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x96ef 
 	.DB $C0, $00, $DC                                                                                                     ; x96f0  {"(Location)":{"up":0,"left":4.375}}
 	PlayerCommandData.playerTakesControl                                                                                  ; x96f3 
 	.DB $2C, $03, $B7                                                                                                     ; x96f4  {"(Pointer)":" to x9713"}
@@ -2949,7 +2949,7 @@ OFFENSE_PLAYER_REACTION_308:
 	PlayerCommandData.moveBallPlacement $D0, $00                                                                          ; x97f8  {"(Location)":{"up":4,"left":0}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_428                                                                  ; x97fb  {"(Pointer)":" to x9e4c"}
 OFFENSE_PLAYER_REACTION_309:
-	.DB $D4                                                                                                               ; x97fe 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x97fe 
 	PlayerCommandData.turn $14                                                                                            ; x97ff  {"(Time)":"for 1s"}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_140                                                             ; x9801  {"(Pointer)":" to x9300"}
 OFFENSE_PLAYER_REACTION_310:
@@ -2959,7 +2959,7 @@ OFFENSE_PLAYER_REACTION_310:
 	.DB $C0, $00, $F8                                                                                                     ; x9809  {"(Location)":{"up":0,"left":0.875}}
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_144                                                             ; x980c  {"(Pointer)":" to x933c"}
 OFFENSE_PLAYER_REACTION_311:
-	.DB $D4                                                                                                               ; x980f 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x980f 
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; x9810  {"(Location)":{"up":0,"left":3}}
 	PlayerCommandData.moveBallPlacement $EC, $DC                                                                          ; x9813  {"(Location)":{"up":0.5,"left":4.5}}
 	.DB $61                                                                                                               ; x9816 
@@ -2976,7 +2976,7 @@ OFFENSE_PLAYER_REACTION_JUMP_188:
 	.DB $C1, $01, $64, $CC                                                                                                ; x9830  {"(Start Time, End Time)":"start in between 0.05s and 5s","(Take Sack Chance)":"20.3125%"}
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_117                                                             ; x9834  {"(Amount)":"-13 bytes to x9827"}
 OFFENSE_PLAYER_REACTION_312:
-	.DB $D4                                                                                                               ; x9836 
+	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x9836 
 	PlayerCommandData.moveBallPlacement $F0, $E8                                                                          ; x9837  {"(Location)":{"up":0,"left":3}}
 	.DB $72                                                                                                               ; x983a 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_JUMP_093                                                             ; x983b  {"(Pointer)":" to x8e14"}
