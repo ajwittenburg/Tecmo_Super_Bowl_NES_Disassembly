@@ -10,6 +10,13 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.passChance2ReceiversAndPostCatch postCatchLocation, receiverOne, receiverTwo
+    .DB $91
+    .DB receiverOne
+    .DB receiverTwo
+    .WORD postCatchLocation
+.ENDM
+
 .MACRO PlayerCommandData.passChance3ReceiversAndPostCatch postCatchLocation, receiverOne, receiverTwo, receiverThree
     .DB $92
     .DB receiverOne
