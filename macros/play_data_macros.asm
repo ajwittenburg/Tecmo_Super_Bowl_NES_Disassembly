@@ -2,6 +2,18 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.Helper.addCommandAndLocationXY commandByte, xByte, yByte
+    .DB commandByte
+    .DB yByte
+    .DB xByte
+.ENDM
+
+;;;;;;;;;;;;;;;
+
+.MACRO PlayerCommandData.moveMiddleOfField y,x
+    PlayerCommandData.Helper.addCommandAndLocationXY $D9, x, y
+.ENDM
+
 .MACRO PlayerCommandData.runRush
     .DB $DA
 .ENDM
