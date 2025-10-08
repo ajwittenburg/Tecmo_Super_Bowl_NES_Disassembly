@@ -2,6 +2,10 @@
 
 _F{_PLAY_DATA_MACROS
 
+.MACRO PlayerCommandData.runRush
+    .DB $DA
+.ENDM
+
 .MACRO PlayerCommandData.verticallyMirrorBallCarrier
     .DB $DB
 .ENDM
