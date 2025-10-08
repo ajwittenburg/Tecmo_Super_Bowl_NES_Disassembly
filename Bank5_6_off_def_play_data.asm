@@ -156,7 +156,7 @@ OFFENSE_PLAYER_REACTION_017:
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_140                                                                  ; x813b  {"(Pointer)":" to x8730"}
 OFFENSE_PLAYER_REACTION_018:
 	.DB $D0, $F0, $06                                                                                                     ; x813e  {"(Location)":{"up":0,"left":0.75}}
-	.DB $D3                                                                                                               ; x8141 
+	PlayerCommandData.hikeFromShotgun                                                                                     ; x8141 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_426                                                                  ; x8142  {"(Pointer)":" to x9e40"}
 OFFENSE_PLAYER_REACTION_019:
 	.DB $D0, $E4, $0C                                                                                                     ; x8145  {"(Location)":{"up":1.5,"left":1.5}}
@@ -218,7 +218,7 @@ OFFENSE_PLAYER_REACTION_030:
 OFFENSE_PLAYER_REACTION_031:
 	.DB $D0, $F0, $08                                                                                                     ; x81ab  {"(Location)":{"up":0,"left":1}}
 	PlayerCommandData.faceDirection $80                                                                                   ; x81ae  {"(Direction)":"90 degrees"}
-	.DB $D3                                                                                                               ; x81b0 
+	PlayerCommandData.hikeFromShotgun                                                                                     ; x81b0 
 	PlayerCommandData.jumpTo OFFENSE_PLAYER_REACTION_428                                                                  ; x81b1  {"(Pointer)":" to x9e4c"}
 OFFENSE_PLAYER_REACTION_032:
 	.DB $D0, $00, $10                                                                                                     ; x81b4  {"(Location)":{"down":2,"left":2}}
@@ -433,7 +433,7 @@ OFFENSE_PLAYER_REACTION_084:
 	PlayerCommandData.waitForSnap3PointStance                                                                             ; x830a 
 OFFENSE_PLAYER_REACTION_085:
 	.DB $D0, $F0, $06                                                                                                     ; x830b  {"(Location)":{"up":0,"left":0.75}}
-	.DB $D3                                                                                                               ; x830e 
+	PlayerCommandData.hikeFromShotgun                                                                                     ; x830e 
 OFFENSE_PLAYER_REACTION_086:
 	.DB $D0, $F0, $06                                                                                                     ; x830f  {"(Location)":{"up":0,"left":0.75}}
 	.DB $D2                                                                                                               ; x8312 
@@ -466,7 +466,7 @@ OFFENSE_PLAYER_REACTION_090:
 	.DB $D1, $B0, $18                                                                                                     ; x8342  {"(Location)":{"down":7,"left":3}}
 	PlayerCommandData.waitForSnap2PointStance                                                                             ; x8345 
 	.DB $D0, $F0, $06                                                                                                     ; x8346  {"(Location)":{"up":0,"left":0.75}}
-	.DB $D3                                                                                                               ; x8349 
+	PlayerCommandData.hikeFromShotgun                                                                                     ; x8349 
 OFFENSE_PLAYER_REACTION_091:
 	PlayerCommandData.takeSnapUnderCenter                                                                                 ; x834a 
 	PlayerCommandData.moveBallPlacement $F8, $E0                                                                          ; x834b  {"(Location)":{"down":1,"left":4}}
