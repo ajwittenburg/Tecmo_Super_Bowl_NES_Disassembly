@@ -3876,15 +3876,15 @@ OFFENSE_PLAYER_REACTION_LOOP_131:
 	PlayerCommandData.passRush                                                                                            ; x9f56 
 	PlayerCommandData.loopTo OFFENSE_PLAYER_REACTION_LOOP_131                                                             ; x9f57  {"(Amount)":"-4 bytes to x9f53"}
 OFFENSE_PLAYER_REACTION_448:
-	.DB $C4, $14                                                                                                          ; x9f59  {"(Time)":"for 1s"}
+	PlayerCommandData.celebrate $14                                                                                       ; x9f59  {"(Time)":"for 1s"}
 OFFENSE_PLAYER_REACTION_449:
-	.DB $C4, $28                                                                                                          ; x9f5b  {"(Time)":"for 2s"}
+	PlayerCommandData.celebrate $28                                                                                       ; x9f5b  {"(Time)":"for 2s"}
 OFFENSE_PLAYER_REACTION_450:
-	.DB $C4, $3C                                                                                                          ; x9f5d  {"(Time)":"for 3s"}
+	PlayerCommandData.celebrate $3C                                                                                       ; x9f5d  {"(Time)":"for 3s"}
 OFFENSE_PLAYER_REACTION_451:
-	.DB $C4, $50                                                                                                          ; x9f5f  {"(Time)":"for 4s"}
+	PlayerCommandData.celebrate $50                                                                                       ; x9f5f  {"(Time)":"for 4s"}
 OFFENSE_PLAYER_REACTION_452:
-	.DB $C4, $64                                                                                                          ; x9f61  {"(Time)":"for 5s"}
+	PlayerCommandData.celebrate $64                                                                                       ; x9f61  {"(Time)":"for 5s"}
 OFFENSE_PLAYER_REACTION_453:
 	PlayerCommandData.cry $14                                                                                             ; x9f63  {"(Time)":"for 1s"}
 OFFENSE_PLAYER_REACTION_454:
@@ -7825,11 +7825,11 @@ DEFENSE_PLAYER_REACTION_504:
 	PlayerCommandData.playerTakesControl                                                                                  ; xbf5e 
 	PlayerCommandData.loopTo DEFENSE_PLAYER_REACTION_503                                                                  ; xbf5f  {"(Amount)":"-11 bytes to xbf54"}
 DEFENSE_PLAYER_REACTION_505:
-	.DB $C4, $14                                                                                                          ; xbf61  {"(Time)":"for 1s"}
+	PlayerCommandData.celebrate $14                                                                                       ; xbf61  {"(Time)":"for 1s"}
 DEFENSE_PLAYER_REACTION_506:
-	.DB $C4, $3C                                                                                                          ; xbf63  {"(Time)":"for 3s"}
+	PlayerCommandData.celebrate $3C                                                                                       ; xbf63  {"(Time)":"for 3s"}
 DEFENSE_PLAYER_REACTION_507:
-	.DB $C4, $50                                                                                                          ; xbf65  {"(Time)":"for 4s"}
+	PlayerCommandData.celebrate $50                                                                                       ; xbf65  {"(Time)":"for 4s"}
 DEFENSE_PLAYER_REACTION_508:
 	PlayerCommandData.cry $1E                                                                                             ; xbf67  {"(Time)":"for 1.5s"}
 DEFENSE_PLAYER_REACTION_509:

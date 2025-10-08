@@ -10,6 +10,11 @@ _F{_PLAY_DATA_MACROS
 
 ;;;;;;;;;;;;;;;
 
+.MACRO PlayerCommandData.celebrate time
+    .DB $C4
+    .DB time
+.ENDM
+
 .MACRO PlayerCommandData.cry time
     .DB $C5
     .DB time
