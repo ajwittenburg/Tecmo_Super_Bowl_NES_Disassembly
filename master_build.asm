@@ -59,6 +59,7 @@ _F{_MACROS
 .INCSRC macros/mmc3_macros.asm
 .INCSRC macros/nes_macros.asm
 .INCSRC macros/play_call_macros.asm
+.INCSRC macros/play_data_macros.asm
 .INCSRC macros/player_ram_macros.asm
 .INCSRC macros/set_compare_player_ball_to_yardlines_macros.asm
 .INCSRC macros/set_init_status_macros.asm

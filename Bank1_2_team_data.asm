@@ -1875,6 +1875,12 @@ ATTRIBUTE_94 = $0E
 ATTRIBUTE_100 = $0F
 
 .MACRO ADD_NIBBLES_AS_BYTE[nibbleSignificant_nibbleLeast] nibble_significant, nibble_least
+	IF nibble_significant > $0F 
+		ERROR "nibble_signifcant is larger than $0F"
+	ENDIF
+	IF nibble_least > $0F 
+		ERROR "nibble_least is larger than $0F"
+	ENDIF
 	.DB nibble_significant * 16 + nibble_least
 .ENDM
 
